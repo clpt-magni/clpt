@@ -38,7 +38,7 @@ export default function HeroVideo() {
             fadeText ? "opacity-0 translate-y-8 pointer-events-none" : "opacity-100 translate-y-0"
           }`}
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white drop-shadow-2xl font-poppins">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight !text-white drop-shadow-2xl font-poppins">
             Welcome to Chalapathi Institute <br className="hidden md:block"/> of Pharmaceutical Sciences
           </h1>
           

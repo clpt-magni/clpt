@@ -34,27 +34,27 @@ export default function HeroVideo() {
 
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
         <div 
-          className={`max-w-5xl transition-all duration-1000 transform ${
+          className={`max-w-4xl transition-all duration-1000 transform ${
             fadeText ? "opacity-0 translate-y-8 pointer-events-none" : "opacity-100 translate-y-0"
           }`}
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight !text-white drop-shadow-2xl font-poppins">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug tracking-tight !text-white drop-shadow-2xl font-poppins">
             Welcome to Chalapathi Institute <br className="hidden md:block"/> of Pharmaceutical Sciences
           </h1>
           
-          <blockquote className="relative text-xl md:text-2xl mb-12 text-white/90 font-light max-w-3xl mx-auto drop-shadow-lg font-roboto italic border-l-[5px] border-secondary pl-8 text-left bg-white/5 p-6 rounded-r-2xl backdrop-blur-sm border-y border-r border-white/10">
-            <span className="text-5xl text-secondary absolute -top-4 left-2 opacity-50 font-serif">"</span>
+          <blockquote className="relative text-base sm:text-lg md:text-xl mb-10 text-white/90 font-light max-w-2xl mx-auto drop-shadow-lg font-roboto italic border-l-[4px] border-secondary pl-6 text-left bg-white/10 p-5 rounded-r-2xl backdrop-blur-sm border-y border-r border-white/10">
+            <span className="text-4xl text-secondary absolute -top-3 left-2 opacity-50 font-serif">"</span>
             Join a premier autonomous institution committed to excellence in pharmaceutical sciences, research, and holistic development.
           </blockquote>
 
-          <div className="flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/academics">
-              <Button size="lg" className="bg-primary hover:bg-primary-light text-white px-10 py-7 text-lg font-bold rounded-2xl transition-all transform hover:-translate-y-1 shadow-2xl pointer-events-auto border-none">
+              <Button className="bg-primary hover:bg-primary-light text-white px-6 py-5 md:px-8 md:py-6 text-sm md:text-base font-bold rounded-xl transition-all transform hover:-translate-y-1 shadow-2xl pointer-events-auto border-none">
                 Explore Programs
               </Button>
             </Link>
             <Link href="/admissions">
-              <Button size="lg" className="bg-secondary hover:bg-secondary-light text-primary-dark px-10 py-7 text-lg font-bold rounded-2xl transition-all transform hover:-translate-y-1 shadow-2xl pointer-events-auto border-none">
+              <Button className="bg-secondary hover:bg-secondary-light text-primary-dark px-6 py-5 md:px-8 md:py-6 text-sm md:text-base font-bold rounded-xl transition-all transform hover:-translate-y-1 shadow-2xl pointer-events-auto border-none">
                 Admission Now Open
               </Button>
             </Link>

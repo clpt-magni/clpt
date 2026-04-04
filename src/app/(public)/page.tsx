@@ -110,17 +110,7 @@ export default async function Home() {
                       </CardContent>
                     </Card>
                   ))
-                ) : (
-                  [
-                    { title: "CLPT Student Awarded by Former President APJ Abdul Kalam", date: "Posted Today", desc: "A moment of pride for Chalapathi Institute of Pharmaceutical Sciences as our outstanding student receives a prestigious award." },
-                    { title: "Admission Now Open for International Students", date: "Academic Year 2025-2026", desc: "Applications are invited from international candidates for B.Pharmacy, Pharm.D, and M.Pharmacy programs." }
-                  ].map((n, i) => (
-                    <Card key={i} className="hover:shadow-lg transition-all border-none bg-white p-2">
-                      {/* fallback content ... */}
-                    </Card>
-                  ))
-                  // I'll just use the dynamic one with a placeholder message if empty
-                )}
+                ) : null}
                 {news.length === 0 && (
                   <p className="text-slate-400 italic">No recent news updates.</p>
                 )}

@@ -20,6 +20,7 @@ import feeStructure from './feeStructure';
 
 import institutionalBody from './institutionalBody';
 import affiliation from './affiliation';
+import institutionalDocument from './institutionalDocument';
 
 export const schemaTypes = [
   faculty, 
@@ -45,5 +46,6 @@ export const schemaTypes = [
   studentList,
   feeStructure,
   institutionalBody,
-  affiliation
+  affiliation,
+  institutionalDocument
 ];

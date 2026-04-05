@@ -185,7 +185,7 @@ export const sidebarNav: SidebarGroup[] = [
       { label: "INSTITUTIONAL DEVELOPMENT PLAN", href: "/academic/idp" },
       { label: "PUBLICATIONS", href: "/research/publications" },
       { label: "RESEARCH & DEVELOPMENT", href: "/research/r-and-d" },
-      { label: "INTELLECTUAL PROPERTY CENTRE (IPFC)", href: "/research/ipfc" },
+      { label: "INTELLECTUAL PROPERTY CENTRE (IPFC)", href: "/innovation/ipfc" },
     ],
   },
   {

@@ -65,7 +65,7 @@ export const topNav: NavItem[] = [
         href: "/about/ces-overview",
         items: [
           { label: "CES-OVERVIEW", href: "/about/ces-overview" },
-          { label: "President", href: "/about/president" },
+          { label: "Chairman", href: "/about/chairman" },
           { label: "Principal", href: "/about/principal" },
           { label: "Faculty", href: "/faculty" },
           { label: "Affiliations and Approvals", href: "/about/affiliations" },
@@ -77,6 +77,7 @@ export const topNav: NavItem[] = [
     label: "Admissions",
     href: "/admissions",
     items: [
+      { label: "Overview", href: "/admissions" },
       { label: "Application Procedure", href: "/admissions/procedure" },
       { label: "Rules and Regulations", href: "/admissions/rules" },
     ],
@@ -86,21 +87,10 @@ export const topNav: NavItem[] = [
     label: "Programmes",
     href: "/programs",
     items: [
-      { label: "B.Pharmacy", href: "/programs/b-pharm" },
-      { label: "M.Pharmacy", href: "/programs/m-pharm" },
-      { label: "Pharm.D", href: "/programs/pharm-d" },
-      {
-        label: "Top Pharm.D colleges in Andhra Pradesh",
-        href: "/programs/top-colleges",
-      },
-      {
-        label: "Best Pharm.D Colleges in Andhra Pradesh",
-        href: "/programs/best-colleges",
-      },
-      {
-        label: "Approved Research Center for Ph.D.",
-        href: "/programs/phd-center",
-      },
+      { label: "Overview", href: "/programs" },
+      { label: "B.Pharmacy", href: "/programs/b-pharmacy" },
+      { label: "M.Pharmacy", href: "/programs/m-pharmacy" },
+      { label: "Pharm.D", href: "/programs/pharmd" },
     ],
   },
   {

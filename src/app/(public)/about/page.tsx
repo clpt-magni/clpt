@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto space-y-12">
 
           {/* History Section */}
-          <section id="history" className="animate-in fade-in duration-1000">
+          <section id="history" className="scroll-mt-40 animate-in fade-in duration-1000">
             <Card className="border-none shadow-xl bg-white overflow-hidden border-l-[6px] border-primary">
               <CardContent className="p-10">
                 <div className="flex items-center gap-4 mb-6">
@@ -45,7 +45,7 @@ export default function AboutPage() {
 
           {/* Vision & Mission Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <section id="vision">
+            <section id="vision" className="scroll-mt-40">
               <div className="bg-slate-50 p-10 rounded-2xl border-l-[6px] border-primary h-full shadow-md group hover:shadow-lg transition-all">
                 <div className="flex items-center gap-4 mb-6">
                   <Target className="text-primary w-8 h-8" />
@@ -57,7 +57,7 @@ export default function AboutPage() {
               </div>
             </section>
 
-            <section id="mission">
+            <section id="mission" className="scroll-mt-40">
               <div className="bg-amber-50/50 p-10 rounded-2xl border-l-[6px] border-secondary h-full shadow-md group hover:shadow-lg transition-all">
                 <div className="flex items-center gap-4 mb-6">
                   <Award className="text-secondary-dark w-8 h-8" />
@@ -71,7 +71,7 @@ export default function AboutPage() {
           </div>
 
           {/* Quality Policy */}
-          <section id="quality-policy">
+          <section id="quality-policy" className="scroll-mt-40">
             <div className="bg-blue-50/50 p-10 rounded-2xl border-l-[6px] border-blue-600 shadow-md">
               <div className="flex items-center gap-4 mb-6">
                 <ShieldCheck className="text-blue-600 w-8 h-8" />
@@ -98,54 +98,96 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Principal Preview Card */}
-          <section id="leadership" className="pt-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Leadership Column */}
-              <div className="lg:col-span-1">
-                <Card className="text-center overflow-hidden shadow-2xl border-none">
-                  <div className="h-24 bg-primary" />
-                  <CardContent className="-mt-12 pb-8">
-                    <img
-                      src="/images/principal.jpg"
-                      alt="Prof. Rama Rao Nadendla"
-                      className="w-32 h-32 rounded-full border-4 border-white shadow-lg mx-auto mb-6 object-cover"
-                    />
-                    <h3 className="text-xl font-bold text-primary-dark font-poppins">Prof. Rama Rao Nadendla</h3>
-                    <p className="text-xs font-bold text-secondary-dark uppercase tracking-widest mt-1 mb-4">Principal & Professor</p>
-                    <p className="text-sm text-slate-500 mb-6 italic leading-relaxed px-4">
-                      "Leading with vision, educating with passion to create globally competent pharmacy professionals."
-                    </p>
-                    <Link href="/principal">
-                      <Button className="w-full bg-primary-dark !text-white hover:bg-primary font-bold py-6 rounded-xl shadow-lg transition-all">
-                        View Full Profile
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
-              </div>
+          {/* Leadership Section */}
+          <section id="leadership" className="pt-8 scroll-mt-40 space-y-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Chairman Card */}
+              <Card className="text-center overflow-hidden shadow-2xl border-none transition-all hover:scale-[1.02] duration-500">
+                <div className="h-24 bg-[#002147]" />
+                <CardContent className="-mt-12 pb-8">
+                  <img
+                    src="/images/chairman.jpg"
+                    alt="Sri Y.V. Anjaneyulu Garu"
+                    className="w-32 h-32 rounded-full border-4 border-white shadow-lg mx-auto mb-6 object-cover"
+                  />
+                  <h3 className="text-xl font-bold text-primary-dark font-poppins">Sri Y.V. Anjaneyulu Garu</h3>
+                  <p className="text-xs font-bold text-secondary-dark uppercase tracking-widest mt-1 mb-4">Founder President & Chairman</p>
+                  <p className="text-sm text-slate-500 mb-6 italic leading-relaxed px-4">
+                    "Providing high-quality, value-based education that prepares students for global challenges."
+                  </p>
+                  <Link href="/about/chairman">
+                    <Button className="w-full bg-[#002147] !text-white hover:bg-primary font-bold py-6 rounded-xl shadow-lg transition-all">
+                      View Full Profile
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
 
-              {/* Governing Body Preview */}
-              <div className="lg:col-span-2 space-y-6">
-                <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 h-full flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center gap-4 mb-6">
-                      <Gavel className="text-primary w-8 h-8" />
-                      <h2 className="text-2xl font-bold text-primary-dark font-poppins">Institutional Governance</h2>
-                    </div>
-                    <p className="text-slate-600 leading-relaxed mb-8">
-                      The Governing Body and Academic Council of Chalapathi Institute of Pharmaceutical Sciences provide strategic direction, monitor institutional performance, and ensure global standards in pharmaceutical education.
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <Button variant="outline" className="py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
-                      Governing Body Members
+              {/* Principal Card */}
+              <Card className="text-center overflow-hidden shadow-2xl border-none transition-all hover:scale-[1.02] duration-500">
+                <div className="h-24 bg-primary" />
+                <CardContent className="-mt-12 pb-8">
+                  <img
+                    src="/images/principal.jpg"
+                    alt="Prof. Rama Rao Nadendla"
+                    className="w-32 h-32 rounded-full border-4 border-white shadow-lg mx-auto mb-6 object-cover"
+                  />
+                  <h3 className="text-xl font-bold text-primary-dark font-poppins">Prof. Rama Rao Nadendla</h3>
+                  <p className="text-xs font-bold text-secondary-dark uppercase tracking-widest mt-1 mb-4">Principal & Professor</p>
+                  <p className="text-sm text-slate-500 mb-6 italic leading-relaxed px-4">
+                    "Leading with vision, educating with passion to create globally competent pharmacy professionals."
+                  </p>
+                  <Link href="/about/principal">
+                    <Button className="w-full bg-primary-dark !text-white hover:bg-primary font-bold py-6 rounded-xl shadow-lg transition-all">
+                      View Full Profile
                     </Button>
-                    <Button variant="outline" className="py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
-                      Academic Council
-                    </Button>
-                  </div>
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Governing Body Preview */}
+            <div className="bg-white p-10 rounded-3xl shadow-xl border border-slate-100 flex flex-col md:flex-row items-center gap-10">
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-4 mb-4">
+                  <Gavel className="text-primary w-10 h-10" />
+                  <h2 className="text-3xl font-bold text-primary-dark font-poppins">Institutional Governance</h2>
                 </div>
+                <p className="text-slate-600 leading-relaxed text-lg">
+                  The Governing Body and Academic Council of Chalapathi Institute of Pharmaceutical Sciences provide strategic direction, monitor institutional performance, and ensure global standards in pharmaceutical education.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full md:w-auto">
+                <Link href="/about/governing-body">
+                  <Button variant="outline" className="w-full sm:w-56 py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
+                    Governing Body
+                  </Button>
+                </Link>
+                <Link href="/about/academic-council">
+                  <Button variant="outline" className="w-full sm:w-56 py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
+                    Academic Council
+                  </Button>
+                </Link>
+                <Link href="/about/finance-committee">
+                  <Button variant="outline" className="w-full sm:w-56 py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
+                    Finance Committee
+                  </Button>
+                </Link>
+                <Link href="/about/bos">
+                  <Button variant="outline" className="w-full sm:w-56 py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
+                    Board of Studies
+                  </Button>
+                </Link>
+                <Link href="/about/affiliations">
+                  <Button variant="outline" className="w-full sm:w-56 py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
+                    Affiliations & Approvals
+                  </Button>
+                </Link>
+                <Link href="/faculty">
+                  <Button variant="outline" className="w-full sm:w-56 py-8 border-primary text-primary font-bold rounded-2xl hover:bg-primary/5">
+                    Faculty
+                  </Button>
+                </Link>
               </div>
             </div>
           </section>

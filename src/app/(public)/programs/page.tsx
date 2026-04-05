@@ -6,7 +6,7 @@ import { getPrograms } from "@/lib/sanity-actions";
 
 export default async function ProgramsPage() {
   const sanityPrograms = await getPrograms();
-  
+
   // Fallback to empty array if Sanity returns null
   const programs = sanityPrograms || [];
 
@@ -16,7 +16,7 @@ export default async function ProgramsPage() {
       <section className="bg-primary-dark py-20 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-primary/10 -z-0" />
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-black font-poppins mb-4 tracking-tight">Academic Programs</h1>
+          <h1 className="text-5xl md:text-6xl !text-white font-black font-poppins mb-4 tracking-tight">Academic Programs</h1>
           <p className="text-white/70 text-xl font-medium max-w-2xl mx-auto italic">
             World-class pharmaceutical education designed for the future of global healthcare.
           </p>
@@ -26,9 +26,9 @@ export default async function ProgramsPage() {
       <div className="container mx-auto px-4 pt-16">
         {programs.length === 0 ? (
           <div className="text-center py-20 bg-white rounded-[40px] border border-slate-100 shadow-xl">
-             <GraduationCap className="mx-auto text-slate-200 w-24 h-24 mb-6" />
-             <h3 className="text-2xl font-bold text-slate-400">No Programs Found</h3>
-             <p className="text-slate-400">Please populate your programs in the Sanity Studio.</p>
+            <GraduationCap className="mx-auto text-slate-200 w-24 h-24 mb-6" />
+            <h3 className="text-2xl font-bold text-slate-400">No Programs Found</h3>
+            <p className="text-slate-400">Please populate your programs in the Sanity Studio.</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
@@ -40,7 +40,7 @@ export default async function ProgramsPage() {
                     {prog.title} {prog.type ? `(${prog.type.toUpperCase()})` : ''}
                   </h2>
                 </div>
-                
+
                 <CardContent className="p-8 md:p-10 flex-1 flex flex-col">
                   {/* Consolidated Info Box */}
                   <div className="bg-slate-50 p-6 rounded-2xl border-l-4 border-primary mb-8">

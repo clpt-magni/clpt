@@ -122,7 +122,7 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
                 return (
                   <Link 
                     key={i} 
-                    href={`/resources/infrastructure/${other.slug}`}
+                    href={`/resources/${other.slug}`}
                     className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl transition-all group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary/5 group-hover:text-primary transition-all">

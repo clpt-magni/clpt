@@ -52,7 +52,7 @@ export default function InfrastructureOverview() {
                   </p>
 
                   {/* Action */}
-                  <Link href={`/resources/infrastructure/${item.slug}`} className="w-full relative z-10">
+                  <Link href={`/resources/${item.slug}`} className="w-full relative z-10">
                     <Button variant="outline" className="w-full border-slate-200 text-slate-600 font-bold group-hover:border-primary group-hover:text-primary group-hover:bg-primary/5 py-6 rounded-xl transition-all">
                       Explore Facility <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>

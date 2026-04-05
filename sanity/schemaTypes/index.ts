@@ -21,6 +21,7 @@ import feeStructure from './feeStructure';
 import institutionalBody from './institutionalBody';
 import affiliation from './affiliation';
 import institutionalDocument from './institutionalDocument';
+import { medicinalGarden } from './medicinalGarden';
 
 export const schemaTypes = [
   faculty, 
@@ -47,5 +48,6 @@ export const schemaTypes = [
   feeStructure,
   institutionalBody,
   affiliation,
-  institutionalDocument
+  institutionalDocument,
+  medicinalGarden
 ];

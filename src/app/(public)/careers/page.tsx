@@ -15,7 +15,8 @@ import {
   ShieldCheck,
   Globe,
   Mail,
-  UserPlus
+  UserPlus,
+  Award
 } from "lucide-react";
 import {
   Table,

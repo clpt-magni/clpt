@@ -18,7 +18,8 @@ import {
   Globe,
   Settings,
   Microscope,
-  Briefcase
+  Briefcase,
+  CheckCircle2
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";

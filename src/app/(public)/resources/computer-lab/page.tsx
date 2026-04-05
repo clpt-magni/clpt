@@ -13,7 +13,8 @@ import {
   Search, 
   FileText,
   MousePointer2,
-  Settings
+  Settings,
+  ChevronRight
 } from "lucide-react";
 import Link from "next/link";
 

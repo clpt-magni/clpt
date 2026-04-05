@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { 
   Projector, 
   Tv, 
-  Youtube, 
+  Video, 
   Mic2, 
   Cast, 
   Volume2, 
@@ -33,7 +33,7 @@ const FACILITIES = [
   { 
     title: "Video Streaming Units", 
     desc: "Ready-to-use broadcasting tools for digital webinars and global guest lectures.",
-    icon: Youtube
+    icon: Video
   },
 ];
 

@@ -69,10 +69,10 @@ export function Navbar() {
           </div>
 
           {/* Main Navigation Bar (Desktop) */}
-          <nav className="hidden md:block py-1 border-t border-slate-50">
+          <nav className="hidden md:block py-1 border-t border-slate-50 relative">
             <ul className="flex items-center justify-center gap-1">
               {topNav.map((item, idx) => (
-                <li key={idx} className="relative group">
+                <li key={idx} className={item.isMega ? "static" : "relative group"}>
                   <NavItemComponent item={item} />
                 </li>
               ))}
@@ -114,11 +114,11 @@ function NavItemComponent({ item }: { item: NavItem }) {
     <div
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
-      className="relative"
+      className={isMega ? "static" : "relative"}
     >
       <Link
         href={item.href}
-        className="flex items-center gap-1 px-4 py-3 text-[13px] font-bold text-slate-700 hover:text-primary transition-all rounded-md group-hover:bg-slate-50 whitespace-nowrap"
+        className="flex items-center gap-1 px-4 py-3 text-[13px] font-extrabold text-slate-700 hover:text-primary transition-all rounded-md hover:bg-slate-50/50 whitespace-nowrap uppercase tracking-tight"
       >
         {item.label}
         {item.items && <ChevronDown size={14} className={`transition-transform duration-300 ${isOpen ? "rotate-180 text-primary" : ""}`} />}
@@ -127,34 +127,38 @@ function NavItemComponent({ item }: { item: NavItem }) {
       <AnimatePresence>
         {isOpen && item.items && (
           <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.95 }}
+            initial={{ opacity: 0, y: 10, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 10, scale: 0.95 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className={`absolute left-1/2 top-full -translate-x-1/2 z-[100] ${isMega ? "w-[800px]" : "w-64"} bg-white shadow-2xl rounded-xl border border-slate-100 p-2 overflow-hidden`}
+            exit={{ opacity: 0, y: 10, scale: 0.98 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className={`absolute z-[100] ${
+              isMega 
+                ? "left-4 right-4 top-full w-auto" 
+                : "left-1/2 -translate-x-1/2 top-full w-64"
+            } bg-white shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-2xl border border-slate-100 p-2 mt-1`}
           >
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-light via-primary to-primary-dark" />
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-primary-light via-primary to-primary-dark rounded-t-2xl" />
 
             {isMega ? (
-              <div className="grid grid-cols-3 gap-6 p-6">
+              <div className="grid grid-cols-3 gap-8 p-8">
                 {item.items.map((sub, i) => (
-                  <div key={i} className="space-y-3">
+                  <div key={i} className="space-y-4">
                     <Link
                       href={sub.href}
-                      className="text-primary font-bold text-sm hover:underline flex items-center gap-2 group/sub"
+                      className="inline-block text-primary font-black text-base md:text-lg border-b-2 border-secondary pb-1 mb-2 hover:text-primary-dark transition-colors"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary/30 group-hover/sub:bg-primary transition-colors" />
                       {sub.label}
                     </Link>
                     {sub.items && (
-                      <ul className="space-y-1.5 pl-4 ml-0.5 border-l border-slate-100">
+                      <ul className="space-y-2.5">
                         {sub.items.map((leaf, j) => (
                           <li key={j}>
                             <Link
                               href={leaf.href}
-                              className="text-slate-500 hover:text-primary text-xs font-medium transition-colors block py-0.5"
+                              className="group flex items-center gap-2 text-slate-500 hover:text-primary transition-all"
                             >
-                              {leaf.label}
+                              <div className="w-1.5 h-1.5 rounded-full bg-slate-200 group-hover:bg-primary group-hover:scale-125 transition-all" />
+                              <span className="text-sm font-bold">{leaf.label}</span>
                             </Link>
                           </li>
                         ))}
@@ -169,8 +173,9 @@ function NavItemComponent({ item }: { item: NavItem }) {
                   <li key={i}>
                     <Link
                       href={sub.href}
-                      className="block px-4 py-2.5 text-sm font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-lg mx-1 transition-all"
+                      className="flex items-center gap-2 px-4 py-3 text-sm font-bold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl mx-1 transition-all"
                     >
+                      <div className="w-1.5 h-1.5 rounded-full bg-slate-200 group-hover:bg-primary transition-all" />
                       {sub.label}
                     </Link>
                   </li>

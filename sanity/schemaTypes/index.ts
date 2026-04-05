@@ -18,6 +18,9 @@ import skillPartner from './skillPartner';
 import studentList from './studentList';
 import feeStructure from './feeStructure';
 
+import institutionalBody from './institutionalBody';
+import affiliation from './affiliation';
+
 export const schemaTypes = [
   faculty, 
   notice, 
@@ -40,5 +43,7 @@ export const schemaTypes = [
   placementCompany,
   skillPartner,
   studentList,
-  feeStructure
+  feeStructure,
+  institutionalBody,
+  affiliation
 ];

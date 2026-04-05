@@ -55,3 +55,29 @@ export async function getLaboratoryBySlug(slug: string) {
   }`, { slug });
 }
 
+export async function getInstitutionalBodyBySlug(slug: string) {
+  return await client.fetch(`*[_type == "institutionalBody" && slug.current == $slug][0] {
+    summary,
+    membersList,
+    description,
+    term,
+    "membersFileUrl": membersFile.asset->url,
+    meetingCategories[] {
+      ...,
+      meetings[] {
+        ...,
+        "fileUrl": meetingFile.asset->url
+      }
+    }
+  }`, { slug });
+}
+
+export async function getAffiliations() {
+  return await client.fetch(`*[_type == "affiliation"][0] {
+    ...,
+    approvals[] {
+      ...,
+      "fileUrl": document.asset->url
+    }
+  }`);
+}

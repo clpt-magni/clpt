@@ -21,8 +21,8 @@ export default async function Home() {
         <div className="grid grid-cols-2 md:grid-cols-5 bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-100">
           {[
             { icon: Users, label: "Admissions", href: "/admissions" },
-            { icon: Calendar, label: "Academic Calendar", href: "#" },
-            { icon: Laptop, label: "Examination Portal", href: "#" },
+            { icon: Calendar, label: "Academic Calendar", href: "https://teamup.com/ks6153fe8c4bedca6a" },
+            { icon: Laptop, label: "Examination Portal", href: "https://clptexamination.weebly.com/" },
             { icon: Download, label: "Downloads", href: "#" },
             { icon: GraduationCap, label: "Student Portal", href: "/student-dashboard" }
           ].map((item, i) => (
@@ -53,10 +53,10 @@ export default async function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 font-roboto">
             {[
-              { title: "B. Pharmacy", desc: "4 Year Undergraduate Program focusing on comprehensive pharmaceutical sciences.", href: "/academics?type=ug" },
-              { title: "M. Pharmacy", desc: "2 Year Post Graduate Program with multiple specialized branches.", href: "/academics?type=pg" },
-              { title: "Pharm.D", desc: "6 Year Doctoral Program focusing on clinical pharmacy and patient care.", href: "/academics?type=pharmd" },
-              { title: "Ph.D Program", desc: "Advanced research opportunities in various pharmaceutical disciplines.", href: "/academics?type=phd" }
+              { title: "B. Pharmacy", desc: "4 Year Undergraduate Program focusing on comprehensive pharmaceutical sciences.", href: "/programs/b-pharmacy" },
+              { title: "M. Pharmacy", desc: "2 Year Post Graduate Program with multiple specialized branches.", href: "/programs/m-pharmacy" },
+              { title: "Pharm.D", desc: "6 Year Doctoral Program focusing on clinical pharmacy and patient care.", href: "/programs/pharm-d" },
+              { title: "Ph.D Program", desc: "Advanced research opportunities in various pharmaceutical disciplines.", href: "/programs/phd" }
             ].map((p, i) => (
               <Card key={i} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-slate-100 bg-slate-50 flex flex-col h-full overflow-hidden">
                 <CardHeader className="p-8">
@@ -208,7 +208,7 @@ export default async function Home() {
               <div className="w-20 h-20 bg-secondary/20 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-inner rotate-3 group-hover:rotate-0">
                 <Briefcase size={40} className="text-secondary" />
               </div>
-              <h2 className="text-3xl font-bold mb-6 text-white tracking-tight font-poppins">Exceptional Placement Record</h2>
+              <h2 className="text-3xl font-bold mb-6 !text-white tracking-tight font-poppins">Exceptional Placement Record</h2>
               <p className="mb-10 text-slate-300 max-w-sm leading-relaxed text-lg">Our students are consistently placed in top global pharmaceutical companies, healthcare institutions, and research organizations.</p>
               <Link href="/placements">
                 <Button className="bg-secondary hover:bg-secondary-light text-primary-dark font-bold px-10 py-7 text-lg rounded-xl shadow-xl transition-all transform hover:-translate-y-1 font-poppins border-none">

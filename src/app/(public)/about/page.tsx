@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="bg-primary-dark py-16 text-white overflow-hidden relative">
         <div className="absolute inset-0 bg-[url('https://clpt.s3.ap-south-1.amazonaws.com/college-building.jpg')] opacity-10 bg-cover bg-center" />
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold font-poppins mb-2 animate-in slide-in-from-left duration-700">About the Institute</h1>
+          <h1 className="text-4xl md:text-5xl !text-white font-bold font-poppins mb-2 animate-in slide-in-from-left duration-700">About the Institute</h1>
           <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl">Legacy of Excellence in Pharmaceutical Education since 2004.</p>
         </div>
       </section>
@@ -85,44 +85,17 @@ export default function AboutPage() {
                   We shall protect the interest of our students and prepare them to meet growing challenges with increased ability to serve the nation and society.
                 </p>
               </div>
-            </div>
-          </section>
-
-          {/* CES Overview */}
-          <section id="ces-overview">
-            <details className="group bg-white border border-slate-200 rounded-2xl shadow-lg border-l-[6px] border-primary overflow-hidden">
-              <summary className="p-8 cursor-pointer list-none flex items-center justify-between">
-                <h2 className="text-xl font-bold text-primary font-poppins">Chalapathi Educational Society (CES) Overview</h2>
-                <ChevronDown size={20} className="text-slate-400 group-open:rotate-180 transition-transform" />
-              </summary>
-              <div className="px-8 pb-8 space-y-6 text-slate-600 leading-relaxed border-t border-slate-50 pt-6">
-                <p>
-                  Chalapathi Educational Society (CES), established in 1995 under the Andhra Pradesh Societies Registration Act, is poised to launch a State Private University in the academic year 2025. This initiative will integrate the Chalapathi Institute of Pharmaceutical Sciences (established in 2004) and the Chalapathi Institute of Engineering and Technology (established in 2007) in Lam Village, Guntur. The academic buildings were inaugurated by SRI NARA CHANDRABABU NAIDU GARU, the visionary Chief Minister of Andhra Pradesh.
-                </p>
-                <p>
-                  Embracing the transformative goals of the National Education Policy (NEP) 2020, Chalapathi University will expand its academic horizons significantly.
-                </p>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 list-none pl-0">
-                  {[
-                    "Deep Technology & Advanced Computational Sciences",
-                    "Industry-Aligned Skill-Oriented Programs",
-                    "Community Healthcare & Allied Health Sciences",
-                    "Behavioural Psychology & Forensic Science",
-                    "Clinical Research & Clinical Data Management"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm font-medium bg-slate-50 p-3 rounded-lg border border-slate-100">
-                      <div className="w-1.5 h-1.5 bg-secondary rounded-full" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <div className="pt-4">
-                  <Button variant="outline" className="border-primary text-primary font-bold hover:bg-primary hover:text-white">
-                    <FileText className="mr-2 h-4 w-4" /> View Official PDF
-                  </Button>
+              <div className="mt-8 pt-8 border-t border-blue-100 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="text-slate-500 font-medium italic">
+                  Explore our broader institutional vision and the upcoming Chalapathi University (2025).
                 </div>
+                <Link href="/about/ces-overview">
+                  <Button className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-6 rounded-xl shadow-lg transition-all">
+                    View CES Overview
+                  </Button>
+                </Link>
               </div>
-            </details>
+            </div>
           </section>
 
           {/* Principal Preview Card */}
@@ -143,11 +116,11 @@ export default function AboutPage() {
                     <p className="text-sm text-slate-500 mb-6 italic leading-relaxed px-4">
                       "Leading with vision, educating with passion to create globally competent pharmacy professionals."
                     </p>
-                         <Link href="/principal">
-                           <Button className="w-full bg-primary-dark hover:bg-primary font-bold py-6 rounded-xl shadow-lg transition-all">
-                             View Full Profile
-                           </Button>
-                         </Link>
+                    <Link href="/principal">
+                      <Button className="w-full bg-primary-dark !text-white hover:bg-primary font-bold py-6 rounded-xl shadow-lg transition-all">
+                        View Full Profile
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>

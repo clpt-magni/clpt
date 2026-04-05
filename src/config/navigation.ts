@@ -42,23 +42,35 @@ export const topNav: NavItem[] = [
     items: [
       {
         label: "Profile",
-        href: "/about/profile",
+        href: "/about",
         items: [
-          { label: "History", href: "/about/profile#history" },
-          { label: "Vision", href: "/about/profile#vision" },
-          { label: "Mission", href: "/about/profile#mission" },
-          { label: "Quality Policy", href: "/about/profile#quality" },
+          { label: "History", href: "/about#history" },
+          { label: "Vision", href: "/about#vision" },
+          { label: "Mission", href: "/about#mission" },
+          { label: "Quality Policy", href: "/about#quality-policy" },
         ],
       },
-      { label: "CES-OVERVIEW", href: "/about/ces-overview" },
-      { label: "Academic Council", href: "/about/academic-council" },
-      { label: "Board of Studies (BOS)", href: "/about/bos" },
-      { label: "Affiliations and Approvals", href: "/about/affiliations" },
-      { label: "Faculty", href: "/faculty" },
-      { label: "Governing Body", href: "/about/governing-body" },
-      { label: "President", href: "/about/president" },
-      { label: "Principal", href: "/about/principal" },
-      { label: "Finance Committee", href: "/about/finance-committee" },
+      {
+        label: "Committees",
+        href: "/about/academic-council",
+        items: [
+          { label: "Academic Council", href: "/about/academic-council" },
+          { label: "Board of Studies (BOS)", href: "/about/bos" },
+          { label: "Governing Body", href: "/about/governing-body" },
+          { label: "Finance Committee", href: "/about/finance-committee" },
+        ],
+      },
+      {
+        label: "Admin Leadership",
+        href: "/about/ces-overview",
+        items: [
+          { label: "CES-OVERVIEW", href: "/about/ces-overview" },
+          { label: "President", href: "/about/president" },
+          { label: "Principal", href: "/about/principal" },
+          { label: "Faculty", href: "/faculty" },
+          { label: "Affiliations and Approvals", href: "/about/affiliations" },
+        ],
+      },
     ],
   },
   {
@@ -113,51 +125,39 @@ export const topNav: NavItem[] = [
     isMega: true,
     items: [
       {
-        label: "Infrastructure",
+        label: "Campus & Infrastructure",
         href: "/resources/infrastructure",
         items: [
-          {
-            label: "Animal House",
-            href: "/resources/infrastructure/animal-house",
-          },
-          { label: "Canteen", href: "/resources/infrastructure/canteen" },
-          {
-            label: "Central Stores",
-            href: "/resources/infrastructure/central-stores",
-          },
-          {
-            label: "Drug Museum",
-            href: "/resources/infrastructure/drug-museum",
-          },
+          { label: "Seminar Hall", href: "/resources/infrastructure/seminar-hall" },
           { label: "Hostel", href: "/resources/infrastructure/hostel" },
-          { label: "Laboratories", href: "/resources/labs" },
-          {
-            label: "Seminar Hall",
-            href: "/resources/infrastructure/seminar-hall",
-          },
-          {
-            label: "Sports Room",
-            href: "/resources/infrastructure/sports-room",
-          },
+          { label: "Canteen", href: "/resources/infrastructure/canteen" },
+          { label: "Central Stores", href: "/resources/infrastructure/central-stores" },
+          { label: "Play Ground", href: "/resources/play-ground" },
+          { label: "Sports Room", href: "/resources/infrastructure/sports-room" },
+          { label: "Other Facilities", href: "/resources/other-facilities" },
         ],
       },
-      { label: "Audio-visual facility", href: "/resources/audio-visual" },
       {
-        label: "Chalapathi Drug Testing Laboratory",
-        href: "/resources/drug-testing-lab",
+        label: "Scientific & Research",
+        href: "/resources/labs",
+        items: [
+          { label: "Laboratories", href: "/resources/labs" },
+          { label: "Chalapathi Drug Testing Laboratory", href: "/resources/drug-testing-lab" },
+          { label: "Medicinal Plant Garden", href: "/resources/medicinal-garden" },
+          { label: "Drug Museum", href: "/resources/infrastructure/drug-museum" },
+          { label: "Animal House", href: "/resources/infrastructure/animal-house" },
+        ],
       },
       {
-        label: "Computer cum Language Laboratory",
-        href: "/resources/computer-lab",
-      },
-      { label: "Library", href: "/resources/library" },
-      { label: "Medicinal Plant Garden", href: "/resources/medicinal-garden" },
-      { label: "Other Facilities", href: "/resources/other-facilities" },
-      { label: "Pharmacy", href: "/resources/pharmacy" },
-      { label: "Play Ground", href: "/resources/play-ground" },
-      {
-        label: "Student Recreation Centre",
-        href: "/resources/recreation-centre",
+        label: "Academic & Services",
+        href: "/resources/library",
+        items: [
+          { label: "Library", href: "/resources/library" },
+          { label: "Computer cum Language Laboratory", href: "/resources/computer-lab" },
+          { label: "Audio-visual facility", href: "/resources/audio-visual" },
+          { label: "Pharmacy", href: "/resources/pharmacy" },
+          { label: "Student Recreation Centre", href: "/resources/recreation-centre" },
+        ],
       },
     ],
   },
@@ -168,7 +168,7 @@ export const topNav: NavItem[] = [
 
 export const sidebarNav: SidebarGroup[] = [
   {
-    category: "Governance & Compliance",
+    category: "Statutory & Compliance",
     icon: ShieldCheck,
     items: [
       { label: "PCI APPROVAL LETTERS", href: "/compliance/pci-approval" },
@@ -185,7 +185,7 @@ export const sidebarNav: SidebarGroup[] = [
     ],
   },
   {
-    category: "Academic Quality",
+    category: "Academic & Research Excellence",
     icon: Award,
     items: [
       { label: "IQAC", href: "/academic/iqac" },
@@ -195,10 +195,11 @@ export const sidebarNav: SidebarGroup[] = [
       { label: "INSTITUTIONAL DEVELOPMENT PLAN", href: "/academic/idp" },
       { label: "PUBLICATIONS", href: "/research/publications" },
       { label: "RESEARCH & DEVELOPMENT", href: "/research/r-and-d" },
+      { label: "INTELLECTUAL PROPERTY CENTRE (IPFC)", href: "/research/ipfc" },
     ],
   },
   {
-    category: "Student Center",
+    category: "Student Success Center",
     icon: GraduationCap,
     items: [
       { label: "CONSPECTUS", href: "/student/conspectus" },
@@ -219,22 +220,13 @@ export const sidebarNav: SidebarGroup[] = [
     ],
   },
   {
-    category: "Engagement & Careers",
+    category: "Corporate & Community Engagement",
     icon: Briefcase,
     items: [
       { label: "PLACEMENTS", href: "/placements" },
       { label: "SKILL DEVELOPMENT CENTER", href: "/student/skill-development" },
       { label: "MoU", href: "/about/mou" },
       { label: "JOBS @ CLPT", href: "/careers" },
-      { label: "NEWS LETTERS - ARCHIEVE", href: "/newsletters" },
-      { label: "INTELLECTUAL PROPERTY CENTRE(IPFC)", href: "/research/ipfc" },
-    ],
-  },
-  {
-    category: "Institutional Excellence",
-    icon: Zap,
-    items: [
-      { label: "BEST PRACTICES", href: "/about/best-practices" },
       {
         label: "EXTENSION ACTIVITIES",
         href: "/extension-activities",
@@ -246,6 +238,14 @@ export const sidebarNav: SidebarGroup[] = [
           { label: "ISPOR ANU", href: "/extension-activities/ispor-anu" },
         ],
       },
+    ],
+  },
+  {
+    category: "Institutional Heritage & Support",
+    icon: Building2,
+    items: [
+      { label: "BEST PRACTICES", href: "/about/best-practices" },
+      { label: "NEWS LETTERS - ARCHIEVE", href: "/newsletters" },
       { label: "AWARDS AND HONOURS", href: "/about/awards" },
       { label: "STAFF SUPPORT", href: "/staff/support" },
     ],

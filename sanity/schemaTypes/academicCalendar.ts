@@ -78,6 +78,22 @@ export default defineType({
         },
       ],
     }),
+    defineField({
+      name: 'pdfFile',
+      title: 'Full Calendar PDF',
+      type: 'file',
+      description: 'Upload the PDF version for archival and download.',
+      options: {
+        accept: '.pdf',
+      },
+    }),
+    defineField({
+      name: 'isFeatured',
+      title: 'Featured / Current Year',
+      type: 'boolean',
+      description: 'Show detailed event timeline for this calendar.',
+      initialValue: true,
+    }),
   ],
   preview: {
     select: {

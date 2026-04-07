@@ -53,6 +53,8 @@ export default defineType({
         'Placement Officer',
         'Laboratory Technician',
         'System Administrator',
+        'Adjunct Faculty',
+        'Principal and Dean',
       ]
     } }),
     defineField({ 
@@ -76,6 +78,9 @@ export default defineType({
           'Mathematics and Biostatistics',
           'Computer Applications / IT',
           'Environmental Sciences',
+          'Management Studies / MBA',
+          'Physical Education',
+          'Library Sciences',
         ]
       }
     }),
@@ -176,6 +181,16 @@ export default defineType({
     }),
     defineField({ name: 'conferences', title: 'Conferences & Presentations', type: 'array', group: 'research', of: [{ type: 'string' }] }),
     defineField({ name: 'awards', title: 'Awards & Honors', type: 'array', group: 'research', of: [{ type: 'string' }] }),
+
+    // Research Metrics (Quantitative)
+    defineField({ name: 'booksPublished', title: 'Books Published', type: 'number', group: 'research' }),
+    defineField({ name: 'bookChapters', title: 'Book Chapters', type: 'number', group: 'research' }),
+    defineField({ name: 'patentsGranted', title: 'Patents Granted', type: 'number', group: 'research' }),
+    defineField({ name: 'patentsPublished', title: 'Patents Published', type: 'number', group: 'research' }),
+    defineField({ name: 'phdGuided', title: 'Ph.D. Guided', type: 'number', group: 'research' }),
+    defineField({ name: 'citations', title: 'Citations (Google Scholar)', type: 'number', group: 'research' }),
+    defineField({ name: 'hIndex', title: 'h-Index', type: 'number', group: 'research' }),
+    defineField({ name: 'i10Index', title: 'i10-Index', type: 'number', group: 'research' }),
 
     // 5. Extended Information & External Links
     defineField({ name: 'bio', title: 'Biography / About', type: 'array', group: 'extended', of: [{ type: 'block' }] }),

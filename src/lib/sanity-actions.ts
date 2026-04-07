@@ -40,7 +40,10 @@ export async function getProgramBySlug(slug: string) {
 }
 
 export async function getAcademicCalendars() {
-  return await client.fetch(`*[_type == "academicCalendar"] | order(title asc)`);
+  return await client.fetch(`*[_type == "academicCalendar"] | order(academicYear desc) {
+    ...,
+    "pdfUrl": pdfFile.asset->url
+  }`);
 }
 
 export async function getLaboratories() {

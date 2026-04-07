@@ -18,13 +18,14 @@ export default async function Home() {
 
       {/* Quick Links Strip */}
       <div className="container mx-auto px-4 relative z-20 -translate-y-[60px]">
-        <div className="grid grid-cols-2 md:grid-cols-5 bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-100">
+        <div className="grid grid-cols-2 md:grid-cols-6 bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-100">
           {[
             { icon: Users, label: "Admissions", href: "/admissions" },
-            { icon: Calendar, label: "Academic Calendar", href: "https://teamup.com/ks6153fe8c4bedca6a" },
-            { icon: Laptop, label: "Examination Portal", href: "https://clptexamination.weebly.com/" },
-            { icon: Download, label: "Downloads", href: "#" },
-            { icon: GraduationCap, label: "Student Portal", href: "/student-dashboard" }
+            { icon: Calendar, label: "Academic Calendar", href: "/academic-calendar" },
+            { icon: Microscope, label: "PPT Presentations", href: "/resources/powerpoint-presentations" },
+            { icon: BookOpen, label: "Repository", href: "https://clptlibrary.weebly.com/repository-services.html" },
+            { icon: Laptop, label: "Exams", href: "https://clptexamination.weebly.com/" },
+            { icon: GraduationCap, label: "Portal", href: "/student-dashboard" }
           ].map((item, i) => (
             <Link
               key={i}
@@ -55,7 +56,7 @@ export default async function Home() {
             {[
               { title: "B. Pharmacy", desc: "4 Year Undergraduate Program focusing on comprehensive pharmaceutical sciences.", href: "/programs/b-pharmacy" },
               { title: "M. Pharmacy", desc: "2 Year Post Graduate Program with multiple specialized branches.", href: "/programs/m-pharmacy" },
-              { title: "Pharm.D", desc: "6 Year Doctoral Program focusing on clinical pharmacy and patient care.", href: "/programs/pharm-d" },
+              { title: "Pharm.D", desc: "6 Year Doctoral Program focusing on clinical pharmacy and patient care.", href: "/programs/pharmd" },
               { title: "Ph.D Program", desc: "Advanced research opportunities in various pharmaceutical disciplines.", href: "/programs/phd" }
             ].map((p, i) => (
               <Card key={i} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-slate-100 bg-slate-50 flex flex-col h-full overflow-hidden">

@@ -15,7 +15,13 @@ import {
   Lightbulb,
   ExternalLink,
   Search,
-  CheckCircle2
+  CheckCircle2,
+  Users,
+  Book,
+  FileCheck,
+  Quote,
+  Layers,
+  Sparkles
 } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -193,16 +199,89 @@ export default async function FacultyProfilePage({ params }: { params: Promise<{
               </section>
             )}
 
-            {/* Research Interests (Pills) */}
-            {faculty.specializations && faculty.specializations.length > 0 && (
-              <section>
-                <h2 className="text-xl md:text-2xl font-bold text-slate-900 tracking-tight mb-8">Research Interests</h2>
-                <div className="flex flex-wrap gap-2">
-                  {faculty.specializations.map((interest: string, i: number) => (
-                    <span key={i} className="px-3 md:px-4 py-1.5 bg-slate-50 border border-slate-200 rounded-full text-[11px] md:text-xs font-semibold text-slate-600 tracking-tight">
-                      {interest}
-                    </span>
-                  ))}
+            {/* Research Impact Metrics Grid */}
+            {(faculty.citations > 0 || faculty.hIndex > 0 || faculty.phdGuided > 0 || faculty.booksPublished > 0 || faculty.patentsPublished > 0) && (
+              <section className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                <div className="bg-slate-50 px-8 py-6 border-b border-slate-200 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                      <Sparkles size={20} />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 tracking-tight">Research Impact </h3>
+                  </div>
+                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+                    Academic Analytics
+                  </span>
+                </div>
+                
+                <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y divide-slate-100">
+                  {/* Google Scholar Metrics */}
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                       <Quote size={12} className="text-blue-500" /> Citations
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter">
+                      {faculty.citations || 0}
+                    </p>
+                  </div>
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                      <Layers size={12} className="text-purple-500" /> h-Index
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter">
+                      {faculty.hIndex || 0}
+                    </p>
+                  </div>
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                      <CheckCircle2 size={12} className="text-emerald-500" /> i10-Index
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter">
+                      {faculty.i10Index || 0}
+                    </p>
+                  </div>
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                      <Users size={12} className="text-orange-500" /> Ph.D. Guided
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter">
+                      {faculty.phdGuided || 0}
+                    </p>
+                  </div>
+
+                  {/* Publications & Patents */}
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                      <Book size={12} className="text-blue-500" /> Books
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter">
+                      {faculty.booksPublished || 0}
+                    </p>
+                  </div>
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                       <FileText size={12} className="text-indigo-500" /> Chapters
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter">
+                      {faculty.bookChapters || 0}
+                    </p>
+                  </div>
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                       <FileCheck size={12} className="text-amber-500" /> Patents (G)
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter text-amber-600">
+                      {faculty.patentsGranted || 0}
+                    </p>
+                  </div>
+                  <div className="p-8 text-center hover:bg-slate-50 transition-colors">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3 flex items-center justify-center gap-2">
+                      <Award size={12} className="text-slate-400" /> Patents (P)
+                    </p>
+                    <p className="text-4xl font-black text-slate-900 tracking-tighter">
+                      {faculty.patentsPublished || 0}
+                    </p>
+                  </div>
                 </div>
               </section>
             )}

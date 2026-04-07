@@ -36,6 +36,9 @@ const DEPARTMENTS = [
   "Mathematics and Biostatistics",
   "Computer Applications / IT",
   "Environmental Sciences",
+  "Management Studies / MBA",
+  "Physical Education",
+  "Library Sciences",
 ];
 
 const DESIGNATIONS = [
@@ -60,6 +63,8 @@ const DESIGNATIONS = [
   "Placement Officer",
   "Laboratory Technician",
   "System Administrator",
+  "Adjunct Faculty",
+  "Principal and Dean",
 ];
 
 export default function FacultyClient({ initialFaculty }: { initialFaculty: FacultyMember[] }) {

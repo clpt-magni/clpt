@@ -143,6 +143,8 @@ export const topNav: NavItem[] = [
         href: "/resources/library",
         items: [
           { label: "Library", href: "/resources/library" },
+          { label: "Repository Service", href: "https://clptlibrary.weebly.com/repository-services.html" },
+          { label: "PPT Presentations", href: "/resources/powerpoint-presentations" },
           { label: "Computer cum Language Laboratory", href: "/resources/computer-lab" },
           { label: "Audio-visual facility", href: "/resources/audio-visual" },
           { label: "Pharmacy", href: "/resources/pharmacy" },

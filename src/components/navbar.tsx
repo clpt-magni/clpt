@@ -131,11 +131,10 @@ function NavItemComponent({ item }: { item: NavItem }) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.98 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className={`absolute z-[100] ${
-              isMega 
-                ? "left-4 right-4 top-full w-auto" 
-                : "left-1/2 -translate-x-1/2 top-full w-64"
-            } bg-white shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-2xl border border-slate-100 p-2 mt-1`}
+            className={`absolute z-[100] ${isMega
+              ? "left-4 right-4 top-full w-auto"
+              : "left-1/2 -translate-x-1/2 top-full w-64"
+              } bg-white shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-2xl border border-slate-100 p-2 mt-1`}
           >
             <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-primary-light via-primary to-primary-dark rounded-t-2xl" />
 

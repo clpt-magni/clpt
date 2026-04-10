@@ -10,7 +10,7 @@ export function Footer() {
           {/* About Widget */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
-               <img src="/images/flogo.png" alt="CLPT Logo" className="h-16 w-auto object-contain" />
+              <img src="/images/flogo.png" alt="CLPT Logo" className="h-16 w-auto object-contain" />
             </Link>
             <p className="text-sm leading-relaxed">
               Chalapathi Institute of Pharmaceutical Sciences (Autonomous) is committed to impart Quality Pharmacy

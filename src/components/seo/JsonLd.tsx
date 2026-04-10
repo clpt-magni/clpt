@@ -12,7 +12,7 @@ const JsonLd = () => {
       "@type": "ContactPoint",
       "telephone": "+91-863-2524124",
       "contactType": "admissions",
-      "email": "principalclpt@gmail.com",
+      "email": "principal@chalapathipharmacy.ac.in",
       "areaServed": "IN",
       "availableLanguage": ["en", "telugu"]
     },

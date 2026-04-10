@@ -64,15 +64,39 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <Mail className="text-primary shrink-0" size={18} />
-                <span>principalcips@gmail.com</span>
+                <span>principal@chalapathipharmacy.ac.in</span>
               </li>
             </ul>
+
+            {/* Visitor Counter */}
+            <div className="pt-4 space-y-2">
+              <p className="text-xs uppercase tracking-widest text-slate-500 font-semibold">Visitor Count</p>
+              <div className="inline-block bg-white/5 p-2 rounded-lg backdrop-blur-sm border border-white/10">
+                <img
+                  src="https://hitwebcounter.com/counter/counter.php?page=7119490&style=0038&nbdigits=6&type=page&initCount=0"
+                  title="Visitor Counter"
+                  alt="Hits"
+                  className="opacity-50 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>&copy; {new Date().getFullYear()} Chalapathi Institute of Pharmaceutical Sciences. All Rights Reserved.</p>
-          <p>Designed by <span className="text-primary">Magni Digitech</span></p>
+        <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] font-medium uppercase tracking-wider text-slate-500">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <p>&copy; {new Date().getFullYear()} Chalapathi Institute of Pharmaceutical Sciences. All Rights Reserved.</p>
+            <p className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Site Updated: <span className="text-slate-300">April 10th, 2026</span>
+            </p>
+          </div>
+          <div className="flex items-center gap-3">
+            <span>Developed & Maintained by </span>
+            <Link href="https://magnidigitech.com" target="_blank" className="hover:opacity-80 transition-all hover:scale-105 active:scale-95">
+              <img src="/images/magnidigitech.png" alt="Magni Digitech" className="h-8 w-auto opacity-90 hover:opacity-100 transition-all" />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -29,7 +29,6 @@ export function Navbar() {
               <div className="hidden lg:flex items-center gap-6">
                 {[
                   { src: "/images/naac.jpg", alt: "NAAC A+" },
-                  { src: "/images/nba.png", alt: "NBA Accredited" },
                   { src: "/images/iso.jpg", alt: "ISO Certified" }
                 ].map((img, i) => (
                   <div key={i} className="group cursor-help">

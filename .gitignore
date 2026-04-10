@@ -42,3 +42,8 @@ next-env.d.ts
 
 # library assets (stored in Sanity/S3)
 /public/library
+
+# powerpoint presentations
+*.ppt
+*.pptx
+*.PPT

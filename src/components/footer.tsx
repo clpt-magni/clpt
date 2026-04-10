@@ -4,15 +4,14 @@ import { Globe, Users, Link2, Play, MapPin, Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12">
+    <footer className="bg-[#020617] text-slate-300 py-12 border-t border-slate-800">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* About Widget */}
           <div className="space-y-6">
-            <div className="relative h-12 w-48 bg-white/10 p-2 rounded flex items-center justify-center">
-               <span className="text-white font-bold text-lg">CLPT LOGO</span>
-               {/* Replace with real logo: <Image src="/assets/images/clptfull.png" alt="CLPT Logo" fill className="object-contain" /> */}
-            </div>
+            <Link href="/" className="inline-block">
+               <img src="/images/flogo.png" alt="CLPT Logo" className="h-16 w-auto object-contain" />
+            </Link>
             <p className="text-sm leading-relaxed">
               Chalapathi Institute of Pharmaceutical Sciences (Autonomous) is committed to impart Quality Pharmacy
               Education and Research to meet Global standards.

@@ -19,7 +19,7 @@ export function Navbar() {
           <div className="py-3 flex justify-between items-center border-b md:border-none">
             <Link href="/" className="flex items-center gap-3">
               <img
-                src="/images/logo.png"
+                src="/images/flogo.png"
                 alt="CLPT Logo"
                 className="h-16 w-auto object-contain"
               />

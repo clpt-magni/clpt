@@ -38,12 +38,12 @@ export default function HeroVideo() {
             }`}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug tracking-tight !text-white drop-shadow-2xl font-poppins">
-            Welcome to Chalapathi Institute <br className="hidden md:block" /> of Pharmaceutical Sciences
+            Best Pharmacy College in AP <br className="hidden md:block" /> Chalapathi Institute of Pharmaceutical Sciences
           </h1>
 
           <blockquote className="relative text-base sm:text-lg md:text-xl mb-10 text-white/90 font-light max-w-2xl mx-auto drop-shadow-lg font-roboto italic border-l-[4px] border-secondary pl-6 text-left bg-white/10 p-5 rounded-r-2xl backdrop-blur-sm border-y border-r border-white/10">
             <span className="text-4xl text-secondary absolute -top-3 left-2 opacity-50 font-serif">"</span>
-            Join a premier autonomous institution committed to excellence in pharmaceutical sciences, research, and holistic development.
+            Consistently recognized among the top pharmacy colleges in Andhra Pradesh and India, CLPT (Autonomous) empowers students with world-class education and research excellence.
           </blockquote>
 
           <div className="flex flex-wrap gap-4 justify-center">

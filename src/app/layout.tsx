@@ -1,6 +1,7 @@
 import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
+import JsonLd from "@/components/seo/JsonLd";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -16,8 +17,64 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Chalapathi Institute of Pharmaceutical Sciences | CLPT Autonomous",
-  description: "A premier pharmacy college offering B.Pharm, M.Pharm, Pharm.D and PhD programs.",
+  metadataBase: new URL("https://chalapathipharmacy.in"),
+  title: {
+    default: "Best Pharmacy College in AP | Chalapathi Institute of Pharmaceutical Sciences (CLPT)",
+    template: "%s | CLPT Autonomous",
+  },
+  description:
+    "Accredited NAAC A+ & NBA, Chalapathi Institute of Pharmaceutical Sciences is the best pharmacy college in AP and India, offering premium B.Pharm, M.Pharm, Pharm.D and PhD programs with excellent placements.",
+  keywords: [
+    "best pharmacy college in AP",
+    "best pharmacy colleges in India",
+    "top pharmacy colleges in Andhra Pradesh",
+    "pharmacy admissions Guntur",
+    "CLPT Autonomous",
+    "B.Pharm college Guntur",
+    "M.Pharm specialization colleges",
+    "best research pharmacy college AP",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: "/images/favicon.png",
+    shortcut: "/images/favicon.png",
+    apple: "/images/favicon.png",
+  },
+  openGraph: {
+    title: "Best Pharmacy College in AP | CLPT Autonomous",
+    description: "Leading pharmaceutical education and research excellence in Guntur, Andhra Pradesh.",
+    url: "https://chalapathipharmacy.in",
+    siteName: "CLPT Autonomous",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CLPT Campus and Excellence",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Pharmacy College in AP | CLPT Autonomous",
+    description: "Leading pharmaceutical education and research excellence in Guntur, Andhra Pradesh.",
+    images: ["/images/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +88,10 @@ export default function RootLayout({
       className={`${poppins.variable} ${roboto.variable} h-full antialiased font-roboto`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="icon" href="/images/favicon.png" />
+        <JsonLd />
+      </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <ClerkProvider>
           {children}

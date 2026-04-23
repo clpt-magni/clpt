@@ -3,8 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { 
-  CheckCircle2,
-  PageHeader
+  CheckCircle2
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import Link from "next/link";

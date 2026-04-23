@@ -12,8 +12,7 @@ import {
   ExternalLink,
   ChevronDown,
   X,
-  Minus,
-  PageHeader
+  Minus
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import Link from 'next/link';

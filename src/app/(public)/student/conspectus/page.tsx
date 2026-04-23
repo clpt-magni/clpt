@@ -15,8 +15,7 @@ import {
   LayoutGrid,
   FileText,
   ShieldCheck,
-  GraduationCap,
-  PageHeader
+  GraduationCap
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/button";

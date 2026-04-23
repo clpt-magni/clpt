@@ -5,7 +5,12 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Rocket,
-  PageHeader
+  Award,
+  Globe2,
+  Building2,
+  BookOpen,
+  Microscope,
+  Briefcase
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 

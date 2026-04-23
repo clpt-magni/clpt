@@ -54,10 +54,10 @@ export default async function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 font-roboto">
             {[
-              { title: "B. Pharmacy", desc: "A 4 Year Skill Oriented Student Centric Undergraduate Program integrated with Indian Knoweldge System focusing on comprehensive pharmaceutical sciences.", href: "/programs/b-pharmacy" },
-              { title: "M. Pharmacy", desc: "A 2 Year Skill Oriented Student Centric Post Graduate Program integrated with Indian Knoweldge System with multiple specialized branches.", href: "/programs/m-pharmacy" },
-              { title: "Pharm.D", desc: "A 6 Year Skill Oriented Student Centric Post Graduate Program integrated with Indian Knoweldge System focusing on clinical pharmacy and patient care.", href: "/programs/pharmd" },
-              { title: "Ph.D Program", desc: "A Skill Oriented Student Centric Doctoral Program integrated with Indian Knoweldge System with multiple specialized branches.", href: "/programs/phd" }
+              { title: "B. Pharmacy", desc: "A 4 Year Skill Oriented Student Centric Undergraduate Program integrated with Indian Knowledge System focusing on comprehensive pharmaceutical sciences.", href: "/programs/b-pharmacy" },
+              { title: "M. Pharmacy", desc: "A 2 Year Skill Oriented Student Centric Post Graduate Program integrated with Indian Knowledge System with multiple specialized branches.", href: "/programs/m-pharmacy" },
+              { title: "Pharm.D", desc: "A 6 Year Skill Oriented Student Centric Post Graduate Program integrated with Indian Knowledge System focusing on clinical pharmacy and patient care.", href: "/programs/pharmd" },
+              { title: "Ph.D Program", desc: "A Skill Oriented Student Centric Doctoral Program integrated with Indian Knowledge System with multiple specialized branches.", href: "/programs/phd" }
             ].map((p, i) => (
               <Card key={i} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-slate-100 bg-slate-50 flex flex-col h-full overflow-hidden">
                 <CardHeader className="p-8">

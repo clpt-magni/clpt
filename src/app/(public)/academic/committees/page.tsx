@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { 
-  ChevronRight
+import {
+  ChevronRight,
+  Search
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import { academicCommittees, Committee } from "@/data/committees";

@@ -163,15 +163,15 @@ export default function ChairmanProfile() {
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3 text-sm text-slate-600 leading-relaxed">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        Built a multi-disciplinary portfolio focused on quality education for rural and underprivileged students.
+                        <div>Built a multi-disciplinary portfolio focused on quality education for rural and underprivileged students.</div>
                       </li>
                       <li className="flex items-start gap-3 text-sm text-slate-600 leading-relaxed">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        Championed industry-academia partnerships with global leaders including <strong className="text-slate-900">SAP, ServiceNow, Microsoft, Cisco, and EC-Council</strong>.
+                        <div>Championed industry-academia partnerships with global leaders including <strong className="text-slate-900">SAP, ServiceNow, Microsoft, Cisco, and EC-Council</strong>.</div>
                       </li>
                       <li className="flex items-start gap-3 text-sm text-slate-600 leading-relaxed">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                        Facilitated established <strong className="text-slate-900">QNX Everywhere Centre of Excellence</strong> in collaboration with BlackBerry QNX.
+                        <div>Facilitated established <strong className="text-slate-900">QNX Everywhere Centre of Excellence</strong> in collaboration with BlackBerry QNX.</div>
                       </li>
                     </ul>
                     <div className="bg-slate-50/50 p-6 rounded-3xl border border-slate-100">

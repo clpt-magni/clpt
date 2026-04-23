@@ -16,6 +16,8 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import Link from "next/link";
 
 const nirfReports = [
+  { year: "2026 - Overall", filename: "OVERALL CATEGORY-NIRF REPORT-2026.pdf" },
+  { year: "2026 - Pharmacy", filename: "PHARMACY CATEGORY-NIRF REPORT-2026.pdf" },
   { year: "2025", filename: "NIRF DATA-2025.pdf" },
   { year: "2024", filename: "NIRF DATA-2024.pdf" },
   { year: "2023", filename: "nirf-data-2023.pdf" },
@@ -34,7 +36,7 @@ export default function NirfDataPage() {
           { label: "Compliance", href: "/compliance" },
           { label: "NIRF Data" }
         ]}
-        description="Chalapathi Institute of Pharmaceutical Sciences continues to demonstrate its commitment to academic excellence, research innovation, and student success as per the latest National Institutional Ranking Framework (NIRF) 2025 submission."
+        description="Chalapathi Institute of Pharmaceutical Sciences continues to demonstrate its commitment to academic excellence, research innovation, and student success as per the latest National Institutional Ranking Framework (NIRF) 2026 submission."
       />
 
       {/* 2. Quick Stats Grid (Floating Style) */}
@@ -72,7 +74,7 @@ export default function NirfDataPage() {
                     <div className="w-1 md:w-1.5 h-8 md:h-12 bg-blue-600 rounded-full" />
                     <div>
                       <h2 className="text-xl md:text-3xl font-black text-slate-900 tracking-tight">Executive Summary</h2>
-                      <p className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-1">Official Institutional Review 2025</p>
+                      <p className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-1">Official Institutional Review 2026</p>
                     </div>
                   </div>
                   

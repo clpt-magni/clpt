@@ -3,7 +3,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { 
-  CheckCircle2
+  CheckCircle2,
+  CreditCard,
+  MapPin,
+  Info
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import Link from "next/link";

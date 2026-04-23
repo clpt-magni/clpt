@@ -13,8 +13,7 @@ import {
   BookOpen,
   Calendar,
   Building2,
-  ChevronDown,
-  PageHeader
+  ChevronDown
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 

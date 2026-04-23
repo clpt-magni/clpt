@@ -8,9 +8,9 @@ import {
   ShieldCheck, 
   Eye, 
   Download,
-  X,
   CalendarCheck,
-  PageHeader
+  FileText,
+  X
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 

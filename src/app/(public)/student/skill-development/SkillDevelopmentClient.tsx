@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  Rocket,
   Target,
   Award,
   Lightbulb,
@@ -13,6 +12,7 @@ import {
   Building2,
   CheckCircle2
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -29,52 +29,14 @@ interface SkillPartner {
 export default function SkillDevelopmentClient({ partners }: { partners: SkillPartner[] }) {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-slate-50 pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full sm:pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-primary/5 blur-[100px] rounded-full sm:pointer-events-none" />
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-primary transition-all mb-12">
-              <Link href="/">Home</Link>
-              <ChevronRight size={10} />
-              <Link href="/student">Student</Link>
-              <ChevronRight size={10} />
-              <span className="text-primary">Skill Development</span>
-            </nav>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-4 mb-6"
-            >
-              <div className="w-12 h-12 bg-primary text-white flex items-center justify-center rounded-2xl shadow-lg shadow-primary/20">
-                <Rocket size={24} />
-              </div>
-              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Center for Excellence</div>
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.9] mb-8"
-            >
-              Future Ready <span className="text-primary italic">Skills</span>
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-12"
-            >
-              Bridging the gap between pharmaceutical education and global industry standards through strategic government and industrial partnerships.
-            </motion.p>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="Skill Development"
+        breadcrumbs={[
+          { label: "Student Center", href: "/student" },
+          { label: "Skill Development" }
+        ]}
+        description="Empowering the next generation of pharmaceutical leaders through strategic government pairings and industrial certifications."
+      />
 
       {/* Partner Grid */}
       <section className="py-24 bg-white relative">

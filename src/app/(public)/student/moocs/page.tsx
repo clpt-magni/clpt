@@ -4,12 +4,7 @@ import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Laptop, 
-  BookOpen, 
-  ExternalLink, 
-  Award, 
-  FileText, 
-  Globe, 
+  Award,
   ChevronRight,
   GraduationCap
 } from "lucide-react";

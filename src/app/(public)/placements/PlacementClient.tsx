@@ -3,7 +3,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  ArrowUpRight
+  ArrowUpRight,
+  GraduationCap,
+  TrendingUp,
+  Target,
+  Building2
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import Link from 'next/link';

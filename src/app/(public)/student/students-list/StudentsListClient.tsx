@@ -4,7 +4,13 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  GraduationCap
+  GraduationCap,
+  Search,
+  Eye,
+  Download,
+  Filter,
+  FileText,
+  X
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 

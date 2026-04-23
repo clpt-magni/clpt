@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Calendar, Download, Eye, GraduationCap, Clock, Award, FileText, ChevronRight } from "lucide-react";
+import { Calendar, Download, Eye, Award, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DocViewerModal } from "@/components/ui/DocViewerModal";
 

@@ -3,14 +3,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { 
-  Landmark, 
-  ChevronRight, 
-  CreditCard, 
-  Info, 
-  MapPin, 
-  Calendar,
-  CheckCircle2
+  CheckCircle2,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import Link from "next/link";
 import { PortableText } from "@portabletext/react";
 
@@ -38,58 +34,14 @@ export default function FeeStructureClient({ data }: FeeStructureClientProps) {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-slate-50 pt-28 pb-12 md:pt-48 md:pb-32 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-primary/5 blur-[100px] rounded-full" />
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-6 md:mb-12">
-              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-              <ChevronRight size={10} />
-              <Link href="/student" className="hover:text-primary transition-colors">Student Center</Link>
-              <ChevronRight size={10} />
-              <span className="text-primary">Fee Structure</span>
-            </nav>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-4 mb-4 md:mb-6"
-            >
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/5 text-primary flex items-center justify-center rounded-2xl shadow-sm border border-slate-200">
-                <Landmark size={20} className="md:size-[24px]" />
-              </div>
-              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Academic Expenses</div>
-            </motion.div>
-
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.9] mb-6 md:mb-8"
-            >
-              Fee <span className="text-primary italic">Structure</span>
-            </motion.h1>
-            
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="flex flex-wrap items-center gap-6"
-            >
-              <div className="flex items-center gap-2 bg-white px-5 py-3 rounded-2xl shadow-sm border border-slate-100">
-                <Calendar size={18} className="text-primary" />
-                <span className="text-sm font-bold text-slate-600 uppercase tracking-widest">Academic Year {data.academicYear}</span>
-              </div>
-              <p className="text-base md:text-xl text-slate-500 font-medium leading-relaxed max-w-xl">
-                Comprehensive breakdown of tuition fees, sanctioned intake, and category-wise seat allotments for all institutional programs.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="Fee Structure"
+        breadcrumbs={[
+          { label: "Student Center", href: "/student" },
+          { label: "Fee Structure" }
+        ]}
+        description="Comprehensive breakdown of tuition fees, sanctioned intake, and category-wise seat allotments for all institutional programs."
+      />
 
       {/* Main Content */}
       <section className="py-12 md:py-24 bg-white relative">

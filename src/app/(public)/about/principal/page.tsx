@@ -1,18 +1,19 @@
 import { Button } from "@/components/ui/button";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, Building, BookOpen, Microscope, Briefcase, GraduationCap } from "lucide-react";
 
 export default function PrincipalProfile() {
    return (
       <div className="flex flex-col min-h-screen font-roboto pb-24 bg-slate-50">
-         {/* Page Header */}
-         <section className="bg-gradient-to-r from-primary-dark to-primary-light py-20 text-white text-center shadow-inner relative overflow-hidden">
-            <div className="absolute inset-0 bg-white/5 opacity-20 pointer-events-none" />
-            <div className="container mx-auto px-4 relative z-10">
-               <h1 className="text-5xl !text-white font-bold font-poppins mb-4 animate-in fade-in slide-in-from-top duration-700">Principal's Profile</h1>
-               <p className="text-white/80 text-xl font-light">Leading with Vision, Educating with Passion</p>
-            </div>
-         </section>
+         <PageHeader
+            title="Principal's Profile"
+            breadcrumbs={[
+               { label: "About", href: "/about" },
+               { label: "Principal's Profile" }
+            ]}
+            description="Leading with Vision, Educating with Passion. Prof. Rama Rao Nadendla has been at the helm of academic excellence for over 30 years."
+         />
 
          <div className="container mx-auto px-4 py-16">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">

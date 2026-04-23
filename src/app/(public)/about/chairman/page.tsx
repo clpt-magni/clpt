@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Building,
@@ -22,14 +23,14 @@ export const metadata: Metadata = {
 export default function ChairmanProfile() {
   return (
     <div className="flex flex-col min-h-screen font-roboto pb-24 bg-slate-50">
-      {/* Page Header */}
-      <section className="bg-gradient-to-r from-primary-dark to-primary-light py-20 text-white text-center shadow-inner relative overflow-hidden">
-        <div className="absolute inset-0 bg-white/5 opacity-20 pointer-events-none" />
-        <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-5xl !text-white font-bold font-poppins mb-2 animate-in slide-in-from-top duration-700">Chairman's Profile</h1>
-          <p className="text-white/80 text-lg md:text-xl font-light">Leading with Vision, Educating with Passion</p>
-        </div>
-      </section>
+      <PageHeader
+        title="Chairman's Profile"
+        breadcrumbs={[
+          { label: "About", href: "/about" },
+          { label: "Chairman's Profile" }
+        ]}
+        description="Sri Y.V. Anjaneyulu Garu, Founder President & Chairman of Chalapathi Educational Society. A visionary leader in professional education and public service."
+      />
 
       <div className="container mx-auto px-4 -mt-12 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">

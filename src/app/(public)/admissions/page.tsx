@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Check, Info, Phone, Mail, Globe, Milestone } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 
 interface Program {
   title: string;
@@ -134,18 +135,13 @@ export default function AdmissionsPage() {
 
   return (
     <div className="flex flex-col min-h-screen font-roboto bg-slate-50">
-      {/* Page Header */}
-      <section className="bg-primary-dark py-24 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://clpt.s3.ap-south-1.amazonaws.com/college-building.jpg')] opacity-20 bg-cover bg-center" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl !text-white font-bold font-poppins mb-6 leading-tight">Admissions & Eligibility</h1>
-            <p className="text-xl text-white/90 font-light leading-relaxed">
-              Join Andhra Pradesh's premier autonomous pharmacy college. We welcome dedicated students driven to make a difference in healthcare.
-            </p>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="Admissions & Eligibility"
+        breadcrumbs={[
+          { label: "Admissions" }
+        ]}
+        description="Join Andhra Pradesh's premier autonomous pharmacy college. We welcome dedicated students driven to make a difference in healthcare."
+      />
 
       <div className="container mx-auto px-4 -translate-y-12 relative z-20">
         {/* Urgent Announcement Pin */}

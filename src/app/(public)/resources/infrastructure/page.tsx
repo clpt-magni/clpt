@@ -2,27 +2,19 @@ import { infrastructureData } from "@/data/infrastructure";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2 } from "lucide-react";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 export default function InfrastructureOverview() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-[#020617] pt-24 pb-12 md:pt-32 md:pb-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/10 blur-[120px] rounded-full" />
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-            <Building2 size={12} />
-            Campus Facilities
-          </div>
-          <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight mb-6 leading-tight">
-            World-Class <span className="text-blue-400">Infrastructure</span>
-          </h1>
-          <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-            State-of-the-art laboratories and administrative facilities designed to foster 
-            innovation and practical excellence in pharmaceutical education.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        title="Campus Infrastructure"
+        breadcrumbs={[
+          { label: "Resources", href: "/resources" },
+          { label: "Infrastructure" }
+        ]}
+        description="State-of-the-art laboratories and administrative facilities designed to foster innovation and practical excellence in pharmaceutical education."
+      />
 
       {/* Facilities Grid */}
       <section className="py-20 md:py-32">

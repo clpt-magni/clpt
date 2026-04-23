@@ -4,85 +4,22 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  ChevronRight,
-  Building2,
-  BookOpen,
-  Microscope,
-  Briefcase,
-  Download,
-  Target,
-  Users,
-  Award,
-  Globe2,
-  Rocket
+  Rocket,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 
 export default function IDPPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-slate-50 pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full sm:pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full sm:pointer-events-none" />
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-blue-600 transition-all mb-12">
-              <Link href="/">Home</Link>
-              <ChevronRight size={10} />
-              <Link href="/academic">Academic</Link>
-              <ChevronRight size={10} />
-              <span className="text-blue-600">IDP</span>
-            </nav>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-4 mb-6"
-            >
-              <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-2xl shadow-lg shadow-blue-600/20">
-                <Target size={24} />
-              </div>
-              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Strategic Roadmap</div>
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.9] mb-8"
-            >
-              Institutional <br />
-              <span className="text-blue-600 italic">Development Plan</span>
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-12"
-            >
-              A comprehensive framework charting our excellence in pharmaceutical education, advanced research, and global healthcare delivery.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 }}
-              className="flex flex-wrap gap-4"
-            >
-              <a
-                href="/documents/academic/IDP.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-blue-600 px-8 py-4 rounded-full text-[11px] font-black uppercase tracking-widest text-white hover:bg-slate-900 transition-all shadow-xl shadow-blue-600/20 group"
-              >
-                <Download size={18} className="group-hover:-translate-y-1 transition-transform" /> Download Official IDP
-              </a>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="Institutional Development Plan"
+        breadcrumbs={[
+          { label: "Academic", href: "/academic" },
+          { label: "IDP" }
+        ]}
+        description="A comprehensive framework charting our excellence in pharmaceutical education, advanced research, and global healthcare delivery."
+      />
 
       {/* Core Institutional Pillars */}
       <section className="py-24 md:py-32 bg-white relative">

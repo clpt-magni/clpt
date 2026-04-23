@@ -9,7 +9,7 @@ export function Footer() {
   const pathname = usePathname();
   if (pathname?.startsWith('/studio')) return null;
   return (
-    <footer className="bg-[#020617] text-slate-300 py-12 border-t border-slate-800">
+    <footer className="bg-primary-dark text-slate-300 py-12 border-t border-white/10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* About Widget */}
@@ -18,7 +18,7 @@ export function Footer() {
               <img src="/images/footerlogo.png" alt="CLPT Logo" className="h-16 w-auto object-contain" />
             </Link>
             <p className="text-sm leading-relaxed">
-              Chalapathi Institute of Pharmaceutical Sciences (Autonomous) is committed to impart Quality Pharmacy
+              Chalapathi Institute of Pharmaceutical Sciences (Autonomous) is committed to impart Quality Pharmaceutical
               Education and Research to meet Global standards.
             </p>
             <div className="flex gap-4">
@@ -65,11 +65,12 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <Phone className="text-primary shrink-0" size={18} />
-                <span>+91 86325 24124, 2524125</span>
+                <span>+91 9440101685</span>
               </li>
               <li className="flex gap-3">
                 <Mail className="text-primary shrink-0" size={18} />
-                <span>principal@chalapathipharmacy.ac.in</span>
+                <span>principalclpt@gmail.com</span>
+                <span>officeclpt2@gmail.com</span>
               </li>
             </ul>
 

@@ -2,17 +2,10 @@
 
 import { useState, useMemo } from "react";
 import { 
-  ShieldAlert, 
-  Search, 
-  ChevronDown, 
-  Users, 
-  FileText, 
-  ExternalLink, 
-  Download,
-  Info,
-  CheckCircle2,
-  ChevronRight
+  ChevronRight,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import { academicCommittees, Committee } from "@/data/committees";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
@@ -35,27 +28,14 @@ export default function CommitteesPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* 1. SE0-Optimized Institutional Hero */}
-      <section className="bg-slate-50 pt-24 pb-20 md:pt-40 md:pb-32 relative overflow-hidden border-b border-slate-100/50">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full -mr-20 -mt-20" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full -ml-20 -mb-20" />
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center md:text-left">
-            <span className="inline-block px-4 py-1.5 bg-blue-600/5 border border-blue-600/10 rounded-full text-blue-700 text-[10px] font-black uppercase tracking-[0.3em] mb-8">
-              Governance & Oversight
-            </span>
-            <h1 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight mb-8 leading-[0.95]">
-              Academic <br />
-              <span className="text-blue-600">Committees</span>
-            </h1>
-            <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-3xl">
-              Chalapathi Institute of Pharmaceutical Sciences maintains a rigorous ecosystem of governance through specialized committees. 
-              These bodies ensure academic integrity, student welfare, and institutional excellence across all programs.
-            </p>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="Academic Committees"
+        breadcrumbs={[
+          { label: "Academic", href: "/academic" },
+          { label: "Committees" }
+        ]}
+        description="Chalapathi Institute of Pharmaceutical Sciences maintains a rigorous ecosystem of governance through specialized committees to ensure academic integrity and excellence."
+      />
 
       {/* 2. Search & Filter Bar */}
       <section className="sticky top-[72px] z-40 bg-white/80 backdrop-blur-xl border-b border-slate-100 py-6">

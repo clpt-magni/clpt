@@ -19,6 +19,7 @@ import {
   ImageIcon
 } from "lucide-react";
 import { Metadata } from "next";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -52,32 +53,15 @@ export default async function LabDetail({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* 1. Header Area with Glassmorphism Overlay */}
-      <section className="bg-[#020617] pt-24 pb-16 md:pt-40 md:pb-32 overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-full h-full opacity-10 flex items-center justify-center -z-0">
-          <Microscope size={600} className="text-blue-500/20 rotate-12" />
-        </div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <Link 
-            href="/resources/labs" 
-            className="inline-flex items-center gap-2 text-slate-500 hover:text-white mb-10 transition-colors text-xs font-black uppercase tracking-[0.2em]"
-          >
-            <ArrowLeft size={16} /> All Laboratories
-          </Link>
-          <div className="max-w-4xl">
-            <span className="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-              Room {lab.roomNo} | {lab.area || "N/A"}
-            </span>
-            <h1 className="text-4xl md:text-7xl font-black text-white tracking-tight mb-8 leading-tight">
-              {lab.name}
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed italic max-w-2xl">
-              Equipped with modern analytical tools and safety systems for pharmaceutical excellence.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        title={lab.name}
+        breadcrumbs={[
+          { label: "Resources", href: "/resources" },
+          { label: "Laboratories", href: "/resources/labs" },
+          { label: lab.name }
+        ]}
+        description={`Equipped with modern analytical tools and safety systems for pharmaceutical excellence. (Room ${lab.roomNo} | ${lab.area || "N/A"})`}
+      />
 
       {/* 2. Image Gallery Section (New) */}
       {lab.images && lab.images.length > 0 && (
@@ -157,44 +141,46 @@ export default async function LabDetail({ params }: { params: Promise<{ slug: st
             {/* Right Column: Sticky Sidebar Info */}
             <div className="lg:w-96 shrink-0 space-y-8">
               {/* Lab Summary Card */}
-              <div className="bg-[#020617] rounded-[2rem] p-4 shadow-2xl relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-[60px] rounded-full" />
-                <div className="bg-white/5 backdrop-blur-md rounded-[1.5rem] p-10 border border-white/10 relative z-10 h-full">
-                  <h3 className="text-white font-black uppercase tracking-[0.2em] text-[10px] mb-8">Lab Quick View</h3>
-                  
-                  <div className="space-y-8 mb-12">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-blue-400 border border-white/10">
-                        <MapPin size={20} />
-                      </div>
-                      <div>
-                        <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Location</div>
-                        <div className="text-white font-bold text-sm">Room {lab.roomNo}</div>
-                      </div>
+              <div className="bg-primary-dark text-white rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 -skew-x-12 translate-x-1/2 -translate-y-1/2 transition-transform group-hover:scale-110 duration-700" />
+                
+                <h3 className="text-secondary font-black uppercase tracking-[0.2em] text-[11px] mb-10 flex items-center gap-2">
+                  <Info size={16} /> Lab Quick View
+                </h3>
+                
+                <div className="space-y-10 mb-12">
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-secondary border border-white/10 group-hover:bg-secondary group-hover:text-primary-dark transition-all duration-500">
+                      <MapPin size={22} />
                     </div>
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-blue-400 border border-white/10">
-                        <Calculator size={20} />
-                      </div>
-                      <div>
-                        <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Total Area</div>
-                        <div className="text-white font-bold text-sm">{lab.area || "Not Specified"}</div>
-                      </div>
+                    <div>
+                      <div className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-1.5">Location</div>
+                      <div className="text-white font-black text-lg tracking-tight uppercase">Room {lab.roomNo}</div>
                     </div>
                   </div>
-
-                  {lab.manualUrl ? (
-                    <Link href={lab.manualUrl} target="_blank">
-                      <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-widest text-[11px] py-8 rounded-2xl shadow-xl transition-all">
-                        Download Manual <Download size={18} className="ml-2" />
-                      </Button>
-                    </Link>
-                  ) : (
-                    <Button disabled className="w-full bg-white/5 text-white/50 font-black uppercase tracking-widest text-[11px] py-8 rounded-2xl border border-white/10 cursor-not-allowed">
-                      Manual Unavailable
-                    </Button>
-                  )}
+                  
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-secondary border border-white/10 group-hover:bg-secondary group-hover:text-primary-dark transition-all duration-500">
+                      <Calculator size={22} />
+                    </div>
+                    <div>
+                      <div className="text-[10px] font-black text-white/40 uppercase tracking-widest mb-1.5">Total Area</div>
+                      <div className="text-secondary font-black text-lg tracking-tight">{lab.area || "N/A"}</div>
+                    </div>
+                  </div>
                 </div>
+
+                {lab.manualUrl ? (
+                  <Link href={lab.manualUrl} target="_blank" className="block">
+                    <Button className="w-full bg-secondary hover:bg-white text-primary-dark font-black uppercase tracking-widest text-[11px] py-8 rounded-2xl shadow-xl transition-all active:scale-95">
+                      Download Manual <Download size={18} className="ml-2" />
+                    </Button>
+                  </Link>
+                ) : (
+                  <div className="p-6 bg-white/5 border border-white/10 rounded-2xl text-center">
+                    <p className="text-white/30 text-[10px] font-black uppercase tracking-widest">Manual Unavailable</p>
+                  </div>
+                )}
               </div>
 
               {/* Related Labs List */}

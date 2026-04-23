@@ -4,16 +4,10 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  ChevronRight, 
-  Users, 
-  Eye, 
-  Download,
-  X,
-  FileText,
-  Search,
-  Filter,
-  GraduationCap
+  GraduationCap,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 
 interface StudentList {
   _id: string;
@@ -90,52 +84,14 @@ export default function StudentsListClient({ initialLists }: StudentsListClientP
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-slate-50 pt-12 pb-10 md:pt-48 md:pb-32 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-primary/5 blur-[100px] rounded-full" />
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4 md:mb-12">
-              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-              <ChevronRight size={10} />
-              <Link href="/student" className="hover:text-primary transition-colors">Student Center</Link>
-              <ChevronRight size={10} />
-              <span className="text-primary">Students List</span>
-            </nav>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-4 mb-2 md:mb-6"
-            >
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/5 text-primary flex items-center justify-center rounded-2xl shadow-sm border border-slate-200">
-                <Users size={20} className="md:size-[24px]" />
-              </div>
-              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Student Directory</div>
-            </motion.div>
-
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.9] mb-4 md:mb-8"
-            >
-              Registered <span className="text-primary italic">Students</span>
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-base md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl"
-            >
-              Access official student enrollment records and batch-wise directories for all pharmaceutical academic programs.
-            </motion.p>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="Registered Students"
+        breadcrumbs={[
+          { label: "Student Center", href: "/student" },
+          { label: "Students List" }
+        ]}
+        description="Access official student enrollment records and batch-wise directories for all pharmaceutical academic programs."
+      />
 
       {/* Main Content Sections */}
       <section className="py-8 md:py-24 bg-white">

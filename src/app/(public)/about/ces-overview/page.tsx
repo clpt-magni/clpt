@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, GraduationCap, Award, Microscope, HeartPulse, Brain, Database, FileText } from "lucide-react";
 import Link from "next/link";
@@ -34,23 +35,14 @@ export default function CesOverviewPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Header */}
-      <section className="bg-primary-dark pt-32 pb-24 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-bold mb-8 backdrop-blur-sm border border-secondary/20 uppercase tracking-widest">
-              <Building2 size={16} /> Estd. 1995
-            </div>
-            <h1 className="text-4xl md:text-7xl font-bold font-poppins mb-8 leading-tight tracking-tight !text-white">
-              Chalapathi Educational <br className="hidden md:block" /> Society (CES)
-            </h1>
-            <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-light max-w-3xl mx-auto italic">
-              "Pioneering a transformation in higher education with the vision of Chalapathi University 2025."
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        title="Chalapathi Educational Society (CES)"
+        breadcrumbs={[
+          { label: "About", href: "/about" },
+          { label: "Society Overview" }
+        ]}
+        description="Pioneering a transformation in higher education since 1995. The society is poised to launch the State Private University in 2025, integrating pharmacy and engineering into a unified center of global excellence."
+      />
 
       {/* Core History & Vision */}
       <section className="py-24 bg-white relative">

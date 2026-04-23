@@ -12,9 +12,10 @@ import {
   ExternalLink,
   ChevronDown,
   X,
-  Plus,
-  Minus
+  Minus,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import Link from 'next/link';
 
 interface Article {
@@ -49,66 +50,32 @@ export default function PublicationClient({ publications }: { publications: Publ
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-slate-50 pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full sm:pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full sm:pointer-events-none" />
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-blue-600 transition-all mb-12">
-              <Link href="/">Home</Link>
-              <ChevronRight size={10} />
-              <Link href="/research">Research</Link>
-              <ChevronRight size={10} />
-              <span className="text-blue-600">Publications</span>
-            </nav>
+      <CustomPageHeader
+        title="Research Publications"
+        breadcrumbs={[
+          { label: "Research", href: "/research" },
+          { label: "Publications" }
+        ]}
+        description="A comprehensive archive of our institutional research, review articles, and scholarly publications across pharmaceutical sciences."
+      />
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-4 mb-6"
-            >
-              <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-2xl shadow-lg shadow-blue-600/20">
-                <BookOpen size={24} />
-              </div>
-              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Research Repository</div>
-            </motion.div>
-
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.9] mb-8"
-            >
-              Academic <span className="text-blue-600 italic">Excellence</span>
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-12"
-            >
-              A comprehensive archive of our institutional research, review articles, and scholarly publications across pharmaceutical sciences.
-            </motion.p>
-
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="relative max-w-xl"
-            >
-              <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-              <input 
-                type="text" 
-                placeholder="Search by title, author, or year..." 
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-white border border-slate-200 pl-14 pr-6 py-5 rounded-3xl text-sm font-medium focus:outline-none focus:ring-4 focus:ring-blue-100 transition-all shadow-sm"
-              />
-            </motion.div>
-          </div>
+      <section className="bg-white py-12 border-b border-slate-100">
+        <div className="container mx-auto px-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="relative max-w-xl mx-auto"
+          >
+            <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
+            <input 
+              type="text" 
+              placeholder="Search by title, author, or year..." 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full bg-slate-50 border border-slate-200 pl-14 pr-6 py-5 rounded-3xl text-sm font-medium focus:outline-none focus:ring-4 focus:ring-blue-100 transition-all shadow-sm"
+            />
+          </motion.div>
         </div>
       </section>
 

@@ -13,8 +13,10 @@ import {
   BookOpen,
   Calendar,
   Building2,
-  ChevronDown
+  ChevronDown,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 
 interface TrainingRecord {
   companyName: string;
@@ -36,52 +38,14 @@ export default function IIPECClientLayout({ records }: { records: IIPECTrainingY
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-slate-50 pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full sm:pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full sm:pointer-events-none" />
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-blue-600 transition-all mb-12">
-              <Link href="/">Home</Link>
-              <ChevronRight size={10} />
-              <Link href="/academic">Academic</Link>
-              <ChevronRight size={10} />
-              <span className="text-blue-600">IIPEC</span>
-            </nav>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-4 mb-6"
-            >
-              <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-2xl shadow-lg shadow-blue-600/20">
-                <Briefcase size={24} />
-              </div>
-              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Corporate Cell</div>
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.9] mb-8"
-            >
-              <span className="text-blue-600 italic">IIPEC</span> Network
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-3xl"
-            >
-              Industry Institute Placement & Entrepreneurship Cell — acts as an interface between industries and the institute to secure collaborative growth and professional pipelines.
-            </motion.p>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="IIPEC Network"
+        breadcrumbs={[
+          { label: "Academic", href: "/academic" },
+          { label: "IIPEC" }
+        ]}
+        description="Industry Institute Placement & Entrepreneurship Cell — acts as an interface between industries and the institute to secure collaborative growth and professional pipelines."
+      />
 
       {/* Main Content Split */}
       <section className="py-24 md:py-32 bg-white relative">

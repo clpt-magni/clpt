@@ -124,6 +124,7 @@ function NavItemComponent({ item }: { item: NavItem }) {
     >
       <Link
         href={item.href}
+        onClick={() => setIsOpen(false)}
         className="flex items-center gap-1 px-4 py-3 text-[13px] font-extrabold text-slate-700 hover:text-primary transition-all rounded-md hover:bg-slate-50/50 whitespace-nowrap uppercase tracking-tight"
       >
         {item.label}
@@ -150,6 +151,7 @@ function NavItemComponent({ item }: { item: NavItem }) {
                   <div key={i} className="space-y-4">
                     <Link
                       href={sub.href}
+                      onClick={() => setIsOpen(false)}
                       className="inline-block text-primary font-black text-base md:text-lg border-b-2 border-secondary pb-1 mb-2 hover:text-primary-dark transition-colors"
                     >
                       {sub.label}
@@ -160,6 +162,7 @@ function NavItemComponent({ item }: { item: NavItem }) {
                           <li key={j}>
                             <Link
                               href={leaf.href}
+                              onClick={() => setIsOpen(false)}
                               className="group flex items-center gap-2 text-slate-500 hover:text-primary transition-all"
                             >
                               <div className="w-1.5 h-1.5 rounded-full bg-slate-200 group-hover:bg-primary group-hover:scale-125 transition-all" />
@@ -178,6 +181,7 @@ function NavItemComponent({ item }: { item: NavItem }) {
                   <li key={i}>
                     <Link
                       href={sub.href}
+                      onClick={() => setIsOpen(false)}
                       className="flex items-center gap-2 px-4 py-3 text-sm font-bold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl mx-1 transition-all"
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-slate-200 group-hover:bg-primary transition-all" />

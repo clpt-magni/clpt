@@ -4,17 +4,18 @@ import {
   Phone, 
   Mail
 } from "lucide-react";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen font-roboto mb-12">
-      {/* Page Header */}
-      <section className="bg-primary-dark py-16 text-white text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold font-poppins mb-2">Contact Us</h1>
-          <p className="text-white/70 text-lg">We'd love to hear from you</p>
-        </div>
-      </section>
+      <PageHeader
+        title="Contact Us"
+        breadcrumbs={[
+          { label: "Contact" }
+        ]}
+        description="We'd love to hear from you. Reach out to our administrative or principal offices for any inquiries."
+      />
 
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">

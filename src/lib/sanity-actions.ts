@@ -60,6 +60,7 @@ export async function getLaboratoryBySlug(slug: string) {
 
 export async function getInstitutionalBodyBySlug(slug: string) {
   return await client.fetch(`*[_type == "institutionalBody" && slug.current == $slug][0] {
+    title,
     summary,
     membersList,
     description,

@@ -11,7 +11,7 @@ import {
   ArrowDownToLine,
   Eye
 } from "lucide-react";
-import Link from "next/link";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -71,32 +71,34 @@ const syllabusData = [
 export default function SyllabusPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Institutional Hero Section */}
-      <section className="bg-slate-50 pt-24 pb-20 md:pt-40 md:pb-32 relative overflow-hidden border-b border-slate-100/50">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full -mr-20 -mt-20" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full -ml-20 -mb-20" />
+      <PageHeader
+        title="Course Syllabus"
+        breadcrumbs={[
+          { label: "Syllabus" }
+        ]}
+        description="Access official curriculum documents and academic syllabi for all pharmacy programs designed to meet global standards."
+      />
 
-        <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
-          <div className="max-w-4xl">
-            <span className="inline-block px-4 py-1.5 bg-blue-600/5 border border-blue-600/10 rounded-full text-blue-700 text-[10px] font-black uppercase tracking-[0.3em] mb-8">
-              Academic Resources
-            </span>
-            <h1 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight mb-8 leading-[0.95]">
-              Course <br />
-              <span className="text-blue-600">Syllabus</span>
-            </h1>
-            <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-2xl">
-              Access official curriculum documents and academic syllabi for all pharmacy programs.
-              Our curriculum is designed to meet international standards and regulatory requirements.
-            </p>
-
-            <div className="mt-12 flex flex-wrap gap-4 justify-center md:justify-start">
-              <Link href="/documents/syllabus/college-curriculum.pdf" target="_blank">
-                <Button className="h-14 px-8 rounded-2xl bg-slate-900 hover:bg-blue-600 text-white font-black uppercase tracking-widest text-[10px] shadow-xl shadow-slate-900/10 transition-all">
-                  <ArrowDownToLine size={16} className="mr-2" /> Download Full Curriculum
-                </Button>
-              </Link>
+      {/* Quick Download Banner */}
+      <section className="py-12 bg-slate-50 border-b border-slate-100">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-xl">
+            <div className="flex items-center gap-6">
+              <div className="w-16 h-16 rounded-2xl bg-blue-600/10 flex items-center justify-center text-blue-600 shrink-0">
+                <FileText size={32} />
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-tight">Full Curriculum Repository</h3>
+                <p className="text-slate-500 text-sm font-medium">Download the complete institutional academic handbook (PDF).</p>
+              </div>
             </div>
+            <a 
+              href="/documents/syllabus/college-curriculum.pdf" 
+              target="_blank" 
+              className="px-10 py-5 bg-blue-600 hover:bg-slate-900 text-white rounded-2xl font-black text-[10px] uppercase tracking-widest transition-all active:scale-95 flex items-center gap-2"
+            >
+              <ArrowDownToLine size={18} /> Download Full Syllabus
+            </a>
           </div>
         </div>
       </section>

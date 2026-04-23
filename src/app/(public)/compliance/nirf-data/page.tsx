@@ -12,6 +12,7 @@ import {
   ChevronRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PageHeader } from "@/components/ui/PageHeader";
 import Link from "next/link";
 
 const nirfReports = [
@@ -27,27 +28,14 @@ const nirfReports = [
 export default function NirfDataPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* 1. SE0-Optimized Institutional Hero (Light Theme) */}
-      <section className="bg-slate-50 pt-20 pb-16 md:pt-32 md:pb-24 relative overflow-hidden border-b border-slate-100/50">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full -mr-20 -mt-20" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full -ml-20 -mb-20" />
-        
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left">
-          <div className="max-w-4xl">
-            <span className="inline-block px-3 py-1 bg-blue-600/5 border border-blue-600/10 rounded-full text-blue-700 text-[10px] font-black uppercase tracking-[0.3em] mb-6">
-              Governance & Institutional Compliance
-            </span>
-            <h1 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tight mb-6 leading-[1.1] md:leading-[0.95]">
-              NIRF Data <br />
-              <span className="text-blue-600">& Performance</span>
-            </h1>
-            <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed max-w-2xl">
-              Chalapathi Institute of Pharmaceutical Sciences (CIPS) continues to demonstrate its commitment to academic excellence, 
-              research innovation, and student success. As per the latest <strong>National Institutional Ranking Framework (NIRF) 2025</strong> submission.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        title="NIRF Data & Performance"
+        breadcrumbs={[
+          { label: "Compliance", href: "/compliance" },
+          { label: "NIRF Data" }
+        ]}
+        description="Chalapathi Institute of Pharmaceutical Sciences continues to demonstrate its commitment to academic excellence, research innovation, and student success as per the latest National Institutional Ranking Framework (NIRF) 2025 submission."
+      />
 
       {/* 2. Quick Stats Grid (Floating Style) */}
       <section className="container mx-auto px-4 md:px-6 -mt-10 mb-16 md:mb-24 relative z-30">

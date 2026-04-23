@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { GraduationCap, Award, Clock, Users, ArrowRight } from "lucide-react";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { getPrograms } from "@/lib/sanity-actions";
 
 export default async function ProgramsPage() {
@@ -12,16 +13,13 @@ export default async function ProgramsPage() {
 
   return (
     <div className="flex flex-col min-h-screen font-roboto pb-24 bg-slate-50">
-      {/* Page Header */}
-      <section className="bg-primary-dark py-20 text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-primary/10 -z-0" />
-        <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl md:text-6xl !text-white font-black font-poppins mb-4 tracking-tight">Academic Programs</h1>
-          <p className="text-white/70 text-xl font-medium max-w-2xl mx-auto italic">
-            World-class pharmaceutical education designed for the future of global healthcare.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        title="Academic Programs"
+        breadcrumbs={[
+          { label: "Programs" }
+        ]}
+        description="World-class pharmaceutical education designed for the future of global healthcare."
+      />
 
       <div className="container mx-auto px-4 pt-16">
         {programs.length === 0 ? (

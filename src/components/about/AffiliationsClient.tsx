@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Eye, Search, Award, FileText, X } from "lucide-react";
 import { PdfViewerModal } from "@/components/ui/PdfViewerModal";
 import { Input } from "@/components/ui/input";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 interface AffiliationItem {
   _key: string;
@@ -37,26 +38,14 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
-      {/* Hero Header */}
-      <section className="bg-primary-dark pt-32 pb-24 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
-
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-bold mb-8 backdrop-blur-sm border border-secondary/20 uppercase tracking-widest">
-              <Award size={16} /> Regulatory Compliance
-            </div>
-            <h1 className="text-4xl md:text-7xl font-bold font-poppins mb-8 leading-tight tracking-tight !text-white">
-              {data.title}
-            </h1>
-            {data.summary && (
-              <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-light max-w-3xl mx-auto italic">
-                {data.summary}
-              </p>
-            )}
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        title={data.title}
+        breadcrumbs={[
+          { label: "About", href: "/about" },
+          { label: "Regulatory Compliance" }
+        ]}
+        description={data.summary || "Recognized and approved by leading regulatory bodies including AICTE, PCI, and affiliated with ANU."}
+      />
 
       <div className="container mx-auto px-4 py-20 -mt-12 relative z-20">
         <div className="max-w-5xl mx-auto space-y-8">

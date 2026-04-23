@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Search, Microscope, ArrowRight, Filter, Calculator } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 export default function LabsClient({ initialLabs }: { initialLabs: any[] }) {
   const [labs, setLabs] = useState<any[]>(initialLabs || []);
@@ -27,25 +28,14 @@ export default function LabsClient({ initialLabs }: { initialLabs: any[] }) {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* 1. SE0-Optimized Hero Section */}
-      <section className="bg-[#020617] pt-24 pb-12 md:pt-40 md:pb-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/4 h-full bg-blue-600/5 blur-[100px] rounded-full" />
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <span className="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
-              Research Infrastructure
-            </span>
-            <h1 className="text-4xl md:text-7xl font-black text-white tracking-tight mb-8 leading-tight">
-              Best Pharmacy College <br />
-              <span className="text-blue-400">Laboratories in AP</span>
-            </h1>
-            <p className="text-slate-400 text-lg md:text-xl max-w-2xl font-medium leading-relaxed">
-              Explore our world-class research facilities across 18+ specialized disciplines, 
-              featuring advanced instrumentation and modern safety protocols.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        title="Research Laboratories"
+        breadcrumbs={[
+          { label: "Resources", href: "/resources" },
+          { label: "Laboratories" }
+        ]}
+        description="Explore our world-class research facilities across 18+ specialized disciplines, featuring advanced instrumentation and modern safety protocols."
+      />
 
       {/* 2. Advanced Search & Filter Bar */}
       <div className="sticky top-[140px] z-40 bg-white/80 backdrop-blur-md border-b border-slate-100 py-6">

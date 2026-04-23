@@ -15,8 +15,10 @@ import {
   LayoutGrid,
   FileText,
   ShieldCheck,
-  GraduationCap
+  GraduationCap,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/button";
 import { conspectusPages } from "@/data/conspectus";
 
@@ -83,41 +85,14 @@ export default function ConspectusPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* 1. Institutional Hero Section */}
-      <section className="bg-slate-50 pt-24 pb-16 md:pt-40 md:pb-24 relative overflow-hidden border-b border-slate-100/50">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full -mr-20 -mt-20" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full -ml-20 -mb-20" />
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8 mt-4">
-              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-              <ChevronRight size={10} />
-              <span className="text-slate-600">Student Center</span>
-              <ChevronRight size={10} />
-              <span className="text-blue-600">Conspectus</span>
-            </nav>
-            
-            <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tight mb-8 leading-[0.95]">
-              Institutional <br />
-              <span className="text-blue-600">Conspectus</span>
-            </h1>
-            <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-10">
-              The official academic handbook providing a comprehensive overview of our curriculum, 
-              institutional policies, and professional standards for student excellence.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <Button onClick={() => scrollToPage(1)} className="h-14 px-8 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-widest text-[10px] shadow-xl shadow-blue-600/20 transition-all">
-                <BookOpen size={16} className="mr-2" /> Start Reading
-              </Button>
-              <Button variant="outline" className="h-14 px-8 rounded-2xl border-slate-200 hover:bg-slate-50 text-slate-900 font-black uppercase tracking-widest text-[10px] transition-all">
-                <Download size={16} className="mr-2" /> Download PDF
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CustomPageHeader
+        title="Institutional Conspectus"
+        breadcrumbs={[
+          { label: "Student Center", href: "/student" },
+          { label: "Conspectus" }
+        ]}
+        description="The official academic handbook providing a comprehensive overview of our curriculum, institutional policies, and professional standards for student excellence."
+      />
 
       {/* 2. Interactive E-Viewer Section */}
       <section className="bg-slate-50/50 py-12 md:py-20 relative">

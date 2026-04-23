@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { Microscope, Activity, FlaskConical, Stethoscope } from "lucide-react";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 const departments = [
   {
@@ -33,13 +34,13 @@ const departments = [
 export default function DepartmentsPage() {
   return (
     <div className="flex flex-col min-h-screen font-roboto bg-slate-50 pb-24">
-      {/* Page Header */}
-      <section className="bg-primary-dark py-16 text-white">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold font-poppins mb-2">Academic Departments</h1>
-          <p className="text-white/70 text-lg">Explore the specialized wings that form the core of CLPT.</p>
-        </div>
-      </section>
+      <PageHeader
+        title="Academic Departments"
+        breadcrumbs={[
+          { label: "Departments" }
+        ]}
+        description="Explore the specialized wings that form the core of pharmaceutical research and education at CLPT."
+      />
 
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

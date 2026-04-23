@@ -14,8 +14,10 @@ import {
   Award,
   Download,
   BookOpen,
-  GraduationCap
+  GraduationCap,
+  PageHeader
 } from "lucide-react";
+import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 
 const detailedPractices = [
   {
@@ -96,53 +98,35 @@ const otherInitiatives = [
 export default function BestPracticesPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-slate-50 pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full sm:pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full sm:pointer-events-none" />
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-blue-600 transition-all mb-12">
-              <Link href="/">Home</Link>
-              <ChevronRight size={10} />
-              <Link href="/about">About Us</Link>
-              <ChevronRight size={10} />
-              <span className="text-blue-600">Best Practices</span>
-            </nav>
+      <CustomPageHeader
+        title="Institutional Best Practices"
+        breadcrumbs={[
+          { label: "About", href: "/about" },
+          { label: "Best Practices" }
+        ]}
+        description="Driving academic excellence, social equity, and holistic growth through systematic and recognized institutional initiatives."
+      />
 
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight leading-[0.9] mb-8"
+      {/* Document Highlight Section */}
+      <section className="py-12 bg-slate-50 border-b border-slate-100">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-xl">
+            <div className="flex items-center gap-6">
+              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <FileText size={32} />
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-primary-dark uppercase tracking-tight">Technical Data Repository</h3>
+                <p className="text-slate-500 text-sm font-medium">Download the official NAAC Best Practices audit report (PDF).</p>
+              </div>
+            </div>
+            <a 
+              href="/documents/about/best-practices-naac.pdf" 
+              target="_blank" 
+              className="px-10 py-5 bg-primary hover:bg-primary-dark text-white rounded-2xl font-black text-xs uppercase tracking-widest transition-all active:scale-95 flex items-center gap-2"
             >
-              Institutional <br />
-              <span className="text-blue-600 italic">Best Practices</span>
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-12"
-            >
-              Driving academic excellence, social equity, and holistic growth through systematic and recognized institutional initiatives.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <a 
-                href="/documents/about/best-practices-naac.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-white border border-slate-200 px-8 py-4 rounded-full text-sm font-black uppercase tracking-widest text-slate-900 hover:border-blue-600 hover:text-blue-600 transition-all shadow-xl shadow-slate-200/50 group"
-              >
-                <Download size={18} className="text-blue-600 group-hover:-translate-y-1 transition-transform" /> NAAC Best Practices Report
-              </a>
-            </motion.div>
+              <Download size={18} /> Download NAAC Report
+            </a>
           </div>
         </div>
       </section>

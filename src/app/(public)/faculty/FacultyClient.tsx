@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import { Search, Filter, User, SlidersHorizontal, ArrowUp } from "lucide-react";
 import { getFaculty } from "@/lib/sanity-actions";
 import FacultyCard, { FacultyMember } from "@/components/faculty/FacultyCard";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 /**
  * GROQ Query for Faculty Directory
@@ -104,23 +105,14 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      {/* 1. Page Header - More compact and professional */}
-      <header className="bg-[#020617] pt-24 pb-12 md:pt-40 md:pb-24 relative overflow-hidden">
-        {/* Subtle Background Glow */}
-        <div className="absolute top-0 right-0 w-1/4 h-full bg-blue-600/5 blur-[100px] rounded-full" />
-
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <span className="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-[9px] font-bold uppercase tracking-[0.2em] mb-6">
-            Faculty Directory
-          </span>
-          <h1 className="text-3xl md:text-6xl font-bold !text-white tracking-tight mb-4 leading-tight">
-            Distinguished <span className="text-blue-400">Faculty</span>
-          </h1>
-          <p className="!text-slate-400 text-sm md:text-lg max-w-xl mx-auto font-medium leading-relaxed">
-            Academic leaders and researchers shaping the future of pharmaceutical sciences.
-          </p>
-        </div>
-      </header>
+      <PageHeader
+        title="Distinguished Faculty"
+        breadcrumbs={[
+          { label: "About", href: "/about" },
+          { label: "Faculty Directory" }
+        ]}
+        description="Academic leaders and researchers shaping the future of pharmaceutical sciences."
+      />
 
       {/* 2. Search & Filter Bar - Compacted segments */}
       <div

@@ -10,11 +10,11 @@ export function TopBar() {
         <div className="flex items-center gap-6">
           <a href="tel:+918632524124" className="flex items-center gap-2 hover:text-primary transition-colors">
             <Phone size={14} className="text-primary" />
-            +91 86325 24124
+            +91 9440101685
           </a>
-          <a href="mailto:principal@chalapathipharmacy.ac.in" className="flex items-center gap-2 hover:text-primary transition-colors">
+          <a href="mailto:principalclpt@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
             <Mail size={14} className="text-primary" />
-            principal@chalapathipharmacy.ac.in
+            principalclpt@gmail.com
           </a>
         </div>
         <div className="flex items-center gap-6">

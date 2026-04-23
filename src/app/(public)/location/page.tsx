@@ -15,6 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { PageHeader } from "@/components/ui/PageHeader";
 
 const contactInfo = [
   {
@@ -60,27 +61,13 @@ export default function LocationPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* 1. Institutional Hero Section */}
-      <section className="bg-slate-50 pt-24 pb-20 md:pt-40 md:pb-32 relative overflow-hidden border-b border-slate-100/50">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/[0.03] blur-[120px] rounded-full -mr-20 -mt-20" />
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-blue-400/[0.03] blur-[100px] rounded-full -ml-20 -mb-20" />
-        
-        <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
-          <div className="max-w-4xl">
-            <span className="inline-block px-4 py-1.5 bg-blue-600/5 border border-blue-600/10 rounded-full text-blue-700 text-[10px] font-black uppercase tracking-[0.3em] mb-8">
-              Campus Visit
-            </span>
-            <h1 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight mb-8 leading-[0.95]">
-              Location & <br />
-              <span className="text-blue-600">Directions</span>
-            </h1>
-            <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-2xl">
-              Nestled in the educational hub of Guntur, our campus is easily accessible 
-              via road, rail, and air. Visit us to experience our state-of-the-art facilities firsthand.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        title="Location & Directions"
+        breadcrumbs={[
+          { label: "Location" }
+        ]}
+        description="Nestled in the educational hub of Guntur, our campus is easily accessible via road, rail, and air. Visit us to experience our facilities firsthand."
+      />
 
       {/* 2. Map Presentation Section */}
       <section className="py-20 md:py-32 bg-white relative">

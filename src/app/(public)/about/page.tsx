@@ -28,16 +28,55 @@ export default function AboutPage() {
                   </div>
                   <h2 className="text-3xl font-bold text-primary-dark font-poppins border-b-2 border-secondary pb-2">Our History</h2>
                 </div>
-                <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
-                  <p>
-                    Realizing the increasing importance of Pharmacy profession, Sri. Y.V. Anjaneyulu, President of Chalapathi Educational Society with his futuristic vision established Chalapathi Institute of Pharmaceutical Sciences (CLPT) at Lam in Guntur, Andhra Pradesh. It is located at about 8 K.M. from Guntur Town towards Amaravathi.
-                  </p>
-                  <p>
-                    Guntur is well connected by bus or train from Vijayawada (40 min), Hyderabad (4.30 hrs.) and Chennai (7 hrs.) and is on the N.H.-5 connecting Chennai and Calcutta. Plenty of local transport is arrived from Guntur town to the college campus.
-                  </p>
-                  <p>
-                    The campus is located in 2 acres pollution free, picturesque lush green environment offering right ambience and conduciveness for quality education and research. The College is housed in an independent and spacious building constructed as per the norms and specifications of AICTE and PCI New Delhi, Govt. of Andhra Pradesh. All Programmes offered by the Institution are permanently affiliated to ANU and the institution was accorded autonomous since 2016 by UGC and approved by UGC under Section 2(f) and 12 B.
-                  </p>
+                <div className="space-y-8 text-slate-600 leading-relaxed text-lg">
+                  <div className="space-y-4">
+                    <h3 className="font-black text-primary-dark uppercase tracking-tight text-xl">Establishment & Vision</h3>
+                    <p>
+                      Chalapathi Institute of Pharmaceutical Sciences (CLPT) was established in 2004 under the aegis of the Chalapathi Educational Society (founded in 1995) by Sri Y. V. Anjaneyulu, with a forward-looking vision to strengthen and professionalize pharmaceutical education in India. The institution was founded at Lam, near Guntur in Andhra Pradesh, strategically located along the Guntur–Amaravathi corridor with strong connectivity to major cities such as Vijayawada, Hyderabad, and Chennai through national highway and rail networks.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="font-black text-primary-dark uppercase tracking-tight text-xl">Campus & Regulatory Framework</h3>
+                    <p>
+                      From its inception, CLPT was developed with a focus on creating a high-quality academic and research ecosystem within a pollution-free and eco-sustainable campus. The infrastructure was established in accordance with the regulatory standards of the Pharmacy Council of India and other statutory bodies. The institute became permanently affiliated with Acharya Nagarjuna University and was later granted autonomous status in 2016 by the University Grants Commission under Sections 2(f) and 12(B), marking a significant milestone in its academic evolution.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="font-black text-primary-dark uppercase tracking-tight text-xl">Accreditations & Rankings</h3>
+                    <p>
+                      Over the years, CLPT has progressively strengthened its quality benchmarks and academic standing. The B.Pharmacy program received accreditation from the National Board of Accreditation, and the institution achieved NAAC "A+" accreditation for two consecutive cycles with a CGPA of 3.37 on a 4.0 scale. Its consistent academic performance has been reflected in national rankings by the National Institutional Ranking Framework (NIRF), where it secured notable positions between 2017 and 2023, demonstrating sustained institutional growth and competitiveness.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="font-black text-primary-dark uppercase tracking-tight text-xl">Infrastructure & Specialized Facilities</h3>
+                    <p>
+                      As part of its developmental trajectory, CLPT expanded its academic and research infrastructure to include advanced laboratories, smart classrooms, simulation facilities, and comprehensive library resources. It also established several specialized units such as a Government-approved Drug Testing Laboratory, Pradhan Mantri Bharatiya Janaushadhi Kendra, CPCSEA-approved animal house, ADR Monitoring Centre, and an incubation centre, thereby enhancing its research and service capabilities. Recognition as a Scientific and Industrial Research Organization (SIRO) by the Department of Scientific and Industrial Research further strengthened its research profile.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="font-black text-primary-dark uppercase tracking-tight text-xl">Curriculum & Academic Ecosystem</h3>
+                    <p>
+                      Parallel to infrastructure growth, the institution developed a dynamic and industry-aligned curriculum integrating core pharmaceutical sciences with skill development, research training, and experiential learning components such as practice school, clerkship, and project work. Over time, CLPT established multiple academic and professional centres, including those dedicated to community services, competitive examinations, overseas education, intellectual property, and industry–institute partnerships.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="font-black text-primary-dark uppercase tracking-tight text-xl">Student Development & Career Progression</h3>
+                    <p>
+                      The institute has also evolved robust student support and career development systems, with the IIPEC Cell playing a key role in placements and higher education pathways, including international opportunities. Its growing alumni network has contributed significantly to academic enrichment and institutional reputation, with numerous batches of B.Pharmacy, M.Pharmacy, and Pharm.D graduates successfully completing their programs.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="font-black text-primary-dark uppercase tracking-tight text-xl">Continuous Quality Improvement</h3>
+                    <p>
+                      Throughout its history, CLPT has maintained a strong commitment to continuous quality improvement through structured feedback systems, academic audits, and alignment with emerging trends in pharmaceutical sciences. This sustained and systematic development has positioned the institution as a prominent center for pharmaceutical education and research with national recognition and expanding global relevance.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>

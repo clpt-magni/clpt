@@ -43,10 +43,10 @@ export default function NirfDataPage() {
       <section className="container mx-auto px-4 md:px-6 -mt-10 mb-16 md:mb-24 relative z-30">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {[
-            { label: "Students", value: "701", icon: Users },
-            { label: "Median", value: "₹3.88L", icon: TrendingUp },
-            { label: "Patents", value: "15", icon: Zap },
-            { label: "Investment", value: "₹1.5Cr+", icon: Building2 },
+            { label: "Students", value: "728", icon: Users },
+            { label: "Median", value: "₹3.85L", icon: TrendingUp },
+            { label: "Patents", value: "35", icon: Zap },
+            { label: "Investment", value: "₹2.57Cr+", icon: Building2 },
           ].map((stat, i) => (
             <div key={i} className="bg-white p-5 md:p-8 rounded-3xl md:rounded-[2rem] shadow-xl shadow-slate-200/40 border border-slate-100 group hover:border-blue-600/20 transition-all hover:-translate-y-1 duration-500">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-slate-50 group-hover:bg-blue-600/5 flex items-center justify-center text-slate-400 group-hover:text-blue-600 mb-4 md:mb-6 transition-colors">
@@ -87,9 +87,8 @@ export default function NirfDataPage() {
                         <h3 className="text-slate-900 font-bold uppercase tracking-widest text-[10px]">Academic Strength</h3>
                       </div>
                       <p>
-                        We host a diverse student body across UG and PG programs, with a total strength of <strong>701 students</strong>. 
-                        Sanctioned intake includes UG, PG, and Pharm.D programs. 
-                        Over <strong>70%</strong> of our students receive full tuition fee reimbursement.
+                        We host a diverse student body across UG and PG programs, with a total strength of <strong>728 students</strong> (420 UG, 115 PG-2Y, 193 PG-6Y). 
+                        Over <strong>38% (279 students)</strong> receive full tuition fee reimbursement from Government funds.
                       </p>
                     </div>
                     <div className="space-y-4 md:space-y-6">
@@ -101,7 +100,7 @@ export default function NirfDataPage() {
                       </div>
                       <p>
                         Graduates consistently secure positions in leading pharma sectors. Median salaries range from 
-                        <strong> ₹3.65 Lakhs (UG)</strong> to <strong>₹3.88 Lakhs (PG)</strong>.
+                        <strong> ₹3.15 Lakhs (UG)</strong> to <strong>₹3.85 Lakhs (PG)</strong>.
                       </p>
                     </div>
                   </div>
@@ -115,7 +114,7 @@ export default function NirfDataPage() {
                         <h3 className="text-slate-900 font-bold uppercase tracking-widest text-[10px]">Research & Innovation</h3>
                       </div>
                       <p>
-                        CIPS secured <strong>65 sponsored projects</strong> in 2023-24. IP development includes <strong>11 patents published</strong> and 4 granted recently.
+                        CIPS secured <strong>33 sponsored projects</strong> in 2024-25. IP development includes <strong>34 patents published</strong> and 1 granted recently.
                       </p>
                     </div>
                     <div className="space-y-4 md:space-y-6">
@@ -126,7 +125,7 @@ export default function NirfDataPage() {
                         <h3 className="text-slate-900 font-bold uppercase tracking-widest text-[10px]">Expert Faculty</h3>
                       </div>
                       <p>
-                        Supported by <strong>63 faculty members</strong>, including experienced Professors with specializations in Ph.D., M.Pharm, and Pharm.D.
+                        Supported by <strong>60 faculty members</strong>, including distinguished Professors like Dr. Rama Rao Nadendla and Dr. K. Panduranga Rao with extensive academic experience.
                       </p>
                     </div>
                   </div>

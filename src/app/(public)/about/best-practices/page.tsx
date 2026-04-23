@@ -14,8 +14,7 @@ import {
   Award,
   Download,
   BookOpen,
-  GraduationCap,
-  PageHeader
+  GraduationCap
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 

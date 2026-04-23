@@ -57,16 +57,16 @@ export default function ChairmanProfile() {
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-bold text-primary-dark font-poppins mb-1">Sri Yalamanchili Veeranjaneyulu</h2>
+                <h2 className="text-2xl font-bold text-primary-dark font-poppins mb-1">Dr. Sri Yalamanchili Veeranjaneyulu</h2>
                 <p className="text-secondary-dark font-black uppercase tracking-[0.2em] text-[10px] mb-6">Chairman, Chalapathi Group</p>
 
                 <div className="bg-slate-50 rounded-3xl p-6 mb-8 border border-slate-100 flex flex-col items-center gap-3">
                   <div className="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-widest">
                     <MapPin size={14} className="text-primary" /> Guntur, Andhra Pradesh
                   </div>
-                  <a 
-                    href="https://linkedin.com/in/yalamanchili-veeranjaneyulu-b1b251111" 
-                    target="_blank" 
+                  <a
+                    href="https://linkedin.com/in/yalamanchili-veeranjaneyulu-b1b251111"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-[#0077b5] text-white px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all shadow-md"
                   >
@@ -145,7 +145,7 @@ export default function ChairmanProfile() {
                 <h2 className="text-3xl font-black text-primary-dark font-poppins uppercase tracking-tight">Professional Leadership</h2>
                 <Briefcase className="text-primary w-8 h-8 opacity-20" />
               </div>
-              
+
               <div className="space-y-6">
                 <div className="bg-white p-8 md:p-10 rounded-[3rem] border border-slate-100 shadow-lg relative overflow-hidden group">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full group-hover:bg-primary/10 transition-all" />
@@ -155,10 +155,10 @@ export default function ChairmanProfile() {
                       <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">Chalapathi Group of Institutions</p>
                     </div>
                     <div className="bg-slate-50 px-5 py-2.5 rounded-2xl border border-slate-100 self-start text-xs font-black text-primary uppercase tracking-widest">
-                       1988 – Present · 38+ Years
+                      1988 – Present · 38+ Years
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3 text-sm text-slate-600 leading-relaxed">
@@ -175,23 +175,23 @@ export default function ChairmanProfile() {
                       </li>
                     </ul>
                     <div className="bg-slate-50/50 p-6 rounded-3xl border border-slate-100">
-                       <h4 className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-4">
-                         <Star size={12} /> Strategic Milestones
-                       </h4>
-                       <div className="space-y-4">
-                          <div className="flex justify-between items-end border-b border-slate-100 pb-2">
-                             <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">CIET Ranking (Times)</span>
-                             <span className="text-lg font-black text-primary-dark">154th</span>
-                          </div>
-                          <div className="flex justify-between items-end border-b border-slate-100 pb-2">
-                             <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Global Certifications</span>
-                             <span className="text-lg font-black text-primary-dark">277+</span>
-                          </div>
-                          <div className="flex justify-between items-end">
-                             <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">EduSkills (AP & TS)</span>
-                             <span className="text-lg font-black text-primary-dark">Rank 8</span>
-                          </div>
-                       </div>
+                      <h4 className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-4">
+                        <Star size={12} /> Strategic Milestones
+                      </h4>
+                      <div className="space-y-4">
+                        <div className="flex justify-between items-end border-b border-slate-100 pb-2">
+                          <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">CIET Ranking (Times)</span>
+                          <span className="text-lg font-black text-primary-dark">154th</span>
+                        </div>
+                        <div className="flex justify-between items-end border-b border-slate-100 pb-2">
+                          <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Global Certifications</span>
+                          <span className="text-lg font-black text-primary-dark">277+</span>
+                        </div>
+                        <div className="flex justify-between items-end">
+                          <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">EduSkills (AP & TS)</span>
+                          <span className="text-lg font-black text-primary-dark">Rank 8</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -204,23 +204,23 @@ export default function ChairmanProfile() {
                       <p className="text-sm font-bold text-white/50 uppercase tracking-widest">Sattenapalli Constituency</p>
                     </div>
                     <div className="bg-white/10 px-5 py-2.5 rounded-2xl border border-white/10 self-start text-xs font-black text-secondary uppercase tracking-widest">
-                       2 Consecutive Terms (1994 – 2003)
+                      2 Consecutive Terms (1994 – 2003)
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                     <p className="text-white/80 text-sm leading-relaxed font-medium">
-                       Served as the elected representative for Sattenapalli constituency in Guntur district, actively advocating for rural development, social welfare, and legislative reforms to strengthen the education system.
-                     </p>
-                     <div className="flex flex-col gap-4">
-                        <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
-                           <Globe size={20} className="text-secondary" />
-                           <span className="text-xs font-bold uppercase tracking-widest">Rural Development Advocate</span>
-                        </div>
-                        <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
-                           <ArrowUpRight size={20} className="text-secondary" />
-                           <span className="text-xs font-bold uppercase tracking-widest">Policy Innovation</span>
-                        </div>
-                     </div>
+                    <p className="text-white/80 text-sm leading-relaxed font-medium">
+                      Served as the elected representative for Sattenapalli constituency in Guntur district, actively advocating for rural development, social welfare, and legislative reforms to strengthen the education system.
+                    </p>
+                    <div className="flex flex-col gap-4">
+                      <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                        <Globe size={20} className="text-secondary" />
+                        <span className="text-xs font-bold uppercase tracking-widest">Rural Development Advocate</span>
+                      </div>
+                      <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                        <ArrowUpRight size={20} className="text-secondary" />
+                        <span className="text-xs font-bold uppercase tracking-widest">Policy Innovation</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -228,50 +228,50 @@ export default function ChairmanProfile() {
 
             {/* Honours and Education Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-               <section className="space-y-6">
-                 <h2 className="text-2xl font-black text-primary-dark font-poppins uppercase tracking-tight">Honours</h2>
-                 <div className="bg-amber-50 rounded-[2.5rem] p-8 border-l-8 border-secondary shadow-lg">
-                   <Award className="text-secondary w-10 h-10 mb-6" />
-                   <h3 className="text-lg font-black text-primary-dark mb-2">Honorary Doctorate of Letters (D.Litt.)</h3>
-                   <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4">Burlington State University, USA · 2025</p>
-                   <p className="text-sm text-slate-600 font-medium leading-relaxed italic">
-                     "In recognition of outstanding contributions in the fields of education and social service."
-                   </p>
-                 </div>
-               </section>
+              <section className="space-y-6">
+                <h2 className="text-2xl font-black text-primary-dark font-poppins uppercase tracking-tight">Honours</h2>
+                <div className="bg-amber-50 rounded-[2.5rem] p-8 border-l-8 border-secondary shadow-lg">
+                  <Award className="text-secondary w-10 h-10 mb-6" />
+                  <h3 className="text-lg font-black text-primary-dark mb-2">Honorary Doctorate of Letters (D.Litt.)</h3>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4">Burlington State University, USA · 2025</p>
+                  <p className="text-sm text-slate-600 font-medium leading-relaxed italic">
+                    "In recognition of outstanding contributions in the fields of education and social service."
+                  </p>
+                </div>
+              </section>
 
-               <section className="space-y-6">
-                 <h2 className="text-2xl font-black text-primary-dark font-poppins uppercase tracking-tight">Academic Journey</h2>
-                 <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-lg space-y-6">
-                    <div className="flex items-start gap-4">
-                       <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
-                          <GraduationCap size={20} />
-                       </div>
-                       <div>
-                          <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Master's in Economics</h4>
-                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Bhopal University · 1980</p>
-                       </div>
+              <section className="space-y-6">
+                <h2 className="text-2xl font-black text-primary-dark font-poppins uppercase tracking-tight">Academic Journey</h2>
+                <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-lg space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
+                      <GraduationCap size={20} />
                     </div>
-                    <div className="flex items-start gap-4">
-                       <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
-                          <BookOpen size={20} />
-                       </div>
-                       <div>
-                          <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Bachelor of Commerce (B.Com)</h4>
-                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">RVVN College · 1978</p>
-                       </div>
+                    <div>
+                      <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Master's in Economics</h4>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Bhopal University · 1980</p>
                     </div>
-                    <div className="flex items-start gap-4">
-                       <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
-                          <Building size={20} />
-                       </div>
-                       <div>
-                          <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Secondary Education</h4>
-                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">SRKHH High School · 1973</p>
-                       </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
+                      <BookOpen size={20} />
                     </div>
-                 </div>
-               </section>
+                    <div>
+                      <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Bachelor of Commerce (B.Com)</h4>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">RVVN College · 1978</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
+                      <Building size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Secondary Education</h4>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">SRKHH High School · 1973</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
 
             {/* Institutional Ecosystem Section */}
@@ -282,12 +282,13 @@ export default function ChairmanProfile() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { name: "CLPT (Lam, Guntur)", url: "https://www.chalapathipharmacy.ac.in", badge: "Accredited" },
-                  { name: "CIET (Lam, Guntur)", url: "https://www.chalapathiengg.ac.in", badge: "Times Rank 154" },
-                  { name: "CITY (Mothadaka)", url: "https://www.city.ac.in", badge: "Autonomous" },
-                  { name: "SRKHH School (Amaravathi)", url: "https://www.chalapathi.org", badge: "Elite" },
-                  { name: "Chalapathi Degree College", url: "https://www.chalapathi.org", badge: "Holistic" },
-                  { name: "Chalapathi Chit Fund", url: "#", badge: "Corporate" },
+                  { name: "Chalapathi Institute of Pharmaceutical Sciences - CLPT (Lam, Guntur)", url: "https://www.chalapathipharmacy.ac.in", badge: "Top Pharmacy College" },
+                  { name: "Chalapathi Institute of Engineering and Technology - CIET (Lam, Guntur)", url: "https://www.chalapathiengg.ac.in", badge: "Times Rank 154" },
+                  { name: "Chalapathi Institute of Technology - CITY (Mothadaka, Guntur)", url: "https://www.city.ac.in", badge: "Autonomous" },
+                  { name: "Chalapathi Pharamcy College - CCPY (Mothadaka, Guntur)", url: "https://www.ccpy.ac.in/", badge: "Pharmacy College" },
+                  { name: "Chalapathi Degree College (Mothadaka, Guntur)", url: "https://www.chalapathi.org", badge: "Holistic" },
+                  { name: "Chalapathi Junior College (Mothadaka, Guntur)", url: "https://www.chalapathi.org", badge: "Holistic" },
+
                 ].map((inst, i) => (
                   <a
                     key={i}
@@ -297,10 +298,10 @@ export default function ChairmanProfile() {
                     className="group bg-white p-6 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all flex flex-col gap-4"
                   >
                     <div className="flex items-center justify-between">
-                       <span className="text-[8px] font-black uppercase text-primary border border-primary/20 bg-primary/5 px-2 py-1 rounded-full group-hover:bg-primary group-hover:text-white transition-all">
-                         {inst.badge}
-                       </span>
-                       <ExternalLink className="w-3 h-3 text-slate-300 group-hover:text-primary" />
+                      <span className="text-[8px] font-black uppercase text-primary border border-primary/20 bg-primary/5 px-2 py-1 rounded-full group-hover:bg-primary group-hover:text-white transition-all">
+                        {inst.badge}
+                      </span>
+                      <ExternalLink className="w-3 h-3 text-slate-300 group-hover:text-primary" />
                     </div>
                     <span className="font-black text-primary-dark group-hover:text-primary transition-colors text-xs uppercase tracking-tight">
                       {inst.name}
@@ -312,23 +313,23 @@ export default function ChairmanProfile() {
 
             {/* Social Contributions */}
             <section className="bg-slate-900 rounded-[3rem] p-10 md:p-14 text-white relative overflow-hidden">
-               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-3xl rounded-full" />
-               <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
-                  <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center border border-white/20 flex-shrink-0">
-                     <HeartHandshake size={48} className="text-secondary" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-3xl rounded-full" />
+              <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
+                <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center border border-white/20 flex-shrink-0">
+                  <HeartHandshake size={48} className="text-secondary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black !text-white mb-6 uppercase tracking-tight">Social & Community Advocacy</h3>
+                  <p className="text-white/60 font-medium leading-relaxed mb-6">
+                    Dedicated over three decades to improving educational access for rural students in Guntur district. As an active patron of community development and social service, he continues to empower youth initiatives across the region.
+                  </p>
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4">
+                    <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">37+ Years Governance</div>
+                    <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">Rural Empowerment</div>
+                    <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">Educational Equity</div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-black !text-white mb-6 uppercase tracking-tight">Social & Community Advocacy</h3>
-                    <p className="text-white/60 font-medium leading-relaxed mb-6">
-                      Dedicated over three decades to improving educational access for rural students in Guntur district. As an active patron of community development and social service, he continues to empower youth initiatives across the region.
-                    </p>
-                    <div className="flex flex-wrap justify-center md:justify-start gap-4">
-                       <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">37+ Years Governance</div>
-                       <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">Rural Empowerment</div>
-                       <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">Educational Equity</div>
-                    </div>
-                  </div>
-               </div>
+                </div>
+              </div>
             </section>
           </div>
         </div>

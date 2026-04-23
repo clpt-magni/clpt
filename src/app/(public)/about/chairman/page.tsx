@@ -11,13 +11,19 @@ import {
   Award,
   Users,
   HeartHandshake,
-  ExternalLink
+  ExternalLink,
+  MapPin,
+  Calendar,
+  ShieldCheck,
+  Star,
+  Globe,
+  ArrowUpRight
 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Chairman's Profile | Chalapathi Institute of Pharmaceutical Sciences",
-  description: "Profile of Sri Y.V. Anjaneyulu Garu, Founder President & Chairman of Chalapathi Educational Society. A visionary leader in professional education and public service.",
+  title: "Chairman's Profile | Yalamanchili Veeranjaneyulu | Chalapathi Group",
+  description: "Profile of Sri Yalamanchili Veeranjaneyulu, Chairman of Chalapathi Group of Institutions. Former MLA, distinguished educationist, and social entrepreneur.",
 };
 
 export default function ChairmanProfile() {
@@ -29,7 +35,7 @@ export default function ChairmanProfile() {
           { label: "About", href: "/about" },
           { label: "Chairman's Profile" }
         ]}
-        description="Sri Y.V. Anjaneyulu Garu, Founder President & Chairman of Chalapathi Educational Society. A visionary leader in professional education and public service."
+        description="A distinguished educationist, philanthropist, and former legislator with over 38 years of leadership in building one of Andhra Pradesh's most respected educational groups."
       />
 
       <div className="container mx-auto px-4 -mt-12 relative z-20">
@@ -43,7 +49,7 @@ export default function ChairmanProfile() {
                 <div className="relative inline-block mb-8">
                   <img
                     src="/images/chairman.jpg"
-                    alt="Sri Y.V. Anjaneyulu Garu"
+                    alt="Sri Yalamanchili Veeranjaneyulu"
                     className="w-48 h-auto max-h-72 rounded-2xl border-[6px] border-white shadow-2xl mx-auto mb-8 object-contain transform transition-all duration-700 group-hover:scale-105"
                   />
                   <div className="absolute -bottom-4 right-0 bg-secondary text-primary-dark p-3 rounded-2xl shadow-xl animate-bounce">
@@ -51,22 +57,31 @@ export default function ChairmanProfile() {
                   </div>
                 </div>
 
-                <h2 className="text-3xl font-bold text-primary-dark font-poppins mb-2">Sri Y.V. Anjaneyulu Garu</h2>
-                <p className="text-secondary-dark font-black uppercase tracking-[0.2em] text-xs mb-6">Founder President & Chairman</p>
+                <h2 className="text-2xl font-bold text-primary-dark font-poppins mb-1">Sri Yalamanchili Veeranjaneyulu</h2>
+                <p className="text-secondary-dark font-black uppercase tracking-[0.2em] text-[10px] mb-6">Chairman, Chalapathi Group</p>
 
-                <div className="bg-slate-50 rounded-3xl p-6 mb-8 text-slate-600 space-y-2 border border-slate-100">
-                  <p className="text-sm font-semibold text-primary">Chalapathi Educational Society</p>
-                  <p className="text-xs italic font-medium uppercase leading-relaxed uppercase tracking-wider">M.A. (Economics)</p>
+                <div className="bg-slate-50 rounded-3xl p-6 mb-8 border border-slate-100 flex flex-col items-center gap-3">
+                  <div className="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-widest">
+                    <MapPin size={14} className="text-primary" /> Guntur, Andhra Pradesh
+                  </div>
+                  <a 
+                    href="https://linkedin.com/in/yalamanchili-veeranjaneyulu-b1b251111" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-[#0077b5] text-white px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:scale-105 transition-all shadow-md"
+                  >
+                    <ExternalLink size={14} /> Connect on LinkedIn
+                  </a>
                 </div>
 
                 <div className="space-y-4 pt-8 border-t border-slate-100">
                   <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/50 border border-transparent hover:border-primary/10 transition-all">
                     <div className="w-12 h-12 bg-white shadow-sm rounded-xl flex items-center justify-center text-primary">
-                      <Building className="w-6 h-6" />
+                      <ShieldCheck className="w-6 h-6" />
                     </div>
                     <div className="text-left">
-                      <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Office</p>
-                      <p className="text-sm font-bold text-primary-dark">Chalapathi Group of Institutions</p>
+                      <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Honorary</p>
+                      <p className="text-xs font-bold text-primary-dark">Dr. of Letters (D.Litt.)</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/50 border border-transparent hover:border-primary/10 transition-all">
@@ -74,160 +89,246 @@ export default function ChairmanProfile() {
                       <Users className="w-6 h-6" />
                     </div>
                     <div className="text-left">
-                      <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Leadership</p>
-                      <p className="text-sm font-bold text-primary-dark">Former MLA, Sattenapalli</p>
+                      <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Public Service</p>
+                      <p className="text-xs font-bold text-primary-dark">Former MLA, Sattenapalli</p>
                     </div>
                   </div>
                 </div>
               </CardContent>
+            </Card>
+
+            {/* Core Competencies Sidebar Card */}
+            <Card className="border-none shadow-xl rounded-[2rem] bg-primary-dark text-white p-8">
+              <h3 className="text-sm font-black uppercase tracking-widest mb-6 border-b border-white/10 pb-4">Core Competencies</h3>
+              <div className="space-y-6">
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-secondary mb-3">Leadership</p>
+                  <div className="flex flex-wrap gap-2 text-[9px] font-bold">
+                    {["Institutional Leadership", "Strategic Vision", "Educational Administration", "Policy Advocacy", "Governance"].map(tag => (
+                      <span key={tag} className="bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-secondary mb-3">Domain Expertise</p>
+                  <div className="flex flex-wrap gap-2 text-[9px] font-bold">
+                    {["Higher Education Management", "Industry-Academia Collaboration", "Rural Education", "Social Entrepreneurship", "Legislative Affairs"].map(tag => (
+                      <span key={tag} className="bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </Card>
           </div>
 
           {/* Main Dossier Content */}
           <div className="lg:col-span-8 space-y-12">
 
-            {/* Professional Manifesto */}
-            <section className="space-y-6 animate-in slide-in-from-right duration-700">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="h-1 w-12 bg-secondary rounded-full" />
-                <h2 className="text-lg !text-white font-black text-primary-white uppercase tracking-widest">The Architect of Ambition</h2>
-              </div>
+            {/* Introduction Section */}
+            <section className="space-y-6">
               <div className="bg-white p-10 md:p-14 rounded-[40px] shadow-xl border border-slate-100 relative group overflow-hidden">
                 <Quote className="absolute top-8 right-8 w-24 h-24 text-slate-50 opacity-50 group-hover:text-primary/10 transition-all duration-700" />
                 <div className="relative z-10 space-y-6 text-slate-700 leading-relaxed text-xl font-medium">
                   <p>
-                    Sri Yalamanchili Veeranjaneyulu (popularly known as Y.V. Anjaneyulu) is a distinguished academician, visionary philanthropist, and former legislator who has redefined the landscape of professional education in Guntur and Andhra Pradesh.
+                    Recipient of an Honorary <strong className="text-primary">Doctorate of Letters</strong> from Burlington State University, USA (2025), Sri Yalamanchili Veeranjaneyulu is a distinguished educationist, philanthropist, and former legislator with over <strong className="text-primary">38 years</strong> of leadership.
                   </p>
                   <p className="text-lg text-slate-500 font-normal">
-                    As the architect of the <strong className="text-primary-dark">Chalapathi Educational Society (est. 1995)</strong>, his primary mission has been to provide high-quality, value-based education that prepares students for global challenges.
+                    Committed to empowering rural students through quality, globally benchmarked education, he has built the <strong className="text-primary-dark">Chalapathi Group of Institutions</strong> into one of Andhra Pradesh's most respected academic ecosystems.
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* Academic Foundation Section */}
-            <section id="vision" className="space-y-8">
+            {/* Professional Experience Section */}
+            <section className="space-y-8">
               <div className="flex items-center justify-between">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary-dark font-poppins">Academic Foundation & Vision</h2>
-                <BookOpen className="text-secondary w-8 h-8 opacity-20" />
+                <h2 className="text-3xl font-black text-primary-dark font-poppins uppercase tracking-tight">Professional Leadership</h2>
+                <Briefcase className="text-primary w-8 h-8 opacity-20" />
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white p-8 rounded-3xl border-l-[6px] border-primary shadow-lg hover:shadow-xl transition-all">
-                  <GraduationCap className="text-primary w-10 h-10 mb-6" />
-                  <h3 className="text-xl font-bold font-poppins text-primary-dark mb-4">Educational Pillars</h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    Holding a <strong className="text-primary">Master of Arts (M.A.) in Economics</strong>, his strategic foresight allows him to navigate complex industrial shifts and manage a large-scale educational ecosystem.
-                  </p>
-                </div>
-                <div className="bg-amber-50/50 p-8 rounded-3xl border-l-[6px] border-secondary shadow-lg hover:shadow-xl transition-all">
-                  <HeartHandshake className="text-secondary-dark w-10 h-10 mb-6" />
-                  <h3 className="text-xl font-bold font-poppins text-primary-dark mb-4">The "Chalapathi" Philosophy</h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    Named after <strong className="text-primary">Lord Venkateswara</strong>, symbolizing a "noble restlessness of questioning minds"—a core value integrated into the academic culture of CLPT.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* Leadership in Pharmacy (CLPT) */}
-            <section id="clpt-leadership" className="space-y-8">
-              <h2 className="text-3xl font-bold text-primary-dark font-poppins">Pharmacy Education Leadership</h2>
-              <div className="bg-primary-dark rounded-[40px] p-10 md:p-14 text-white relative overflow-hidden shadow-2xl">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-3xl" />
-                <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12">
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 bg-white/10 rounded-2xl">
-                        <Microscope className="w-6 h-6 text-secondary" />
-                      </div>
-                      <h4 className="text-xl !text-white font-bold">Research Excellence</h4>
+              
+              <div className="space-y-6">
+                <div className="bg-white p-8 md:p-10 rounded-[3rem] border border-slate-100 shadow-lg relative overflow-hidden group">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full group-hover:bg-primary/10 transition-all" />
+                  <div className="flex flex-col md:flex-row justify-between mb-8 gap-4">
+                    <div>
+                      <h3 className="text-2xl font-black text-primary-dark mb-1">Chairman and Managing Director</h3>
+                      <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">Chalapathi Group of Institutions</p>
                     </div>
-                    <p className="text-white/70 leading-relaxed">
-                      Under his stewardship, CLPT secured <strong className="text-secondary">NAAC 'A' Grade</strong>, NBA accreditation, and <strong className="text-secondary">Autonomous</strong> status, evolving into a premier research hub.
-                    </p>
-                  </div>
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 bg-white/10 rounded-2xl">
-                        <Briefcase className="w-6 h-6 text-secondary" />
-                      </div>
-                      <h4 className="text-xl !text-white font-bold">Industry Focus</h4>
+                    <div className="bg-slate-50 px-5 py-2.5 rounded-2xl border border-slate-100 self-start text-xs font-black text-primary uppercase tracking-widest">
+                       1988 – Present · 38+ Years
                     </div>
-                    <p className="text-white/70 leading-relaxed">
-                      He pioneered the "need-based" training model, ensuring graduates are clinical experts ready for global drug discovery and patient care.
-                    </p>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <ul className="space-y-4">
+                      <li className="flex items-start gap-3 text-sm text-slate-600 leading-relaxed">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        Built a multi-disciplinary portfolio focused on quality education for rural and underprivileged students.
+                      </li>
+                      <li className="flex items-start gap-3 text-sm text-slate-600 leading-relaxed">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        Championed industry-academia partnerships with global leaders including <strong className="text-slate-900">SAP, ServiceNow, Microsoft, Cisco, and EC-Council</strong>.
+                      </li>
+                      <li className="flex items-start gap-3 text-sm text-slate-600 leading-relaxed">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        Facilitated established <strong className="text-slate-900">QNX Everywhere Centre of Excellence</strong> in collaboration with BlackBerry QNX.
+                      </li>
+                    </ul>
+                    <div className="bg-slate-50/50 p-6 rounded-3xl border border-slate-100">
+                       <h4 className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-4">
+                         <Star size={12} /> Strategic Milestones
+                       </h4>
+                       <div className="space-y-4">
+                          <div className="flex justify-between items-end border-b border-slate-100 pb-2">
+                             <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">CIET Ranking (Times)</span>
+                             <span className="text-lg font-black text-primary-dark">154th</span>
+                          </div>
+                          <div className="flex justify-between items-end border-b border-slate-100 pb-2">
+                             <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Global Certifications</span>
+                             <span className="text-lg font-black text-primary-dark">277+</span>
+                          </div>
+                          <div className="flex justify-between items-end">
+                             <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">EduSkills (AP & TS)</span>
+                             <span className="text-lg font-black text-primary-dark">Rank 8</span>
+                          </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-primary-dark p-8 md:p-10 rounded-[3rem] text-white relative overflow-hidden shadow-xl shadow-primary-dark/20">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl" />
+                  <div className="flex flex-col md:flex-row justify-between mb-8 gap-4">
+                    <div>
+                      <h3 className="text-2xl font-black !text-white mb-1">Member of Legislative Assembly (MLA)</h3>
+                      <p className="text-sm font-bold text-white/50 uppercase tracking-widest">Sattenapalli Constituency</p>
+                    </div>
+                    <div className="bg-white/10 px-5 py-2.5 rounded-2xl border border-white/10 self-start text-xs font-black text-secondary uppercase tracking-widest">
+                       2 Consecutive Terms (1994 – 2003)
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <p className="text-white/80 text-sm leading-relaxed font-medium">
+                       Served as the elected representative for Sattenapalli constituency in Guntur district, actively advocating for rural development, social welfare, and legislative reforms to strengthen the education system.
+                     </p>
+                     <div className="flex flex-col gap-4">
+                        <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                           <Globe size={20} className="text-secondary" />
+                           <span className="text-xs font-bold uppercase tracking-widest">Rural Development Advocate</span>
+                        </div>
+                        <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                           <ArrowUpRight size={20} className="text-secondary" />
+                           <span className="text-xs font-bold uppercase tracking-widest">Policy Innovation</span>
+                        </div>
+                     </div>
                   </div>
                 </div>
               </div>
             </section>
 
-            {/* Public Service & Experience */}
-            <section className="space-y-8 text-primary-dark">
-              <h2 className="text-3xl font-bold font-poppins">Public Service & Administration</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                  { title: "Legislative Service", detail: "Member of Legislative Assembly (MLA), Sattenapalli (1999–2004)" },
-                  { title: "Academic Policy", detail: "Former EC Member (Senate Member) at Acharya Nagarjuna University" },
-                  { title: "Institutional Roots", detail: "Former President of R.V.V.N. College, Amaravathi" }
-                ].map((exp, i) => (
-                  <div key={i} className="bg-white p-8 rounded-[32px] border border-slate-100 shadow-xl hover:bg-slate-50/50 transition-all">
-                    <h4 className="font-bold text-primary border-b border-slate-100 pb-3 mb-4">{exp.title}</h4>
-                    <p className="text-sm text-slate-500 font-medium leading-relaxed">{exp.detail}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
+            {/* Honours and Education Section */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+               <section className="space-y-6">
+                 <h2 className="text-2xl font-black text-primary-dark font-poppins uppercase tracking-tight">Honours</h2>
+                 <div className="bg-amber-50 rounded-[2.5rem] p-8 border-l-8 border-secondary shadow-lg">
+                   <Award className="text-secondary w-10 h-10 mb-6" />
+                   <h3 className="text-lg font-black text-primary-dark mb-2">Honorary Doctorate of Letters (D.Litt.)</h3>
+                   <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4">Burlington State University, USA · 2025</p>
+                   <p className="text-sm text-slate-600 font-medium leading-relaxed italic">
+                     "In recognition of outstanding contributions in the fields of education and social service."
+                   </p>
+                 </div>
+               </section>
 
-            {/* Quote of Ethics */}
-            <section className="pt-8">
-              <div className="bg-gradient-to-r from-secondary-dark to-amber-600 rounded-[40px] p-12 text-white relative overflow-hidden group shadow-2xl">
-                <Quote className="absolute -left-4 -top-4 w-40 h-40 text-black/10 transition-transform group-hover:scale-110" />
-                <div className="relative z-10 text-center space-y-8">
-                  <p className="text-2xl md:text-3xl font-bold font-poppins italic leading-normal max-w-4xl mx-auto drop-shadow-md">
-                    "My goal is to develop the institute into a center of excellence where technical training meets ethical practice, enabling our students to serve humanity through the healthcare sector."
-                  </p>
-                  <div className="pt-4">
-                    <p className="text-sm font-black uppercase tracking-[0.4em] mb-1">Sri Y.V. Anjaneyulu</p>
-                    <p className="text-white/70 text-xs font-bold uppercase tracking-widest">Chairman, CLPT</p>
-                  </div>
-                </div>
-              </div>
-            </section>
+               <section className="space-y-6">
+                 <h2 className="text-2xl font-black text-primary-dark font-poppins uppercase tracking-tight">Academic Journey</h2>
+                 <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-lg space-y-6">
+                    <div className="flex items-start gap-4">
+                       <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
+                          <GraduationCap size={20} />
+                       </div>
+                       <div>
+                          <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Master's in Economics</h4>
+                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Bhopal University · 1980</p>
+                       </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                       <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
+                          <BookOpen size={20} />
+                       </div>
+                       <div>
+                          <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Bachelor of Commerce (B.Com)</h4>
+                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">RVVN College · 1978</p>
+                       </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                       <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-primary border border-slate-100 flex-shrink-0">
+                          <Building size={20} />
+                       </div>
+                       <div>
+                          <h4 className="text-sm font-black text-primary-dark uppercase tracking-tight">Secondary Education</h4>
+                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">SRKHH High School · 1973</p>
+                       </div>
+                    </div>
+                 </div>
+               </section>
+            </div>
 
             {/* Institutional Ecosystem Section */}
             <section className="space-y-8">
               <div className="flex items-center gap-4 mb-4">
                 <div className="h-1 w-12 bg-secondary rounded-full" />
-                <h2 className="text-lg font-black text-secondary-dark uppercase tracking-widest">Institutional Portfolio</h2>
+                <h2 className="text-lg font-black text-secondary-dark uppercase tracking-widest">The Chalapathi Ecosystem</h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { name: "Chalapathi Inst. of Pharm. Sciences (CLPT)", url: "https://www.chalapathipharmacy.ac.in" },
-                  { name: "Chalapathi Inst. of Engineering & Tech (CIET)", url: "https://www.chalapathiengg.ac.in" },
-                  { name: "Chalapathi Institute of Technology (CIT)", url: "https://www.city.ac.in" },
-                  { name: "Chalapathi Junior College", url: "https://www.chalapathiiitneetacademy.com" },
-                  { name: "Chalapathi Degree College", url: "https://www.chalapathi.org" },
-                  { name: "Chalapathi High Schools", url: "https://www.chalapathi.org" },
+                  { name: "CLPT (Lam, Guntur)", url: "https://www.chalapathipharmacy.ac.in", badge: "Accredited" },
+                  { name: "CIET (Lam, Guntur)", url: "https://www.chalapathiengg.ac.in", badge: "Times Rank 154" },
+                  { name: "CITY (Mothadaka)", url: "https://www.city.ac.in", badge: "Autonomous" },
+                  { name: "SRKHH School (Amaravathi)", url: "https://www.chalapathi.org", badge: "Elite" },
+                  { name: "Chalapathi Degree College", url: "https://www.chalapathi.org", badge: "Holistic" },
+                  { name: "Chalapathi Chit Fund", url: "#", badge: "Corporate" },
                 ].map((inst, i) => (
                   <a
                     key={i}
                     href={inst.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/20 transition-all flex items-center justify-between"
+                    className="group bg-white p-6 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all flex flex-col gap-4"
                   >
-                    <span className="font-bold text-primary-dark group-hover:text-primary transition-colors text-sm md:text-base">
+                    <div className="flex items-center justify-between">
+                       <span className="text-[8px] font-black uppercase text-primary border border-primary/20 bg-primary/5 px-2 py-1 rounded-full group-hover:bg-primary group-hover:text-white transition-all">
+                         {inst.badge}
+                       </span>
+                       <ExternalLink className="w-3 h-3 text-slate-300 group-hover:text-primary" />
+                    </div>
+                    <span className="font-black text-primary-dark group-hover:text-primary transition-colors text-xs uppercase tracking-tight">
                       {inst.name}
                     </span>
-                    <div className="p-2 bg-slate-50 rounded-lg group-hover:bg-primary group-hover:text-white transition-all">
-                      <ExternalLink className="w-4 h-4" />
-                    </div>
                   </a>
                 ))}
               </div>
-              <p className="text-xs text-slate-400 italic text-center pt-4">
-                * Managing the comprehensive Chalapathi group banners under the main Society portal.
-              </p>
+            </section>
+
+            {/* Social Contributions */}
+            <section className="bg-slate-900 rounded-[3rem] p-10 md:p-14 text-white relative overflow-hidden">
+               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-3xl rounded-full" />
+               <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
+                  <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center border border-white/20 flex-shrink-0">
+                     <HeartHandshake size={48} className="text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-black !text-white mb-6 uppercase tracking-tight">Social & Community Advocacy</h3>
+                    <p className="text-white/60 font-medium leading-relaxed mb-6">
+                      Dedicated over three decades to improving educational access for rural students in Guntur district. As an active patron of community development and social service, he continues to empower youth initiatives across the region.
+                    </p>
+                    <div className="flex flex-wrap justify-center md:justify-start gap-4">
+                       <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">37+ Years Governance</div>
+                       <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">Rural Empowerment</div>
+                       <div className="px-4 py-2 bg-white/5 rounded-xl border border-white/10 text-[9px] font-black uppercase tracking-widest">Educational Equity</div>
+                    </div>
+                  </div>
+               </div>
             </section>
           </div>
         </div>

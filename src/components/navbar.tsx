@@ -1,4 +1,8 @@
+
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { SignInButton, UserButton, Show } from "@clerk/nextjs";
 import { TopBar } from "./top-bar";
@@ -9,6 +13,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname?.startsWith('/studio')) return null;
 
   return (
     <>

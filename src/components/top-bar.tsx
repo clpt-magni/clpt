@@ -1,3 +1,5 @@
+"use client";
+
 import { Phone, Mail, GraduationCap, User, Settings } from "lucide-react";
 import Link from "next/link";
 

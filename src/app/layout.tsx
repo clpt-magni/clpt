@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import JsonLd from "@/components/seo/JsonLd";
 import "./globals.css";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { SidebarNav } from "@/components/sidebar-nav";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -94,7 +97,14 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <ClerkProvider>
-          {children}
+          <div className="min-h-screen flex flex-col bg-white">
+            <Navbar />
+            <main className="flex-1 relative">
+              <SidebarNav />
+              {children}
+            </main>
+            <Footer />
+          </div>
         </ClerkProvider>
       </body>
     </html>

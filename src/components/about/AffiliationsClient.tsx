@@ -38,6 +38,20 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
+      <style jsx>{`
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+          display: flex;
+          width: fit-content;
+          animation: scroll 40s linear infinite;
+        }
+        .animate-scroll:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
       <PageHeader
         title={data.title}
         breadcrumbs={[
@@ -50,13 +64,29 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
       <div className="container mx-auto px-4 py-20 -mt-12 relative z-20">
         <div className="max-w-7xl mx-auto space-y-8">
 
-          {/* Institutional Trust Badges */}
-          <div className="pt-20 grid grid-cols-2 md:grid-cols-4 gap-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-            {["/images/naac.jpg", "/images/nba.png", "/images/iso.jpg", "/images/pci.png"].map((src, i) => (
-              <div key={i} className="flex items-center justify-center p-4">
-                <img src={src} alt="Institutional Badge" className="h-20 w-auto object-contain" />
-              </div>
-            ))}
+          {/* Scrolling Logos Marquee */}
+          <div className="relative overflow-hidden py-12 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-32 before:bg-gradient-to-r before:from-slate-50 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-32 after:bg-gradient-to-l after:from-slate-50 after:to-transparent">
+            <div className="animate-scroll gap-20 items-center">
+              {[...Array(14)].map((_, i) => (
+                <div key={`logo-${i}`} className="shrink-0 px-4">
+                  <img 
+                    src={`/images/affiliationslogo/${i + 1}.png`} 
+                    alt={`Affiliation Logo ${i + 1}`} 
+                    className="h-16 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-pointer"
+                  />
+                </div>
+              ))}
+              {/* Duplicate for seamless scrolling */}
+              {[...Array(14)].map((_, i) => (
+                <div key={`logo-dup-${i}`} className="shrink-0 px-4">
+                  <img 
+                    src={`/images/affiliationslogo/${i + 1}.png`} 
+                    alt={`Affiliation Logo ${i + 1}`} 
+                    className="h-16 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-pointer"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Search Bar */}
@@ -122,14 +152,6 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
             )}
           </div>
 
-          {/* Institutional Trust Badges */}
-          <div className="pt-20 grid grid-cols-2 md:grid-cols-4 gap-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-            {["/images/naac.jpg", "/images/nba.png", "/images/iso.jpg", "/images/pci.png"].map((src, i) => (
-              <div key={i} className="flex items-center justify-center p-4">
-                <img src={src} alt="Institutional Badge" className="h-20 w-auto object-contain" />
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 

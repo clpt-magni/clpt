@@ -335,11 +335,12 @@ export const academicCommittees: Committee[] = [
       "Mentoring program for new faculty."
     ],
     members: [
-      { sno: "01", name: "Principal, CLPT", designation: "" },
-      { sno: "02", name: "Professor, ANU", designation: "" },
-      { sno: "03", name: "Professor, Padmavathi Mahila Viswavidyalayam", designation: "" },
-      { sno: "04", name: "President, CES", designation: "" },
-      { sno: "05", name: "Joint-Secretary, CES", designation: "" }
+      { sno: "01", name: "Chairman, CES", designation: "" },
+      { sno: "02", name: "Secretary, CES", designation: "" },
+      { sno: "03", name: "Principal, CLPT", designation: "" },
+      { sno: "04", name: "Professor, University Nominee", designation: "" },
+      { sno: "05", name: "Professor, Subject Expert", designation: "" },
+      { sno: "06", name: "Professor, Subject Expert", designation: "" }
     ]
   },
   {

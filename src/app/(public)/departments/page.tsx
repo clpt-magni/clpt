@@ -9,25 +9,25 @@ const departments = [
     name: "Pharmaceutics",
     icon: FlaskConical,
     description: "The Department of Pharmaceutics is dedicated to the formulation and evaluation of various dosage forms. It focuses on novel drug delivery systems, nanomedicines, and biopharmaceutics.",
-    vision: "To be a center of excellence in Pharmaceutics education and research, producing globally competent professionals."
+    vision: "To become a leading expert in the field of pharmaceutics with comprehensive knowledge on various emerging areas and to attain competency in skills and to cater the healthcare as well as career prospects."
   },
   {
     name: "Pharmaceutical Analysis",
     icon: FlaskConical,
     description: "This department ensures the quality, safety, and efficacy of drugs through sophisticated analytical techniques like HPLC, GC, and spectroscopy, supporting rigorous quality control standards.",
-    vision: "To produce skilled analytical professionals for pharmaceutical industry and research."
+    vision: "To be a centre of excellence in pharmaceutical analysis, regulatory affairs, and pharmaceutical chemistry while contributing to socio-economic progress, strengthening industry–institute interaction, empowering students in regulatory and drug testing practices, and promoting higher education, research, and innovative problem-based learning."
   },
   {
     name: "Pharmacology",
     icon: Activity,
     description: "Focuses on understanding the mechanisms of drug action, pre-clinical screening of new chemical entities, and toxicological studies. The department is equipped with state-of-the-art animal handling facilities.",
-    vision: "To impart quality education and promote ethical research in the field of Pharmacology and Toxicology."
+    vision: "To lead toward effective global healthcare by flourishing advanced research in pharmacology and assimilating true entrepreneurial spirit with care and lenity."
   },
   {
     name: "Pharmacy Practice",
     icon: Stethoscope,
     description: "Integrated with hospital settings, this department trains Pharm.D students in clinical pharmacy, patient care, ward rounds, therapeutic drug monitoring, and pharmacovigilance.",
-    vision: "To lead in patient-centered pharmaceutical care and clinical research."
+    vision: "To become a centre of excellence for undergraduate and postgraduate studies in pharmaceutical sciences through quality education, research and innovative practices and contribute to the healthcare needs of society."
   }
 ];
 

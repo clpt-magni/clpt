@@ -183,13 +183,13 @@ export default function AdmissionsPage() {
                     <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
                       <Phone className="w-6 h-6" />
                     </div>
-                    <span className="font-bold text-lg">+91 863-2524126</span>
+                    <span className="font-bold text-lg">+91 9440101685</span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
                       <Mail className="w-6 h-6" />
                     </div>
-                    <span className="font-bold text-lg">admissions@chalapathipharmacy.ac.in</span>
+                    <span className="font-bold text-lg">principalclpt@gmail.com</span>
                   </div>
                 </div>
               </div>

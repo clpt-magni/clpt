@@ -58,6 +58,8 @@ export const topNav: NavItem[] = [
           { label: "Board of Studies (BOS)", href: "/about/bos" },
           { label: "Governing Body", href: "/about/governing-body" },
           { label: "Finance Committee", href: "/about/finance-committee" },
+          { label: "Academic Committee", href: "/academic/committees" },
+          { label: "Research & Developement Cell", href: "/research/r-and-d" },
         ],
       },
       {

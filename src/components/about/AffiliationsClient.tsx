@@ -48,17 +48,26 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
       />
 
       <div className="container mx-auto px-4 py-20 -mt-12 relative z-20">
-        <div className="max-w-5xl mx-auto space-y-8">
+        <div className="max-w-7xl mx-auto space-y-8">
+
+          {/* Institutional Trust Badges */}
+          <div className="pt-20 grid grid-cols-2 md:grid-cols-4 gap-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+            {["/images/naac.jpg", "/images/nba.png", "/images/iso.jpg", "/images/pci.png"].map((src, i) => (
+              <div key={i} className="flex items-center justify-center p-4">
+                <img src={src} alt="Institutional Badge" className="h-20 w-auto object-contain" />
+              </div>
+            ))}
+          </div>
 
           {/* Search Bar */}
-          <div className="relative group max-w-2xl mx-auto">
+          <div className="relative group max-w-xl mx-auto">
             <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none text-slate-400 group-focus-within:text-primary transition-colors">
-              <Search size={20} />
+              <Search size={18} />
             </div>
             <Input
               type="text"
-              placeholder="Search affiliations, recognitions, or approvals..."
-              className="w-full bg-white border-none shadow-2xl rounded-[32px] py-8 pl-16 pr-8 text-lg font-medium text-primary-dark placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-primary transition-all"
+              placeholder="Search affiliations..."
+              className="w-full bg-white border-none shadow-xl rounded-2xl py-6 pl-14 pr-8 text-sm font-bold text-primary-dark placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-primary transition-all"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -73,40 +82,34 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
             )}
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredApprovals.length > 0 ? (
               filteredApprovals.map((item, i) => (
-                <Card key={item._key || i} className="border-none shadow-xl hover:shadow-2xl transition-all bg-white rounded-3xl overflow-hidden group">
-                  <CardContent className="p-0">
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 p-8">
-                      <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary-dark group-hover:bg-secondary group-hover:text-primary-dark transition-all duration-300 shrink-0">
-                          <Award size={32} />
-                        </div>
-                        <div>
-                          <h3 className="text-xl md:text-2xl font-bold text-primary-dark font-poppins group-hover:text-primary transition-colors leading-tight">
-                            {item.title}
-                          </h3>
-                        </div>
+                <Card key={item._key || i} className="border-none shadow-md hover:shadow-xl transition-all bg-white rounded-[2rem] overflow-hidden group">
+                  <CardContent className="p-6 flex flex-col h-full justify-between gap-6">
+                    <div className="flex flex-col items-center text-center gap-4">
+                      <div className="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary-dark group-hover:bg-secondary group-hover:text-primary-dark transition-all duration-300 shrink-0">
+                        <Award size={24} />
                       </div>
-
-                      {item.fileUrl && (
-                        <div className="shrink-0 flex items-center justify-center w-full md:w-auto">
-                          <Button
-                            onClick={() => openPdf(item.title, item.fileUrl!)}
-                            size="lg"
-                            className="w-full md:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-7 rounded-2xl font-bold shadow-lg transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2"
-                          >
-                            <Eye size={20} /> View PDF
-                          </Button>
-                        </div>
-                      )}
+                      <h3 className="text-[13px] font-black text-primary-dark group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
+                        {item.title}
+                      </h3>
                     </div>
+
+                    {item.fileUrl && (
+                      <Button
+                        onClick={() => openPdf(item.title, item.fileUrl!)}
+                        size="sm"
+                        className="w-full bg-primary hover:bg-primary-dark text-white h-12 rounded-xl font-black uppercase tracking-widest text-[9px] shadow-sm transition-all transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center gap-2"
+                      >
+                        <Eye size={14} /> View PDF
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               ))
             ) : (
-              <div className="text-center py-20 bg-white rounded-[40px] shadow-sm">
+              <div className="col-span-full text-center py-20 bg-white rounded-[40px] shadow-sm">
                 <p className="text-slate-400 italic text-xl">No documents found matching "{searchTerm}"</p>
                 <Button
                   variant="link"

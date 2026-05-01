@@ -33,18 +33,20 @@ export function PageHeader({ title, breadcrumbs, description, size = "default" }
               <Home size={12} />
               <span>Home</span>
             </Link>
-            {breadcrumbs.map((crumb, idx) => (
-              <React.Fragment key={idx}>
-                <ChevronRight size={10} className="text-white/30" />
-                {crumb.href ? (
-                  <Link href={crumb.href} className="hover:text-secondary transition-colors">
-                    {crumb.label}
-                  </Link>
-                ) : (
-                  <span className="text-white font-black">{crumb.label}</span>
-                )}
-              </React.Fragment>
-            ))}
+            {breadcrumbs
+              .filter(crumb => crumb.label.toLowerCase() !== "home" && crumb.href !== "/")
+              .map((crumb, idx) => (
+                <React.Fragment key={idx}>
+                  <ChevronRight size={10} className="text-white/30" />
+                  {crumb.href ? (
+                    <Link href={crumb.href} className="hover:text-secondary transition-colors">
+                      {crumb.label}
+                    </Link>
+                  ) : (
+                    <span className="text-white font-black">{crumb.label}</span>
+                  )}
+                </React.Fragment>
+              ))}
           </nav>
 
           {/* Title */}

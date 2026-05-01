@@ -106,16 +106,16 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
 
       <AnimatePresence>
         {isModalOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4">
+          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white rounded-3xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col relative z-10"
+              className="bg-white rounded-3xl w-full md:w-[80vw] lg:w-[70vw] max-w-6xl shadow-2xl overflow-hidden flex flex-col relative z-10"
             >
               <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                 <h3 className="font-black text-slate-800">{editIndex !== null ? 'Edit' : 'Add'} {title}</h3>
                 <button type="button" onClick={() => setIsModalOpen(false)} className="text-slate-400 hover:text-slate-600">&times;</button>
               </div>
-              <div className="p-6 space-y-4 overflow-y-auto max-h-[60vh]">
+              <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-auto max-h-[80vh]">
                 {fields.map(f => (
                   <div key={f.key}>
                     <label className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">{f.label}</label>

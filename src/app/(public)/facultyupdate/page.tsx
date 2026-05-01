@@ -47,7 +47,7 @@ function DynamicList({ items, onChange, label, placeholder }: { items: string[],
   );
 }
 
-function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { title: string, fields: { key: string, label: string, type: string, options?: string[] }[], items: any[], onChange: (items: any[]) => void, emptyItem: any }) {
+function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { title: string, fields: { key: string, label: string, type: string, options?: string[], colSpan?: number }[], items: any[], onChange: (items: any[]) => void, emptyItem: any }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [tempItem, setTempItem] = useState<any>(emptyItem);
   const [editIndex, setEditIndex] = useState<number | null>(null);

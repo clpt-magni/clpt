@@ -104,8 +104,28 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       awards: Array.isArray(data.awards) ? data.awards.map((s: string) => s.trim()).filter(Boolean) : [],
       memberships: Array.isArray(data.memberships) ? data.memberships.map((s: string) => s.trim()).filter(Boolean) : [],
       
+      innovativeTeaching: Array.isArray(data.innovativeTeaching) ? data.innovativeTeaching.map((t: string) => ({
+        _key: crypto.randomUUID(),
+        _type: 'block',
+        children: [{ _type: 'span', text: t, _key: crypto.randomUUID() }]
+      })) : undefined,
+
       isActive: true,
-    };
+    } as any;
+
+    // Handle Image Upload
+    if (data.imageBase64) {
+      try {
+        const base64Data = data.imageBase64.split(',')[1];
+        const buffer = Buffer.from(base64Data, 'base64');
+        const asset = await writeClient.assets.upload('image', buffer, {
+          filename: `${slug}-profile.jpg`
+        });
+        doc.image = { _type: 'image', asset: { _ref: asset._id } };
+      } catch (err) {
+        console.error("Image upload failed:", err);
+      }
+    }
 
     if (existingId) {
       // Update existing document

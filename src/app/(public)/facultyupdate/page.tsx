@@ -47,6 +47,93 @@ function DynamicList({ items, onChange, label, placeholder }: { items: string[],
   );
 }
 
+function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { title: string, fields: { key: string, label: string, type: string, options?: string[] }[], items: any[], onChange: (items: any[]) => void, emptyItem: any }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [tempItem, setTempItem] = useState<any>(emptyItem);
+
+  const openModal = () => {
+    setTempItem(emptyItem);
+    setIsModalOpen(true);
+  };
+
+  const handleSave = () => {
+    onChange([...items, tempItem]);
+    setIsModalOpen(false);
+  };
+
+  const handleRemove = (index: number) => {
+    const newItems = [...items];
+    newItems.splice(index, 1);
+    onChange(newItems);
+  };
+
+  return (
+    <div className="space-y-3">
+      <label className="block text-xs font-black text-slate-500 uppercase tracking-widest">{title}</label>
+      <div className="space-y-2">
+        {items.map((item, index) => (
+          <div key={index} className="flex justify-between items-center bg-slate-50 border border-slate-200 rounded-2xl p-4">
+            <div className="truncate text-sm font-semibold text-slate-700">
+              {Object.values(item)[0] as string} {/* Show first field as title */}
+            </div>
+            <button type="button" onClick={() => handleRemove(index)} className="text-red-400 hover:text-red-600 font-bold ml-4">
+              &times;
+            </button>
+          </div>
+        ))}
+      </div>
+      <button type="button" onClick={openModal} className="text-sm font-bold text-primary hover:text-primary/80 flex items-center gap-1 bg-primary/5 px-4 py-2 rounded-xl transition-colors">
+        + Add {title}
+      </button>
+
+      <AnimatePresence>
+        {isModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}
+              className="bg-white rounded-3xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col"
+            >
+              <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <h3 className="font-black text-slate-800">Add {title}</h3>
+                <button type="button" onClick={() => setIsModalOpen(false)} className="text-slate-400 hover:text-slate-600">&times;</button>
+              </div>
+              <div className="p-6 space-y-4 overflow-y-auto max-h-[60vh]">
+                {fields.map(f => (
+                  <div key={f.key}>
+                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">{f.label}</label>
+                    {f.type === "select" ? (
+                      <select 
+                        value={tempItem[f.key] || ""} 
+                        onChange={(e) => setTempItem({...tempItem, [f.key]: e.target.value})}
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
+                      >
+                        <option value="">Select...</option>
+                        {f.options?.map(o => <option key={o} value={o}>{o}</option>)}
+                      </select>
+                    ) : (
+                      <input 
+                        type={f.type} 
+                        value={tempItem[f.key] || ""} 
+                        onChange={(e) => setTempItem({...tempItem, [f.key]: e.target.value})}
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
+              <div className="p-6 border-t border-slate-100 bg-slate-50">
+                <Button type="button" onClick={handleSave} className="w-full h-12 rounded-xl font-bold">
+                  Save Item
+                </Button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 export default function FacultyUpdatePage() {
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [phoneQuery, setPhoneQuery] = useState("");
@@ -71,6 +158,7 @@ export default function FacultyUpdatePage() {
     specializations: [] as string[],
     subjectsUG: [] as string[],
     subjectsPG: [] as string[],
+    innovativeTeaching: [] as string[],
     booksPublished: "",
     bookChapters: "",
     patentsGranted: "",
@@ -87,7 +175,23 @@ export default function FacultyUpdatePage() {
     awards: [] as string[],
     memberships: [] as string[],
     password: "Clptf@2026",
+    imageBase64: "",
+    qualifications: [] as { degree: string, institution: string, year: string }[],
+    publications: [] as { title: string, journal: string, year: string, impactFactor: string, link: string }[],
+    patents: [] as { title: string, appNumber: string, status: string, year: string }[],
+    grants: [] as { title: string, agency: string, amount: string, status: string }[],
   });
+
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setFormData(prev => ({ ...prev, imageBase64: reader.result as string }));
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   const handlePhoneSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -125,6 +229,7 @@ export default function FacultyUpdatePage() {
           specializations: faculty.specializations || [],
           subjectsUG: faculty.subjectsUG || [],
           subjectsPG: faculty.subjectsPG || [],
+          innovativeTeaching: faculty.innovativeTeaching?.map((block: any) => block.children?.[0]?.text || "").filter(Boolean) || [],
           booksPublished: faculty.booksPublished?.toString() || "",
           bookChapters: faculty.bookChapters?.toString() || "",
           patentsGranted: faculty.patentsGranted?.toString() || "",
@@ -141,6 +246,11 @@ export default function FacultyUpdatePage() {
           awards: faculty.awards || [],
           memberships: faculty.memberships || [],
           password: savedPassword,
+          imageBase64: "", // Don't fetch the existing image base64, we only set if user uploads a new one
+          qualifications: faculty.qualifications || [],
+          publications: faculty.publications || [],
+          patents: faculty.patents || [],
+          grants: faculty.grants || [],
         });
       } else {
         if (passwordQuery !== "Clptf@2026") {
@@ -444,6 +554,26 @@ export default function FacultyUpdatePage() {
                         <h3 className="text-xl font-black text-slate-800">Experience & Credentials</h3>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <div className="md:col-span-4 bg-slate-50 border border-slate-200 rounded-2xl p-4 flex flex-col md:flex-row items-center gap-6">
+                          <div className="w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0">
+                            {formData.imageBase64 ? (
+                              <img src={formData.imageBase64} alt="Preview" className="w-full h-full object-cover" />
+                            ) : (
+                              <User size={32} className="text-slate-400" />
+                            )}
+                          </div>
+                          <div className="flex-grow w-full">
+                            <label className={labelClassName}>Profile Image</label>
+                            <input 
+                              type="file" 
+                              accept="image/*"
+                              onChange={handleImageUpload}
+                              className="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20"
+                            />
+                            <p className="text-xs text-slate-400 mt-2">Leave empty to keep your existing photo. Recommended ratio 1:1.</p>
+                          </div>
+                        </div>
+
                         <div>
                           <label className={labelClassName}>Teaching Exp. (Yrs)</label>
                           <input
@@ -480,6 +610,19 @@ export default function FacultyUpdatePage() {
                             className={inputClassName}
                           />
                         </div>
+                        <div className="md:col-span-4 mt-4 border-t border-slate-100 pt-6">
+                          <ComplexObjectList 
+                            title="Education & Qualifications"
+                            items={formData.qualifications}
+                            onChange={(items) => setFormData({...formData, qualifications: items})}
+                            emptyItem={{ degree: "", institution: "", year: "" }}
+                            fields={[
+                              { key: "degree", label: "Degree (e.g., Ph.D.)", type: "text" },
+                              { key: "institution", label: "Institution/University", type: "text" },
+                              { key: "year", label: "Year of Passing", type: "text" },
+                            ]}
+                          />
+                        </div>
                       </div>
                     </div>
 
@@ -513,6 +656,14 @@ export default function FacultyUpdatePage() {
                               onChange={(items) => setFormData({ ...formData, subjectsPG: items })}
                             />
                           </div>
+                        </div>
+                        <div className="pt-4">
+                          <DynamicList
+                            label="Innovative Teaching Methods"
+                            items={formData.innovativeTeaching}
+                            onChange={(items) => setFormData({ ...formData, innovativeTeaching: items })}
+                            placeholder="e.g., Flipped Classroom, Project-based learning"
+                          />
                         </div>
                       </div>
                     </div>
@@ -575,6 +726,46 @@ export default function FacultyUpdatePage() {
                             onChange={(items) => setFormData({ ...formData, memberships: items })}
                           />
                         </div>
+                      </div>
+
+                      <div className="space-y-8 mt-10 pt-8 border-t border-slate-100">
+                        <ComplexObjectList 
+                          title="Publications"
+                          items={formData.publications}
+                          onChange={(items) => setFormData({...formData, publications: items})}
+                          emptyItem={{ title: "", journal: "", year: "", impactFactor: "", link: "" }}
+                          fields={[
+                            { key: "title", label: "Paper Title", type: "text" },
+                            { key: "journal", label: "Journal Name", type: "text" },
+                            { key: "year", label: "Year", type: "text" },
+                            { key: "impactFactor", label: "Impact Factor", type: "text" },
+                            { key: "link", label: "DOI / Link", type: "url" },
+                          ]}
+                        />
+                        <ComplexObjectList 
+                          title="Patents & Copyrights"
+                          items={formData.patents}
+                          onChange={(items) => setFormData({...formData, patents: items})}
+                          emptyItem={{ title: "", appNumber: "", status: "Filed", year: "" }}
+                          fields={[
+                            { key: "title", label: "Title", type: "text" },
+                            { key: "appNumber", label: "Application Number", type: "text" },
+                            { key: "status", label: "Status", type: "select", options: ["Filed", "Granted", "Published"] },
+                            { key: "year", label: "Year", type: "text" },
+                          ]}
+                        />
+                        <ComplexObjectList 
+                          title="Grants & Funded Projects"
+                          items={formData.grants}
+                          onChange={(items) => setFormData({...formData, grants: items})}
+                          emptyItem={{ title: "", agency: "", amount: "", status: "Ongoing" }}
+                          fields={[
+                            { key: "title", label: "Project Title", type: "text" },
+                            { key: "agency", label: "Funding Agency", type: "text" },
+                            { key: "amount", label: "Amount Granted", type: "text" },
+                            { key: "status", label: "Status", type: "select", options: ["Ongoing", "Completed"] },
+                          ]}
+                        />
                       </div>
                     </div>
 

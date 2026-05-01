@@ -86,8 +86,8 @@ export default defineType({
     }),
     defineField({ name: 'email', title: 'Official Email', type: 'string', group: 'basic' }),
     defineField({ name: 'phone', title: 'Contact / Extension', type: 'string', group: 'basic' }),
+    defineField({ name: 'password', title: 'Password', type: 'string', group: 'basic', initialValue: 'Clptf@2026' }),
     defineField({ name: 'officeLocation', title: 'Office Location', type: 'string', group: 'basic', placeholder: 'e.g., Ground Floor, Room 102' }),
-
     // 2. Academic & Professional Credentials
     defineField({
       name: 'qualifications',

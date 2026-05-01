@@ -14,73 +14,63 @@ export default defineType({
   ],
   fields: [
     // 1. Core Identification & Contact
-    defineField({ 
-      name: 'prefix', 
-      title: 'Prefix', 
-      type: 'string', 
+    defineField({
+      name: 'prefix',
+      title: 'Prefix',
+      type: 'string',
       group: 'basic',
-      options: { list: ['Dr.', 'Mr.', 'Mrs.', 'Ms.', 'Prof.'] } 
+      options: { list: ['Dr.', 'Mr.', 'Mrs.', 'Ms.', 'Prof.'] }
     }),
     defineField({ name: 'name', title: 'Full Name', type: 'string', group: 'basic', validation: (Rule) => Rule.required() }),
-    defineField({ 
-      name: 'slug', 
-      title: 'Slug', 
+    defineField({
+      name: 'slug',
+      title: 'Slug',
       type: 'slug',
       group: 'basic',
       options: { source: 'name', maxLength: 96 },
       validation: (Rule) => Rule.required()
     }),
     defineField({ name: 'image', title: 'Profile Image', type: 'image', group: 'basic', options: { hotspot: true } }),
-    defineField({ name: 'designation', title: 'Designation / Title', type: 'string', group: 'basic', options: {
-      list: [
-        'Head of Department (HOD)',
-        'Professor',
-        'Associate Professor',
-        'Assistant Professor',
-        'Senior Lecturer',
-        'Lecturer',
-        'Professor Emeritus',
-        'Adjunct Professor',
-        'Visiting Faculty',
-        'Guest Lecturer',
-        'Research Scientist',
-        'Postdoctoral Fellow',
-        'Research Associate',
-        'Research Scholar / Ph.D. Candidate',
-        'Teaching Assistant (TA)',
-        'Librarian',
-        'Assistant Librarian',
-        'Placement Officer',
-        'Laboratory Technician',
-        'System Administrator',
-        'Adjunct Faculty',
-        'Principal and Dean',
-      ]
-    } }),
-    defineField({ 
-      name: 'department', 
-      title: 'Department', 
+    defineField({
+      name: 'designation', title: 'Designation / Title', type: 'string', group: 'basic', options: {
+        list: [
+          'Head of Department (HOD)',
+          'Professor',
+          'Associate Professor',
+          'Assistant Professor',
+          'Senior Lecturer',
+          'Lecturer',
+          'Professor Emeritus',
+          'Adjunct Professor',
+          'Visiting Faculty',
+          'Guest Lecturer',
+          'Research Scientist',
+          'Postdoctoral Fellow',
+          'Research Associate',
+          'Research Scholar / Ph.D. Candidate',
+          'Teaching Assistant (TA)',
+          'Librarian',
+          'Assistant Librarian',
+          'Placement Officer',
+          'Laboratory Technician',
+          'System Administrator',
+          'Adjunct Faculty',
+          'Principal',
+          'Dean',
+        ]
+      }
+    }),
+    defineField({
+      name: 'department',
+      title: 'Department',
       type: 'string',
       group: 'basic',
       options: {
         list: [
-          'Pharmaceutics',
-          'Pharmaceutical Chemistry',
-          'Pharmacology',
-          'Pharmacognosy',
-          'Pharmaceutical Analysis',
+          'Pharmaceutics (including Microbiology & Biotechnology)',
+          'Pharmacology (including Pharmacognosy)',
+          'Pharmaceutical Analysis (including Pharmaceutical Chemistry & Regulatory Affairs)',
           'Pharmacy Practice',
-          'Regulatory Affairs',
-          'Industrial Pharmacy',
-          'Quality Assurance (QA)',
-          'Pharmaceutical Biotechnology',
-          'Human Anatomy and Physiology',
-          'Mathematics and Biostatistics',
-          'Computer Applications / IT',
-          'Environmental Sciences',
-          'Management Studies / MBA',
-          'Physical Education',
-          'Library Sciences',
         ]
       }
     }),
@@ -114,10 +104,10 @@ export default defineType({
     defineField({ name: 'specializations', title: 'Areas of Specialization / Research Interest', type: 'array', group: 'academic', of: [{ type: 'string' }] }),
     defineField({ name: 'subjectsUG', title: 'Subjects Taught (UG)', type: 'array', group: 'academic', of: [{ type: 'string' }] }),
     defineField({ name: 'subjectsPG', title: 'Subjects Taught (PG)', type: 'array', group: 'academic', of: [{ type: 'string' }] }),
-    defineField({ 
-      name: 'researchGuideship', 
-      title: 'Research Guideship', 
-      type: 'object', 
+    defineField({
+      name: 'researchGuideship',
+      title: 'Research Guideship',
+      type: 'object',
       group: 'academic',
       fields: [
         { name: 'isApproved', title: 'Approved Guide', type: 'boolean' },
@@ -137,7 +127,11 @@ export default defineType({
           type: 'object',
           fields: [
             { name: 'title', title: 'Paper Title', type: 'string' },
+            { name: 'authors', title: 'Authors', type: 'string' },
+            { name: 'correspondingAuthor', title: 'Corresponding Author', type: 'string', options: { list: ['Yes', 'No'] } },
             { name: 'journal', title: 'Journal Name', type: 'string' },
+            { name: 'volume', title: 'Volume', type: 'string' },
+            { name: 'issue', title: 'Issue', type: 'string' },
             { name: 'year', title: 'Year', type: 'string' },
             { name: 'impactFactor', title: 'Impact Factor', type: 'string' },
             { name: 'link', title: 'DOI / Link', type: 'url' },
@@ -183,6 +177,7 @@ export default defineType({
     defineField({ name: 'awards', title: 'Awards & Honors', type: 'array', group: 'research', of: [{ type: 'string' }] }),
 
     // Research Metrics (Quantitative)
+    defineField({ name: 'totalPublications', title: 'Total Publications', type: 'number', group: 'research' }),
     defineField({ name: 'booksPublished', title: 'Books Published', type: 'number', group: 'research' }),
     defineField({ name: 'bookChapters', title: 'Book Chapters', type: 'number', group: 'research' }),
     defineField({ name: 'patentsGranted', title: 'Patents Granted', type: 'number', group: 'research' }),

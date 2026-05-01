@@ -86,8 +86,8 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
       <label className="block text-xs font-black text-slate-500 uppercase tracking-widest">{title}</label>
       <div className="space-y-2">
         {items.map((item, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="flex justify-between items-center bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-2xl p-4 cursor-pointer transition-colors"
             onClick={() => openModal(index)}
           >
@@ -107,7 +107,7 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
       <AnimatePresence>
         {isModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}
               className="bg-white rounded-3xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col relative z-10"
             >
@@ -120,19 +120,19 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
                   <div key={f.key}>
                     <label className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">{f.label}</label>
                     {f.type === "select" ? (
-                      <select 
-                        value={tempItem[f.key] || ""} 
-                        onChange={(e) => setTempItem({...tempItem, [f.key]: e.target.value})}
+                      <select
+                        value={tempItem[f.key] || ""}
+                        onChange={(e) => setTempItem({ ...tempItem, [f.key]: e.target.value })}
                         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
                       >
                         <option value="">Select...</option>
                         {f.options?.map(o => <option key={o} value={o}>{o}</option>)}
                       </select>
                     ) : (
-                      <input 
-                        type={f.type} 
-                        value={tempItem[f.key] || ""} 
-                        onChange={(e) => setTempItem({...tempItem, [f.key]: e.target.value})}
+                      <input
+                        type={f.type}
+                        value={tempItem[f.key] || ""}
+                        onChange={(e) => setTempItem({ ...tempItem, [f.key]: e.target.value })}
                         className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
                       />
                     )}
@@ -140,9 +140,9 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
                 ))}
               </div>
               <div className="p-6 border-t border-slate-100 bg-slate-50">
-                <Button type="button" onClick={handleSave} className="w-full h-12 rounded-xl font-bold">
+                <button type="button" onClick={handleSave} className="w-full h-12 rounded-xl font-bold bg-primary text-white hover:bg-primary/90 transition-colors">
                   {editIndex !== null ? 'Update Item' : 'Save Item'}
-                </Button>
+                </button>
               </div>
             </motion.div>
             <div className="absolute inset-0" onClick={() => setIsModalOpen(false)}></div>
@@ -152,6 +152,15 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
     </div>
   );
 }
+
+const DESIGNATION_OPTIONS = [
+  'Head of Department (HOD)', 'Professor', 'Associate Professor', 'Assistant Professor',
+  'Senior Lecturer', 'Lecturer', 'Professor Emeritus', 'Adjunct Professor', 'Visiting Faculty',
+  'Guest Lecturer', 'Research Scientist', 'Postdoctoral Fellow', 'Research Associate',
+  'Research Scholar / Ph.D. Candidate', 'Teaching Assistant (TA)', 'Librarian',
+  'Assistant Librarian', 'Placement Officer', 'Laboratory Technician', 'System Administrator',
+  'Adjunct Faculty', 'Principal', 'Dean'
+];
 
 export default function FacultyUpdatePage() {
   const [step, setStep] = useState<1 | 2 | 3>(1);
@@ -165,8 +174,8 @@ export default function FacultyUpdatePage() {
   const [formData, setFormData] = useState({
     prefix: "Mr.",
     name: "",
-    designation: "Assistant Professor",
-    department: "Pharmaceutics",
+    designation: [] as string[],
+    department: "Pharmaceutics (including Microbiology & Biotechnology)",
     email: "",
     phone: "",
     officeLocation: "",
@@ -177,7 +186,8 @@ export default function FacultyUpdatePage() {
     specializations: [] as string[],
     subjectsUG: [] as string[],
     subjectsPG: [] as string[],
-    innovativeTeaching: [] as string[],
+    innovativeTeaching: "",
+    totalPublications: "",
     booksPublished: "",
     bookChapters: "",
     patentsGranted: "",
@@ -196,7 +206,7 @@ export default function FacultyUpdatePage() {
     password: "Clptf@2026",
     imageBase64: "",
     qualifications: [] as { degree: string, institution: string, year: string }[],
-    publications: [] as { title: string, journal: string, year: string, impactFactor: string, link: string }[],
+    publications: [] as { title: string, authors: string, correspondingAuthor: string, journal: string, volume: string, issue: string, year: string, impactFactor: string, link: string }[],
     patents: [] as { title: string, appNumber: string, status: string, year: string }[],
     grants: [] as { title: string, agency: string, amount: string, status: string }[],
   });
@@ -236,8 +246,8 @@ export default function FacultyUpdatePage() {
         setFormData({
           prefix: faculty.prefix || "Mr.",
           name: faculty.name || "",
-          designation: faculty.designation || "Assistant Professor",
-          department: faculty.department || "Pharmaceutics",
+          designation: faculty.designation ? faculty.designation.split(',').map((s: string) => s.trim()).filter(Boolean) : [],
+          department: faculty.department || "Pharmaceutics (including Microbiology & Biotechnology)",
           email: faculty.email || "",
           phone: faculty.phone || phoneQuery,
           officeLocation: faculty.officeLocation || "",
@@ -248,7 +258,8 @@ export default function FacultyUpdatePage() {
           specializations: faculty.specializations || [],
           subjectsUG: faculty.subjectsUG || [],
           subjectsPG: faculty.subjectsPG || [],
-          innovativeTeaching: faculty.innovativeTeaching?.map((block: any) => block.children?.[0]?.text || "").filter(Boolean) || [],
+          innovativeTeaching: faculty.innovativeTeaching?.map((block: any) => block.children?.[0]?.text || "").filter(Boolean).join('\n') || "",
+          totalPublications: faculty.totalPublications?.toString() || "",
           booksPublished: faculty.booksPublished?.toString() || "",
           bookChapters: faculty.bookChapters?.toString() || "",
           patentsGranted: faculty.patentsGranted?.toString() || "",
@@ -466,39 +477,27 @@ export default function FacultyUpdatePage() {
                         <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center"><Building size={16} /></div>
                         <h3 className="text-xl font-black text-slate-800">Professional Placement</h3>
                       </div>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-6">
                         <div>
-                          <label className={labelClassName}>Designation / Role</label>
-                          <select
-                            required
-                            value={formData.designation}
-                            onChange={(e) => setFormData({ ...formData, designation: e.target.value })}
-                            className={inputClassName}
-                          >
-                            <option value="">Select Designation</option>
-                            <option value="Head of Department (HOD)">Head of Department (HOD)</option>
-                            <option value="Professor">Professor</option>
-                            <option value="Associate Professor">Associate Professor</option>
-                            <option value="Assistant Professor">Assistant Professor</option>
-                            <option value="Senior Lecturer">Senior Lecturer</option>
-                            <option value="Lecturer">Lecturer</option>
-                            <option value="Professor Emeritus">Professor Emeritus</option>
-                            <option value="Adjunct Professor">Adjunct Professor</option>
-                            <option value="Visiting Faculty">Visiting Faculty</option>
-                            <option value="Guest Lecturer">Guest Lecturer</option>
-                            <option value="Research Scientist">Research Scientist</option>
-                            <option value="Postdoctoral Fellow">Postdoctoral Fellow</option>
-                            <option value="Research Associate">Research Associate</option>
-                            <option value="Research Scholar / Ph.D. Candidate">Research Scholar / Ph.D. Candidate</option>
-                            <option value="Teaching Assistant (TA)">Teaching Assistant (TA)</option>
-                            <option value="Librarian">Librarian</option>
-                            <option value="Assistant Librarian">Assistant Librarian</option>
-                            <option value="Placement Officer">Placement Officer</option>
-                            <option value="Laboratory Technician">Laboratory Technician</option>
-                            <option value="System Administrator">System Administrator</option>
-                            <option value="Adjunct Faculty">Adjunct Faculty</option>
-                            <option value="Principal and Dean">Principal and Dean</option>
-                          </select>
+                          <label className={labelClassName}>Designation / Role (Select all that apply)</label>
+                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-2">
+                            {DESIGNATION_OPTIONS.map(opt => (
+                              <label key={opt} className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-100 transition-colors">
+                                <input 
+                                  type="checkbox" 
+                                  checked={formData.designation.includes(opt)}
+                                  onChange={(e) => {
+                                     const newDesig = e.target.checked 
+                                       ? [...formData.designation, opt] 
+                                       : formData.designation.filter(d => d !== opt);
+                                     setFormData({...formData, designation: newDesig});
+                                  }}
+                                  className="w-4 h-4 rounded text-primary focus:ring-primary"
+                                />
+                                <span className="truncate">{opt}</span>
+                              </label>
+                            ))}
+                          </div>
                         </div>
                         <div>
                           <label className={labelClassName}>Core Department</label>
@@ -507,13 +506,21 @@ export default function FacultyUpdatePage() {
                             onChange={(e) => setFormData({ ...formData, department: e.target.value })}
                             className={inputClassName}
                           >
-                            <option>Pharmaceutics</option>
-                            <option>Pharmaceutical Chemistry</option>
-                            <option>Pharmacology</option>
-                            <option>Pharmacognosy</option>
-                            <option>Pharmaceutical Analysis</option>
-                            <option>Pharmacy Practice</option>
-                            <option>Regulatory Affairs</option>
+                            <option value="Pharmaceutics (including Microbiology & Biotechnology)">Pharmaceutics (including Microbiology & Biotechnology)</option>
+                            <option value="Pharmacology (including Pharmacognosy)">Pharmacology (including Pharmacognosy)</option>
+                            <option value="Pharmaceutical Analysis (including Pharmaceutical Chemistry & Regulatory Affairs)">Pharmaceutical Analysis (including Pharmaceutical Chemistry & Regulatory Affairs)</option>
+                            <option value="Pharmacy Practice">Pharmacy Practice</option>
+                            <option value="Regulatory Affairs">Regulatory Affairs</option>
+                            <option value="Industrial Pharmacy">Industrial Pharmacy</option>
+                            <option value="Quality Assurance (QA)">Quality Assurance (QA)</option>
+                            <option value="Pharmaceutical Biotechnology">Pharmaceutical Biotechnology</option>
+                            <option value="Human Anatomy and Physiology">Human Anatomy and Physiology</option>
+                            <option value="Mathematics and Biostatistics">Mathematics and Biostatistics</option>
+                            <option value="Computer Applications / IT">Computer Applications / IT</option>
+                            <option value="Environmental Sciences">Environmental Sciences</option>
+                            <option value="Management Studies / MBA">Management Studies / MBA</option>
+                            <option value="Physical Education">Physical Education</option>
+                            <option value="Library Sciences">Library Sciences</option>
                           </select>
                         </div>
                       </div>
@@ -527,7 +534,7 @@ export default function FacultyUpdatePage() {
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                          <label className={labelClassName}>Institutional Email</label>
+                          <label className={labelClassName}>Personal/Institutional Email</label>
                           <input
                             type="email" required
                             value={formData.email}
@@ -583,8 +590,8 @@ export default function FacultyUpdatePage() {
                           </div>
                           <div className="flex-grow w-full">
                             <label className={labelClassName}>Profile Image</label>
-                            <input 
-                              type="file" 
+                            <input
+                              type="file"
                               accept="image/*"
                               onChange={handleImageUpload}
                               className="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20"
@@ -630,13 +637,13 @@ export default function FacultyUpdatePage() {
                           />
                         </div>
                         <div className="md:col-span-4 mt-4 border-t border-slate-100 pt-6">
-                          <ComplexObjectList 
+                          <ComplexObjectList
                             title="Education & Qualifications"
                             items={formData.qualifications}
-                            onChange={(items) => setFormData({...formData, qualifications: items})}
+                            onChange={(items) => setFormData({ ...formData, qualifications: items })}
                             emptyItem={{ degree: "", institution: "", year: "" }}
                             fields={[
-                              { key: "degree", label: "Degree (e.g., Ph.D.)", type: "text" },
+                              { key: "degree", label: "Education Qualification (e.g., Ph.D., SSC)", type: "text" },
                               { key: "institution", label: "Institution/University", type: "text" },
                               { key: "year", label: "Year of Passing", type: "text" },
                             ]}
@@ -677,11 +684,12 @@ export default function FacultyUpdatePage() {
                           </div>
                         </div>
                         <div className="pt-4">
-                          <DynamicList
-                            label="Innovative Teaching Methods"
-                            items={formData.innovativeTeaching}
-                            onChange={(items) => setFormData({ ...formData, innovativeTeaching: items })}
-                            placeholder="e.g., Flipped Classroom, Project-based learning"
+                          <label className={labelClassName}>Innovative Teaching Methods</label>
+                          <textarea
+                            value={formData.innovativeTeaching}
+                            onChange={(e) => setFormData({ ...formData, innovativeTeaching: e.target.value })}
+                            className={`${inputClassName} min-h-[100px] resize-y`}
+                            placeholder="Describe innovative teaching methods used (e.g., Flipped Classroom, Project-based learning)..."
                           />
                         </div>
                       </div>
@@ -694,6 +702,10 @@ export default function FacultyUpdatePage() {
                         <h3 className="text-xl font-black text-slate-800">Research & Achievements</h3>
                       </div>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                        <div>
+                          <label className={labelClassName}>Total Publications</label>
+                          <input type="number" value={formData.totalPublications} onChange={(e) => setFormData({ ...formData, totalPublications: e.target.value })} className={inputClassName} />
+                        </div>
                         <div>
                           <label className={labelClassName}>Books Published</label>
                           <input type="number" value={formData.booksPublished} onChange={(e) => setFormData({ ...formData, booksPublished: e.target.value })} className={inputClassName} />
@@ -748,23 +760,27 @@ export default function FacultyUpdatePage() {
                       </div>
 
                       <div className="space-y-8 mt-10 pt-8 border-t border-slate-100">
-                        <ComplexObjectList 
+                        <ComplexObjectList
                           title="Publications"
                           items={formData.publications}
-                          onChange={(items) => setFormData({...formData, publications: items})}
-                          emptyItem={{ title: "", journal: "", year: "", impactFactor: "", link: "" }}
+                          onChange={(items) => setFormData({ ...formData, publications: items })}
+                          emptyItem={{ title: "", authors: "", correspondingAuthor: "No", journal: "", volume: "", issue: "", year: "", impactFactor: "", link: "" }}
                           fields={[
-                            { key: "title", label: "Paper Title", type: "text" },
+                            { key: "title", label: "Paper Title *", type: "text" },
+                            { key: "authors", label: "Authors *", type: "text" },
+                            { key: "correspondingAuthor", label: "Corresponding Author?", type: "select", options: ["Yes", "No"] },
                             { key: "journal", label: "Journal Name", type: "text" },
-                            { key: "year", label: "Year", type: "text" },
+                            { key: "volume", label: "Volume", type: "text" },
+                            { key: "issue", label: "Issue", type: "text" },
+                            { key: "year", label: "Year *", type: "text" },
                             { key: "impactFactor", label: "Impact Factor", type: "text" },
                             { key: "link", label: "DOI / Link", type: "url" },
                           ]}
                         />
-                        <ComplexObjectList 
+                        <ComplexObjectList
                           title="Patents & Copyrights"
                           items={formData.patents}
-                          onChange={(items) => setFormData({...formData, patents: items})}
+                          onChange={(items) => setFormData({ ...formData, patents: items })}
                           emptyItem={{ title: "", appNumber: "", status: "Filed", year: "" }}
                           fields={[
                             { key: "title", label: "Title", type: "text" },
@@ -773,10 +789,10 @@ export default function FacultyUpdatePage() {
                             { key: "year", label: "Year", type: "text" },
                           ]}
                         />
-                        <ComplexObjectList 
+                        <ComplexObjectList
                           title="Grants & Funded Projects"
                           items={formData.grants}
-                          onChange={(items) => setFormData({...formData, grants: items})}
+                          onChange={(items) => setFormData({ ...formData, grants: items })}
                           emptyItem={{ title: "", agency: "", amount: "", status: "Ongoing" }}
                           fields={[
                             { key: "title", label: "Project Title", type: "text" },

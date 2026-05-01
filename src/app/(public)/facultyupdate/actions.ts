@@ -30,7 +30,7 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       prefix: data.prefix,
       name: data.name,
       slug: { _type: 'slug', current: slug },
-      designation: data.designation,
+      designation: Array.isArray(data.designation) ? data.designation.join(', ') : data.designation,
       department: data.department,
       email: data.email,
       phone: data.phone,
@@ -62,7 +62,11 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       publications: data.publications?.map((p: any) => ({
         _key: crypto.randomUUID(),
         title: p.title,
+        authors: p.authors,
+        correspondingAuthor: p.correspondingAuthor,
         journal: p.journal,
+        volume: p.volume,
+        issue: p.issue,
         year: p.year,
         impactFactor: p.impactFactor,
         link: p.link
@@ -83,6 +87,7 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       })),
 
       // Research Metrics
+      totalPublications: Number(data.totalPublications) || 0,
       booksPublished: Number(data.booksPublished) || 0,
       bookChapters: Number(data.bookChapters) || 0,
       patentsGranted: Number(data.patentsGranted) || 0,
@@ -104,10 +109,10 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       awards: Array.isArray(data.awards) ? data.awards.map((s: string) => s.trim()).filter(Boolean) : [],
       memberships: Array.isArray(data.memberships) ? data.memberships.map((s: string) => s.trim()).filter(Boolean) : [],
       
-      innovativeTeaching: Array.isArray(data.innovativeTeaching) ? data.innovativeTeaching.map((t: string) => ({
+      innovativeTeaching: data.innovativeTeaching ? data.innovativeTeaching.split('\n').filter((t: string) => t.trim().length > 0).map((t: string) => ({
         _key: crypto.randomUUID(),
         _type: 'block',
-        children: [{ _type: 'span', text: t, _key: crypto.randomUUID() }]
+        children: [{ _type: 'span', text: t.trim(), _key: crypto.randomUUID() }]
       })) : undefined,
 
       isActive: true,

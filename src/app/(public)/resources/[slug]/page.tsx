@@ -25,7 +25,7 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
         
         <div className="container mx-auto px-6 relative z-10">
           <Link 
-            href="/resources/infrastructure" 
+            href="/resources" 
             className="inline-flex items-center gap-2 text-slate-500 hover:text-primary mb-8 transition-colors text-xs font-black tracking-[0.2em]"
           >
             <ArrowLeft size={16} /> Back to Facilities

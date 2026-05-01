@@ -7,7 +7,17 @@ import {
   Microscope,
   Building2,
   Trophy,
-  Dumbbell
+  Dumbbell,
+  Trees,
+  LayoutGrid,
+  FlaskConical,
+  Leaf,
+  BookOpen,
+  Presentation,
+  Monitor,
+  Video,
+  Pill,
+  Gamepad2
 } from "lucide-react";
 
 export interface InfrastructureItem {
@@ -26,41 +36,22 @@ export interface InfrastructureItem {
 
 export const infrastructureData: InfrastructureItem[] = [
   {
-    title: "Animal House",
-    slug: "animal-house",
-    description: "CPCSEA approved facility dedicated to pharmacological research and ethical animal experimentation.",
-    longDescription: "Our Animal House is a state-of-the-art facility meticulously designed according to CPCSEA (Committee for the Purpose of Control and Supervision of Experiments on Animals) guidelines. It serves as an essential hub for pharmacological and toxicological research, ensuring that all ethical standards are met while providing a controlled environment for scientific inquiry.",
-    icon: Dog,
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800", // Generic lab/animal info image
-    features: [
-      "Ethical Research Compliance",
-      "Controlled Environment Systems",
-      "Dedicated Quarantine Zone",
-      "Sterilized Housing Units"
-    ],
-    specs: [
-      { label: "Certification", value: "CPCSEA Approved" },
-      { label: "Total Area", value: "2,500 Sq. Ft." },
-      { label: "Ventilation", value: "HEPA Filtered" }
-    ]
-  },
-  {
-    title: "Drug Museum",
-    slug: "drug-museum",
-    description: "An extensive collection of pharmaceutical dosage forms, crude drugs, and medicinal plant samples.",
-    longDescription: "The Drug Museum at CLPT serves as a living encyclopedia of pharmacy. It houses a vast collection of traditional and modern dosage forms, crude drug samples, and comprehensive information on medicinal plants, providing students with a tangible link to pharmaceutical history and practice.",
+    title: "Library",
+    slug: "library",
+    description: "A comprehensive collection of books, journals, and digital resources for academic and research needs.",
+    longDescription: "Our central library is a cornerstone of learning, housing a vast collection of pharmaceutical texts, scientific journals, and digital databases. It provides a quiet, conducive environment for study and research, equipped with modern amenities to support academic excellence.",
     icon: Library,
-    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbbb88?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1572756622305-6364b9f8315e?auto=format&fit=crop&q=80&w=800",
     features: [
-      "Historical Dosage Forms",
-      "Phytochemistry Exhibits",
-      "Packaging Evolution Gallery",
-      "Botanical Identification"
+      "Extensive Collection",
+      "Digital Resources",
+      "Reading Halls",
+      "24/7 Access"
     ],
     specs: [
-      { label: "Total Samples", value: "1,200+" },
-      { label: "Special Sections", value: "Rare Crude Drugs" },
-      { label: "Learning Tool", value: "Interactive QR Labels" }
+      { label: "Total Volumes", value: "10,000+" },
+      { label: "Journals", value: "50+ Subscribed" },
+      { label: "Seating Capacity", value: "150" }
     ]
   },
   {
@@ -234,4 +225,144 @@ export const infrastructureData: InfrastructureItem[] = [
       { label: "Supply Chain", value: "Direct OEM Tie-ups" }
     ]
   },
+  {
+    title: "Play Ground",
+    slug: "play-ground",
+    description: "Expansive outdoor play area for various sports and recreational activities.",
+    longDescription: "Our expansive playground provides students with ample space for outdoor sports, fitness routines, and large recreational events, promoting physical wellness and teamwork.",
+    icon: Trees,
+    image: "https://images.unsplash.com/photo-1529900965798-f40a33654f5a?auto=format&fit=crop&q=80&w=800",
+    features: ["Outdoor Sports", "Athletics Track", "Recreational Space", "Well-Maintained"],
+    specs: [
+      { label: "Type", value: "Outdoor Field" },
+      { label: "Usage", value: "Sports & Events" },
+      { label: "Access", value: "All Students" }
+    ]
+  },
+  {
+    title: "Other Facilities",
+    slug: "other-facilities",
+    description: "Additional campus amenities supporting a comprehensive student experience.",
+    longDescription: "Beyond our core academic and recreational spaces, the campus is equipped with various other facilities including dedicated parking, security outposts, and student support kiosks to ensure a seamless daily experience.",
+    icon: LayoutGrid,
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+    features: ["Campus Security", "Parking Zones", "Support Kiosks", "Accessibility Support"],
+    specs: [
+      { label: "Scope", value: "Campus-wide" },
+      { label: "Availability", value: "24/7 Support" },
+      { label: "Focus", value: "Student Convenience" }
+    ]
+  },
+  {
+    title: "Chalapathi Drug Testing Laboratory",
+    slug: "drug-testing-lab",
+    description: "Advanced testing facility for pharmaceutical quality control and research analysis.",
+    longDescription: "The Chalapathi Drug Testing Laboratory is equipped with high-precision analytical instruments to conduct rigorous quality control and research-based testing of pharmaceutical formulations.",
+    icon: FlaskConical,
+    image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=800",
+    features: ["Quality Control", "Analytical Testing", "Precision Instruments", "Research Support"],
+    specs: [
+      { label: "Specialty", value: "Drug Analysis" },
+      { label: "Equipment", value: "High-Precision" },
+      { label: "Standards", value: "Industry Compliant" }
+    ]
+  },
+  {
+    title: "Medicinal Plant Garden",
+    slug: "medicinal-garden",
+    description: "A diverse collection of medicinal plants supporting botanical and pharmacognosy studies.",
+    longDescription: "Our Medicinal Plant Garden is a living laboratory featuring a vast array of flora used in traditional and modern medicine, providing students with hands-on pharmacognosy education.",
+    icon: Leaf,
+    image: "https://images.unsplash.com/photo-1466692476877-04f08ce38db0?auto=format&fit=crop&q=80&w=800",
+    features: ["Rare Species", "Botanical Study", "Pharmacognosy", "Eco-friendly"],
+    specs: [
+      { label: "Plant Varieties", value: "200+ Species" },
+      { label: "Type", value: "Botanical Garden" },
+      { label: "Maintenance", value: "Organic" }
+    ]
+  },
+  {
+    title: "Library",
+    slug: "library",
+    description: "A comprehensive collection of books, journals, and digital resources for academic and research needs.",
+    longDescription: "Our central library is a cornerstone of learning, housing a vast collection of pharmaceutical texts, scientific journals, and digital databases. It provides a quiet, conducive environment for study and research, equipped with modern amenities.",
+    icon: BookOpen,
+    image: "https://images.unsplash.com/photo-1572756622305-6364b9f8315e?auto=format&fit=crop&q=80&w=800",
+    features: ["Extensive Collection", "Digital Resources", "Reading Halls", "24/7 Access"],
+    specs: [
+      { label: "Total Volumes", value: "10,000+" },
+      { label: "Journals", value: "50+ Subscribed" },
+      { label: "Seating Capacity", value: "150+" }
+    ]
+  },
+  {
+    title: "PPT Presentations",
+    slug: "powerpoint-presentations",
+    description: "Dedicated digital repository and screening rooms for academic presentations.",
+    longDescription: "A specialized resource offering a digital repository of academic presentations and screening facilities to help students and faculty prepare, review, and deliver high-quality scientific talks.",
+    icon: Presentation,
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
+    features: ["Digital Repository", "Screening Rooms", "Academic Review", "Interactive Displays"],
+    specs: [
+      { label: "Resource Type", value: "Digital & Physical" },
+      { label: "Access", value: "Institutional Network" },
+      { label: "Support", value: "Technical Assistance" }
+    ]
+  },
+  {
+    title: "Computer cum Language Laboratory",
+    slug: "computer-lab",
+    description: "High-tech computing facility integrated with specialized language learning software.",
+    longDescription: "This dual-purpose laboratory provides students with high-speed computing resources for research and data analysis, alongside advanced language software to enhance communication and professional skills.",
+    icon: Monitor,
+    image: "https://images.unsplash.com/photo-1571260899304-42507611e159?auto=format&fit=crop&q=80&w=800",
+    features: ["High-speed Internet", "Language Software", "Programming Tools", "Research Access"],
+    specs: [
+      { label: "Terminals", value: "100+ Systems" },
+      { label: "Software", value: "Industry Standard" },
+      { label: "Focus", value: "IT & Communication" }
+    ]
+  },
+  {
+    title: "Audio-Visual Facility",
+    slug: "audio-visual",
+    description: "Multimedia rooms equipped for interactive learning and visual education.",
+    longDescription: "Our Audio-Visual Facility supports modern pedagogical methods by providing multimedia resources, video conferencing capabilities, and specialized equipment for interactive learning sessions.",
+    icon: Video,
+    image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=800",
+    features: ["Multimedia Projection", "Video Conferencing", "Interactive Boards", "Sound Systems"],
+    specs: [
+      { label: "Technology", value: "Smart Classrooms" },
+      { label: "Capacity", value: "Flexible Seating" },
+      { label: "Usage", value: "Lectures & Seminars" }
+    ]
+  },
+  {
+    title: "Pharmacy",
+    slug: "pharmacy",
+    description: "On-campus pharmacy providing essential medicines and practical dispensing experience.",
+    longDescription: "The institutional pharmacy serves the health needs of the campus community while functioning as a practical training ground for students to learn dispensing, inventory management, and patient interaction.",
+    icon: Pill,
+    image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=800",
+    features: ["Essential Medicines", "Clinical Training", "Inventory Management", "Patient Counseling"],
+    specs: [
+      { label: "Services", value: "Dispensing & Care" },
+      { label: "Training", value: "Hands-on Practice" },
+      { label: "Operations", value: "Licensed Facility" }
+    ]
+  },
+  {
+    title: "Student Recreation Centre",
+    slug: "recreation-centre",
+    description: "A vibrant space for relaxation, socialization, and extracurricular activities.",
+    longDescription: "Designed to foster a balanced campus life, the Student Recreation Centre offers lounges, indoor games, and collaborative spaces where students can unwind, socialize, and engage in extracurricular pursuits.",
+    icon: Gamepad2,
+    image: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&q=80&w=800",
+    features: ["Lounge Areas", "Indoor Games", "Social Spaces", "Event Zones"],
+    specs: [
+      { label: "Environment", value: "Relaxed & Vibrant" },
+      { label: "Activities", value: "Extracurricular" },
+      { label: "Access", value: "Student Community" }
+    ]
+  }
 ];

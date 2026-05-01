@@ -119,7 +119,7 @@ export const topNav: NavItem[] = [
     items: [
       {
         label: "Campus & Infrastructure",
-        href: "/resources/infrastructure",
+        href: "/resources",
         items: [
           { label: "Seminar Hall", href: "/resources/seminar-hall" },
           { label: "Auditorium", href: "/resources/auditorium" },
@@ -128,14 +128,14 @@ export const topNav: NavItem[] = [
           { label: "Canteen", href: "/resources/canteen" },
           { label: "Central Stores", href: "/resources/central-stores" },
           { label: "Play Ground", href: "/resources/play-ground" },
-          { label: "Sports Room", href: "/resources/sports-room" },
+          { label: "Sports Facilities", href: "/resources/sports-facilities" },
           { label: "Gymnasium", href: "/resources/gymnasium" },
           { label: "Other Facilities", href: "/resources/other-facilities" },
         ],
       },
       {
         label: "Scientific & Research",
-        href: "/resources/labs",
+        href: "/resources",
         items: [
           { label: "Laboratories", href: "/resources/labs" },
           { label: "Chalapathi Drug Testing Laboratory", href: "/resources/drug-testing-lab" },
@@ -146,7 +146,7 @@ export const topNav: NavItem[] = [
       },
       {
         label: "Academic & Services",
-        href: "/resources/library",
+        href: "/resources",
         items: [
           { label: "Library", href: "/resources/library" },
           { label: "Repository Service", href: "https://clptlibrary.weebly.com/repository-services.html" },

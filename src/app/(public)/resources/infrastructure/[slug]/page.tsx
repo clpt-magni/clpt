@@ -16,7 +16,7 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* 1. Header Area */}
-      <section className="bg-slate-50 pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden relative">
+      <section className="bg-slate-50 pt-16 pb-12 md:pt-24 md:pb-16 overflow-hidden relative">
         <div className="absolute top-0 right-0 w-2/3 h-full bg-primary/2 px-12 md:px-24 flex items-center justify-end -z-0">
           <div className="opacity-10 scale-[2] md:scale-[3] text-primary rotate-12">
             <Icon size={120} strokeWidth={1} />
@@ -26,7 +26,7 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
         <div className="container mx-auto px-6 relative z-10">
           <Link 
             href="/resources/infrastructure" 
-            className="inline-flex items-center gap-2 text-slate-500 hover:text-primary mb-8 transition-colors text-xs font-black uppercase tracking-[0.2em]"
+            className="inline-flex items-center gap-2 text-slate-500 hover:text-primary mb-8 transition-colors text-xs font-black tracking-[0.2em]"
           >
             <ArrowLeft size={16} /> Back to Facilities
           </Link>
@@ -42,14 +42,14 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
       </section>
 
       {/* 2. Main Content & Specs Grid */}
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-16 xl:gap-24">
             
             {/* Main Content Column */}
             <div className="flex-1 space-y-16">
               <div className="prose prose-slate prose-lg max-w-none">
-                <h2 className="text-2xl font-black text-primary-dark uppercase tracking-wide border-b-2 border-primary-light pb-4 mb-8">
+                <h2 className="text-2xl font-black text-primary-dark tracking-wide border-b-2 border-primary-light pb-4 mb-8">
                   Overview & Scope
                 </h2>
                 <p className="text-slate-600 leading-[1.8] text-lg font-medium">
@@ -58,7 +58,7 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
               </div>
 
               <div>
-                <h2 className="text-2xl font-black text-primary-dark uppercase tracking-wide border-b-2 border-primary-light pb-4 mb-8">
+                <h2 className="text-2xl font-black text-primary-dark tracking-wide border-b-2 border-primary-light pb-4 mb-8">
                   Core Features
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -82,7 +82,7 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
                     <Info size={24} />
                   </div>
                   <div>
-                    <h3 className="font-black text-blue-400 uppercase tracking-widest text-[10px]">Technical Specifications</h3>
+                    <h3 className="font-black text-blue-400 tracking-widest text-[10px]">Technical Specifications</h3>
                     <p className="text-slate-400 text-xs font-medium">Facility Verification Data</p>
                   </div>
                 </div>
@@ -90,13 +90,13 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
                 <div className="space-y-6 mb-12">
                   {item.specs.map((spec, i) => (
                     <div key={i} className="flex flex-col gap-1">
-                      <span className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em]">{spec.label}</span>
+                      <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em]">{spec.label}</span>
                       <span className="text-lg font-medium text-white">{spec.value}</span>
                     </div>
                   ))}
                 </div>
 
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-widest text-[11px] py-7 rounded-xl shadow-lg transition-all active:scale-95 border-none">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-black tracking-widest text-[11px] py-7 rounded-xl shadow-lg transition-all active:scale-95 border-none">
                   Inquiry for Facility
                 </Button>
               </div>
@@ -106,10 +106,10 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
       </section>
 
       {/* 3. Browse Other Facilities */}
-      <section className="bg-slate-50 py-24 border-t border-slate-100">
+      <section className="bg-slate-50 py-16 border-t border-slate-100">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-2xl font-black text-slate-900 uppercase tracking-[0.2em]">Other Facilities</h2>
+            <h2 className="text-2xl font-black text-slate-900 tracking-[0.2em]">Other Facilities</h2>
             <div className="w-12 h-1 bg-primary mx-auto mt-4 rounded-full" />
           </div>
 
@@ -129,8 +129,8 @@ export default function InfrastructureDetail({ params }: { params: { slug: strin
                       <OtherIcon size={20} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-bold text-[13px] text-slate-800 uppercase tracking-tight">{other.title}</h4>
-                      <div className="flex items-center gap-1 text-slate-400 text-[10px] uppercase tracking-widest mt-0.5 group-hover:text-primary transition-colors">
+                      <h4 className="font-bold text-[13px] text-slate-800 tracking-tight">{other.title}</h4>
+                      <div className="flex items-center gap-1 text-slate-400 text-[10px] tracking-widest mt-0.5 group-hover:text-primary transition-colors">
                         View Details <ChevronRight size={12} />
                       </div>
                     </div>

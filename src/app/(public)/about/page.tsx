@@ -3,17 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronDown, History, Target, ShieldCheck, Award, FileText, User, Users, Gavel } from "lucide-react";
 import Link from "next/link";
 
+import { PageHeader } from "@/components/ui/PageHeader";
+
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen font-roboto">
       {/* Page Header */}
-      <section className="bg-primary-dark py-16 text-white overflow-hidden relative">
-        <div className="absolute inset-0 bg-[url('https://clpt.s3.ap-south-1.amazonaws.com/college-building.jpg')] opacity-10 bg-cover bg-center" />
-        <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-5xl !text-white font-bold font-poppins mb-2 animate-in slide-in-from-left duration-700">About the Institute</h1>
-          <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl">Legacy of Excellence in Pharmaceutical Education since 2004.</p>
-        </div>
-      </section>
+      <PageHeader
+        title="About the Institute"
+        breadcrumbs={[
+          { label: "About Us" }
+        ]}
+        description="Legacy of Excellence in Pharmaceutical Education since 2004."
+      />
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto space-y-12">

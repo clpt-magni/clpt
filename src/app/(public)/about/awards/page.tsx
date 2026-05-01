@@ -81,7 +81,7 @@ export default function AwardsPage() {
       <PageHeader
         title="Awards & Honours"
         breadcrumbs={[
-          { label: "About", href: "/about/chairman" },
+          { label: "About", href: "/about" },
           { label: "Awards" }
         ]}
         description="Celebrating the legacy of academic brilliance, research innovation, and competitive excellence that defines the Chalapathi community."

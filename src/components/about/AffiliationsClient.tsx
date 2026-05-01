@@ -61,7 +61,7 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
         description={data.summary || "Recognized and approved by leading regulatory bodies including AICTE, PCI, and affiliated with ANU."}
       />
 
-      <div className="container mx-auto px-4 py-20 -mt-12 relative z-20">
+      <div className="container mx-auto px-4 py-12 relative z-20">
         <div className="max-w-7xl mx-auto space-y-8">
 
           {/* Scrolling Logos Marquee */}
@@ -69,20 +69,20 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
             <div className="animate-scroll gap-20 items-center">
               {[...Array(14)].map((_, i) => (
                 <div key={`logo-${i}`} className="shrink-0 px-4">
-                  <img 
-                    src={`/images/affiliationslogo/${i + 1}.png`} 
-                    alt={`Affiliation Logo ${i + 1}`} 
-                    className="h-16 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-pointer"
+                  <img
+                    src={`/images/affiliationslogo/${i + 1}.png`}
+                    alt={`Affiliation Logo ${i + 1}`}
+                    className="h-25 w-auto object-contain transition-all duration-500 cursor-pointer hover:scale-125"
                   />
                 </div>
               ))}
               {/* Duplicate for seamless scrolling */}
               {[...Array(14)].map((_, i) => (
                 <div key={`logo-dup-${i}`} className="shrink-0 px-4">
-                  <img 
-                    src={`/images/affiliationslogo/${i + 1}.png`} 
-                    alt={`Affiliation Logo ${i + 1}`} 
-                    className="h-16 w-auto object-contain grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-pointer"
+                  <img
+                    src={`/images/affiliationslogo/${i + 1}.png`}
+                    alt={`Affiliation Logo ${i + 1}`}
+                    className="h-25 w-auto object-contain transition-all duration-500 cursor-pointer hover:scale-125"
                   />
                 </div>
               ))}
@@ -121,7 +121,7 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
                       <div className="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary-dark group-hover:bg-secondary group-hover:text-primary-dark transition-all duration-300 shrink-0">
                         <Award size={24} />
                       </div>
-                      <h3 className="text-[13px] font-black text-primary-dark group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
+                      <h3 className="text-[13px] font-black text-primary-dark group-hover:text-primary transition-colors leading-tight tracking-tight">
                         {item.title}
                       </h3>
                     </div>
@@ -130,7 +130,7 @@ export default function AffiliationsClient({ data }: AffiliationsClientProps) {
                       <Button
                         onClick={() => openPdf(item.title, item.fileUrl!)}
                         size="sm"
-                        className="w-full bg-primary hover:bg-primary-dark text-white h-12 rounded-xl font-black uppercase tracking-widest text-[9px] shadow-sm transition-all transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center gap-2"
+                        className="w-full bg-primary hover:bg-primary-dark text-white h-12 rounded-xl font-black tracking-widest text-[9px] shadow-sm transition-all transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center gap-2"
                       >
                         <Eye size={14} /> View PDF
                       </Button>

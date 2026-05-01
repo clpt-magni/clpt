@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { SignInButton, UserButton, Show } from "@clerk/nextjs";
 import { TopBar } from "./top-bar";
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, Menu, X, Phone, Mail } from "lucide-react";
 import { topNav, NavItem } from "@/config/navigation";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -20,7 +20,7 @@ export function Navbar() {
   return (
     <>
       <TopBar />
-      <header className="bg-white sticky top-0 z-50 shadow-md">
+    <header className="bg-white sticky top-0 z-[9999] shadow-lg border-b border-slate-100">
         <div className="container mx-auto px-4">
           {/* Logo and Accreditations Area */}
           <div className="py-3 flex justify-between items-center border-b md:border-none">
@@ -66,9 +66,10 @@ export function Navbar() {
                 </Show>
                 <button
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  className="md:hidden p-2 text-primary hover:bg-slate-50 rounded-lg transition-colors"
+                  className="md:hidden p-2 text-primary hover:bg-slate-100 rounded-xl transition-all active:scale-90"
+                  aria-label="Toggle Menu"
                 >
-                  <Menu size={28} />
+                  {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
               </div>
             </div>
@@ -86,21 +87,35 @@ export function Navbar() {
           </nav>
         </div>
 
-        {/* Mobile Menu (Drawer) */}
+        {/* Mobile Menu (Stable Drawer) */}
         <AnimatePresence>
           {mobileMenuOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-white border-t overflow-hidden shadow-2xl"
+              className="md:hidden bg-white border-t border-slate-100 overflow-hidden shadow-inner"
             >
-              <div className="container mx-auto px-4 py-6 max-h-[80vh] overflow-y-auto">
-                <ul className="space-y-4">
-                  {topNav.map((item, idx) => (
-                    <MobileNavItem key={idx} item={item} close={() => setMobileMenuOpen(false)} />
-                  ))}
-                </ul>
+              <div className="container mx-auto px-4 py-8 max-h-[75vh] overflow-y-auto">
+                <nav>
+                  <ul className="space-y-1">
+                    {topNav.map((item, idx) => (
+                      <MobileNavItem key={idx} item={item} close={() => setMobileMenuOpen(false)} />
+                    ))}
+                  </ul>
+                </nav>
+                
+                <div className="mt-8 pt-8 border-t border-slate-100 flex items-center justify-center gap-8 text-slate-400">
+                  <a href="tel:+919440101685" className="hover:text-primary transition-colors">
+                    <Phone size={20} />
+                  </a>
+                  <a href="mailto:principalclpt@gmail.com" className="hover:text-primary transition-colors">
+                    <Mail size={20} />
+                  </a>
+                  <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-xs font-black uppercase tracking-widest hover:text-primary transition-colors">
+                    Contact Us
+                  </Link>
+                </div>
               </div>
             </motion.div>
           )}
@@ -202,24 +217,32 @@ function MobileNavItem({ item, close }: { item: NavItem; close: () => void }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const hasSub = item.items && item.items.length > 0;
 
+  const handleToggle = (e: React.MouseEvent) => {
+    if (hasSub) {
+      e.preventDefault();
+      setIsExpanded(!isExpanded);
+    } else {
+      close();
+    }
+  };
+
   return (
-    <li className="border-b border-slate-50 last:border-0 pb-2">
-      <div className="flex items-center justify-between">
+    <li className="last:border-0">
+      <div className="flex items-center">
         <Link
           href={item.href}
-          onClick={close}
-          className="text-lg font-bold text-slate-800 hover:text-primary transition-colors py-2 flex-grow"
+          onClick={handleToggle}
+          className={`flex-grow py-4 text-base font-bold transition-all flex items-center justify-between ${
+            isExpanded ? "text-primary" : "text-slate-700"
+          }`}
         >
           {item.label}
+          {hasSub && (
+            <div className={`p-1 rounded-lg bg-slate-50 transition-transform duration-300 ${isExpanded ? "rotate-180 bg-primary/10 text-primary" : "text-slate-400"}`}>
+              <ChevronDown size={18} />
+            </div>
+          )}
         </Link>
-        {hasSub && (
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="p-3 text-slate-400 hover:text-primary transition-colors"
-          >
-            <ChevronDown size={20} className={`transition-transform ${isExpanded ? "rotate-180" : ""}`} />
-          </button>
-        )}
       </div>
 
       <AnimatePresence>
@@ -228,27 +251,27 @@ function MobileNavItem({ item, close }: { item: NavItem; close: () => void }) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="pl-4 mt-2 space-y-3 bg-slate-50 rounded-xl p-4"
+            className="overflow-hidden bg-slate-50/50 rounded-2xl mb-2"
           >
             {item.items?.map((sub, i) => (
-              <li key={i}>
+              <li key={i} className="border-b border-white last:border-0">
                 <Link
                   href={sub.href}
                   onClick={close}
-                  className="text-sm font-semibold text-slate-600 hover:text-primary flex items-center gap-2"
+                  className="block p-4 text-sm font-bold text-slate-600 hover:text-primary active:bg-white transition-colors"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-slate-300" />
                   {sub.label}
                 </Link>
                 {sub.items && (
-                  <ul className="pl-6 mt-2 space-y-2 border-l border-slate-200">
+                  <ul className="bg-white/50 px-4 pb-4 space-y-3">
                     {sub.items.map((leaf, j) => (
                       <li key={j}>
                         <Link
                           href={leaf.href}
                           onClick={close}
-                          className="text-xs text-slate-500 hover:text-primary"
+                          className="flex items-center gap-3 text-xs font-bold text-slate-400 hover:text-primary transition-colors"
                         >
+                          <div className="w-1.5 h-1.5 rounded-full bg-slate-200" />
                           {leaf.label}
                         </Link>
                       </li>

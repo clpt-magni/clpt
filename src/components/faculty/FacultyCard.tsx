@@ -66,10 +66,10 @@ export default function FacultyCard({ faculty }: { faculty: FacultyMember }) {
           </div>
           
           <div className="space-y-2 flex-grow">
-            <p className="text-[11px] font-bold text-blue-600/80 line-clamp-1 uppercase tracking-wider uppercase">
+            <p className="text-[11px] font-bold text-blue-600/80 line-clamp-1 tracking-wider">
               {faculty.designation}
             </p>
-            <p className="text-[10px] font-medium text-slate-400 uppercase tracking-[0.05em] line-clamp-2 leading-relaxed">
+            <p className="text-[10px] font-medium text-slate-400 tracking-[0.05em] line-clamp-2 leading-relaxed">
               {faculty.department}
             </p>
           </div>

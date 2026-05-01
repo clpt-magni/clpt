@@ -60,6 +60,7 @@ export const topNav: NavItem[] = [
           { label: "Finance Committee", href: "/about/finance-committee" },
           { label: "Academic Committee", href: "/academic/committees" },
           { label: "Research & Developement Cell", href: "/research/r-and-d" },
+          { label: "IQAC Cell", href: "/academic/iqac" },
         ],
       },
       {
@@ -121,11 +122,14 @@ export const topNav: NavItem[] = [
         href: "/resources/infrastructure",
         items: [
           { label: "Seminar Hall", href: "/resources/seminar-hall" },
+          { label: "Auditorium", href: "/resources/auditorium" },
+          { label: "Open-Air Auditorium", href: "/resources/open-air-auditorium" },
           { label: "Hostel", href: "/resources/hostel" },
           { label: "Canteen", href: "/resources/canteen" },
           { label: "Central Stores", href: "/resources/central-stores" },
           { label: "Play Ground", href: "/resources/play-ground" },
           { label: "Sports Room", href: "/resources/sports-room" },
+          { label: "Gymnasium", href: "/resources/gymnasium" },
           { label: "Other Facilities", href: "/resources/other-facilities" },
         ],
       },

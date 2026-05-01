@@ -34,7 +34,7 @@ export default async function Home() {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-dark to-primary-light opacity-0 group-hover:opacity-100 transition-opacity z-0" />
               <item.icon className="w-10 h-10 text-primary group-hover:text-white transition-all transform group-hover:-translate-y-1 z-10" />
-              <span className="font-bold text-sm uppercase tracking-wider text-slate-800 group-hover:text-white transition-all transform group-hover:-translate-y-1 z-10 font-poppins">
+              <span className="font-bold text-sm tracking-wider text-slate-800 group-hover:text-white transition-all transform group-hover:-translate-y-1 z-10 font-poppins">
                 {item.label}
               </span>
             </Link>
@@ -43,7 +43,7 @@ export default async function Home() {
       </div>
 
       {/* Programs Section   <Link href={p.href}> */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 relative">
             <h2 className="text-4xl font-bold pb-4 inline-block text-primary font-poppins">
@@ -82,7 +82,7 @@ export default async function Home() {
       </section>
 
       {/* News & Events Section */}
-      <section className="py-24 bg-slate-50 border-y">
+      <section className="py-16 bg-slate-50 border-y">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
@@ -101,7 +101,7 @@ export default async function Home() {
                     <Card key={n._id || i} className="hover:shadow-lg transition-all border-none bg-white p-2">
                       <CardContent className="p-6">
                         <h3 className="font-bold text-xl mb-2 text-primary-dark font-poppins">{n.title}</h3>
-                        <p className="text-xs text-slate-400 font-semibold uppercase tracking-widest mb-4">
+                        <p className="text-xs text-slate-400 font-semibold tracking-widest mb-4">
                           {n.date ? new Date(n.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Latest'}
                         </p>
                         <p className="text-slate-600 mb-6 leading-relaxed line-clamp-2">{n.description}</p>
@@ -201,7 +201,7 @@ export default async function Home() {
       </section>
 
       {/* Placements & Research */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 font-roboto">
             <div className="bg-primary-dark text-white p-14 rounded-3xl text-center flex flex-col items-center group transition-all hover:bg-slate-900 shadow-2xl relative overflow-hidden">

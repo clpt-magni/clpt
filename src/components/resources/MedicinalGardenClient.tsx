@@ -83,16 +83,16 @@ export default function MedicinalGardenClient({ plantListRaw }: MedicinalGardenC
   }, [searchTerm, plants]);
 
   return (
-    <section className="py-24 bg-slate-50 relative overflow-hidden">
+    <section className="py-12 bg-slate-50 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         
         {/* Registry Header & Search */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div className="space-y-4">
-             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full font-black text-xs uppercase tracking-widest border border-emerald-100">
+             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full font-black text-xs tracking-widest border border-emerald-100">
                 Digital Inventory
              </div>
-             <h3 className="text-3xl md:text-5xl font-black text-primary uppercase tracking-tight flex items-center gap-4">
+             <h3 className="text-3xl md:text-5xl font-black text-primary tracking-tight flex items-center gap-4">
                 Plant Registry
              </h3>
              <p className="text-slate-500 font-medium max-w-xl">
@@ -122,7 +122,7 @@ export default function MedicinalGardenClient({ plantListRaw }: MedicinalGardenC
         {/* Results Counter */}
         {searchTerm && (
           <div className="mb-8 flex items-center gap-2">
-            <span className="text-xs font-black text-slate-400 uppercase tracking-widest">Found</span>
+            <span className="text-xs font-black text-slate-400 tracking-widest">Found</span>
             <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full font-black text-xs">{filteredPlants.length} species</span>
           </div>
         )}
@@ -136,8 +136,8 @@ export default function MedicinalGardenClient({ plantListRaw }: MedicinalGardenC
             >
               <div className="flex justify-between items-start">
                 <div className="space-y-1">
-                   <p className="text-[10px] font-black text-emerald-600 uppercase tracking-widest">{plant.family}</p>
-                   <h4 className="text-xl font-black text-primary-dark italic uppercase tracking-tight group-hover:text-primary transition-colors">{plant.botanicalName}</h4>
+                   <p className="text-[10px] font-black text-emerald-600 tracking-widest">{plant.family}</p>
+                   <h4 className="text-xl font-black text-primary-dark italic tracking-tight group-hover:text-primary transition-colors">{plant.botanicalName}</h4>
                 </div>
                 <div className="w-10 h-10 rounded-2xl bg-slate-50 flex items-center justify-center text-[10px] font-black text-slate-300 group-hover:bg-emerald-50 group-hover:text-emerald-600 transition-all">
                   #{plant.sNo}
@@ -150,13 +150,13 @@ export default function MedicinalGardenClient({ plantListRaw }: MedicinalGardenC
                       <Leaf size={14} />
                     </div>
                     <div className="space-y-0.5">
-                      <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest leading-none">Local Name</p>
+                      <p className="text-[8px] font-black text-slate-400 tracking-widest leading-none">Local Name</p>
                       <p className="text-sm font-bold text-slate-700">{plant.teluguName}</p>
                     </div>
                  </div>
 
                  <div className="space-y-2">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                    <p className="text-[10px] font-black text-slate-400 tracking-widest flex items-center gap-2">
                       <FlaskConical size={12} className="text-primary" /> Constituents
                     </p>
                     <p className="text-xs text-slate-500 font-medium leading-relaxed break-words line-clamp-3 group-hover:line-clamp-none transition-all">
@@ -165,7 +165,7 @@ export default function MedicinalGardenClient({ plantListRaw }: MedicinalGardenC
                  </div>
 
                  <div className="pt-4 border-t border-slate-50 space-y-2">
-                    <p className="text-[10px] font-black text-emerald-600 uppercase tracking-widest flex items-center gap-2">
+                    <p className="text-[10px] font-black text-emerald-600 tracking-widest flex items-center gap-2">
                       <Stethoscope size={12} /> Medical Uses
                     </p>
                     <p className="text-xs text-slate-600 font-bold leading-relaxed italic break-words">
@@ -178,12 +178,12 @@ export default function MedicinalGardenClient({ plantListRaw }: MedicinalGardenC
         </div>
 
         {filteredPlants.length === 0 && (
-          <Card className="border-none shadow-sm rounded-[3rem] bg-white py-24">
+          <Card className="border-none shadow-sm rounded-[3rem] bg-white py-12">
              <CardContent className="text-center space-y-6">
                 <div className="w-20 h-20 bg-slate-50 text-slate-200 rounded-full flex items-center justify-center mx-auto">
                    <Search size={40} />
                 </div>
-                <p className="text-slate-400 font-black uppercase tracking-[0.2em] text-sm">No plants matching your search</p>
+                <p className="text-slate-400 font-black tracking-[0.2em] text-sm">No plants matching your search</p>
              </CardContent>
           </Card>
         )}

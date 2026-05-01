@@ -59,7 +59,7 @@ export function SidebarNav() {
       {/* Floating Toggle Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed right-0 top-1/2 -translate-y-1/2 z-[100] bg-[#003366] text-white p-3 rounded-l-2xl shadow-[-5px_0_15px_rgba(0,0,0,0.1)] hover:pr-6 transition-all group flex flex-col items-center gap-2"
+        className="fixed right-0 top-1/2 -translate-y-1/2 z-[10001] bg-[#003366] text-white p-3 rounded-l-2xl shadow-[-5px_0_15px_rgba(0,0,0,0.1)] hover:pr-6 transition-all group flex flex-col items-center gap-2"
       >
         <Layers size={24} className="group-hover:scale-110 transition-transform" />
         <span className="[writing-mode:vertical-lr] text-[10px] font-bold uppercase tracking-widest">Resources</span>
@@ -73,7 +73,7 @@ export function SidebarNav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[110]"
+            className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[10002]"
           />
         )}
       </AnimatePresence>
@@ -86,7 +86,7 @@ export function SidebarNav() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed right-0 top-0 h-screen w-full max-w-sm bg-white shadow-2xl z-[120] flex flex-col border-l border-slate-100"
+            className="fixed right-0 top-0 h-screen w-full max-w-sm bg-white shadow-2xl z-[10003] flex flex-col border-l border-slate-100"
           >
             {/* Header Sticky */}
             <div className="sticky top-0 z-20 bg-white border-b border-slate-100 flex flex-col shadow-sm">

@@ -1,12 +1,13 @@
-import { 
-  Dog, 
-  Coffee, 
-  Box, 
-  Library, 
-  Home, 
-  Microscope, 
-  Building2, 
-  Trophy 
+import {
+  Dog,
+  Coffee,
+  Box,
+  Library,
+  Home,
+  Microscope,
+  Building2,
+  Trophy,
+  Dumbbell
 } from "lucide-react";
 
 export interface InfrastructureItem {
@@ -41,44 +42,6 @@ export const infrastructureData: InfrastructureItem[] = [
       { label: "Certification", value: "CPCSEA Approved" },
       { label: "Total Area", value: "2,500 Sq. Ft." },
       { label: "Ventilation", value: "HEPA Filtered" }
-    ]
-  },
-  {
-    title: "Canteen",
-    slug: "canteen",
-    description: "Hygienic and vibrant dining space offering nutritious meals and refreshments for students and staff.",
-    longDescription: "The CLPT Canteen is more than just a dining hall; it's a social hub where students and faculty gather to recharge. We prioritize hygiene, nutrition, and variety, offering a range of freshly prepared meals and snacks in a clean, modern environment.",
-    icon: Coffee,
-    image: "https://images.unsplash.com/photo-1567529684892-0f1964096379?auto=format&fit=crop&q=80&w=800",
-    features: [
-      "Nutritious Meal Plans",
-      "RO Purified Water",
-      "Spacious Seating",
-      "Regular Quality Audits"
-    ],
-    specs: [
-      { label: "Capacity", value: "200+ Students" },
-      { label: "Cuisine", value: "Multi-cuisine" },
-      { label: "Quality Rating", value: "Grade A" }
-    ]
-  },
-  {
-    title: "Central Stores",
-    slug: "central-stores",
-    description: "Efficiently managed inventory for high-grade chemicals, glassware, and sophisticated lab equipment.",
-    longDescription: "Our Central Stores facility ensures that academic and research activities are never interrupted. We maintain a rigorous inventory of high-purity chemicals, specialized glassware, and equipment, all stored under appropriate safety and environmental conditions.",
-    icon: Box,
-    image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=800",
-    features: [
-      "Automated Inventory Tracking",
-      "Hazardous Material Safety",
-      "Cool Storage Facilities",
-      "Bulk Procurement Efficiency"
-    ],
-    specs: [
-      { label: "Inventory Count", value: "5,000+ Items" },
-      { label: "Safety System", value: "NFPA Compliant" },
-      { label: "Supply Chain", value: "Direct OEM Tie-ups" }
     ]
   },
   {
@@ -141,7 +104,7 @@ export const infrastructureData: InfrastructureItem[] = [
   {
     title: "Seminar Hall",
     slug: "seminar-hall",
-    description: "Modern auditorium with audio-visual equipment for international conferences, guest lectures, and student activities.",
+    description: "Equipped with audio-visual equipment for seminars, webinars, workshops, guest lectures, and student activities.",
     longDescription: "Our Seminar Hall is a venue for intellectual discourse and professional networking. Equipped with integrated audio-visual systems and ergonomic seating, it hosts regular guest lectures by industry experts, international symposia, and university-level competitions.",
     icon: Building2,
     image: "https://images.unsplash.com/photo-1475721027785-f74dea996949?auto=format&fit=crop&q=80&w=800",
@@ -158,8 +121,47 @@ export const infrastructureData: InfrastructureItem[] = [
     ]
   },
   {
-    title: "Sports Room",
-    slug: "sports-room",
+    title: "Auditorium",
+    slug: "auditorium",
+    description: "Modern auditorium equipped with high-defintion audio and video facilities for national and international conferences, workshops & Student Activities.",
+    longDescription: "Our state-of-the-art auditorium serves as the premier venue for intellectual discourse and professional engagement. Designed to host national and international conferences, symposia, guest lectures, and major student events, it combines cutting-edge technology with architectural excellence.",
+    icon: Building2,
+    image: "https://images.unsplash.com/photo-1475721027785-f74dea996949?auto=format&fit=crop&q=80&w=800",
+    features: [
+      "High-Definition 4K Laser Projection",
+      "Immersive Dolby Atmos Surround Sound",
+      "Professional Grade Lighting Rig",
+      "Ergonomic Tiered Seating",
+      "Acoustic Optimization"
+    ],
+    specs: [
+      { label: "Seating Capacity", value: "300+ Attendees" },
+      { label: "Connectivity", value: "High-speed Ethernet" },
+      { label: "Projection", value: "4K Laser Projector" }
+    ]
+  },
+  {
+    title: "Open Air Auditorium",
+    slug: "open-air-auditorium",
+    description: "Equipped with audio video facilities for student activities like national level sports and cultural meets, yoga & meditation, gatherings, functions and events.",
+    longDescription: "Open Air Auditorium at CLPT is a serene amphitheater designed for large gatherings and performances under the open sky. With its natural acoustics and professional stage setup, it provides an inspiring backdrop for cultural festivals, large-scale conferences, yoga & meditation sessions, and community events.",
+    icon: Building2,
+    image: "https://images.unsplash.com/photo-1475721027785-f74dea996949?auto=format&fit=crop&q=80&w=800",
+    features: [
+      "Integrated AV Controls",
+      "Video Conferencing",
+      "Ergonomic Tiered Seating",
+      "Acoustic Optimization"
+    ],
+    specs: [
+      { label: "Seating Capacity", value: "300+ Attendees" },
+      { label: "Connectivity", value: "High-speed Ethernet" },
+      { label: "Projection", value: "4K Laser Projector" }
+    ]
+  },
+  {
+    title: "Sports Facilities",
+    slug: "sports-facilities",
     description: "Comprehensive facilities for indoor and outdoor sports to ensure physical wellness and team spirit.",
     longDescription: "At CLPT, we believe in the physical well-being of our students. Our sports facilities include a dedicated indoor sports room for games like Table Tennis and Chess, alongside well-maintained outdoor courts for Volleyball and Cricket, encouraging a healthy, balanced lifestyle.",
     icon: Trophy,
@@ -175,5 +177,61 @@ export const infrastructureData: InfrastructureItem[] = [
       { label: "Available Sports", value: "10+ Disciplines" },
       { label: "Wellness Hub", value: "Open Daily" }
     ]
-  }
+  },
+  {
+    title: "Gymnasium",
+    slug: "gymnasium",
+    description: "A well-equipped indoor and outdoor gymnasium that provides boys and girls with a safe, inclusive, and dynamic environment for fitness, sports, and overall physical development in both comfortable indoor settings and refreshing open-air spaces.",
+    longDescription: "At CLPT, we believe in the physical well-being of our students. Our gymnasium is equipped with state-of-the-art fitness equipment to support your health and fitness goals. From cardio machines to strength training equipment, we have everything you need for a comprehensive workout.",
+    icon: Dumbbell,
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
+    features: [
+      "Cardio Machines",
+      "Strength Training Equipment",
+      "Professional Equipment"
+    ],
+    specs: [
+      { label: "Facility Type", value: "Indoor" },
+      { label: "Available Equipment", value: "Cardio Machines, Strength Training Equipment" },
+      { label: "Wellness Hub", value: "Open Daily" }
+    ]
+  },
+  {
+    title: "Canteen",
+    slug: "canteen",
+    description: "Hygienic and vibrant dining space offering nutritious meals and refreshments for students and staff.",
+    longDescription: "The CLPT Canteen is more than just a dining hall; it's a social hub where students and faculty gather to recharge. We prioritize hygiene, nutrition, and variety, offering a range of freshly prepared meals and snacks in a clean, modern environment.",
+    icon: Coffee,
+    image: "https://images.unsplash.com/photo-1567529684892-0f1964096379?auto=format&fit=crop&q=80&w=800",
+    features: [
+      "Nutritious Meal Plans",
+      "RO Purified Water",
+      "Spacious Seating",
+      "Regular Quality Audits"
+    ],
+    specs: [
+      { label: "Capacity", value: "200+ Students" },
+      { label: "Cuisine", value: "Multi-cuisine" },
+      { label: "Quality Rating", value: "Grade A" }
+    ]
+  },
+  {
+    title: "Central Stores",
+    slug: "central-stores",
+    description: "Efficiently managed inventory for high-grade chemicals, glassware, and sophisticated lab equipment.",
+    longDescription: "Our Central Stores facility ensures that academic and research activities are never interrupted. We maintain a rigorous inventory of high-purity chemicals, specialized glassware, and equipment, all stored under appropriate safety and environmental conditions.",
+    icon: Box,
+    image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=800",
+    features: [
+      "Automated Inventory Tracking",
+      "Hazardous Material Safety",
+      "Cool Storage Facilities",
+      "Bulk Procurement Efficiency"
+    ],
+    specs: [
+      { label: "Inventory Count", value: "5,000+ Items" },
+      { label: "Safety System", value: "NFPA Compliant" },
+      { label: "Supply Chain", value: "Direct OEM Tie-ups" }
+    ]
+  },
 ];

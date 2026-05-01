@@ -109,38 +109,49 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
           <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white rounded-3xl w-full md:w-[80vw] lg:w-[70vw] max-w-6xl shadow-2xl overflow-hidden flex flex-col relative z-10"
+              className="bg-white rounded-3xl w-full md:w-[75vw] lg:w-[65vw] max-w-5xl shadow-2xl overflow-hidden flex flex-col relative z-10"
             >
-              <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+              <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                 <h3 className="font-black text-slate-800">{editIndex !== null ? 'Edit' : 'Add'} {title}</h3>
                 <button type="button" onClick={() => setIsModalOpen(false)} className="text-slate-400 hover:text-slate-600">&times;</button>
               </div>
-              <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-y-auto max-h-[80vh]">
-                {fields.map(f => (
-                  <div key={f.key}>
-                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">{f.label}</label>
-                    {f.type === "select" ? (
-                      <select
-                        value={tempItem[f.key] || ""}
-                        onChange={(e) => setTempItem({ ...tempItem, [f.key]: e.target.value })}
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
-                      >
-                        <option value="">Select...</option>
-                        {f.options?.map(o => <option key={o} value={o}>{o}</option>)}
-                      </select>
-                    ) : (
-                      <input
-                        type={f.type}
-                        value={tempItem[f.key] || ""}
-                        onChange={(e) => setTempItem({ ...tempItem, [f.key]: e.target.value })}
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
-                      />
-                    )}
-                  </div>
-                ))}
+              <div className="p-5 grid grid-cols-1 md:grid-cols-4 gap-4 overflow-y-auto max-h-[72vh]">
+                {fields.map(f => {
+                  const colSpanClass = f.colSpan === 4 
+                    ? "md:col-span-4" 
+                    : f.colSpan === 3 
+                    ? "md:col-span-3" 
+                    : f.colSpan === 2 
+                    ? "md:col-span-2" 
+                    : f.colSpan === 1 
+                    ? "md:col-span-1" 
+                    : "md:col-span-2"; // default to 2 cols
+                  return (
+                    <div key={f.key} className={colSpanClass}>
+                      <label className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1.5">{f.label}</label>
+                      {f.type === "select" ? (
+                        <select
+                          value={tempItem[f.key] || ""}
+                          onChange={(e) => setTempItem({ ...tempItem, [f.key]: e.target.value })}
+                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
+                        >
+                          <option value="">Select...</option>
+                          {f.options?.map(o => <option key={o} value={o}>{o}</option>)}
+                        </select>
+                      ) : (
+                        <input
+                          type={f.type}
+                          value={tempItem[f.key] || ""}
+                          onChange={(e) => setTempItem({ ...tempItem, [f.key]: e.target.value })}
+                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 font-medium text-slate-800"
+                        />
+                      )}
+                    </div>
+                  );
+                })}
               </div>
-              <div className="p-6 border-t border-slate-100 bg-slate-50">
-                <button type="button" onClick={handleSave} className="w-full h-12 rounded-xl font-bold bg-primary text-white hover:bg-primary/90 transition-colors">
+              <div className="p-4 border-t border-slate-100 bg-slate-50">
+                <button type="button" onClick={handleSave} className="w-full h-11 rounded-xl font-bold bg-primary text-white hover:bg-primary/90 transition-colors">
                   {editIndex !== null ? 'Update Item' : 'Save Item'}
                 </button>
               </div>
@@ -643,9 +654,9 @@ export default function FacultyUpdatePage() {
                             onChange={(items) => setFormData({ ...formData, qualifications: items })}
                             emptyItem={{ degree: "", institution: "", year: "" }}
                             fields={[
-                              { key: "degree", label: "Education Qualification (e.g., Ph.D., SSC)", type: "text" },
-                              { key: "institution", label: "Institution/University", type: "text" },
-                              { key: "year", label: "Year of Passing", type: "text" },
+                              { key: "degree", label: "Education Qualification (e.g., Ph.D., SSC)", type: "text", colSpan: 2 },
+                              { key: "institution", label: "Institution/University", type: "text", colSpan: 1 },
+                              { key: "year", label: "Year of Passing", type: "text", colSpan: 1 },
                             ]}
                           />
                         </div>
@@ -766,15 +777,15 @@ export default function FacultyUpdatePage() {
                           onChange={(items) => setFormData({ ...formData, publications: items })}
                           emptyItem={{ title: "", authors: "", correspondingAuthor: "No", journal: "", volume: "", issue: "", year: "", impactFactor: "", link: "" }}
                           fields={[
-                            { key: "title", label: "Paper Title *", type: "text" },
-                            { key: "authors", label: "Authors *", type: "text" },
-                            { key: "correspondingAuthor", label: "Corresponding Author?", type: "select", options: ["Yes", "No"] },
-                            { key: "journal", label: "Journal Name", type: "text" },
-                            { key: "volume", label: "Volume", type: "text" },
-                            { key: "issue", label: "Issue", type: "text" },
-                            { key: "year", label: "Year *", type: "text" },
-                            { key: "impactFactor", label: "Impact Factor", type: "text" },
-                            { key: "link", label: "DOI / Link", type: "url" },
+                            { key: "title", label: "Paper Title *", type: "text", colSpan: 4 },
+                            { key: "authors", label: "Authors *", type: "text", colSpan: 4 },
+                            { key: "correspondingAuthor", label: "Corresponding Author?", type: "select", options: ["Yes", "No"], colSpan: 2 },
+                            { key: "journal", label: "Journal Name", type: "text", colSpan: 2 },
+                            { key: "volume", label: "Volume", type: "text", colSpan: 1 },
+                            { key: "issue", label: "Issue", type: "text", colSpan: 1 },
+                            { key: "year", label: "Year *", type: "text", colSpan: 1 },
+                            { key: "impactFactor", label: "Impact Factor", type: "text", colSpan: 1 },
+                            { key: "link", label: "DOI / Link", type: "url", colSpan: 4 },
                           ]}
                         />
                         <ComplexObjectList
@@ -783,10 +794,10 @@ export default function FacultyUpdatePage() {
                           onChange={(items) => setFormData({ ...formData, patents: items })}
                           emptyItem={{ title: "", appNumber: "", status: "Filed", year: "" }}
                           fields={[
-                            { key: "title", label: "Title", type: "text" },
-                            { key: "appNumber", label: "Application Number", type: "text" },
-                            { key: "status", label: "Status", type: "select", options: ["Filed", "Granted", "Published"] },
-                            { key: "year", label: "Year", type: "text" },
+                            { key: "title", label: "Title", type: "text", colSpan: 4 },
+                            { key: "appNumber", label: "Application Number", type: "text", colSpan: 2 },
+                            { key: "status", label: "Status", type: "select", options: ["Filed", "Granted", "Published"], colSpan: 1 },
+                            { key: "year", label: "Year", type: "text", colSpan: 1 },
                           ]}
                         />
                         <ComplexObjectList
@@ -795,10 +806,10 @@ export default function FacultyUpdatePage() {
                           onChange={(items) => setFormData({ ...formData, grants: items })}
                           emptyItem={{ title: "", agency: "", amount: "", status: "Ongoing" }}
                           fields={[
-                            { key: "title", label: "Project Title", type: "text" },
-                            { key: "agency", label: "Funding Agency", type: "text" },
-                            { key: "amount", label: "Amount Granted", type: "text" },
-                            { key: "status", label: "Status", type: "select", options: ["Ongoing", "Completed"] },
+                            { key: "title", label: "Project Title", type: "text", colSpan: 4 },
+                            { key: "agency", label: "Funding Agency", type: "text", colSpan: 2 },
+                            { key: "amount", label: "Amount Granted", type: "text", colSpan: 1 },
+                            { key: "status", label: "Status", type: "select", options: ["Ongoing", "Completed"], colSpan: 1 },
                           ]}
                         />
                       </div>

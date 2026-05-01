@@ -50,18 +50,32 @@ function DynamicList({ items, onChange, label, placeholder }: { items: string[],
 function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { title: string, fields: { key: string, label: string, type: string, options?: string[] }[], items: any[], onChange: (items: any[]) => void, emptyItem: any }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [tempItem, setTempItem] = useState<any>(emptyItem);
+  const [editIndex, setEditIndex] = useState<number | null>(null);
 
-  const openModal = () => {
-    setTempItem(emptyItem);
+  const openModal = (index: number | null = null) => {
+    if (index !== null) {
+      setEditIndex(index);
+      setTempItem({ ...items[index] });
+    } else {
+      setEditIndex(null);
+      setTempItem(emptyItem);
+    }
     setIsModalOpen(true);
   };
 
   const handleSave = () => {
-    onChange([...items, tempItem]);
+    if (editIndex !== null) {
+      const newItems = [...items];
+      newItems[editIndex] = tempItem;
+      onChange(newItems);
+    } else {
+      onChange([...items, tempItem]);
+    }
     setIsModalOpen(false);
   };
 
-  const handleRemove = (index: number) => {
+  const handleRemove = (e: React.MouseEvent, index: number) => {
+    e.stopPropagation();
     const newItems = [...items];
     newItems.splice(index, 1);
     onChange(newItems);
@@ -72,17 +86,21 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
       <label className="block text-xs font-black text-slate-500 uppercase tracking-widest">{title}</label>
       <div className="space-y-2">
         {items.map((item, index) => (
-          <div key={index} className="flex justify-between items-center bg-slate-50 border border-slate-200 rounded-2xl p-4">
+          <div 
+            key={index} 
+            className="flex justify-between items-center bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-2xl p-4 cursor-pointer transition-colors"
+            onClick={() => openModal(index)}
+          >
             <div className="truncate text-sm font-semibold text-slate-700">
-              {Object.values(item)[0] as string} {/* Show first field as title */}
+              {item[fields[0].key] || "Unnamed Item"}
             </div>
-            <button type="button" onClick={() => handleRemove(index)} className="text-red-400 hover:text-red-600 font-bold ml-4">
+            <button type="button" onClick={(e) => handleRemove(e, index)} className="text-red-400 hover:text-red-600 font-bold ml-4">
               &times;
             </button>
           </div>
         ))}
       </div>
-      <button type="button" onClick={openModal} className="text-sm font-bold text-primary hover:text-primary/80 flex items-center gap-1 bg-primary/5 px-4 py-2 rounded-xl transition-colors">
+      <button type="button" onClick={() => openModal()} className="text-sm font-bold text-primary hover:text-primary/80 flex items-center gap-1 bg-primary/5 px-4 py-2 rounded-xl transition-colors">
         + Add {title}
       </button>
 
@@ -91,10 +109,10 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4">
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white rounded-3xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col"
+              className="bg-white rounded-3xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col relative z-10"
             >
               <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                <h3 className="font-black text-slate-800">Add {title}</h3>
+                <h3 className="font-black text-slate-800">{editIndex !== null ? 'Edit' : 'Add'} {title}</h3>
                 <button type="button" onClick={() => setIsModalOpen(false)} className="text-slate-400 hover:text-slate-600">&times;</button>
               </div>
               <div className="p-6 space-y-4 overflow-y-auto max-h-[60vh]">
@@ -123,10 +141,11 @@ function ComplexObjectList({ title, fields, items, onChange, emptyItem }: { titl
               </div>
               <div className="p-6 border-t border-slate-100 bg-slate-50">
                 <Button type="button" onClick={handleSave} className="w-full h-12 rounded-xl font-bold">
-                  Save Item
+                  {editIndex !== null ? 'Update Item' : 'Save Item'}
                 </Button>
               </div>
             </motion.div>
+            <div className="absolute inset-0" onClick={() => setIsModalOpen(false)}></div>
           </div>
         )}
       </AnimatePresence>

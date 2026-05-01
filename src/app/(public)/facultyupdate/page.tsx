@@ -521,17 +521,6 @@ export default function FacultyUpdatePage() {
                             <option value="Pharmacology (including Pharmacognosy)">Pharmacology (including Pharmacognosy)</option>
                             <option value="Pharmaceutical Analysis (including Pharmaceutical Chemistry & Regulatory Affairs)">Pharmaceutical Analysis (including Pharmaceutical Chemistry & Regulatory Affairs)</option>
                             <option value="Pharmacy Practice">Pharmacy Practice</option>
-                            <option value="Regulatory Affairs">Regulatory Affairs</option>
-                            <option value="Industrial Pharmacy">Industrial Pharmacy</option>
-                            <option value="Quality Assurance (QA)">Quality Assurance (QA)</option>
-                            <option value="Pharmaceutical Biotechnology">Pharmaceutical Biotechnology</option>
-                            <option value="Human Anatomy and Physiology">Human Anatomy and Physiology</option>
-                            <option value="Mathematics and Biostatistics">Mathematics and Biostatistics</option>
-                            <option value="Computer Applications / IT">Computer Applications / IT</option>
-                            <option value="Environmental Sciences">Environmental Sciences</option>
-                            <option value="Management Studies / MBA">Management Studies / MBA</option>
-                            <option value="Physical Education">Physical Education</option>
-                            <option value="Library Sciences">Library Sciences</option>
                           </select>
                         </div>
                       </div>

@@ -198,6 +198,7 @@ export default function FacultyUpdatePage() {
     subjectsUG: [] as string[],
     subjectsPG: [] as string[],
     innovativeTeaching: "",
+    bio: "",
     totalPublications: "",
     booksPublished: "",
     bookChapters: "",
@@ -269,7 +270,8 @@ export default function FacultyUpdatePage() {
           specializations: faculty.specializations || [],
           subjectsUG: faculty.subjectsUG || [],
           subjectsPG: faculty.subjectsPG || [],
-          innovativeTeaching: faculty.innovativeTeaching?.map((block: any) => block.children?.[0]?.text || "").filter(Boolean).join('\n') || "",
+          innovativeTeaching: Array.isArray(faculty.innovativeTeaching) ? faculty.innovativeTeaching.map((block: any) => Array.isArray(block.children) ? block.children.map((child: any) => child.text || "").join("") : "").filter(Boolean).join('\n') : "",
+          bio: Array.isArray(faculty.bio) ? faculty.bio.map((block: any) => Array.isArray(block.children) ? block.children.map((child: any) => child.text || "").join("") : "").filter(Boolean).join('\n') : "",
           totalPublications: faculty.totalPublications?.toString() || "",
           booksPublished: faculty.booksPublished?.toString() || "",
           bookChapters: faculty.bookChapters?.toString() || "",
@@ -411,7 +413,7 @@ export default function FacultyUpdatePage() {
                       />
                     </div>
                   </div>
-                  <Button type="submit" disabled={loading} className="w-full h-16 text-sm font-black uppercase tracking-widest rounded-2xl group hover:shadow-lg hover:shadow-primary/20 transition-all mt-4">
+                  <Button type="submit" disabled={loading} className="w-full h-16 text-sm font-black uppercase tracking-widest rounded-2xl group hover:shadow-lg hover:shadow-primary/20 transition-all mt-4 text-white bg-primary hover:bg-primary/90">
                     {loading ? <Loader2 className="animate-spin" /> : "Verify & Proceed"}
                     {!loading && <ArrowRight size={18} className="ml-3 group-hover:translate-x-1 transition-transform" />}
                   </Button>
@@ -477,6 +479,15 @@ export default function FacultyUpdatePage() {
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                             className={inputClassName}
                             placeholder="e.g., Ramesh Kumar"
+                          />
+                        </div>
+                        <div className="md:col-span-4 mt-4">
+                          <label className={labelClassName}>Biography / About Section</label>
+                          <textarea
+                            value={formData.bio}
+                            onChange={(e) => setFormData({ ...formData, bio: e.target.value })}
+                            className={`${inputClassName} min-h-[120px] resize-y`}
+                            placeholder="A short biography or introduction..."
                           />
                         </div>
                       </div>
@@ -719,6 +730,10 @@ export default function FacultyUpdatePage() {
                           <input type="number" value={formData.patentsGranted} onChange={(e) => setFormData({ ...formData, patentsGranted: e.target.value })} className={inputClassName} />
                         </div>
                         <div>
+                          <label className={labelClassName}>Patents Published</label>
+                          <input type="number" value={formData.patentsPublished} onChange={(e) => setFormData({ ...formData, patentsPublished: e.target.value })} className={inputClassName} />
+                        </div>
+                        <div>
                           <label className={labelClassName}>Ph.D. Guided</label>
                           <input type="number" value={formData.phdGuided} onChange={(e) => setFormData({ ...formData, phdGuided: e.target.value })} className={inputClassName} />
                         </div>
@@ -834,7 +849,7 @@ export default function FacultyUpdatePage() {
                       <Button type="button" variant="outline" onClick={() => setStep(1)} className="w-full md:w-1/3 h-16 rounded-2xl font-black uppercase tracking-widest text-xs border-slate-200 text-slate-500 hover:bg-slate-50">
                         Back to Search
                       </Button>
-                      <Button type="submit" disabled={loading} className="w-full md:w-2/3 h-16 rounded-2xl font-black uppercase tracking-widest text-xs shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all">
+                      <Button type="submit" disabled={loading} className="w-full md:w-2/3 h-16 rounded-2xl font-black uppercase tracking-widest text-xs shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all text-white bg-primary hover:bg-primary/90">
                         {loading ? <Loader2 className="animate-spin" /> : (
                           <span className="flex items-center justify-center gap-2">
                             <Save size={18} /> {existingId ? "Commit Changes to Database" : "Create Official Profile"}

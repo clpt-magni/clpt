@@ -8,7 +8,7 @@ const writeClient = createClient({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   apiVersion: '2023-10-01',
   useCdn: false,
-  token: process.env.SANITY_WRITE_TOKEN || process.env.SANITY_AUTH_TOKEN,
+  token: process.env.SANITY_AUTH_TOKEN || process.env.SANITY_WRITE_TOKEN,
 });
 
 import { revalidatePath } from "next/cache";
@@ -42,12 +42,12 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       pciRegistration: data.pciRegistration,
       
       // Qualifications
-      qualifications: data.qualifications?.map((q: any) => ({
-        _key: crypto.randomUUID(),
-        degree: q.degree,
-        institution: q.institution,
-        year: q.year
-      })),
+      qualifications: Array.isArray(data.qualifications) ? data.qualifications.map((q: any) => ({
+        _key: q._key || crypto.randomUUID(),
+        degree: q.degree || "",
+        institution: q.institution || "",
+        year: q.year || ""
+      })) : undefined,
 
       // Academic Operations
       specializations: Array.isArray(data.specializations) ? data.specializations.map((s: string) => s.trim()).filter(Boolean) : [],
@@ -59,32 +59,32 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       },
 
       // Arrays of objects
-      publications: data.publications?.map((p: any) => ({
-        _key: crypto.randomUUID(),
-        title: p.title,
-        authors: p.authors,
-        correspondingAuthor: p.correspondingAuthor,
-        journal: p.journal,
-        volume: p.volume,
-        issue: p.issue,
-        year: p.year,
-        impactFactor: p.impactFactor,
-        link: p.link
-      })),
-      patents: data.patents?.map((p: any) => ({
-        _key: crypto.randomUUID(),
-        title: p.title,
-        appNumber: p.appNumber,
-        status: p.status,
-        year: p.year
-      })),
-      grants: data.grants?.map((g: any) => ({
-        _key: crypto.randomUUID(),
-        title: g.title,
-        agency: g.agency,
-        amount: g.amount,
-        status: g.status
-      })),
+      publications: Array.isArray(data.publications) ? data.publications.map((p: any) => ({
+        _key: p._key || crypto.randomUUID(),
+        title: p.title || "",
+        authors: p.authors || "",
+        correspondingAuthor: p.correspondingAuthor || "No",
+        journal: p.journal || "",
+        volume: p.volume || "",
+        issue: p.issue || "",
+        year: p.year || "",
+        impactFactor: p.impactFactor || "",
+        link: p.link || ""
+      })) : undefined,
+      patents: Array.isArray(data.patents) ? data.patents.map((p: any) => ({
+        _key: p._key || crypto.randomUUID(),
+        title: p.title || "",
+        appNumber: p.appNumber || "",
+        status: p.status || "Filed",
+        year: p.year || ""
+      })) : undefined,
+      grants: Array.isArray(data.grants) ? data.grants.map((g: any) => ({
+        _key: g._key || crypto.randomUUID(),
+        title: g.title || "",
+        agency: g.agency || "",
+        amount: g.amount || "",
+        status: g.status || "Ongoing"
+      })) : undefined,
 
       // Research Metrics
       totalPublications: Number(data.totalPublications) || 0,
@@ -110,6 +110,12 @@ export async function saveFacultyProfile(data: any, existingId?: string) {
       memberships: Array.isArray(data.memberships) ? data.memberships.map((s: string) => s.trim()).filter(Boolean) : [],
       
       innovativeTeaching: data.innovativeTeaching ? data.innovativeTeaching.split('\n').filter((t: string) => t.trim().length > 0).map((t: string) => ({
+        _key: crypto.randomUUID(),
+        _type: 'block',
+        children: [{ _type: 'span', text: t.trim(), _key: crypto.randomUUID() }]
+      })) : undefined,
+
+      bio: data.bio ? data.bio.split('\n').filter((t: string) => t.trim().length > 0).map((t: string) => ({
         _key: crypto.randomUUID(),
         _type: 'block',
         children: [{ _type: 'span', text: t.trim(), _key: crypto.randomUUID() }]

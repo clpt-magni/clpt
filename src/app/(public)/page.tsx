@@ -6,6 +6,9 @@ import { getNotices, getNews, getEvents } from "@/lib/sanity-actions";
 
 import HeroVideo from "@/components/home/HeroVideo";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function Home() {
   const notices = await getNotices().catch(() => []);
   const news = await getNews().catch(() => []);

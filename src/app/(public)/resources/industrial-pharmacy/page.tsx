@@ -32,12 +32,12 @@ const MODULES = [
   },
   {
     title: "Hands-On Training",
-    desc: "Provides rigorous hands-on training to students, researchers, industry professionals, and faculty members.",
+    desc: "Provides hands-on training to students, researchers, industry professionals, and faculty members.",
     icon: Stethoscope
   },
   {
     title: "Consultancy Services",
-    desc: "Supports formulation development and advanced pharmaceutical process optimization consultancy for industrial partners.",
+    desc: "Supports formulation development and pharmaceutical process optimization consultancy for industrial partners.",
     icon: Briefcase
   }
 ];
@@ -51,7 +51,7 @@ export default function IndustrialPharmacyPage() {
           { label: "Resources", href: "/resources" },
           { label: "Industrial Pharmacy" }
         ]}
-        description="Providing state-of-the-art facilities for formulation design, professional training, and process optimization consultancy services."
+        description="Providing facilities for formulation design, professional training, and process optimization consultancy services."
       />
 
       {/* Main Section */}
@@ -70,7 +70,7 @@ export default function IndustrialPharmacyPage() {
                 </h2>
                 <div className="prose prose-slate prose-lg max-w-none text-slate-600 font-medium leading-relaxed italic">
                   <p>
-                    The Industrial Pharmacy Division at CLPT stands as a bridge between academic learning and industry standards. Through the usage of top-tier formulation equipment, we expose our students to cutting-edge manufacturing protocols and offer professional testing services.
+                    The Industrial Pharmacy Division at CLPT stands as a bridge between academic learning and industry standards. Through the usage of formulation equipment, we expose our students to manufacturing protocols and offer professional testing services.
                   </p>
                 </div>
               </div>

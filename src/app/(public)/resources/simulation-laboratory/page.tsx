@@ -3,51 +3,63 @@
 import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
-  MapPin,
-  Square,
-  Users,
-  ShieldCheck,
-  HeartPulse,
+  Activity,
+  Heart,
+  Laptop,
+  Cpu,
+  Monitor,
   Sparkles,
   ArrowRight,
-  FlaskConical,
+  Stethoscope,
   Award,
-  BookOpen
+  Users
 } from "lucide-react";
 
 const FEATURES = [
-  { label: "Available To", value: "Students, Staff & Community", icon: Users },
-  { label: "Medicine Quality", value: "DCA & WHO-GMP Standards", icon: ShieldCheck },
+  { label: "Laboratory Type", value: "Clinical Simulation", icon: Activity },
+  { label: "Available Tools", value: "Smart Boards & Software", icon: Laptop },
+  { label: "Emergency Prep", value: "Advanced Mannequins", icon: Users },
+  { label: "Primary Audience", value: "Students & Researchers", icon: Stethoscope },
 ];
 
-const VALUES = [
+const MODULES = [
   {
-    title: "Empowering Students",
-    desc: "Provides hands-on community engagement opportunities for pharmacy students, by giving them real-world healthcare exposure.",
-    icon: BookOpen
+    title: "Hands-On Training",
+    desc: "Equipped with specialized training instruments that provide real-world, hands-on learning experiences.",
+    icon: Stethoscope
   },
   {
-    title: "Affordable Healthcare",
-    desc: "Ensures the availability of quality generic medicines at a low cost for patients and local citizens.",
-    icon: HeartPulse
+    title: "Clinical Parameter Measurement",
+    desc: "Enables students to accurately measure and interpret physiological clinical parameters using advanced medical devices.",
+    icon: Heart
   },
   {
-    title: "In-House Formulations",
-    desc: "Facilitates the commercialization of in-house developed formulations created through advanced academic research.",
-    icon: FlaskConical
+    title: "Preclinical Pharmacology Simulation",
+    desc: "Offers intensive training in preclinical activities through cutting-edge pharmacology simulation software modules.",
+    icon: Cpu
+  },
+  {
+    title: "First Aid & Emergency Response",
+    desc: "Facilitates practical skill development using high-fidelity medical mannequins for first aid and critical emergency response training.",
+    icon: Activity
+  },
+  {
+    title: "Interactive Smart Boards",
+    desc: "Integrates touch-enabled Smart Boards for modern, technology-enabled, and interactive classroom learning.",
+    icon: Monitor
   }
 ];
 
-export default function PMBJKPage() {
+export default function SimulationLaboratoryPage() {
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
       <PageHeader
-        title="Pradhan Mantri Bharatiya Janaushadhi Kendra"
+        title="Simulation Laboratory"
         breadcrumbs={[
           { label: "Resources", href: "/resources" },
-          { label: "PMBJK" }
+          { label: "Simulation Laboratory" }
         ]}
-        description="A specialized healthcare unit providing quality generic medicines at affordable prices while enabling student training and research commercialization."
+        description="A cutting-edge facility providing experiential training, clinical parameter measurements, pharmacology simulation software, and emergency response tools."
       />
 
       {/* Main Section */}
@@ -59,14 +71,14 @@ export default function PMBJKPage() {
             <div className="lg:col-span-6 space-y-12">
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary rounded-full font-black text-xs uppercase tracking-widest border border-primary/10">
-                  Healthcare & Community
+                  Simulation & Medical Practice
                 </div>
                 <h2 className="text-4xl md:text-5xl font-black text-primary uppercase tracking-tight leading-tight">
-                  Quality Generics. <br /> Maximum Care.
+                  Simulate Care. <br /> Master the Practice.
                 </h2>
                 <div className="prose prose-slate prose-lg max-w-none text-slate-600 font-medium leading-relaxed italic">
                   <p>
-                    The Pradhan Mantri Bharatiya Janaushadhi Kendra (PMBJK) at CLPT serves as a hub of social responsibility and education. By offering low-cost, medicines, it translates our institutional vision of public health service into direct action.
+                    The Simulation Laboratory provides an exceptional environment for our students to master critical clinical and emergency skills before entering real-world hospital environments. With advanced pharmacology simulation software and medical mannequins, our curriculum seamlessly integrates theory with immersive practical applications.
                   </p>
                 </div>
               </div>
@@ -91,12 +103,12 @@ export default function PMBJKPage() {
             <div className="lg:col-span-6 space-y-8">
               <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 group relative aspect-[4/3]">
                 <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
-                  alt="Pharmacy Store"
+                  src="https://images.unsplash.com/photo-1532187828452-b32053a65b8a?auto=format&fit=crop&q=80&w=800"
+                  alt="Laboratory work space"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-10 flex items-end">
-                  <p className="text-white text-xl font-black uppercase tracking-tight">Dedicated Healthcare Kendra</p>
+                  <p className="text-white text-xl font-black uppercase tracking-tight">Experiential Clinical Hub</p>
                 </div>
               </div>
 
@@ -106,13 +118,13 @@ export default function PMBJKPage() {
                   <Award size={130} />
                 </div>
                 <h4 className="text-xl font-black text-secondary uppercase mb-4 flex items-center gap-2">
-                  <Sparkles size={22} className="text-secondary animate-pulse" /> National Initiative
+                  <Sparkles size={22} className="text-secondary animate-pulse" /> Advanced Skillsets
                 </h4>
                 <p className="text-white/70 font-medium text-sm leading-relaxed mb-6">
-                  Empowered by the Government of India, the Kendra promotes the usage of quality generic medicines that match standard protocols without inflated pricing.
+                  Providing modern interactive tools, high-fidelity mannequins, and touch-enabled Smart Boards to ensure a deeply interactive learning space.
                 </p>
                 <div className="inline-flex items-center gap-3 py-3 px-6 bg-white/10 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:text-primary-dark transition-all relative z-10 w-fit cursor-pointer">
-                  Visit the Facility <ArrowRight size={16} />
+                  Explore Lab Modules <ArrowRight size={16} />
                 </div>
               </div>
             </div>
@@ -126,27 +138,27 @@ export default function PMBJKPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-primary-dark uppercase tracking-tight leading-tight">
-              Institutional Core Values
+              Core Simulation Modules
             </h2>
             <div className="h-1.5 w-32 bg-primary mx-auto my-6 rounded-full" />
             <p className="text-lg font-medium text-slate-500 leading-relaxed italic">
-              Integrating professional pharmaceutical education with impactful public health endeavors.
+              Empowering healthcare professionals of tomorrow with essential clinical training.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {VALUES.map((val, idx) => (
+            {MODULES.map((mod, idx) => (
               <div key={idx} className="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-xl hover:bg-primary-dark transition-all duration-500 hover:-translate-y-2 group flex flex-col items-start justify-between min-h-[300px]">
                 <div className="space-y-6">
                   <div className="w-16 h-16 bg-primary/5 group-hover:bg-white/10 rounded-2xl flex items-center justify-center text-primary group-hover:text-secondary transition-all duration-500 shadow-inner">
-                    <val.icon size={32} />
+                    <mod.icon size={32} />
                   </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-black text-primary-dark group-hover:text-white transition-colors leading-tight uppercase tracking-tight">
-                      {val.title}
+                      {mod.title}
                     </h3>
                     <p className="text-slate-500 group-hover:text-white/70 leading-relaxed text-sm font-medium italic transition-colors">
-                      {val.desc}
+                      {mod.desc}
                     </p>
                   </div>
                 </div>

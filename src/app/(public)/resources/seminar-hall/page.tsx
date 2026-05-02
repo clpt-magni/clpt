@@ -15,8 +15,8 @@ import {
 
 const FEATURES = [
   { label: "Seating Capacity", value: "200+ Persons", icon: Users },
-  { label: "Acoustics", value: "Premium Audio", icon: Mic2 },
-  { label: "Visuals", size: "High Definition Media", icon: Tv },
+  { label: "Total Area", value: "185 sq. m", icon: Maximize2 },
+  { label: "Visuals", value: "High Definition Media", icon: Tv },
   { label: "Environment", value: "Air Conditioned", icon: Wind },
 ];
 
@@ -61,7 +61,7 @@ export default function SeminarHallPage() {
                   <div key={i} className="p-8 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center text-center group hover:bg-primary-dark transition-all duration-500">
                     <feat.icon size={28} className="text-primary group-hover:text-secondary mb-4 transition-colors" />
                     <p className="text-[10px] font-black text-slate-400 tracking-widest mb-1 group-hover:text-white/50">{feat.label}</p>
-                    <p className="text-sm font-black text-primary-dark group-hover:text-white transition-colors">{feat.value || feat.size}</p>
+                    <p className="text-sm font-black text-primary-dark group-hover:text-white transition-colors">{feat.value}</p>
                   </div>
                 ))}
               </div>

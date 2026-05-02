@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 
 const FEATURES = [
-  { label: "Seating Capacity", value: "300+ Attendees", icon: Users },
-  { label: "Connectivity", value: "High-speed Ethernet", icon: Wind },
+  { label: "Seating Capacity", value: "1000+ Attendees", icon: Users },
+  { label: "Total Area", value: "1752 sq. m", icon: Maximize2 },
   { label: "Projection", value: "4K Laser Projector", icon: Tv },
   { label: "Audio", value: "Dolby Atmos Surround", icon: Mic2 },
 ];

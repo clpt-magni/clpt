@@ -25,7 +25,7 @@ const FEATURES = [
 const VALUES = [
   {
     title: "Empowering Students",
-    desc: "Provides hands-on community engagement opportunities for pharmacy students, fostering real-world healthcare interaction.",
+    desc: "Provides hands-on community engagement opportunities for pharmacy students, by giving them real-world healthcare exposure.",
     icon: BookOpen
   },
   {

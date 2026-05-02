@@ -15,16 +15,14 @@ import {
 } from "lucide-react";
 
 const SPORTS = [
+  { name: "Cricket Net", icon: ShieldCheck },
+  { name: "Kabaddi", icon: Users },
+  { name: "Chess Academy", icon: Trophy },
+  { name: "Carrom", icon: Monitor },
+  { name: "Table Tennis", icon: Monitor },
   { name: "Volleyball", icon: Zap },
   { name: "Shuttle Badminton", icon: Target },
-  { name: "Throw Ball", icon: Users },
-  { name: "Tennicoit", icon: Trophy },
-  { name: "Carrom", icon: Monitor },
-  { name: "Chess", icon: Monitor },
-  { name: "Table Tennis", icon: Monitor },
-  { name: "Ball Badminton", icon: Monitor },
-  { name: "Kabaddi", icon: Users },
-  { name: "Cricket Net", icon: ShieldCheck }
+  { name: "Throw Ball", icon: Users }
 ];
 
 export default function PlayGroundPage() {

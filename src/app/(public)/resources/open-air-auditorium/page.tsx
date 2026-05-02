@@ -9,13 +9,14 @@ import {
   Tent,
   ArrowRight,
   Sparkles,
-  TreePine
+  TreePine,
+  Maximize2
 } from "lucide-react";
 
 const FEATURES = [
   { label: "Setting", value: "Open Amphitheater", icon: Tent },
-  { label: "Seating Capacity", value: "300+ Attendees", icon: Users },
-  { label: "Environment", value: "Natural Acoustics", icon: TreePine },
+  { label: "Seating Capacity", value: "1500+ Attendees", icon: Users },
+  { label: "Total Area", value: "1299 sq. m", icon: Maximize2 },
   { label: "Activities", value: "Cultural & Sports", icon: Music },
 ];
 

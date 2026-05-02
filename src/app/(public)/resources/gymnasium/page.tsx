@@ -92,6 +92,62 @@ export default function GymnasiumPage() {
           </div>
         </div>
       </section>
+
+      {/* Time Schedule Sheet */}
+      <section className="py-16 bg-slate-50 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black text-primary-dark uppercase tracking-tight leading-tight">
+              Gymnasium Time Schedule
+            </h2>
+            <div className="h-1.5 w-32 bg-primary mx-auto my-6 rounded-full" />
+            <p className="text-lg font-medium text-slate-500 leading-relaxed italic">
+              Allocated slots for Day Scholars and Hostellers across both categories.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-xl overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse min-w-[600px]">
+                <thead>
+                  <tr className="border-b-2 border-slate-100 bg-slate-50">
+                    <th className="py-4 px-6 text-xs font-black uppercase text-primary-dark tracking-widest">Category</th>
+                    <th className="py-4 px-6 text-xs font-black uppercase text-primary-dark tracking-widest">Type</th>
+                    <th className="py-4 px-6 text-xs font-black uppercase text-primary-dark tracking-widest">Morning Session</th>
+                    <th className="py-4 px-6 text-xs font-black uppercase text-primary-dark tracking-widest">Evening Session</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-50">
+                  <tr className="hover:bg-slate-50/60 transition-colors">
+                    <td className="py-5 px-6 font-black text-slate-700">Day Scholars</td>
+                    <td className="py-5 px-6 text-slate-600 font-bold">Girls</td>
+                    <td className="py-5 px-6 text-slate-500">06:00 AM - 07:30 AM</td>
+                    <td className="py-5 px-6 text-slate-500">04:30 PM - 05:45 PM</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50/60 transition-colors">
+                    <td className="py-5 px-6 font-black text-slate-700">Day Scholars</td>
+                    <td className="py-5 px-6 text-slate-600 font-bold">Boys</td>
+                    <td className="py-5 px-6 text-slate-500">07:30 AM - 09:00 AM</td>
+                    <td className="py-5 px-6 text-slate-500">05:45 PM - 07:00 PM</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50/60 transition-colors">
+                    <td className="py-5 px-6 font-black text-slate-700">Hostellers</td>
+                    <td className="py-5 px-6 text-slate-600 font-bold">Girls</td>
+                    <td className="py-5 px-6 text-slate-500">05:30 AM - 06:45 AM</td>
+                    <td className="py-5 px-6 text-slate-500">04:30 PM - 06:00 PM</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50/60 transition-colors">
+                    <td className="py-5 px-6 font-black text-slate-700">Hostellers</td>
+                    <td className="py-5 px-6 text-slate-600 font-bold">Boys</td>
+                    <td className="py-5 px-6 text-slate-500">06:45 AM - 08:30 AM</td>
+                    <td className="py-5 px-6 text-slate-500">06:00 PM - 07:45 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

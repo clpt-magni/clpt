@@ -141,6 +141,7 @@ export const topNav: NavItem[] = [
           { label: "Chalapathi Drug Testing Laboratory(CDTL)", href: "/resources/drug-testing-lab" },
           { label: "PMBJK", href: "/resources/pmbjk" },
           { label: "Business Incubation Center by MSME", href: "/resources/business-incubation-center" },
+          { label: "MSMEs Intellectual Property Facilitation Centre", href: "/resources/msme-ipfc" },
           { label: "Medicinal Plant Garden", href: "/resources/medicinal-garden" },
           { label: "Drug Museum", href: "/resources/drug-museum" },
           { label: "Animal House", href: "/resources/animal-house" },

@@ -16,8 +16,8 @@ import {
 const FEATURES = [
   { label: "Seating Capacity", value: "1000+ Attendees", icon: Users },
   { label: "Total Area", value: "1752 sq. m", icon: Maximize2 },
-  { label: "Projection", value: "4K Laser Projector", icon: Tv },
-  { label: "Audio", value: "Dolby Atmos Surround", icon: Mic2 },
+  { label: "Projection", value: "Full HD", icon: Tv },
+  { label: "Audio", value: "Premium Sound System", icon: Mic2 },
 ];
 
 export default function AuditoriumPage() {

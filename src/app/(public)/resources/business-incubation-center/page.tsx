@@ -3,53 +3,52 @@
 import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
-  MapPin,
-  Square,
-  Users,
+  Rocket,
   ShieldCheck,
-  HeartPulse,
+  FlaskConical,
+  Users,
+  Building,
   Sparkles,
   ArrowRight,
-  FlaskConical,
-  Award,
-  BookOpen
+  Briefcase,
+  Lightbulb
 } from "lucide-react";
 
 const FEATURES = [
-  { label: "Location", value: "Ground Floor, 111", icon: MapPin },
-  { label: "Carpet Area", value: "20 sq. m", icon: Square },
-  { label: "Available To", value: "Students, Staff & Community", icon: Users },
-  { label: "Medicine Quality", value: "DCA & WHO-GMP Standards", icon: ShieldCheck },
+  { label: "Supported By", value: "Ministry of MSME", icon: Building },
+  { label: "Focus Area", value: "Herbal Formulations", icon: FlaskConical },
+  { label: "Incubatees", value: "Students, Staff & Alumni", icon: Users },
+  { label: "Primary Goal", value: "Startup & IP Creation", icon: Rocket },
 ];
 
 const VALUES = [
   {
-    title: "Empowering Students",
-    desc: "Provides hands-on community engagement opportunities for pharmacy students, by giving them real-world healthcare exposure.",
-    icon: BookOpen
+    title: "MSME Center",
+    desc: "A fully supported Business Incubation Center recognized by the Ministry of MSME, Govt of India.",
+    icon: Building
   },
   {
-    title: "Affordable Healthcare",
-    desc: "Ensures the availability of quality generic medicines at a low cost for patients and local citizens.",
-    icon: HeartPulse
-  },
-  {
-    title: "In-House Formulations",
-    desc: "Facilitates the commercialization of in-house developed formulations created through advanced academic research.",
+    title: "Herbal Formulations",
+    desc: "Fosters the development of cost-effective pharmaceutical herbal formulations with minimal side effects.",
     icon: FlaskConical
+  },
+  {
+    title: "Startup Support",
+    desc: "Facilitates incubation opportunities for students and staff to launch innovative healthcare and pharma startups.",
+    icon: Briefcase
   }
 ];
 
-export default function PMBJKPage() {
+export default function BusinessIncubationCenterPage() {
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
       <PageHeader
-        title="Pradhan Mantri Bharatiya Janaushadhi Kendra"
+        title="Business Incubation Center"
         breadcrumbs={[
           { label: "Resources", href: "/resources" },
-          { label: "PMBJK" }
+          { label: "Business Incubation Center" }
         ]}
-        description="A specialized healthcare unit providing quality generic medicines at affordable prices while enabling student training and research commercialization."
+        description="A specialized center recognized by the Ministry of MSME, providing infrastructure and technical support for startups and herbal formulation research."
       />
 
       {/* Main Section */}
@@ -61,14 +60,14 @@ export default function PMBJKPage() {
             <div className="lg:col-span-6 space-y-12">
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary rounded-full font-black text-xs uppercase tracking-widest border border-primary/10">
-                  Healthcare & Community
+                  Innovation & Entrepreneurship
                 </div>
                 <h2 className="text-4xl md:text-5xl font-black text-primary uppercase tracking-tight leading-tight">
-                  Quality Generics. <br /> Maximum Care.
+                  Incubating Ideas. <br /> Launching Startups.
                 </h2>
                 <div className="prose prose-slate prose-lg max-w-none text-slate-600 font-medium leading-relaxed italic">
                   <p>
-                    The Pradhan Mantri Bharatiya Janaushadhi Kendra (PMBJK) at CLPT serves as a hub of social responsibility and education. By offering low-cost, medicines, it translates our institutional vision of public health service into direct action.
+                    The Business Incubation Center at CLPT acts as a seedbed for visionary entrepreneurs. By partnering with the Ministry of MSME, we provide complete technical, legal, and commercial assistance to transform innovative ideas into viable startups.
                   </p>
                 </div>
               </div>
@@ -93,28 +92,28 @@ export default function PMBJKPage() {
             <div className="lg:col-span-6 space-y-8">
               <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 group relative aspect-[4/3]">
                 <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
-                  alt="Pharmacy Store"
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+                  alt="Incubation Center workspace"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-10 flex items-end">
-                  <p className="text-white text-xl font-black uppercase tracking-tight">Dedicated Healthcare Kendra</p>
+                  <p className="text-white text-xl font-black uppercase tracking-tight">Advanced Startup Workspace</p>
                 </div>
               </div>
 
               {/* Utility Card */}
               <div className="p-10 bg-primary-dark text-white rounded-[3rem] shadow-xl relative overflow-hidden flex flex-col justify-center min-h-[220px]">
                 <div className="absolute top-0 right-0 p-10 text-white/5 pointer-events-none">
-                  <Award size={130} />
+                  <Lightbulb size={130} />
                 </div>
                 <h4 className="text-xl font-black text-secondary uppercase mb-4 flex items-center gap-2">
-                  <Sparkles size={22} className="text-secondary animate-pulse" /> National Initiative
+                  <Sparkles size={22} className="text-secondary animate-pulse" /> Entrepreneurial Vision
                 </h4>
                 <p className="text-white/70 font-medium text-sm leading-relaxed mb-6">
-                  Empowered by the Government of India, the Kendra promotes the usage of quality generic medicines that match standard protocols without inflated pricing.
+                  Assisting young founders with proof-of-concept testing, prototyping, patent applications, and initial fundraising strategies.
                 </p>
                 <div className="inline-flex items-center gap-3 py-3 px-6 bg-white/10 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:text-primary-dark transition-all relative z-10 w-fit cursor-pointer">
-                  Visit the Facility <ArrowRight size={16} />
+                  Explore Incubator <ArrowRight size={16} />
                 </div>
               </div>
             </div>
@@ -128,11 +127,11 @@ export default function PMBJKPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-primary-dark uppercase tracking-tight leading-tight">
-              Institutional Core Values
+              Our Core Incubation Values
             </h2>
             <div className="h-1.5 w-32 bg-primary mx-auto my-6 rounded-full" />
             <p className="text-lg font-medium text-slate-500 leading-relaxed italic">
-              Integrating professional pharmaceutical education with impactful public health endeavors.
+              Empowering innovators to bring cutting-edge herbal and pharmaceutical formulations to market.
             </p>
           </div>
 

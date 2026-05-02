@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Microscope, 
-  ShieldCheck, 
-  FileSearch, 
-  FlaskConical, 
+import {
+  Microscope,
+  ShieldCheck,
+  FileSearch,
+  FlaskConical,
   Search,
   CheckCircle2,
   Table as TableIcon,
@@ -85,7 +85,7 @@ const INSTRUMENTS = [
 export default function DrugTestingLabPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredInstruments = INSTRUMENTS.filter(inst => 
+  const filteredInstruments = INSTRUMENTS.filter(inst =>
     inst.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     inst.model.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -105,18 +105,18 @@ export default function DrugTestingLabPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-16 items-start">
-            
+
             <div className="lg:w-3/5 space-y-8">
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary-dark rounded-full font-black text-xs uppercase tracking-widest border border-primary/10">
-                   CDSCO Approved Facility
+                  DCA, AP. Approved Testing Laboratory
                 </div>
                 <h2 className="text-4xl font-black text-primary uppercase tracking-tight">Technical Excellence</h2>
                 <div className="prose prose-slate prose-lg max-w-none text-slate-600 font-medium leading-relaxed italic">
                   <p>
-                    "The Chalapathi Drug Testing Laboratory is equipped with high value sophisticated instruments 
-                    for qualitative and quantitative analysis of various drugs and pharmaceuticals. 
-                    The Central Drugs Standard Control Organization (CDSCO) has approved this laboratory 
+                    "The Chalapathi Drug Testing Laboratory is equipped with high value sophisticated instruments
+                    for qualitative and quantitative analysis of various drugs and pharmaceuticals.
+                    The Drugs Control Administration (DCA, AP) has approved this laboratory
                     to test and analyse 36 specific drugs."
                   </p>
                 </div>
@@ -127,7 +127,7 @@ export default function DrugTestingLabPage() {
                   <ShieldCheck className="text-primary mt-1" size={32} />
                   <div>
                     <h4 className="text-lg font-black text-primary-dark uppercase">Regulatory Status</h4>
-                    <p className="text-sm text-slate-500 font-bold">Approved under CDSCO guidelines for 36 drugs.</p>
+                    <p className="text-sm text-slate-500 font-bold">Approved under DCA, AP guidelines for 36 drugs.</p>
                   </div>
                 </div>
                 <div className="p-8 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm flex items-start gap-4">
@@ -141,16 +141,16 @@ export default function DrugTestingLabPage() {
             </div>
 
             <div className="lg:w-2/5">
-               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-slate-50 relative group">
-                  <img 
-                    src="/images/resources/drug-testing-lab/c1.jpg" 
-                    alt="Instrument Lab" 
-                    className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 to-transparent flex items-end p-8">
-                     <p className="text-white font-black uppercase text-sm tracking-widest">Sophisticated Instrumentation</p>
-                  </div>
-               </div>
+              <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-slate-50 relative group">
+                <img
+                  src="/images/resources/drug-testing-lab/c1.jpg"
+                  alt="Instrument Lab"
+                  className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 to-transparent flex items-end p-8">
+                  <p className="text-white font-black uppercase text-sm tracking-widest">Sophisticated Instrumentation</p>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -169,11 +169,11 @@ export default function DrugTestingLabPage() {
                 A complete inventory of the high-value instrumentation available for research and technical analysis.
               </p>
             </div>
-            
+
             <div className="relative w-full md:w-80">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-              <Input 
-                placeholder="Search instruments/models..." 
+              <Input
+                placeholder="Search instruments/models..."
                 className="pl-10 h-12 bg-white border-slate-200 rounded-xl font-bold shadow-sm"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -208,7 +208,7 @@ export default function DrugTestingLabPage() {
                     {filteredInstruments.length === 0 && (
                       <TableRow>
                         <TableCell colSpan={2} className="py-20 text-center text-slate-400 font-bold uppercase tracking-widest">
-                           No instruments found matching your search.
+                          No instruments found matching your search.
                         </TableCell>
                       </TableRow>
                     )}
@@ -219,11 +219,11 @@ export default function DrugTestingLabPage() {
           </Card>
 
           <div className="mt-12 p-8 bg-primary/5 rounded-[2rem] border border-primary/10 flex items-start gap-4">
-             <Info className="text-primary shrink-0" size={24} />
-             <p className="text-sm text-slate-600 font-medium italic">
-               Note: The instrumentation laboratory is the most expensive and advanced facility at the institution, 
-               representing a significant investment in pharmaceutical research and quality control excellence.
-             </p>
+            <Info className="text-primary shrink-0" size={24} />
+            <p className="text-sm text-slate-600 font-medium italic">
+              Note: The instrumentation laboratory is the most expensive and advanced facility at the institution,
+              representing a significant investment in pharmaceutical research and quality control excellence.
+            </p>
           </div>
         </div>
       </section>
@@ -231,14 +231,14 @@ export default function DrugTestingLabPage() {
       {/* Additional Visuals Area */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-[3rem] overflow-hidden shadow-xl">
-                 <img src="/images/resources/drug-testing-lab/c2.jpg" alt="Lab View 2" className="w-full h-auto" />
-              </div>
-              <div className="rounded-[3rem] overflow-hidden shadow-xl">
-                 <img src="/images/resources/drug-testing-lab/c3.jpg" alt="Lab View 3" className="w-full h-auto" />
-              </div>
-           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-[3rem] overflow-hidden shadow-xl">
+              <img src="/images/resources/drug-testing-lab/c2.jpg" alt="Lab View 2" className="w-full h-auto" />
+            </div>
+            <div className="rounded-[3rem] overflow-hidden shadow-xl">
+              <img src="/images/resources/drug-testing-lab/c3.jpg" alt="Lab View 3" className="w-full h-auto" />
+            </div>
+          </div>
         </div>
       </section>
     </div>

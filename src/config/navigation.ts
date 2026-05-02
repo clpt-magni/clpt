@@ -138,10 +138,13 @@ export const topNav: NavItem[] = [
         href: "/resources",
         items: [
           { label: "Laboratories", href: "/resources/labs" },
-          { label: "Chalapathi Drug Testing Laboratory", href: "/resources/drug-testing-lab" },
+          { label: "Chalapathi Drug Testing Laboratory(CDTL)", href: "/resources/drug-testing-lab" },
+          { label: "PMBJK", href: "/resources/pmbjk" },
+          { label: "Business Incubation Center by MSME", href: "/resources/business-incubation-center" },
           { label: "Medicinal Plant Garden", href: "/resources/medicinal-garden" },
           { label: "Drug Museum", href: "/resources/drug-museum" },
           { label: "Animal House", href: "/resources/animal-house" },
+
         ],
       },
       {

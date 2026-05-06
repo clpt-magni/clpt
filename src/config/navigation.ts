@@ -82,6 +82,7 @@ export const topNav: NavItem[] = [
     items: [
       { label: "Overview", href: "/admissions" },
       { label: "Application Procedure", href: "/admissions/procedure" },
+      { label: "Fee Structure", href: "/admissions/fee-structure" },
       { label: "Rules and Regulations", href: "/admissions/rules" },
     ],
   },
@@ -207,7 +208,7 @@ export const sidebarNav: SidebarGroup[] = [
     items: [
       { label: "CONSPECTUS", href: "/student/conspectus" },
       { label: "STUDENT SUPPORT", href: "/student/support" },
-      { label: "FEE STRUCTURE", href: "/student/fee-structure" },
+      { label: "FEE STRUCTURE", href: "/admissions/fee-structure" },
       { label: "STUDENTS LIST", href: "/student/students-list" },
       { label: "MOOCS", href: "/student/moocs" },
       { label: "PRAXIS STUDENTS WALL MAGAZINE", href: "/student/praxis" },

@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Check, Info, Phone, Mail, Globe, Milestone } from "lucide-react";
+import { Check, Info, Phone, Mail, Globe, Milestone, CheckCircle, Loader2 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
+import Link from "next/link";
+import { sendEnquiryEmail } from "./actions";
 
 interface Program {
   title: string;
@@ -94,6 +96,38 @@ function AdmissionCard({ prog }: { prog: Program }) {
 }
 
 export default function AdmissionsPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    program: "",
+    query: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    success?: boolean;
+    message?: string;
+  } | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    try {
+      const res = await sendEnquiryEmail(formData);
+      if (res.success) {
+        setSubmitStatus({ success: true, message: res.message });
+        setFormData({ name: "", phone: "", email: "", program: "", query: "" });
+      } else {
+        setSubmitStatus({ success: false, message: res.error });
+      }
+    } catch (err: any) {
+      setSubmitStatus({ success: false, message: "Something went wrong. Please try again." });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const programs: Program[] = [
     {
       title: "B. Pharmacy",
@@ -155,9 +189,11 @@ export default function AdmissionsPage() {
               <p className="text-sky-800/80 mt-1 font-medium">Counseling codes: AP EAPCET - <span className="font-black text-sky-900 underline">CLPT</span> | AP PGECET - <span className="font-black text-sky-900 underline">CLPT1</span> | AP ECET - <span className="font-black text-sky-900 underline">CLPT</span></p>
             </div>
           </div>
-          <Button className="bg-sky-700 hover:bg-sky-800 text-white font-bold px-10 py-7 rounded-xl text-lg shadow-lg whitespace-nowrap">
-            Enquire Now
-          </Button>
+          <Link href="#contact-admissions">
+            <Button className="bg-sky-700 hover:bg-sky-800 text-white font-bold px-10 py-7 rounded-xl text-lg shadow-lg whitespace-nowrap">
+              Enquire Now
+            </Button>
+          </Link>
         </div>
 
         {/* Programs Grid */}
@@ -193,38 +229,109 @@ export default function AdmissionsPage() {
                   </div>
                 </div>
               </div>
-              <div className="lg:col-span-3 p-12">
-                <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Full Name *</label>
-                    <input type="text" className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="John Doe" required />
+              <div className="lg:col-span-3 p-12 flex flex-col justify-center">
+                {submitStatus?.success ? (
+                  <div className="text-center p-8 bg-emerald-50 rounded-[2rem] border border-emerald-100 flex flex-col items-center justify-center space-y-6">
+                    <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
+                      <CheckCircle size={32} />
+                    </div>
+                    <div className="space-y-2 max-w-sm">
+                      <h3 className="text-2xl font-black text-emerald-900 font-poppins">Thank You!</h3>
+                      <p className="text-sm text-emerald-800/80 font-medium">
+                        {submitStatus.message}
+                      </p>
+                    </div>
+                    <Button
+                      onClick={() => setSubmitStatus(null)}
+                      className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-5 rounded-xl transition-all"
+                    >
+                      Submit Another Enquiry
+                    </Button>
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Phone Number *</label>
-                    <input type="tel" className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="+91 00000 00000" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Email Address</label>
-                    <input type="email" className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="john@example.com" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Interested Program *</label>
-                    <select className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all appearance-none" required>
-                      <option value="">-- Select Program --</option>
-                      <option value="bpharm">B. Pharmacy</option>
-                      <option value="mpharm">M. Pharmacy</option>
-                      <option value="pharmd">Pharm. D</option>
-                      <option value="phd">Ph.D</option>
-                    </select>
-                  </div>
-                  <div className="md:col-span-2 space-y-2">
-                    <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Your Query</label>
-                    <textarea rows={4} className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" placeholder="Ask us anything about the program..." />
-                  </div>
-                  <Button className="md:col-span-2 bg-primary hover:bg-primary-dark font-bold py-8 text-lg rounded-2xl shadow-xl transform active:scale-[0.98] transition-all">
-                    Submit Enquiry Sheet
-                  </Button>
-                </form>
+                ) : (
+                  <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {submitStatus?.success === false && (
+                      <div className="md:col-span-2 p-4 bg-red-50 border border-red-100 rounded-xl text-xs font-semibold text-red-600">
+                        {submitStatus.message}
+                      </div>
+                    )}
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Full Name *</label>
+                      <input
+                        type="text"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                        placeholder="John Doe"
+                        required
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Phone Number *</label>
+                      <input
+                        type="tel"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                        placeholder="+91 00000 00000"
+                        required
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Email Address</label>
+                      <input
+                        type="email"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                        placeholder="john@example.com"
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Interested Program *</label>
+                      <select
+                        value={formData.program}
+                        onChange={(e) => setFormData({ ...formData, program: e.target.value })}
+                        className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all appearance-none"
+                        required
+                        disabled={isSubmitting}
+                      >
+                        <option value="">-- Select Program --</option>
+                        <option value="b-pharmacy">B. Pharmacy</option>
+                        <option value="m-pharmacy">M. Pharmacy</option>
+                        <option value="pharmd">Pharm. D</option>
+                        <option value="phd">Ph.D</option>
+                      </select>
+                    </div>
+                    <div className="md:col-span-2 space-y-2">
+                      <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Your Query</label>
+                      <textarea
+                        rows={4}
+                        value={formData.query}
+                        onChange={(e) => setFormData({ ...formData, query: e.target.value })}
+                        className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                        placeholder="Ask us anything about the program..."
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="md:col-span-2 bg-primary hover:bg-primary-dark font-bold py-8 text-lg rounded-2xl shadow-xl transform active:scale-[0.98] transition-all flex items-center justify-center gap-2 border-none"
+                    >
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 size={20} className="animate-spin" /> Submitting...
+                        </>
+                      ) : (
+                        "Submit Enquiry Sheet"
+                      )}
+                    </Button>
+                  </form>
+                )}
               </div>
             </div>
           </Card>

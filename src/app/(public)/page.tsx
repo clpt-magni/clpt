@@ -5,6 +5,8 @@ import { ArrowRight, BookOpen, Microscope, Users, GraduationCap, Calendar, Lapto
 import { getNotices, getNews, getEvents } from "@/lib/sanity-actions";
 
 import HeroVideo from "@/components/home/HeroVideo";
+import AdmissionsPopup from "@/components/home/AdmissionsPopup";
+import InternshipReportSection from "@/components/home/InternshipReportSection";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -16,6 +18,7 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <AdmissionsPopup />
       {/* Hero Section */}
       <HeroVideo />
 
@@ -83,6 +86,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Internship Training Report Template Section */}
+      <InternshipReportSection />
 
       {/* News & Events Section */}
       <section className="py-16 bg-slate-50 border-y">

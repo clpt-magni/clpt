@@ -6,9 +6,7 @@ import {
   CheckCircle2,
   CreditCard,
   MapPin,
-  Info,
-  Layers,
-  GraduationCap
+  Info
 } from "lucide-react";
 import { PageHeader as CustomPageHeader } from "@/components/ui/PageHeader";
 import { PortableText } from "@portabletext/react";
@@ -40,7 +38,7 @@ export default function FeeStructureClient({ data }: FeeStructureClientProps) {
       <CustomPageHeader
         title="Fee Structure"
         breadcrumbs={[
-          { label: "Student Center", href: "/student" },
+          { label: "Admissions", href: "/admissions" },
           { label: "Fee Structure" }
         ]}
         description="View sanctioned intake, category allotments, and tuition fee details for all undergraduate and postgraduate programs."

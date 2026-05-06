@@ -1,12 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FileText, Download, Eye, X, FileSpreadsheet, FileArchive } from "lucide-react";
+import { FileText, Download, Eye, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function InternshipReportSection() {
+  const [mounted, setMounted] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   const docxUrl = "/documents/studentdocuments/Internship-training-report.docx";
   const pdfUrl = "/documents/studentdocuments/Internship-training-report.pdf";

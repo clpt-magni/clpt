@@ -14,5 +14,13 @@ export default defineType({
       type: 'string',
       options: { list: ['Low', 'Medium', 'High'] }
     }),
+    defineField({
+      name: 'pdfFile',
+      title: 'PDF Attachment',
+      type: 'file',
+      options: {
+        accept: '.pdf'
+      }
+    }),
   ],
 });

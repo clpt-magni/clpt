@@ -8,12 +8,28 @@ import { SignInButton, UserButton, Show } from "@clerk/nextjs";
 import { TopBar } from "./top-bar";
 import { ChevronDown, Menu, X, Phone, Mail } from "lucide-react";
 import { topNav, NavItem } from "@/config/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [noticeCount, setNoticeCount] = useState(3);
+
+  useEffect(() => {
+    const fetchCount = async () => {
+      try {
+        const { getNotices } = await import("@/lib/sanity-actions");
+        const list = await getNotices();
+        if (list && list.length > 0) {
+          setNoticeCount(list.length);
+        }
+      } catch (err) {
+        console.error("Failed to fetch notices count client-side:", err);
+      }
+    };
+    fetchCount();
+  }, []);
 
   if (pathname?.startsWith('/studio')) return null;
 
@@ -85,6 +101,18 @@ export function Navbar() {
                   <NavItemComponent item={item} />
                 </li>
               ))}
+              <li className="ml-2 relative">
+                <Link
+                  href="/notices"
+                  className="relative flex items-center gap-1.5 px-3.5 py-2 text-[11px] font-black text-white bg-red-600 hover:bg-red-700 transition-all rounded-full whitespace-nowrap uppercase tracking-wider shadow-md hover:scale-105 transform active:scale-95 duration-150"
+                >
+                  <span className="flex h-2 w-2 rounded-full bg-white animate-ping shrink-0" />
+                  <span>Notices</span>
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[9px] font-black text-red-600 shadow-sm ml-0.5 shrink-0">
+                    {noticeCount}
+                  </span>
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -100,6 +128,21 @@ export function Navbar() {
             >
               <div className="container mx-auto px-4 py-8 max-h-[75vh] overflow-y-auto">
                 <nav>
+                  <div className="mb-4">
+                    <Link
+                      href="/notices"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="relative flex items-center justify-between px-5 py-3.5 text-xs font-black text-white bg-red-600 hover:bg-red-700 transition-all rounded-xl uppercase tracking-wider shadow-md"
+                    >
+                      <div className="flex items-center gap-2">
+                        <span className="flex h-2 w-2 rounded-full bg-white animate-ping shrink-0" />
+                        <span>Active Notices</span>
+                      </div>
+                      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-black text-red-600 shadow-sm shrink-0">
+                        {noticeCount}
+                      </span>
+                    </Link>
+                  </div>
                   <ul className="space-y-1">
                     {topNav.map((item, idx) => (
                       <MobileNavItem key={idx} item={item} close={() => setMobileMenuOpen(false)} />

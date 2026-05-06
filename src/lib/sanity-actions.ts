@@ -1,7 +1,10 @@
 import { client } from "../../sanity/sanity.client";
 
 export async function getNotices() {
-  return await client.fetch(`*[_type == "notice"] | order(date desc)`);
+  return await client.fetch(`*[_type == "notice"] | order(date desc) {
+    ...,
+    "pdfUrl": pdfFile.asset->url
+  }`);
 }
 
 export async function getFaculty() {

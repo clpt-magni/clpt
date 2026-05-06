@@ -90,93 +90,62 @@ export default async function Home() {
       {/* Internship Training Report Template Section */}
       <InternshipReportSection />
 
-      {/* News & Events Section */}
+      {/* Important Notices Section */}
       <section className="py-16 bg-slate-50 border-y">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="text-center mb-16 relative">
+            <h2 className="text-4xl font-bold pb-4 inline-block text-primary font-poppins relative">
+              Important Notices & Announcements
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-secondary rounded-full" />
+            </h2>
+            <p className="text-slate-500 max-w-xl mx-auto mt-4 text-base font-medium">
+              Stay informed with the latest academic notifications, examination updates, and institutional circulars directly from the administration.
+            </p>
+          </div>
 
-            {/* News Area */}
-            <div className="space-y-8 font-roboto">
-              <div className="relative mb-12">
-                <h2 className="text-4xl font-bold text-primary pb-4 inline-block font-poppins">
-                  Latest News
-                  <span className="absolute bottom-0 left-0 w-16 h-1 bg-secondary rounded-full" />
-                </h2>
-              </div>
+          <div className="max-w-4xl mx-auto space-y-6">
+            {notices.length > 0 ? (
+              notices.slice(0, 3).map((notice: any, i: number) => (
+                <Card key={notice._id || i} className="border-none shadow-md bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 border-l-[6px] border-primary">
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center gap-3">
+                      <span className={`text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full ${
+                        notice.priority === 'High' ? 'bg-red-50 text-red-600' :
+                        notice.priority === 'Medium' ? 'bg-amber-50 text-amber-600' : 'bg-blue-50 text-blue-600'
+                      }`}>
+                        {notice.priority || 'Normal'} Priority
+                      </span>
+                      <span className="text-xs text-slate-400 font-bold uppercase tracking-tighter">
+                        {notice.date ? new Date(notice.date).toLocaleDateString('en-IN', {
+                          day: '2-digit',
+                          month: 'long',
+                          year: 'numeric'
+                        }) : 'Recent'}
+                      </span>
+                    </div>
+                    <h3 className="font-bold text-xl text-primary-dark group-hover:text-primary transition-colors font-poppins">
+                      {notice.title}
+                    </h3>
+                    <p className="text-slate-500 text-sm leading-relaxed line-clamp-2">
+                      {notice.content}
+                    </p>
+                  </div>
+                  <Link href="/notices" className="text-primary font-bold flex items-center gap-1.5 shrink-0 text-sm group-hover:translate-x-1 transition-transform">
+                    Read Full Notice <ArrowRight size={14} />
+                  </Link>
+                </Card>
+              ))
+            ) : (
+              <p className="text-slate-400 italic text-center">No active announcements at the moment.</p>
+            )}
+          </div>
 
-              <div className="space-y-6">
-                {news.length > 0 ? (
-                  news.slice(0, 3).map((n: any, i: number) => (
-                    <Card key={n._id || i} className="hover:shadow-lg transition-all border-none bg-white p-2">
-                      <CardContent className="p-6">
-                        <h3 className="font-bold text-xl mb-2 text-primary-dark font-poppins">{n.title}</h3>
-                        <p className="text-xs text-slate-400 font-semibold tracking-widest mb-4">
-                          {n.date ? new Date(n.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Latest'}
-                        </p>
-                        <p className="text-slate-600 mb-6 leading-relaxed line-clamp-2">{n.description}</p>
-                        <Link href="/news" className="text-primary font-bold flex items-center gap-2 group text-sm self-start">
-                          Read More <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                      </CardContent>
-                    </Card>
-                  ))
-                ) : null}
-                {news.length === 0 && (
-                  <p className="text-slate-400 italic">No recent news updates.</p>
-                )}
-              </div>
-              <Link href="/news">
-                <Button variant="outline" className="mt-8 border-primary text-primary font-bold px-8 py-6 rounded-lg hover:bg-primary hover:text-white transition-all shadow-sm font-poppins">
-                  View All News
-                </Button>
-              </Link>
-            </div>
-
-            {/* Events Area */}
-            <div className="space-y-8 font-roboto">
-              <div className="relative mb-12">
-                <h2 className="text-4xl font-bold text-primary pb-4 inline-block font-poppins">
-                  Upcoming Events
-                  <span className="absolute bottom-0 left-0 w-16 h-1 bg-secondary rounded-full" />
-                </h2>
-              </div>
-
-              <div className="space-y-6">
-                {events.length > 0 ? (
-                  events.slice(0, 3).map((e: any, i: number) => {
-                    const eventDate = new Date(e.date);
-                    const day = eventDate.getDate();
-                    const month = eventDate.toLocaleString('default', { month: 'short' }).toUpperCase();
-                    const year = eventDate.getFullYear();
-                    const time = eventDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-
-                    return (
-                      <div key={e._id || i} className="flex bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all h-36 border border-slate-100 group">
-                        <div className="w-32 bg-primary text-white flex flex-col items-center justify-center p-6 group-hover:bg-primary-dark transition-colors font-poppins">
-                          <span className="text-3xl font-bold leading-none mb-1">{day}</span>
-                          <span className="text-sm font-bold uppercase tracking-widest border-y border-white/20 w-full text-center py-1.5 my-1.5">{month}</span>
-                          <span className="text-xs opacity-75">{year}</span>
-                        </div>
-                        <div className="flex-1 p-8 flex flex-col justify-center">
-                          <h3 className="font-bold text-xl text-primary-dark mb-3 group-hover:text-primary transition-colors font-poppins truncate pr-4">{e.title}</h3>
-                          <div className="flex flex-col gap-2 text-sm text-slate-500 italic">
-                            <span className="flex items-center gap-2"><Clock size={14} className="text-primary" /> {time}</span>
-                            <span className="flex items-center gap-2"><MapPin size={14} className="text-primary" /> {e.location}</span>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })
-                ) : (
-                  <p className="text-slate-400 italic">No upcoming events scheduled.</p>
-                )}
-              </div>
-              <Link href="/news#events">
-                <Button variant="outline" className="mt-8 border-primary text-primary font-bold px-8 py-6 rounded-lg hover:bg-primary hover:text-white transition-all shadow-sm font-poppins">
-                  View All Events
-                </Button>
-              </Link>
-            </div>
+          <div className="text-center mt-12">
+            <Link href="/notices">
+              <Button variant="outline" className="border-primary text-primary font-bold px-10 py-6 rounded-lg hover:bg-primary hover:text-white transition-all shadow-sm font-poppins">
+                View All Institutional Notices
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

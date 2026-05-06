@@ -68,11 +68,15 @@ export default async function NoticesPage() {
                       {notice.content}
                     </p>
 
-                    <div className="flex flex-wrap gap-4">
-                      <button className="bg-slate-900 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary transition-all flex items-center gap-2">
-                        Download PDF <ChevronRight size={16} />
-                      </button>
-                    </div>
+                    {notice.pdfUrl && (
+                      <div className="flex flex-wrap gap-4">
+                        <a href={notice.pdfUrl} download target="_blank" rel="noopener noreferrer">
+                          <button className="bg-slate-900 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary transition-all flex items-center gap-2">
+                            Download PDF <ChevronRight size={16} />
+                          </button>
+                        </a>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               ))

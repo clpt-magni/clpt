@@ -101,6 +101,8 @@ export default function AdmissionsPage() {
     phone: "",
     email: "",
     program: "",
+    stream: "",
+    state: "",
     query: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -117,7 +119,7 @@ export default function AdmissionsPage() {
       const res = await sendEnquiryEmail(formData);
       if (res.success) {
         setSubmitStatus({ success: true, message: res.message });
-        setFormData({ name: "", phone: "", email: "", program: "", query: "" });
+        setFormData({ name: "", phone: "", email: "", program: "", stream: "", state: "", query: "" });
       } else {
         setSubmitStatus({ success: false, message: res.error });
       }
@@ -306,6 +308,59 @@ export default function AdmissionsPage() {
                         <option value="phd">Ph.D</option>
                       </select>
                     </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Intermediate Stream</label>
+                      <select
+                        value={formData.stream}
+                        onChange={(e) => setFormData({ ...formData, stream: e.target.value })}
+                        className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all appearance-none"
+                        disabled={isSubmitting}
+                      >
+                        <option value="">-- Select Stream --</option>
+                        <option value="MPC">M.P.C</option>
+                        <option value="BiPC">Bi.P.C</option>
+                      </select>
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">State / Region *</label>
+                      <select
+                        value={formData.state}
+                        onChange={(e) => setFormData({ ...formData, state: e.target.value })}
+                        className="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none transition-all appearance-none"
+                        required
+                        disabled={isSubmitting}
+                      >
+                        <option value="">-- Select State --</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
                     <div className="md:col-span-2 space-y-2">
                       <label className="text-sm font-bold text-slate-600 uppercase tracking-widest pl-1">Your Query</label>
                       <textarea
@@ -320,7 +375,7 @@ export default function AdmissionsPage() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="md:col-span-2 bg-primary hover:bg-primary-dark font-bold py-8 text-lg rounded-2xl shadow-xl transform active:scale-[0.98] transition-all flex items-center justify-center gap-2 border-none"
+                      className="md:col-span-2 bg-primary hover:bg-primary-dark font-bold py-8 text-lg text-white rounded-2xl shadow-xl transform active:scale-[0.98] transition-all flex items-center justify-center gap-2 border-none"
                     >
                       {isSubmitting ? (
                         <>

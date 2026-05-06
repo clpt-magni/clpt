@@ -14,7 +14,8 @@ async function getFeeStructure() {
       name,
       intake,
       categoryB,
-      tuitionFee
+      tuitionFee,
+      categoryBFee
     },
     applicationFee,
     applicationDetails,

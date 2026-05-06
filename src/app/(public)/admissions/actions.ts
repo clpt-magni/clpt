@@ -17,6 +17,8 @@ export interface EnquiryData {
   phone: string;
   email?: string;
   program: string;
+  stream?: string;
+  state?: string;
   query?: string;
 }
 
@@ -25,7 +27,7 @@ export async function sendEnquiryEmail(data: EnquiryData) {
     return { success: false, error: "Please fill in all required fields." };
   }
 
-  const { name, phone, email, program, query } = data;
+  const { name, phone, email, program, stream, state, query } = data;
 
   // Try backing up to Sanity first to prevent any data loss
   try {
@@ -35,6 +37,8 @@ export async function sendEnquiryEmail(data: EnquiryData) {
       phone,
       email: email || undefined,
       program,
+      stream: stream || undefined,
+      state: state || undefined,
       query: query || undefined,
       submittedAt: new Date().toISOString(),
     });
@@ -95,6 +99,14 @@ export async function sendEnquiryEmail(data: EnquiryData) {
           <tr>
             <td style="padding: 12px; border: 1px solid #e2e8f0; font-weight: bold; background-color: #f8fafc; color: #475569; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">Interested Program</td>
             <td style="padding: 12px; border: 1px solid #e2e8f0; font-size: 14px; color: #e11d48; font-weight: bold; text-transform: uppercase;">${program}</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e2e8f0; font-weight: bold; background-color: #f8fafc; color: #475569; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">Student Stream</td>
+            <td style="padding: 12px; border: 1px solid #e2e8f0; font-size: 14px; color: #0f172a; font-weight: bold; text-transform: uppercase;">${stream || 'Not Specified'}</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e2e8f0; font-weight: bold; background-color: #f8fafc; color: #475569; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">State / Region</td>
+            <td style="padding: 12px; border: 1px solid #e2e8f0; font-size: 14px; color: #0f172a; font-weight: 600;">${state || 'Not Specified'}</td>
           </tr>
           <tr>
             <td style="padding: 12px; border: 1px solid #e2e8f0; font-weight: bold; background-color: #f8fafc; color: #475569; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">Message/Query</td>

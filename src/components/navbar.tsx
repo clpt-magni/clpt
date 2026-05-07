@@ -19,11 +19,9 @@ export function Navbar() {
   useEffect(() => {
     const fetchCount = async () => {
       try {
-        const { getNotices } = await import("@/lib/sanity-actions");
-        const list = await getNotices();
-        if (list && list.length > 0) {
-          setNoticeCount(list.length);
-        }
+        const { getNoticesCount } = await import("@/app/actions/notices");
+        const count = await getNoticesCount();
+        setNoticeCount(count);
       } catch (err) {
         console.error("Failed to fetch notices count client-side:", err);
       }

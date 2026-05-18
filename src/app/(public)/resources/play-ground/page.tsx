@@ -84,7 +84,7 @@ export default function PlayGroundPage() {
             <div className="lg:col-span-8">
               <ResourceGallery
                 sectionKey="playGround"
-                defaultMainImage="/images/resources/play-ground/play-1.jpg"
+                defaultMainImage="https://images.unsplash.com/photo-1544698310-74ea9d1c8258?auto=format&fit=crop&q=80&w=800"
                 mainImageAlt="Athletic Court View"
               />
             </div>

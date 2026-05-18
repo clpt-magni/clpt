@@ -74,7 +74,7 @@ export default function CanteenPage() {
             <div className="lg:col-span-5 space-y-8">
                <ResourceGallery
                 sectionKey="canteen"
-                defaultMainImage="/images/resources/canteen/canteen-head.jpg"
+                defaultMainImage="https://images.unsplash.com/photo-1567529684892-0f290495538e?auto=format&fit=crop&q=80&w=800"
                 defaultGalleryImages={[]}
                 mainImageAlt="Canteen Dining View"
               />

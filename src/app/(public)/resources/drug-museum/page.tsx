@@ -124,8 +124,8 @@ export default function DrugMuseumPage() {
          <div className="container mx-auto px-4 max-w-5xl">
             <ResourceGallery
                sectionKey="drugMuseum"
-               defaultMainImage="/images/resources/drug-museum/drug-1.jpg"
-               defaultGalleryImages={["/images/resources/drug-museum/drug-2.jpg", "/images/resources/drug-museum/drug-3.jpg", "/images/resources/drug-museum/drug-4.jpg"]}
+               defaultMainImage="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&q=80&w=800"
+               defaultGalleryImages={["https://images.unsplash.com/photo-1607619056574-7b8d304b2b4f?auto=format&fit=crop&q=80&w=800"]}
                mainImageAlt="Drug Museum Exhibit View"
             />
          </div>

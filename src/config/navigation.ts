@@ -61,6 +61,7 @@ export const topNav: NavItem[] = [
           { label: "Academic Committee", href: "/academic/committees" },
           { label: "Research & Developement Cell", href: "/research/r-and-d" },
           { label: "IQAC Cell", href: "/academic/iqac" },
+          { label: "Event Registry & Reports", href: "/activities" },
         ],
       },
       {
@@ -195,6 +196,7 @@ export const sidebarNav: SidebarGroup[] = [
       { label: "IQAC", href: "/academic/iqac" },
       { label: "IIPEC", href: "/academic/iipec" },
       { label: "FACULTY", href: "/faculty" },
+      { label: "EVENT REGISTRY & REPORTS", href: "/activities" },
       { label: "COMMITTEES", href: "/academic/committees" },
       { label: "INSTITUTIONAL DEVELOPMENT PLAN", href: "/academic/idp" },
       { label: "PUBLICATIONS", href: "/research/publications" },

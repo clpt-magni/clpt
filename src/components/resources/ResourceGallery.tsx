@@ -24,7 +24,7 @@ export default function ResourceGallery({
     const fetchGallery = async () => {
       try {
         // Query the single Resources Gallery document
-        const query = `*[_type == "resourcesGallery" && _id == "resourcesGallery"][0]`;
+        const query = `*[_type == "resourcesGallery"][0]`;
         const res = await client.fetch(query, {}, { cache: 'no-store' });
         if (isMounted) {
           setGalleryData(res);
@@ -44,9 +44,28 @@ export default function ResourceGallery({
     };
   }, []);
 
+  if (loading) {
+    return (
+      <div className="space-y-8 w-full animate-pulse">
+        {/* Main Image Showcase Skeleton */}
+        <div className="w-full h-[450px] bg-slate-200/60 rounded-[3rem] border-8 border-white shadow-md" />
+        
+        {/* Additional Images Skeleton */}
+        <div className="pt-4 space-y-4">
+          <div className="h-4 w-48 bg-slate-200/60 rounded-full" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="w-full h-48 bg-slate-200/60 rounded-[2rem] border-4 border-white" />
+            <div className="w-full h-48 bg-slate-200/60 rounded-[2rem] border-4 border-white" />
+            <div className="w-full h-48 bg-slate-200/60 rounded-[2rem] border-4 border-white" />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // Extract the specific facility data from the single document
   const section = galleryData?.[sectionKey];
-  const sanityImages = section?.images || [];
+  const sanityImages = (section?.images || []).filter((img: any) => img && img.asset);
   const caption = section?.caption;
 
   const hasSanityImages = sanityImages.length > 0;

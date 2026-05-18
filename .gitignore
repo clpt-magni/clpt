@@ -47,3 +47,6 @@ next-env.d.ts
 *.ppt
 *.pptx
 *.PPT
+
+# scratch scripts
+/scratch/

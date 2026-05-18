@@ -80,40 +80,31 @@ export default function HostelPage() {
             <div className="lg:col-span-5 space-y-8">
                <ResourceGallery
                 sectionKey="hostel"
-                defaultMainImage="/images/resources/hostel/hostel-1.jpg"
-                defaultGalleryImages={["/images/resources/hostel/hostel-2.jpg"]}
+                defaultMainImage="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=800"
+                defaultGalleryImages={[]}
                 mainImageAlt="Hostel Facility View"
               />
 
                {/* Dining & Nutrition Card */}
                <div className="p-10 bg-primary-dark text-white rounded-[3rem] shadow-xl relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-10 text-white/5 pointer-events-none">
-                    <Utensils size={120} />
+                     <Utensils size={120} />
                   </div>
                   <h4 className="text-xl font-black text-secondary uppercase mb-6 flex items-center gap-2">
-                    <Sparkles size={20} /> Nutritional Excellence
+                     <Sparkles size={20} /> Nutritional Excellence
                   </h4>
                   <p className="text-white/60 font-medium text-sm leading-relaxed mb-8">
-                    Our well-furnished dining hall serves nutritious food four times a day, maintaining 
-                    the highest standards of hygiene and student wellness.
+                     Our well-furnished dining hall serves nutritious food four times a day, maintaining 
+                     the highest standards of hygiene and student wellness.
                   </p>
                   <div className="inline-flex items-center gap-3 py-3 px-6 bg-white/10 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-white hover:text-primary-dark transition-colors">
                      24/7 Warden Assistance <ArrowRight size={16} />
                   </div>
                </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Exterior Gallery */}
-      <section className="py-24 bg-slate-50">
-         <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto rounded-[3.5rem] overflow-hidden shadow-2xl border-4 border-white">
-               <img src="/images/resources/hostel/hostel-2.jpg" alt="Hostel Exterior View" className="w-full h-auto" />
-            </div>
          </div>
-      </section>
-    </div>
+      </div>
+   </section>
+</div>
   );
 }

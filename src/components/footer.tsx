@@ -37,6 +37,7 @@ export function Footer() {
               <li><Link href="/academics" className="hover:text-primary transition-colors">Academic Programs</Link></li>
               <li><Link href="/admissions" className="hover:text-primary transition-colors">Admissions Open</Link></li>
               <li><Link href="/placements" className="hover:text-primary transition-colors">Placements & Careers</Link></li>
+              <li><Link href="/activities" className="hover:text-primary transition-colors">Event Registry & Reports</Link></li>
               <li><Link href="#" className="hover:text-primary transition-colors">Mandatory Disclosures</Link></li>
               <li><Link href="#" className="hover:text-primary transition-colors">Anti-Ragging Committee</Link></li>
             </ul>

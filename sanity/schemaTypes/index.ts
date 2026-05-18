@@ -25,8 +25,10 @@ import { medicinalGarden } from './medicinalGarden';
 import syllabus from './syllabus';
 import enquiry from './enquiry';
 import { resourcesGallery } from './resourcesGallery';
+import activityReport from './activityReport';
 
 export const schemaTypes = [
+  activityReport,
   faculty, 
   notice, 
   gallery, 

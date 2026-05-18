@@ -75,7 +75,7 @@ export default function CentralStoresPage() {
             <div className="lg:col-span-5 space-y-8">
               <ResourceGallery
                 sectionKey="centralStores"
-                defaultMainImage="/images/resources/central-stores/central-1.jpg"
+                defaultMainImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
                 mainImageAlt="Inventory Management View"
               />
 

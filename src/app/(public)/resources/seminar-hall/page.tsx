@@ -72,8 +72,8 @@ export default function SeminarHallPage() {
             <div className="lg:col-span-6 space-y-8">
               <ResourceGallery 
                 sectionKey="seminarHall"
-                defaultMainImage="/images/resources/seminar-hall/sh1.jpg"
-                defaultGalleryImages={["/images/resources/seminar-hall/sh2.jpg"]}
+                defaultMainImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+                defaultGalleryImages={["https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800"]}
                 mainImageAlt="Seminar Hall View"
               />
 

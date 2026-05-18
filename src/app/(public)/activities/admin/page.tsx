@@ -119,7 +119,7 @@ export default async function ActivitiesAdminPage() {
 
             <div className="flex flex-wrap gap-4 w-full md:w-auto">
               <a
-                href="https://vpfov1jc.api.sanity.io/v3/studio"
+                href="/studio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 py-4 px-6 bg-primary text-white hover:bg-primary-dark rounded-2xl font-black text-xs uppercase tracking-widest shadow-md transition-colors"

@@ -7,7 +7,7 @@ import { Globe, Users, Link2, Play, MapPin, Phone, Mail } from "lucide-react";
 
 export function Footer() {
   const pathname = usePathname();
-  if (pathname?.startsWith('/studio')) return null;
+  if (pathname?.startsWith('/studio') || pathname?.includes('/pdf')) return null;
   return (
     <footer className="bg-primary-dark text-slate-300 py-12 border-t border-white/10">
       <div className="container mx-auto px-4">

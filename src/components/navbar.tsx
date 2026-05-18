@@ -29,7 +29,7 @@ export function Navbar() {
     fetchCount();
   }, []);
 
-  if (pathname?.startsWith('/studio')) return null;
+  if (pathname?.startsWith('/studio') || pathname?.includes('/pdf')) return null;
 
   return (
     <>

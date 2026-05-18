@@ -33,6 +33,8 @@ export function SidebarNav() {
   const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();
 
+  if (pathname?.includes('/pdf')) return null;
+
   // Flattened navigation for search
   const allLinks = useMemo(() => flattenNavigation(topNav, sidebarNav), []);
 

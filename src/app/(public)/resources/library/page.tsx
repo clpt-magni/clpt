@@ -2,6 +2,7 @@
 
 import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   BookOpen,
@@ -242,24 +243,15 @@ export default function LibraryResourcesPage() {
         </div>
       </section>
 
-      {/* Visual Context Strip */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {GALLERY_ITEMS.map((item, idx) => (
-              <div key={idx} className="aspect-video bg-white rounded-[3rem] border border-slate-100 shadow-sm overflow-hidden relative group">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-10 transition-opacity duration-500">
-                  <p className="text-white text-xs font-black uppercase tracking-widest mb-1">{item.title}</p>
-                  <p className="text-white/80 text-[10px] font-bold uppercase tracking-widest italic">{item.subtitle}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Dynamic Visual Context Strip */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <ResourceGallery
+            sectionKey="library"
+            defaultMainImage="/images/library-tour.png"
+            defaultGalleryImages={["/images/library-award.png", "/images/pharmabook-exhibition.png"]}
+            mainImageAlt="CLPT Library Tour View"
+          />
         </div>
       </section>
     </div>

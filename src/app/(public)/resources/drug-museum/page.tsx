@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { 
   Dna, 
@@ -118,16 +119,15 @@ export default function DrugMuseumPage() {
          </div>
       </section>
 
-      {/* Gallery Section */}
+      {/* Dynamic Gallery Section from Sanity */}
       <section className="py-24 bg-slate-50">
-         <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-               {[1, 2, 3, 4].map((num) => (
-                 <div key={num} className="rounded-[2.5rem] overflow-hidden shadow-lg border-4 border-white hover:scale-[1.05] transition-transform duration-500">
-                    <img src={`/images/resources/drug-museum/drug-${num}.jpg`} alt={`Museum Exhibit ${num}`} className="w-full h-auto" />
-                 </div>
-               ))}
-            </div>
+         <div className="container mx-auto px-4 max-w-5xl">
+            <ResourceGallery
+               sectionKey="drugMuseum"
+               defaultMainImage="/images/resources/drug-museum/drug-1.jpg"
+               defaultGalleryImages={["/images/resources/drug-museum/drug-2.jpg", "/images/resources/drug-museum/drug-3.jpg", "/images/resources/drug-museum/drug-4.jpg"]}
+               mainImageAlt="Drug Museum Exhibit View"
+            />
          </div>
       </section>
     </div>

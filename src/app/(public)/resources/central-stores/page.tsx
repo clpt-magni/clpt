@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { 
   Package, 
@@ -72,14 +73,13 @@ export default function CentralStoresPage() {
 
             {/* Visuals & Efficiency Focus */}
             <div className="lg:col-span-5 space-y-8">
-               <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 group relative">
-                  <img src="/images/resources/central-stores/central-1.jpg" alt="Inventory Management View" className="w-full h-auto transition-transform duration-1000 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-10 flex items-end">
-                     <p className="text-white text-xl font-black uppercase tracking-tight italic">Efficient Supply Coordination</p>
-                  </div>
-               </div>
+              <ResourceGallery
+                sectionKey="centralStores"
+                defaultMainImage="/images/resources/central-stores/central-1.jpg"
+                mainImageAlt="Inventory Management View"
+              />
 
-               {/* Inventory Standards Card */}
+                             {/* Inventory Standards Card */}
                <div className="p-10 bg-primary-dark text-white rounded-[3rem] shadow-xl relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-10 text-white/5 pointer-events-none">
                     <Boxes size={120} />

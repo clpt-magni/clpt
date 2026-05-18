@@ -2,6 +2,7 @@
 
 import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Monitor, 
@@ -88,6 +89,15 @@ export default function ComputerLabPage() {
                   systems. This specialized setup empowers students to enhance their communication skills, professional 
                   presentation, and pharmaceutical terminologies through interactive digital learning modules.
                 </p>
+              </div>
+
+              {/* Dynamic computing gallery */}
+              <div className="mt-12">
+                <ResourceGallery
+                  sectionKey="computerLab"
+                  defaultMainImage="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800"
+                  mainImageAlt="Computer cum Language Lab View"
+                />
               </div>
             </div>
 

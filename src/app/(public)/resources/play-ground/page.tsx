@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   Trophy,
@@ -80,11 +81,12 @@ export default function PlayGroundPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
             {/* Image Hero */}
-            <div className="lg:col-span-8 rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 group relative">
-              <img src="/images/resources/play-ground/play-1.jpg" alt="Athletic Court View" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-12 flex items-end">
-                <p className="text-white text-2xl font-black uppercase tracking-tight">Vibrant Campus Life</p>
-              </div>
+            <div className="lg:col-span-8">
+              <ResourceGallery
+                sectionKey="playGround"
+                defaultMainImage="/images/resources/play-ground/play-1.jpg"
+                mainImageAlt="Athletic Court View"
+              />
             </div>
 
             {/* Utility Card */}

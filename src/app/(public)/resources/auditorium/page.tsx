@@ -2,6 +2,7 @@
 
 import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import {
   Mic2,
   Tv,
@@ -67,12 +68,11 @@ export default function AuditoriumPage() {
 
             {/* Visual Content */}
             <div className="lg:col-span-6 space-y-8">
-              <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 group relative">
-                <img src="https://images.unsplash.com/photo-1475721027785-f74dea996949?auto=format&fit=crop&q=80&w=800" alt="Auditorium View" className="w-full h-auto transition-transform duration-1000 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-10 flex items-end">
-                  <p className="text-white text-xl font-black tracking-tight">Premium Acoustics & Lighting</p>
-                </div>
-              </div>
+              <ResourceGallery 
+                sectionKey="auditorium"
+                defaultMainImage="https://images.unsplash.com/photo-1475721027785-f74dea996949?auto=format&fit=crop&q=80&w=800"
+                mainImageAlt="Auditorium View"
+              />
 
               {/* Tech Details Card */}
               <div className="p-10 bg-primary-dark text-white rounded-[3rem] shadow-xl relative overflow-hidden">

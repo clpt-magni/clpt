@@ -2,6 +2,7 @@
 
 import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Coffee,
@@ -80,14 +81,11 @@ export default function RecreationCentrePage() {
                 {/* Decorative blobs */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 rounded-full blur-3xl -z-10 scale-150" />
 
-                <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 relative group">
-                  <img
-                    src="/images/resources/recreation-centre/sr-1.jpg"
-                    alt="Student Recreation Centre"
-                    className="w-full h-auto"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                </div>
+                <ResourceGallery 
+                  sectionKey="studentRecreationCentre"
+                  defaultMainImage="/images/resources/recreation-centre/sr-1.jpg"
+                  mainImageAlt="Student Recreation Centre"
+                />
 
                 {/* Floating Stats */}
                 <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-slate-50 hidden md:block animate-in slide-in-from-bottom-8 duration-1000">

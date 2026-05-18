@@ -1,10 +1,14 @@
 import { client } from "../../sanity/sanity.client";
 
 export async function getNotices() {
-  return await client.fetch(`*[_type == "notice"] | order(date desc) {
-    ...,
-    "pdfUrl": pdfFile.asset->url
-  }`);
+  return await client.fetch(
+    `*[_type == "notice"] | order(date desc) {
+      ...,
+      "pdfUrl": pdfFile.asset->url
+    }`,
+    {},
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
 }
 
 export async function getFaculty() {
@@ -20,11 +24,19 @@ export async function getGallery() {
 }
 
 export async function getNews() {
-  return await client.fetch(`*[_type == "news"] | order(date desc)`);
+  return await client.fetch(
+    `*[_type == "news"] | order(date desc)`,
+    {},
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
 }
 
 export async function getEvents() {
-  return await client.fetch(`*[_type == "event"] | order(date asc)`);
+  return await client.fetch(
+    `*[_type == "event"] | order(date asc)`,
+    {},
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
 }
 
 export async function getLibraryResources() {

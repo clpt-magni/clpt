@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   Activity,
@@ -101,16 +102,12 @@ export default function SimulationLaboratoryPage() {
 
             {/* Visuals Sidebar */}
             <div className="lg:col-span-6 space-y-8">
-              <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 group relative aspect-[4/3]">
-                <img
-                  src="https://images.unsplash.com/photo-1532187828452-b32053a65b8a?auto=format&fit=crop&q=80&w=800"
-                  alt="Laboratory work space"
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-10 flex items-end">
-                  <p className="text-white text-xl font-black uppercase tracking-tight">Experiential Clinical Hub</p>
-                </div>
-              </div>
+              <ResourceGallery
+                sectionKey="simulationLab"
+                defaultMainImage="https://images.unsplash.com/photo-1532187828452-b32053a65b8a?auto=format&fit=crop&q=80&w=800"
+                defaultGalleryImages={[]}
+                mainImageAlt="Simulation Laboratory View"
+              />
 
               {/* Utility Card */}
               <div className="p-10 bg-primary-dark text-white rounded-[3rem] shadow-xl relative overflow-hidden flex flex-col justify-center min-h-[220px]">

@@ -24,6 +24,7 @@ import institutionalDocument from './institutionalDocument';
 import { medicinalGarden } from './medicinalGarden';
 import syllabus from './syllabus';
 import enquiry from './enquiry';
+import { resourcesGallery } from './resourcesGallery';
 
 export const schemaTypes = [
   faculty, 
@@ -53,5 +54,6 @@ export const schemaTypes = [
   institutionalDocument,
   medicinalGarden,
   syllabus,
-  enquiry
+  enquiry,
+  resourcesGallery
 ];

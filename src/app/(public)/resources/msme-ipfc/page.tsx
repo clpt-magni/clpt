@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   Shield,
@@ -217,6 +218,17 @@ export default function MSMEIPFCPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Dynamic MSME IPFC Gallery */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <ResourceGallery
+            sectionKey="msmesIpCenter"
+            defaultMainImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+            mainImageAlt="MSMEs IP Center View"
+          />
         </div>
       </section>
 

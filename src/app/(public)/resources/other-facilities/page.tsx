@@ -2,6 +2,7 @@
 
 import React from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import { 
   Monitor, 
   Phone, 
@@ -135,6 +136,17 @@ export default function OtherFacilitiesPage() {
                   </div>
                </div>
             </div>
+         </div>
+      </section>
+
+      {/* Dynamic Utility Infrastructure Gallery */}
+      <section className="py-12 bg-white">
+         <div className="container mx-auto px-4 max-w-4xl">
+            <ResourceGallery
+               sectionKey="otherFacilities"
+               defaultMainImage="https://images.unsplash.com/photo-1521737711867-e3b904737c88?auto=format&fit=crop&q=80&w=800"
+               mainImageAlt="Utilities & Safety Infrastructure"
+            />
          </div>
       </section>
     </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import {
   Dumbbell,
   HeartPulse,
@@ -125,13 +126,11 @@ export default function GymnasiumPage() {
 
             {/* Visual Content */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white ring-1 ring-slate-100 group relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=600" 
-                  alt="Gymnasium View" 
-                  className="w-full h-auto transition-transform duration-1000 group-hover:scale-105" 
-                />
-              </div>
+              <ResourceGallery
+                sectionKey="gymnasium"
+                defaultMainImage="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=600"
+                mainImageAlt="Institutional Gymnasium View"
+              />
             </div>
 
           </div>

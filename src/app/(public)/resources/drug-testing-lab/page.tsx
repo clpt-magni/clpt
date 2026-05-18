@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
+import ResourceGallery from "@/components/resources/ResourceGallery";
 import {
   Microscope,
   ShieldCheck,
@@ -141,16 +142,12 @@ export default function DrugTestingLabPage() {
             </div>
 
             <div className="lg:w-2/5">
-              <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-slate-50 relative group">
-                <img
-                  src="/images/resources/drug-testing-lab/c1.jpg"
-                  alt="Instrument Lab"
-                  className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 to-transparent flex items-end p-8">
-                  <p className="text-white font-black uppercase text-sm tracking-widest">Sophisticated Instrumentation</p>
-                </div>
-              </div>
+              <ResourceGallery
+                sectionKey="cdtl"
+                defaultMainImage="/images/resources/drug-testing-lab/c1.jpg"
+                defaultGalleryImages={["/images/resources/drug-testing-lab/c2.jpg", "/images/resources/drug-testing-lab/c3.jpg"]}
+                mainImageAlt="CDTL Laboratory View"
+              />
             </div>
 
           </div>
@@ -228,19 +225,7 @@ export default function DrugTestingLabPage() {
         </div>
       </section>
 
-      {/* Additional Visuals Area */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-[3rem] overflow-hidden shadow-xl">
-              <img src="/images/resources/drug-testing-lab/c2.jpg" alt="Lab View 2" className="w-full h-auto" />
-            </div>
-            <div className="rounded-[3rem] overflow-hidden shadow-xl">
-              <img src="/images/resources/drug-testing-lab/c3.jpg" alt="Lab View 3" className="w-full h-auto" />
-            </div>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }

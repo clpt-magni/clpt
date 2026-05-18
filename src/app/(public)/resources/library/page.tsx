@@ -55,30 +55,24 @@ const DIGITAL_RESOURCES = [
   },
 ];
 
-const SUBJECT_INVENTORY = [
-  { sn: "01", subject: "Pharmacognosy", titles: "215", volumes: "727" },
-  { sn: "02", subject: "Pharmacy Practice", titles: "125", volumes: "286" },
-  { sn: "03", subject: "Human Anatomy & Physiology", titles: "186", volumes: "502" },
-  { sn: "04", subject: "Pharmaceutics ( Dispensing & General Pharmacy)", titles: "347", volumes: "1290" },
-  { sn: "05", subject: "Pharmaceutical Organic Chemistry", titles: "164", volumes: "810" },
-  { sn: "06", subject: "Pharmaceutical Inorganic Chemistry", titles: "85", volumes: "363" },
-  { sn: "07", subject: "Pharmaceutical Microbiology", titles: "143", volumes: "520" },
-  { sn: "08", subject: "Pathophysiology", titles: "63", volumes: "189" },
-  { sn: "09", subject: "Applied Biochemistry & Clinical Chemistry", titles: "139", volumes: "332" },
-  { sn: "10", subject: "Pharmacology", titles: "209", volumes: "671" },
-  { sn: "11", subject: "Pharmaceutical Jurisprudence", titles: "40", volumes: "235" },
-  { sn: "12", subject: "Pharmaceutical Dosage Forms", titles: "72", volumes: "132" },
-  { sn: "13", subject: "Community Pharmacy", titles: "55", volumes: "124" },
-  { sn: "14", subject: "Clinical Pharmacy", titles: "212", volumes: "656" },
-  { sn: "15", subject: "Hospital Pharmacy", titles: "74", volumes: "238" },
-  { sn: "16", subject: "Pharmacotherapeutics", titles: "80", volumes: "842" },
-  { sn: "17", subject: "Pharmaceutical Analysis", titles: "274", volumes: "1008" },
-  { sn: "18", subject: "Medicinal Chemistry", titles: "87", volumes: "556" },
-  { sn: "19", subject: "Biology", titles: "62", volumes: "178" },
-  { sn: "20", subject: "Computer Science or Computer Application in Pharmacy", titles: "61", volumes: "155" },
-  { sn: "21", subject: "Mathematics / Statistics", titles: "81", volumes: "163" },
-  { sn: "22", subject: "Communication Skills", titles: "75", volumes: "143" },
-  { sn: "23", subject: "Pharmaceutics - Drug Delivery Systems, Pharmaceutical Engineering, Regulatory Science", titles: "147", volumes: "731" },
+const LIBRARY_SERVICES = [
+  "Library Committee",
+  "Book Bank Service",
+  "Digital Library",
+  "Reference services",
+  "Lending Services",
+  "Inter Library Loan Service",
+  "Overnight Lending Service",
+  "Access to Database (NewGenLib V 3.1.4)",
+  "New Arrival Service",
+  "Reprography Service",
+  "Internet - Wi-Fi",
+  "Library Tours",
+  "Book Exhibitions",
+  "Departmental Libraries",
+  "Library Utilization Awards (Students & Faculty)",
+  "Support Author Book Chapter / Books",
+  "E-Resources of Delnet, N-List, Inventi, National Digital Library of India and CLPT Library Web Portal"
 ];
 
 const GALLERY_ITEMS = [
@@ -165,36 +159,35 @@ export default function LibraryResourcesPage() {
                 </div>
               </div>
 
-              {/* Subject Wise Inventory Table */}
+              {/* Key Library Services & Facilities */}
               <div className="mt-24 space-y-8">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-black text-primary-dark uppercase tracking-tight">Subject Wise Inventory</h3>
-                  <p className="text-slate-400 text-xs font-bold uppercase tracking-[0.2em]">Comprehensive Collection Breakdown</p>
+                  <h3 className="text-2xl font-black text-primary-dark uppercase tracking-tight">Services & Facilities</h3>
+                  <p className="text-slate-400 text-xs font-bold uppercase tracking-[0.2em]">Comprehensive Library Services</p>
                 </div>
                 
-                <div className="overflow-hidden rounded-[2rem] border border-slate-100 shadow-sm">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse min-w-[600px]">
-                      <thead>
-                        <tr className="bg-slate-50/50 border-b border-slate-100">
-                          <th className="px-8 py-5 text-[10px] font-black text-slate-400 uppercase tracking-widest">S.No</th>
-                          <th className="px-8 py-5 text-[10px] font-black text-slate-400 uppercase tracking-widest">Subject</th>
-                          <th className="px-8 py-5 text-[10px] font-black text-slate-400 uppercase tracking-widest text-center">Titles</th>
-                          <th className="px-8 py-5 text-[10px] font-black text-slate-400 uppercase tracking-widest text-center">Volumes</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {SUBJECT_INVENTORY.map((item, idx) => (
-                          <tr key={idx} className="group hover:bg-slate-50/50 transition-colors border-b border-slate-50 last:border-0">
-                            <td className="px-8 py-5 text-[11px] font-bold text-slate-400">{item.sn}</td>
-                            <td className="px-8 py-5 text-[11px] font-black text-slate-900 uppercase tracking-wide group-hover:text-primary transition-colors">{item.subject}</td>
-                            <td className="px-8 py-5 text-[11px] font-black text-slate-600 text-center">{item.titles}</td>
-                            <td className="px-8 py-5 text-[11px] font-black text-slate-900 text-center">{item.volumes}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {LIBRARY_SERVICES.map((service, idx) => {
+                    const sn = String(idx + 1).padStart(2, "0");
+                    return (
+                      <div 
+                        key={idx} 
+                        className="p-6 bg-slate-50/50 hover:bg-white rounded-[2rem] border border-slate-100/50 hover:border-primary/20 hover:shadow-xl transition-all duration-300 group flex items-start gap-5"
+                      >
+                        <div className="w-10 h-10 rounded-2xl bg-white text-primary shadow-sm flex items-center justify-center font-black text-xs shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                          {sn}
+                        </div>
+                        <div className="space-y-1">
+                          <p className="text-sm font-black text-slate-900 uppercase tracking-wide group-hover:text-primary transition-colors duration-300 leading-snug">
+                            {service}
+                          </p>
+                          <p className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+                            Library Service
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

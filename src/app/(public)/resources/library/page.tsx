@@ -165,13 +165,13 @@ export default function LibraryResourcesPage() {
                   <h3 className="text-2xl font-black text-primary-dark uppercase tracking-tight">Services & Facilities</h3>
                   <p className="text-slate-400 text-xs font-bold uppercase tracking-[0.2em]">Comprehensive Library Services</p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {LIBRARY_SERVICES.map((service, idx) => {
                     const sn = String(idx + 1).padStart(2, "0");
                     return (
-                      <div 
-                        key={idx} 
+                      <div
+                        key={idx}
                         className="p-6 bg-slate-50/50 hover:bg-white rounded-[2rem] border border-slate-100/50 hover:border-primary/20 hover:shadow-xl transition-all duration-300 group flex items-start gap-5"
                       >
                         <div className="w-10 h-10 rounded-2xl bg-white text-primary shadow-sm flex items-center justify-center font-black text-xs shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">

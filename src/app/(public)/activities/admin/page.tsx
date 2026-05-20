@@ -41,15 +41,41 @@ function isAuthorized(email: string): boolean {
 }
 
 const CATEGORIES_MAP: { [key: string]: string } = {
-  guestLecture: "Guest Lecture / Webinar",
-  seminar: "Seminar / Conference",
-  fdp: "FTP / FDP",
-  workshop: "Workshop / Training",
-  skillDev: "Skill Development",
-  iiec: "IIEC / Incubation",
-  ipr: "IPR Activity",
-  professionalBody: "Professional Body Chapter",
-  iqac: "IQAC Activity",
+  // Department Activities
+  awardsAchievements: "AWARDS-ACHIEVEMENTS",
+  certificateProgramme: "CERTIFICATE PROGRAMME",
+  fdp: "FDP (Faculty Development Programme)",
+  guestLecture: "GUEST LECTURE",
+  researchGrants: "RESEARCH GRANTS AND SPONSORED RESEARCH",
+  ssm: "SSM",
+  skillDevelopment: "SKILL DEVELOPMENT PROGRAMME",
+  wdh: "WDH",
+
+  // Cells & Committee Activities
+  alumniAssociation: "ALUMNI ASSOCIATION ACTIVITIES",
+  chess: "CHESS",
+  culturalActivities: "CULTURAL ACTIVITIES",
+  eagleClub: "EAGLE CLUB",
+  extensionActivities: "EXTENSION ACTIVITIES",
+  hmapActivities: "HMAP ACTIVITIES",
+  hmrActivities: "HMR ACTIVITIES",
+  iic: "IIC (Institution's Innovation Council)",
+  iipec: "IIPEC (INDUSTRY INSTITUTE PARTNERSHIP CELL)",
+  ipaLamBranch: "IPA-LAM BRANCH ACTIVITIES",
+  iprActivities: "IPR ACTIVITIES (Intellectual Property Rights)",
+  iqacActivities: "IQAC ACTIVITIES",
+  isporAnuStudent: "ISPOR ANU STUDENT CHAPTER ACTIVITIES",
+  isporAmaravathiRegional: "ISPOR INDIA AMARAVATHI REGIONAL CHAPTER ACTIVITIES",
+  library: "LIBRARY",
+  medicalCamp: "MEDICAL CAMP ACTIVITIES",
+  nssUnit1: "NSS UNIT - I ACTIVITIES",
+  nssUnit2: "NSS UNIT - II ACTIVITIES",
+  orientationProgramme: "ORIENTATION PROGRAMME",
+  pmbjakActivities: "PMBJAK ACTIVITIES",
+  professionalTraining: "PROFESSIONAL TRAINING FOR TEACHING STAFF",
+  sportsActivities: "SPORTS ACTIVITIES",
+  womenCellActivities: "WOMEN CELL ACTIVITIES",
+  yoga: "YOGA",
 };
 
 export default async function ActivitiesAdminPage() {

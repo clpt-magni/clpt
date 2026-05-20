@@ -9,7 +9,7 @@ const writeClient = createClient({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   apiVersion: '2023-10-01',
   useCdn: false,
-  token: process.env.SANITY_AUTH_TOKEN || process.env.SANITY_WRITE_TOKEN,
+  token: process.env.SANITY_WRITE_TOKEN || process.env.SANITY_AUTH_TOKEN,
 });
 
 export interface EnquiryData {

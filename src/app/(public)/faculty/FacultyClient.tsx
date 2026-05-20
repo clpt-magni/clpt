@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { Search, Filter, User, SlidersHorizontal, ArrowUp } from "lucide-react";
+import Link from "next/link";
 import { getFaculty } from "@/lib/sanity-actions";
 import FacultyCard, { FacultyMember } from "@/components/faculty/FacultyCard";
 import { PageHeader } from "@/components/ui/PageHeader";
@@ -166,6 +167,15 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
                 </select>
               </div>
             </div>
+
+            {/* Faculty Portal Admin Option */}
+            <Link
+              href="/facultyupdate"
+              className="lg:ml-auto w-full lg:w-auto px-5 py-2.5 bg-slate-900 text-white text-[10px] font-black uppercase tracking-widest rounded-xl hover:bg-primary transition-all flex items-center justify-center gap-2 shadow-sm border border-slate-800"
+            >
+              <User size={13} />
+              <span>Faculty Portal</span>
+            </Link>
           </div>
 
           {/* Result Count Indicator */}

@@ -114,6 +114,7 @@ export const topNav: NavItem[] = [
       },
     ],
   },
+  { label: "Faculty", href: "/faculty" },
   {
     label: "Resources",
     href: "/resources",

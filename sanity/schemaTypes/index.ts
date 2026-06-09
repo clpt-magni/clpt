@@ -1,0 +1,61 @@
+import faculty from './faculty';
+import notice from './notice';
+import gallery from './gallery';
+import news from './news';
+import event from './event';
+import library from './library';
+import program from './program';
+import academicCalendar from './academicCalendar';
+import { laboratory } from './laboratory';
+import { 
+  nssUnit1Activity, nssUnit2Activity, ipaLamActivity, isporAmaravatiActivity, isporAnuActivity
+} from './activityTypes';
+import { iipecTraining } from './iipecTraining';
+import mou from './mou';
+import publication from './publication';
+import { placementStats, placementCompany } from './placement';
+import skillPartner from './skillPartner';
+import studentList from './studentList';
+import feeStructure from './feeStructure';
+
+import institutionalBody from './institutionalBody';
+import affiliation from './affiliation';
+import institutionalDocument from './institutionalDocument';
+import { medicinalGarden } from './medicinalGarden';
+import syllabus from './syllabus';
+import enquiry from './enquiry';
+import { resourcesGallery } from './resourcesGallery';
+import activityReport from './activityReport';
+
+export const schemaTypes = [
+  activityReport,
+  faculty, 
+  notice, 
+  gallery, 
+  news, 
+  event, 
+  library, 
+  program,
+  academicCalendar,
+  laboratory,
+  nssUnit1Activity,
+  nssUnit2Activity,
+  ipaLamActivity,
+  isporAmaravatiActivity,
+  isporAnuActivity,
+  iipecTraining,
+  mou,
+  publication,
+  placementStats,
+  placementCompany,
+  skillPartner,
+  studentList,
+  feeStructure,
+  institutionalBody,
+  affiliation,
+  institutionalDocument,
+  medicinalGarden,
+  syllabus,
+  enquiry,
+  resourcesGallery
+];

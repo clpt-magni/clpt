@@ -55,9 +55,13 @@ export async function getProgramBySlug(slug: string) {
 }
 
 export async function getAcademicCalendars() {
-  return await client.fetch(`*[_type == "academicCalendar"] | order(academicYear desc) {
-    ...,
-    "pdfUrl": pdfFile.asset->url
+  return await client.fetch(`*[_type == "academicCalendar"] | order(year desc) {
+    _id,
+    year,
+    pdfs[] {
+      title,
+      "pdfUrl": pdfFile.asset->url
+    }
   }`);
 }
 

@@ -21,7 +21,7 @@ export function PdfViewerModal({ isOpen, onClose, title, pdfUrl }: PdfViewerModa
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent showCloseButton={false} className="max-w-none sm:!max-w-[95vw] w-[95vw] h-[95vh] flex flex-col p-0 gap-0 overflow-hidden border-none shadow-2xl rounded-3xl z-[100]">
+      <DialogContent showCloseButton={false} className="fixed inset-0 !top-0 !left-0 !translate-x-0 !translate-y-0 w-screen h-screen max-w-none sm:!max-w-none flex flex-col p-0 gap-0 overflow-hidden border-none shadow-none rounded-none z-[10002]">
         {/* Header with gradient and glass effect */}
         <DialogHeader className="p-6 bg-[#003366] text-white flex-row items-center justify-between space-y-0 border-b border-white/10 shrink-0">
           <div className="flex flex-col gap-1 overflow-hidden">

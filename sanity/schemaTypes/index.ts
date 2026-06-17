@@ -26,9 +26,11 @@ import syllabus from './syllabus';
 import enquiry from './enquiry';
 import { resourcesGallery } from './resourcesGallery';
 import activityReport from './activityReport';
+import attendedActivity from './attendedActivity';
 
 export const schemaTypes = [
   activityReport,
+  attendedActivity,
   faculty, 
   notice, 
   gallery, 

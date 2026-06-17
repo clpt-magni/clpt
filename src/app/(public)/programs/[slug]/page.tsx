@@ -13,9 +13,57 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 
 interface ProgramPageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: ProgramPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const program = await getProgramBySlug(slug);
+  
+  if (!program) return { title: "Program Not Found" };
+
+  // Specific SEO Title and Description Overrides
+  if (slug === "b-pharmacy") {
+    return {
+      title: "B.Pharmacy Course | Eligibility, Admission & Details",
+      description: "Find the location and campus directions of Chalapathi Institute of Pharmaceutical Sciences, Guntur with easy access information.",
+      alternates: {
+        canonical: `/programs/${slug}`,
+      },
+    };
+  }
+
+  if (slug === "m-pharmacy") {
+    return {
+      title: "M.Pharmacy Course | Specializations, Eligibility & Admission",
+      description: "Explore M.Pharmacy course details including specializations, eligibility, admission process, duration, syllabus, and career opportunities at Chalapathi.",
+      alternates: {
+        canonical: `/programs/${slug}`,
+      },
+    };
+  }
+
+  if (slug === "pharmd") {
+    return {
+      title: "Pharm.D Course | Eligibility, Admission & Details",
+      description: "Explore Pharm.D course details including eligibility, admission process, duration, syllabus, and career opportunities at Chalapathi Pharmacy Institute.",
+      alternates: {
+        canonical: `/programs/${slug}`,
+      },
+    };
+  }
+
+  // Fallback dynamic SEO
+  return {
+    title: `${program.title} | Chalapathi Institute of Pharmaceutical Sciences`,
+    description: program.description || `Explore details, syllabus, and eligibility for ${program.title} at CIPS.`,
+    alternates: {
+      canonical: `/programs/${slug}`,
+    },
+  };
 }
 
 export default async function ProgramDetailPage({ params }: ProgramPageProps) {

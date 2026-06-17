@@ -127,3 +127,40 @@ export async function getActivityById(id: string): Promise<ActivityReport | null
   }`;
   return await client.fetch(query, { id }, { cache: 'no-store', next: { revalidate: 0 } });
 }
+
+export interface AttendedActivity {
+  _id: string;
+  eventName: string;
+  organizedBy: string;
+  date: string;
+  section: 'seminar' | 'wdh' | 'fdp';
+  faculty?: Array<{
+    _id: string;
+    name: string;
+    prefix?: string;
+    designation?: string;
+    slug?: {
+      current: string;
+    };
+  }>;
+}
+
+// Fetch all attended activities with faculty references resolved
+export async function getAttendedActivities(): Promise<AttendedActivity[]> {
+  const query = `*[_type == "attendedActivity"] | order(date desc) {
+    _id,
+    eventName,
+    organizedBy,
+    date,
+    section,
+    faculty[]->{
+      _id,
+      name,
+      prefix,
+      designation,
+      slug
+    }
+  }`;
+  return await client.fetch(query, {}, { cache: 'no-store', next: { revalidate: 0 } });
+}
+

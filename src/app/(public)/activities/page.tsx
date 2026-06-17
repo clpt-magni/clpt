@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
-import { getActivities } from "@/lib/activity-actions";
+import { getActivities, getAttendedActivities } from "@/lib/activity-actions";
+import { getFaculty } from "@/lib/sanity-actions";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { 
   Calendar, 
@@ -26,7 +27,11 @@ export const metadata: Metadata = {
 };
 
 export default async function ActivitiesPage() {
-  const activities = await getActivities();
+  const [activities, attendedActivities, facultyList] = await Promise.all([
+    getActivities().catch(() => []),
+    getAttendedActivities().catch(() => []),
+    getFaculty().catch(() => [])
+  ]);
 
   // Calculate dynamic metrics
   const totalEvents = activities.length;
@@ -92,7 +97,11 @@ export default async function ActivitiesPage() {
           </div>
 
           {/* Interactive Client Component for Search, Filters, and Cards */}
-          <ActivitiesClient initialActivities={activities} />
+          <ActivitiesClient 
+            initialActivities={activities} 
+            initialAttendedActivities={attendedActivities}
+            facultyList={facultyList}
+          />
 
         </div>
       </section>

@@ -282,7 +282,7 @@ export default function ChairmanProfile() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { name: "Chalapathi Institute of Pharmaceutical Sciences - CLPT (Lam, Guntur)", url: "https://www.chalapathipharmacy.ac.in", badge: "Top Pharmacy College" },
+                  { name: "Chalapathi Institute of Pharmaceutical Sciences - CLPT (Lam, Guntur)", url: "https://chalapathipharmacy.ac.in", badge: "Top Pharmacy College" },
                   { name: "Chalapathi Institute of Engineering and Technology - CIET (Lam, Guntur)", url: "https://www.chalapathiengg.ac.in", badge: "Times Rank 154" },
                   { name: "Chalapathi Institute of Technology - CITY (Mothadaka, Guntur)", url: "https://www.city.ac.in", badge: "Autonomous" },
                   { name: "Chalapathi Pharamcy College - CCPY (Mothadaka, Guntur)", url: "https://www.ccpy.ac.in/", badge: "Pharmacy College" },

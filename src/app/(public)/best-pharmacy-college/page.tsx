@@ -56,22 +56,22 @@ export default function BestPharmacyCollegePage() {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.chalapathipharmacy.ac.in/best-pharmacy-college"
+      "@id": "https://chalapathipharmacy.ac.in/best-pharmacy-college"
     },
     "headline": "Why Choosing the Best Pharmacy College Matters for a Successful Career",
     "description": "Discover why choosing the best pharmacy college matters for career success through quality education, industry exposure, research, and placements.",
-    "image": "https://www.chalapathipharmacy.ac.in/images/og-image.jpg",
+    "image": "https://chalapathipharmacy.ac.in/images/og-image.jpg",
     "author": {
       "@type": "Organization",
       "name": "Chalapathi Institute of Pharmaceutical Sciences",
-      "url": "https://www.chalapathipharmacy.ac.in"
+      "url": "https://chalapathipharmacy.ac.in"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Chalapathi Institute of Pharmaceutical Sciences",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.chalapathipharmacy.ac.in/images/flogo.png"
+        "url": "https://chalapathipharmacy.ac.in/images/flogo.png"
       }
     },
     "datePublished": "2026-06-12",

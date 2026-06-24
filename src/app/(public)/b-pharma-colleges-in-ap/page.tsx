@@ -55,22 +55,22 @@ export default function BPharmaAdmissionsPage() {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.chalapathipharmacy.ac.in/b-pharma-colleges-in-ap"
+      "@id": "https://chalapathipharmacy.ac.in/b-pharma-colleges-in-ap"
     },
     "headline": "Complete Admission Guide for B.Pharmacy Colleges in AP",
     "description": "Explore the B.Pharmacy admission process in AP, including eligibility, AP EAPCET, counseling, documents, seat allotment, and college selection.",
-    "image": "https://www.chalapathipharmacy.ac.in/images/og-image.jpg",
+    "image": "https://chalapathipharmacy.ac.in/images/og-image.jpg",
     "author": {
       "@type": "Organization",
       "name": "Chalapathi Institute of Pharmaceutical Sciences",
-      "url": "https://www.chalapathipharmacy.ac.in"
+      "url": "https://chalapathipharmacy.ac.in"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Chalapathi Institute of Pharmaceutical Sciences",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.chalapathipharmacy.ac.in/images/flogo.png"
+        "url": "https://chalapathipharmacy.ac.in/images/flogo.png"
       }
     },
     "datePublished": "2026-06-12",

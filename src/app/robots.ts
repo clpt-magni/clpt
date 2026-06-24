@@ -19,6 +19,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://www.chalapathipharmacy.ac.in/sitemap.xml',
+    sitemap: 'https://chalapathipharmacy.ac.in/sitemap.xml',
   };
 }

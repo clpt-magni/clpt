@@ -6,8 +6,8 @@ const JsonLd = () => {
     "@type": "CollegeOrUniversity",
     "name": "Chalapathi Institute of Pharmaceutical Sciences (CLPT)",
     "alternateName": "CLPT Guntur",
-    "url": "https://www.chalapathipharmacy.ac.in",
-    "logo": "https://www.chalapathipharmacy.ac.in/images/flogo.png",
+    "url": "https://chalapathipharmacy.ac.in",
+    "logo": "https://chalapathipharmacy.ac.in/images/flogo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-863-2524124",
@@ -41,12 +41,12 @@ const JsonLd = () => {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://www.chalapathipharmacy.ac.in",
+    "url": "https://chalapathipharmacy.ac.in",
     "name": "Chalapathi Institute of Pharmaceutical Sciences",
     "description": "Leading pharmacy college in Andhra Pradesh providing excellence in pharmaceutical education.",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.chalapathipharmacy.ac.in/news?search={search_term_string}",
+      "target": "https://chalapathipharmacy.ac.in/news?search={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

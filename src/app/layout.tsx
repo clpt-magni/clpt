@@ -20,7 +20,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.chalapathipharmacy.ac.in"),
+  metadataBase: new URL("https://chalapathipharmacy.ac.in"),
   title: {
     default: "Best Pharmacy College in AP | Chalapathi Institute of Pharmaceutical Sciences (CLPT)",
     template: "%s",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Pharmacy College in AP | CLPT Autonomous",
     description: "Leading pharmaceutical education and research excellence in Guntur, Andhra Pradesh.",
-    url: "https://www.chalapathipharmacy.ac.in",
+    url: "https://chalapathipharmacy.ac.in",
     siteName: "CLPT Autonomous",
     locale: "en_IN",
     type: "website",

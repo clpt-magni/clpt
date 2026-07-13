@@ -1,6 +1,14 @@
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { LayoutDashboard, GraduationCap, ClipboardCheck, User, BookOpen, Calendar } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 const sidebarLinks = [
   { name: "Overview", href: "/student-dashboard", icon: LayoutDashboard },

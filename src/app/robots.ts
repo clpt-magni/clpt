@@ -9,6 +9,9 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           '/admin/',
           '/private/',
+          '/student-dashboard/',
+          '/sign-in/',
+          '/sign-up/',
           '/studio/',
           '/api/',
           '/_next/',

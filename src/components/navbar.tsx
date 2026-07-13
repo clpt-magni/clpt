@@ -47,19 +47,33 @@ export function Navbar() {
             </Link>
 
             <div className="flex items-center gap-4 md:gap-8">
-              <div className="hidden lg:flex items-center gap-6">
-                {[
-                  { src: "/images/naac.jpg", alt: "NAAC A+" },
-                  { src: "/images/iso.jpg", alt: "ISO Certified" }
-                ].map((img, i) => (
-                  <div key={i} className="group cursor-help">
-                    <img
-                      src={img.src}
-                      alt={img.alt}
-                      className="h-10 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
-                    />
-                  </div>
-                ))}
+              {/* Accreditations & Notices (Desktop & Tablet) */}
+              <div className="hidden md:flex items-center gap-6">
+                <div className="hidden lg:flex items-center gap-6">
+                  {[
+                    { src: "/images/naac.jpg", alt: "NAAC A+" },
+                    { src: "/images/iso.jpg", alt: "ISO Certified" }
+                  ].map((img, i) => (
+                    <div key={i} className="group cursor-help">
+                      <img
+                        src={img.src}
+                        alt={img.alt}
+                        className="h-10 w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                <Link
+                  href="/notices"
+                  className="relative flex items-center gap-1.5 px-4 py-2.5 text-[11px] font-black text-white bg-red-600 hover:bg-red-700 transition-all rounded-full whitespace-nowrap uppercase tracking-wider shadow-md hover:scale-105 transform active:scale-95 duration-150 ml-1"
+                >
+                  <span className="flex h-2 w-2 rounded-full bg-white animate-ping shrink-0" />
+                  <span>Notices</span>
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[9px] font-black text-red-600 shadow-sm ml-0.5 shrink-0">
+                    {noticeCount}
+                  </span>
+                </Link>
               </div>
 
               <div className="flex items-center gap-3">
@@ -99,18 +113,6 @@ export function Navbar() {
                   <NavItemComponent item={item} />
                 </li>
               ))}
-              <li className="ml-2 relative">
-                <Link
-                  href="/notices"
-                  className="relative flex items-center gap-1.5 px-3.5 py-2 text-[11px] font-black text-white bg-red-600 hover:bg-red-700 transition-all rounded-full whitespace-nowrap uppercase tracking-wider shadow-md hover:scale-105 transform active:scale-95 duration-150"
-                >
-                  <span className="flex h-2 w-2 rounded-full bg-white animate-ping shrink-0" />
-                  <span>Notices</span>
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[9px] font-black text-red-600 shadow-sm ml-0.5 shrink-0">
-                    {noticeCount}
-                  </span>
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>

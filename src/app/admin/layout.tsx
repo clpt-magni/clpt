@@ -9,8 +9,16 @@ import {
   LayoutDashboard,
   Home
 } from "lucide-react";
+import type { Metadata } from "next";
 
 import { Sidebar } from "./sidebar";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function AdminLayout({
   children,

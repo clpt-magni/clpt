@@ -17,11 +17,7 @@
   <lastmod>2026-05-29T07:35:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/admin</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
 <url>
   <loc>https://chalapathipharmacy.ac.in/about</loc>
   <lastmod>2026-05-29T07:35:13+00:00</lastmod>
@@ -82,11 +78,7 @@
   <lastmod>2026-05-29T07:35:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/student-dashboard</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
 <url>
   <loc>https://chalapathipharmacy.ac.in/programs/b-pharmacy</loc>
   <lastmod>2026-05-29T07:35:13+00:00</lastmod>
@@ -247,11 +239,7 @@
   <lastmod>2026-05-29T07:35:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/sign-in?redirect_url=/activities/admin</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
 <url>
   <loc>https://chalapathipharmacy.ac.in/activities/511f6a70-ca6e-439e-8729-efaef4ab9419</loc>
   <lastmod>2026-05-29T07:35:13+00:00</lastmod>
@@ -2122,26 +2110,7 @@
   <lastmod>2026-04-05T19:02:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/student-dashboard/marks</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/student-dashboard/attendance</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/student-dashboard/library</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/student-dashboard/profile</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
 <url>
   <loc>https://chalapathipharmacy.ac.in/resources/labs/115-central-instrumentation-laboratory</loc>
   <lastmod>2026-05-29T07:35:13+00:00</lastmod>

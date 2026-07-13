@@ -9,6 +9,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MarksEntryPage() {
+export default function AdminStaffPage() {
   permanentRedirect("/");
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, GraduationCap, User, Settings } from "lucide-react";
+import { Phone, Mail, GraduationCap, User } from "lucide-react";
 import Link from "next/link";
 
 export function TopBar() {
@@ -23,10 +23,7 @@ export function TopBar() {
             <User size={14} />
             Alumni
           </Link>
-          <Link href="/admin" className="flex items-center gap-1 hover:text-primary transition-colors">
-            <Settings size={14} />
-            Admin Login
-          </Link>
+
         </div>
       </div>
     </div>

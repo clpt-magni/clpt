@@ -1,5 +1,7 @@
+# robots.txt
+# Website: https://chalapathipharmacy.ac.in/
+
 User-agent: *
-Content-Signal: search=yes,ai-train=no,use=reference
 Allow: /
 
 # Restrict private/system directories
@@ -55,34 +57,6 @@ Allow: /
 
 # Allow Baidu
 User-agent: Baiduspider
-Allow: /
-
-# Allow AI/scraper bots
-User-agent: Amazonbot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: CloudflareBrowserRenderingCrawler
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: meta-externalagent
 Allow: /
 
 Sitemap: https://chalapathipharmacy.ac.in/sitemap.xml

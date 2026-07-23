@@ -4,7 +4,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { SignInButton, UserButton, Show } from "@clerk/nextjs";
+
 import { TopBar } from "./top-bar";
 import { ChevronDown, Menu, X, Phone, Mail } from "lucide-react";
 import { topNav, NavItem } from "@/config/navigation";
@@ -77,23 +77,6 @@ export function Navbar() {
               </div>
 
               <div className="flex items-center gap-3">
-                {/* Student Login hidden temporarily
-                <Show when="signed-in">
-                  <Link href="/student-dashboard">
-                    <Button variant="outline" size="sm" className="hidden border-primary text-primary hover:bg-primary hover:text-white md:flex transition-all font-bold">
-                      Dashboard
-                    </Button>
-                  </Link>
-                  <UserButton />
-                </Show>
-                <Show when="signed-out">
-                  <SignInButton mode="modal">
-                    <button className="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-primary-dark transition-all active:scale-95 shadow-lg shadow-primary/20">
-                      Student Login
-                    </button>
-                  </SignInButton>
-                </Show>
-                */}
                 <button
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   className="md:hidden p-2 text-primary hover:bg-slate-100 rounded-xl transition-all active:scale-90"

@@ -1,4 +1,4 @@
-import { ClerkProvider } from '@clerk/nextjs';
+
 import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import JsonLd from "@/components/seo/JsonLd";
@@ -94,16 +94,14 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <ClerkProvider>
-          <div className="min-h-screen flex flex-col bg-white">
-            <Navbar />
-            <main className="flex-1 relative">
-              <SidebarNav />
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </ClerkProvider>
+        <div className="min-h-screen flex flex-col bg-white">
+          <Navbar />
+          <main className="flex-1 relative">
+            <SidebarNav />
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

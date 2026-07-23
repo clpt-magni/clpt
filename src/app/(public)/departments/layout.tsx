@@ -3,9 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Departments at Chalapathi Pharmacy College Guntur",
   description: "Explore pharmacy departments at Chalapathi Institute of Pharmaceutical Sciences, Guntur offering advanced education, research, and training.",
-  alternates: {
-    canonical: "/departments",
-  },
+
 };
 
 export default function DepartmentsLayout({

@@ -37,9 +37,7 @@ export const metadata: Metadata = {
     "M.Pharm specialization colleges",
     "best research pharmacy college AP",
   ],
-  alternates: {
-    canonical: "/",
-  },
+
   icons: {
     icon: "/images/favicon.png",
     shortcut: "/images/favicon.png",

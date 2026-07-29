@@ -12,7 +12,27 @@ export default defineType({
       name: 'priority', 
       title: 'Priority', 
       type: 'string',
-      options: { list: ['Low', 'Medium', 'High'] }
+      options: { list: ['Normal', 'Low', 'Medium', 'High'] },
+      initialValue: 'Normal'
+    }),
+    defineField({
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Examination', value: 'examination' },
+          { title: 'Admissions', value: 'admissions' },
+          { title: 'Academic', value: 'academic' },
+          { title: 'Research', value: 'research' },
+          { title: 'General', value: 'general' },
+        ]
+      }
+    }),
+    defineField({
+      name: 'link',
+      title: 'External Link / URL',
+      type: 'url',
     }),
     defineField({
       name: 'pdfFile',

@@ -1,2251 +1,1241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-
-<url>
-  <loc>https://chalapathipharmacy.ac.in/</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/admissions</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/best-pharmacy-college</loc>
-  <lastmod>2026-07-23T16:00:00+05:30</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/b-pharma-colleges-in-ap</loc>
-  <lastmod>2026-07-23T16:00:00+05:30</lastmod>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/programs</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/departments</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/faculty</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/syllabus</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/contact</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/location</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/notices</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/academic-calendar</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/powerpoint-presentations</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://chalapathipharmacy.ac.in/programs/b-pharmacy</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/programs/m-pharmacy</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/programs/pharmd</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/programs/phd</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/placements</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/studio</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/ces-overview</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/chairman</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/principal</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/governing-body</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/academic-council</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/finance-committee</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/bos</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/about/affiliations</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/facultyupdate</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/library</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/hostel</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/seminar-hall</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/auditorium</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/open-air-auditorium</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/sports-facilities</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/gymnasium</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/canteen</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/central-stores</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/play-ground</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/other-facilities</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/drug-testing-lab</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/medicinal-garden</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/computer-lab</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/audio-visual</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/recreation-centre</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/511f6a70-ca6e-439e-8729-efaef4ab9419</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/511f6a70-ca6e-439e-8729-efaef4ab9419/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/f66efd32-a954-4bdf-a1bd-ad3ce62fb663</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/f66efd32-a954-4bdf-a1bd-ad3ce62fb663/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/f547abd7-3b07-4c14-b41b-ceec4cf57509</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/f547abd7-3b07-4c14-b41b-ceec4cf57509/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/3b3881b3-2943-47be-a3a0-16a415c3af85</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/3b3881b3-2943-47be-a3a0-16a415c3af85/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/faf8f86f-abe9-4f9c-9aec-213158be30be</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/faf8f86f-abe9-4f9c-9aec-213158be30be/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/3b91b28f-dfcc-49e4-a1d7-e5c6fabaf6bb</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/3b91b28f-dfcc-49e4-a1d7-e5c6fabaf6bb/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/802a72db-204f-41c1-90ba-c7807846d754</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/802a72db-204f-41c1-90ba-c7807846d754/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/24183673-59de-4610-ba5f-91b521a88b49</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/24183673-59de-4610-ba5f-91b521a88b49/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/73879c47-90ee-472a-88b5-07393576b7d2</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/73879c47-90ee-472a-88b5-07393576b7d2/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/495d0cb5-64ce-4897-add5-eab7b48c19d6</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/495d0cb5-64ce-4897-add5-eab7b48c19d6/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/b0409c25-d2bf-4d37-8f84-90e4faddfdac</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/b0409c25-d2bf-4d37-8f84-90e4faddfdac/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/732827b1-22fb-4f22-a144-1c6df9d8c324</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/732827b1-22fb-4f22-a144-1c6df9d8c324/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/d4cae01d-1be0-4c51-9859-83d91a3ecaf9</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/d4cae01d-1be0-4c51-9859-83d91a3ecaf9/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/80110cd1-af8f-4ae4-96e8-0022196b87b3</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/80110cd1-af8f-4ae4-96e8-0022196b87b3/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/b067b4c0-7bb5-4f24-b9b2-6e2abc3805ac</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/b067b4c0-7bb5-4f24-b9b2-6e2abc3805ac/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/3eca6d86-b498-49f3-a864-5d2aa67235d7</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/3eca6d86-b498-49f3-a864-5d2aa67235d7/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/cd551cac-1acc-45d7-9f87-89044b4e8f2b</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/cd551cac-1acc-45d7-9f87-89044b4e8f2b/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/57c4d37f-2b85-4e13-b881-985cffdbc742</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/57c4d37f-2b85-4e13-b881-985cffdbc742/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/72882157-879e-45b4-bae1-71d3da47a44e</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/72882157-879e-45b4-bae1-71d3da47a44e/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/8e6826fc-0af9-49b7-899d-9d96c25fd772</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/activities/8e6826fc-0af9-49b7-899d-9d96c25fd772/pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/documents/syllabus/college-curriculum.pdf</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/01%20TYPES%20OF%20BALANCES.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/02%20ERRORS.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/05%20neutralization%20curves.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/07%20oxidation%20reduction%20titrations.ppt</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/08.%20Complexometric.ppt</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/1%20Introduction%20to%20Atomic%20Structure..ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/10%20GLP.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/12.%20Moisture%20content.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/13%20PH%20AND%20buffers.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/17.titrationsprimarystandards.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/1Signifant%20figures.ppt</loc>
-  <lastmod>2026-04-05T19:03:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/2%20Chemistry%20of%20%20Organic%20hydrocarbons.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/3%20Chemical%20properties%20of%20Alcohols%20and%20ethers.ppt</loc>
-  <lastmod>2026-04-05T19:03:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/4%20Nomencleature%20and%20reactivity%20of%20carbonyl%20compounds.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Acid%20-%20base%20theory.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/acid-base%20concept.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/ANATOMY%20OF%20COMPUTERS.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/applications%20of%20computer%20in%20pharmacy.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Basics%20of%20Organic%20Chemistry.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/basics_computers.ppt</loc>
-  <lastmod>2026-04-05T19:03:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/chipkomovement.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/classification_of_computer.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/colloids.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/common%20ion%20effect%20and%20buffer%20solution.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/COMPLEXOMETRIC%20REACTONS%20AND%20TITRATION.PPT</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/DIFFERENCES%20BETWEEN%20DOSAGE%20FORMS.pdf</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Differentiation.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/dosage%20forms.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/DOUCHES%20NSP.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/earth%20worm.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/eco%20system.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/EMULSIONS.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/flowcharts.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/flowers_fruits_and_seeds.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Galvanic%20Cell.swf.flv</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/generations.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/generations%20of%20computers.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/GLP%20Sept%202014%20Angela.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/GLYCERITES%20NSP.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/GNR%20Substitution%20Reactions.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/gravimetry-130803100448-phpapp02.ppt</loc>
-  <lastmod>2026-04-05T19:03:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Green%20Revolution%20Notes%20-%20CW13.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/history%20of%20computers.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Integration_by_Parts.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/iupacnomenclature%2029-10-2014%20(1).ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/lotions.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/matrices%20and%20determinants.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/nonaqueous.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/oxidation%20-reduction.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/PACKAGING%20TECHNOLOGY%20cips.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/PHARMACEUTICAL%20LIQUIDS-%20ADV%20DISADV.pdf</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/pharmacopoeia%20NSP.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/plant%20tissues.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/pollution.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Potentiometric%20pH%20measurement.flv</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/powders.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/POWDERS%20PPT.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/precipitation%20titrations%205.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/precipitation%20titrations4.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/RegressionAndCorrelation.ppt</loc>
-  <lastmod>2026-04-05T19:03:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/SHO%20D.pdf</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Significant%20Figures.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/statistics.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/SUPPOSITORIES.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/suspensions.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/systemic%20errors.ppt</loc>
-  <lastmod>2026-04-05T19:03:01+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Types%20of%20Fruits.ppt</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Types%20of%20pollutions.pdf</loc>
-  <lastmod>2026-04-05T19:03:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Unit%201%20CAREERS%20IN%20PHARMACY.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Viscosity.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/01.%20Pharmaceutical%20Legislation.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/01.Chemistry%20of%20carbohydrates%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/02.%20Pharmaceutical%20Ethics.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/02.Chemistry%20of%20lipids%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/03.Chemistry%20ofproteins%2019.02.16.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/04.%20Overview%20of%20enzymes%2019.02.16.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/05.%20Metabolism%20of%20carbohydrates%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/06.Metabolism%20of%20lipids%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/07.%20Metabolism%20of%20Protein%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/08.%20Significance%20if%20vitamins%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/09.%20Significance%20of%20minerals%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/10.Detoxification%20mechanisms%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/11.Metabolism%20OF%20ATP%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/12.Analysis%20of%20body%20fluids%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/13.%20Abnormal%20erythrocytes%2019.02.16.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/3%20-%20Classification%20of%20Microorganisms.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/abnormal%20constituns%20in%20urine.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Abnormal%20erythrocytes%2030.04.15.ppt</loc>
-  <lastmod>2026-04-05T19:02:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Accelerated%20%20stability%20studies.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Anthelmintics%202.3.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Anti%20cancer%20agents-alkylates%20and%20antimetabolites%2030.3.14.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Antiamoebic%20agents%2016.3.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Antibiotics.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Antibodies%20Chpt%204.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Anticancer%20antibiotics%205.4.15.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/ANTIFUNGAL%20AGENTS%206.6.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Antimalarial%20agents.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Antimicrobial%20Drugs%20123.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Antimycobacterial%20agents%2016.6.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/AntisepticsDisinfectants.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Antiviral%20Agents%2011.06.15.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/arrhythmia.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/BACTERIAL%20CELL%20STRUCTURE.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/BIOCHEM-17022016.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Biochemical%20role%20of%20minerals%2030.4.15.ppt</loc>
-  <lastmod>2026-04-05T19:02:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Blood.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Blood%20analysis.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/blood%20pressure.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/bodyfluids.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/BP_Control.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/brain.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Carbohydrate%20metabolism%2030.4.15.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/carbohydrates%201.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Cardiac%20%20Cycle%201.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Cardiac%20Cycle%202.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Cardiac%20Cycle%203.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Cardio-anatomy%20and%20physiology.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/CARDIOVASCULAR%20SYSTEM%201.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Cardiovascular%20system-flow%20and%20pressure.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Cephalosporins.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/CirculatorySystem%202.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/colloidaldisp1pptcompatibilitymode-120521101209-phpapp02%20(1).pdf</loc>
-  <lastmod>2026-04-05T19:02:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/colloids.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/COLLOIDS%20(1).ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/ConnectiveTissue.pps</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/corrosion.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Detoxofication-Metabolism%20of%20Xenobiotics.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/EMULSION%201.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Endo-ch02-Pituitary.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Enzymes.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/epithelial_tissues.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Fat%20soluble%20vitamins%2030.04.2015.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/food%20sources%2019-02-2016.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/gonorrhea-slides%20(1).ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/heart.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/humidity.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Industrial-Hazards-And-Safety-Measures.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/INTRODUCTION%20TO%20INDUSTRIAL%20PROCESSING%20%E2%80%93%20BASIC%20PRINCIPLES.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/introduction-to-class-immune-system.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/isolation%20and%20identification.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/lecture14and15malaria-110302133935-phpapp01.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/LecturePP22Neisseria.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/lipid%20metabolism.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Lipids%20introduction.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/mat%20in%20plant%20constr.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/micromeretics%20ppt.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/MIXING.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/mutations.pdf</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/nerve%20impulse.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/NervousSystemPPT.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Nomenclature%20of%20tricycles%20and%20polycycles.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Organization.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/p_suspensions_00.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Pancreas.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Pharmacy%20Act.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Plant%20products%20in%20cancer%20treatment%205.4.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/PLNT%20MTRL%20CONSTRN.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Prodrug%20concept%20of%20sulphadrugs%20and%20antibiotics%204.4.16.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/refrigeration%20and%20air%20conditioning.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Regulation%20of%20Blood%20pressure.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Schedule%20M%20GMP.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Shigella.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/SIZE%20REDUCTION.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Spinal-Nerves.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/stability%20of%20colloids.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/staining.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/sterilization%20and%20disinfection%202014-2015.ppt</loc>
-  <lastmod>2026-04-05T19:02:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/surface%20and%20interfacial%20tension.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/SUSPENSIONS.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/syphilisbasics-110507210132-phpapp01.pdf</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/THE%20CARDIOVASCULAR%20SYSTEM.ppt</loc>
-  <lastmod>2026-04-05T19:02:54+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/The%20Sense%20of%20Smell.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Tissues.ppt</loc>
-  <lastmod>2026-04-05T19:02:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%201%20Chirality.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%201%20Types%20of%20isomerism%20and%20isomers.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Unit%203%20Drurs.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/unit%203%20Naphthalene.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/unit%203%20Polynuclear%20aromatic%20hydrocarbons.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%204%20Nomenclature%20of%20heterocyclic%20rings.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%204%20Nomenclature%20of%20monocyclic%20heterocycles.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%204%20Nomenclature%20of%20spiro%20and%20ring%20assemblies.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%205%20Condensation%20reactions.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%205%20Named%20reactions.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT%205%20Oxidation%20reduction%20reactions.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT-1%20Stereochemistry.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/UNIT-2%20Chemistry%20of%20aromatic%20compounds.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/urine%20analysis.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/vectrobornediseases-111129233731-phpapp02.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/Water%20soluble%20vitamins%2030.4.ppt</loc>
-  <lastmod>2026-04-05T19:02:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/01%20Combinatorial%20Chemistry.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/01.%20Classification%20of%20Crude%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/02%20Drug%20interactions.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/02%20QSAR.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/02.%20Factors%20Influencing%20Cultivation.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/03%20High%20Throughput%20Screening.PPT</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/03.%20Types%20of%20Soil.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/04%20Adrenergic%20nervous%20system.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/04%20CAAD.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/04.%20Integrated%20Pest%20Management.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/05%20Cholinergic%20drugs.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/06%20Antiepileptic%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/07%20Antidepressants.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/08%20Antihypertensive%20agents.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/08%20Antipsychotic%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/09%20Antianginal%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/09%20Diuretics.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/10%20Antiarrythmic%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/10.Opthalamic%20preparations.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/11%20Antiarrythmic%20drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/13.sterility%20testing.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/3%20Tablets%20Qc.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/4.Quality%20control%20tests%20for%20capsules.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/5.Tablet%20coating.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/6.soft%20gelatin%20capsules.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/7.parenterals.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/8.parenterals%20Quality%20control%20tests.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/9.Production%20facilities%20of%20parenterals.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/ABSORPTION.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Adrenergic%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Adrenergic%20nervous%20system.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/adrenergic_and_anti-adrenergic_drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/adrenergic-agonists.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Adulteration.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/AEROSOLS.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Aerosols%20III%20B.Pharm.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Animation%20Falling%20Film%20Evaporator.flv</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Animation%20Forced%20Circulation%20evaporator.flv</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Anti-anxiety%20drugs%204.11.15.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Anti-epileptic%20drugs%207.11.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antianginal%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antiarrythmic%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Anticoagulants.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antidepressants.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/ANTIDEPRESSANTS%201.11.%20.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antiepileptic%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antihyperlipidemics.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/ANTIMICROBIAL%20ASSAY.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antipsychotic%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antipsychotic%20Drugs-28.10.15.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Antipsychotics.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Asafotida.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/basics%20in%20vaccine%20preparation.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/BENZOIN.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/biphasic%20liquids%20overview.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Blood%20products.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/CAAD.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/cannabis.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/CAPSICUM.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/CAPSULES.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Carbohydrates%20PPT.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/CENTRIFUGES.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Cholinergic%20Drugs.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/cholinergic%20Nervous%20system.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Classificaation%20of%20Crude%20Drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/clinical%20pharmacy.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/CNS%20STIMULANTS.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/collection%20of%20crude%20drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Combinatorial%20Chemistry.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/cosmetics%20III%20B.Pharm.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/counselling.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/creams.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/DEODORANTS%20AND%20ANTIPERSPIRANTS%20(2).pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Diagnostic%20agents%2024.11.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Drug%20Interactions.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Drying.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/DRYING.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Drying%20ppt.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Engineering--II.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/EPILEPSY.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/EXTRACTION.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Factors%20effecting%20cultivation%20of%20crude%20drugs.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/FERMENTATION.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Fermentation%20general.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Filtration.pdf</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/FILTRATION%2001.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/FILTRATION%2002.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/FLOW%20OF%20HEAT.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/gene%20transfer%20techniques.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/GENERAL%20ANAESTHETICS.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/general%20process%20of%20vaccine%20production.pdf</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/general%20productionn%20process.pps</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/ginger.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/HAIR%20BLEACHES%20AND%20DEPILATORIES%20final.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Harvesting%20and%20processing%20of%20crude%20drugs.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/HeatExchangerlecture.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Hospital%20Pharmacy.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Hypoglycemic%20Agents.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/immobilization.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/IMMUNITY%20updated.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/introduction%20to%20biotechnology.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/INTRODUCTION%20TO%20NERVOUS%20SYSTEM.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Introduction%20to%20Pharmcognosy.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/jalap.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Lecture-12-Hybridoma-technique.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Liquids%20I.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/liquids%20II.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/microemulsion%20and%20nanosuspension.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/NAIL%20LACQUERS%20AND%20NAIL%20REMOVERS.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/NSP%20ROUTES%20OF%20PARENTERAL%20DRUG%20DELIVERY.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Ointments.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/ophthalmics%20III%20B.Pharm.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/OPIOIDS%204.12.15.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/penicillin.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/peptic%20ulcer.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Plant%20Growth%20Harmones.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Plasma%20Substitutes.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/PODOPHYLLUM.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/preformulation%20unit-01.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/PTC.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/QSAR.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Radiopharmaceuticals.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/RADIOPHARMACEUTICALS%20APPLICATIONS.pdf</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Radiopharmaceuticals%20III%20B.Pharm.ppt</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/RECEPTORS.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/RIA.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Rising%20Film%20Evaporator.flv</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SEDATIVE-HYPNOTICS.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/shampoos%20final.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SHAVING%20CREAMS%20final.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK%20Hospital%20Formulary.pdf</loc>
-  <lastmod>2026-04-05T19:02:57+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK%20INCOMPATIBILITY.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK%20PRESCRIPTION%20UPLOAD.pdf</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK%20PTC.pdf</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK1%20BULK%20AND%20STERILE%20SUPPLIES.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/storax.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/surgical%20dressings.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/suspensions%20III%20B.Pharm.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Tablet%20coating.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Tablet-Granulation.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/test%20for%20sterility.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/tolu%20balsam.pptx</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/turmeric.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Unit-01%20Preformulation%20studies.ppt</loc>
-  <lastmod>2026-04-05T19:02:56+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/115-central-instrumentation-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/117-industrial-pharmacy-laboratory-i</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/118-machine-room</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/129-animal-mouse-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/202-pharmaceutical-chemistry-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/204-pharmaceutical-chemistry-laboratory-ug</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/207-pharmaceutical-chemistry-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/217-pharmaceutics-physical-pharmacy-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/218-pharmaceutical-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/303-pharmaceutical-analysis-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/305-pharmaceutical-microbiology-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/309-pharmacognosy-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/312-pharmacognosy-anatomy-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/318-pharmacology-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/320-pharmacology-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/321-physiology-pharmacology-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/401-industrial-pharmacy-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/402-industrial-pharmacy-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/406-pharmaceutical-analysis-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/407-pharmaceutical-analaysis-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/412-pharmaceutics-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/419-pharmaceutics-laboratory</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/resources/labs/420-pharmaceutics-laboraotry</loc>
-  <lastmod>2026-05-29T07:35:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/documents/resources/computer-lab/APPLICATION%20SOFTWARE%20LIST.pdf</loc>
-  <lastmod>2026-04-05T12:55:11+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://chalapathipharmacy.ac.in/documents/resources/computer-lab/SYSTEM%20SOFTWARE.pdf</loc>
-  <lastmod>2026-04-05T12:55:11+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
-</urlset>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/admissions</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/notices</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/programs</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/departments</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/blog</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/syllabus</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/contact</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/location</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/academic-calendar</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/powerpoint-presentations</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/programs/b-pharmacy</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/programs/m-pharmacy</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/programs/pharmd</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/programs/phd</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/placements</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/ces-overview</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/chairman</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/principal</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/governing-body</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/academic-council</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/finance-committee</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/bos</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/about/affiliations</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/facultyupdate</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/aneesha-addanki-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/asiya-begum</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/balla-hema-sai-naga-sudheeshna</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/bathula-vasavi</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/bhanu-prakash-peruboyina-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/burri-jaya-krishna</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/bala-saraswathi-nadendla-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/c-anthony-reddy</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/channamallu-sai-charitha</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/chunduri-divya-sri</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/dammati-nalini-devi</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/darla-rajesh-babu</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/darsi-eswar-tony</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/gvenkata-rami-reddy</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/goka-prem-kumar-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/gollamudi-john-asteen</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/gorantla-sireesha</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/gollapalli-nagaraju</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/jai-divya-tella</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/jhansi-lakshmi-marreddy</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/joshi-anand-thapeta</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/kambam-srinivasa-rao</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/katragadda-abhishikth</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/kavuri-prudhvi</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/kojja-sambasiva-rao</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/koora-narasimhulu-rajini-kanth</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/kurmaiah-divyalakshmi</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/kurra-subrahmanyam</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/kota-jahnavi-kutty</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/koushik-yetukuri</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/manchakalapudi-prudhvi-kumar</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/mohammad-mustaq-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/moparthy-pushpa-harshita</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/morla-sivaprasad</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/mounika-nandru</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/patchala-abhinandana</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/podili-satish-babu</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/pradeep-kumar-vajinepalli</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/pallavi-vadlamudi-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/pavan-kumar-yanamadala</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/ponugoti-mounica-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/ravinuthala-navya-pavani-lakshmi</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/rama-rao-nadendla</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/ravi-ketipally</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/shaik-ansar-ali-</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/stv-raghavamma</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/suda-jyotsna-rani</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/sandeep-kanna</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/shaik-fathima</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/shaikfarahan-subahan</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/sony-priya-kurati</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/uppalapati-mohan-chandu</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/valapu-anusha</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/venkata-suresh-ponnuru</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/vijay-kumar-kolli</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/yedduri-naga-lakshmi</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/faculty/yemineni-gopi</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/library</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/hostel</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/seminar-hall</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/auditorium</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/open-air-auditorium</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/sports-facilities</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/gymnasium</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/canteen</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/central-stores</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/play-ground</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/other-facilities</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/drug-testing-lab</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/medicinal-garden</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/computer-lab</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/audio-visual</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/recreation-centre</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/0d13a8e2-09fa-48f6-af96-59efbf469da5</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/0d13a8e2-09fa-48f6-af96-59efbf469da5/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/12bb1c62-e3e0-47e3-b808-1d4375eef27e</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/12bb1c62-e3e0-47e3-b808-1d4375eef27e/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/04e734aa-d126-4a80-afe8-2e545124f8a8</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/04e734aa-d126-4a80-afe8-2e545124f8a8/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/77913ac4-c8c4-4794-8c76-91f0abecafbd</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/77913ac4-c8c4-4794-8c76-91f0abecafbd/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/20096781-a3c3-4640-a4f2-151a34f3747f</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/20096781-a3c3-4640-a4f2-151a34f3747f/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/0dba7f84-5644-4714-84d8-e9932a0c00e3</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/0dba7f84-5644-4714-84d8-e9932a0c00e3/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/19852584-83a6-451a-9701-c8c25e30d5af</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/19852584-83a6-451a-9701-c8c25e30d5af/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/cf069518-080d-46fc-aa05-8467522ec8c1</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/cf069518-080d-46fc-aa05-8467522ec8c1/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/9c0fb94d-e0f8-4666-92ad-369fbf8e5c8e</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/9c0fb94d-e0f8-4666-92ad-369fbf8e5c8e/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/511f6a70-ca6e-439e-8729-efaef4ab9419</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/511f6a70-ca6e-439e-8729-efaef4ab9419/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/f66efd32-a954-4bdf-a1bd-ad3ce62fb663</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/f66efd32-a954-4bdf-a1bd-ad3ce62fb663/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/f547abd7-3b07-4c14-b41b-ceec4cf57509</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/f547abd7-3b07-4c14-b41b-ceec4cf57509/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/3b3881b3-2943-47be-a3a0-16a415c3af85</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/3b3881b3-2943-47be-a3a0-16a415c3af85/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/faf8f86f-abe9-4f9c-9aec-213158be30be</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/faf8f86f-abe9-4f9c-9aec-213158be30be/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/3b91b28f-dfcc-49e4-a1d7-e5c6fabaf6bb</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/3b91b28f-dfcc-49e4-a1d7-e5c6fabaf6bb/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/802a72db-204f-41c1-90ba-c7807846d754</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/802a72db-204f-41c1-90ba-c7807846d754/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/a35a7be8-ea67-4fc4-868e-6d28bd75ac69</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/a35a7be8-ea67-4fc4-868e-6d28bd75ac69/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/24183673-59de-4610-ba5f-91b521a88b49</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/24183673-59de-4610-ba5f-91b521a88b49/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/73879c47-90ee-472a-88b5-07393576b7d2</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/73879c47-90ee-472a-88b5-07393576b7d2/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/495d0cb5-64ce-4897-add5-eab7b48c19d6</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/495d0cb5-64ce-4897-add5-eab7b48c19d6/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/b0409c25-d2bf-4d37-8f84-90e4faddfdac</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/b0409c25-d2bf-4d37-8f84-90e4faddfdac/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/732827b1-22fb-4f22-a144-1c6df9d8c324</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/732827b1-22fb-4f22-a144-1c6df9d8c324/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/d4cae01d-1be0-4c51-9859-83d91a3ecaf9</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/d4cae01d-1be0-4c51-9859-83d91a3ecaf9/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/80110cd1-af8f-4ae4-96e8-0022196b87b3</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/80110cd1-af8f-4ae4-96e8-0022196b87b3/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/b067b4c0-7bb5-4f24-b9b2-6e2abc3805ac</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/b067b4c0-7bb5-4f24-b9b2-6e2abc3805ac/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/3eca6d86-b498-49f3-a864-5d2aa67235d7</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/3eca6d86-b498-49f3-a864-5d2aa67235d7/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/cd551cac-1acc-45d7-9f87-89044b4e8f2b</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/cd551cac-1acc-45d7-9f87-89044b4e8f2b/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/57c4d37f-2b85-4e13-b881-985cffdbc742</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/57c4d37f-2b85-4e13-b881-985cffdbc742/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/72882157-879e-45b4-bae1-71d3da47a44e</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/72882157-879e-45b4-bae1-71d3da47a44e/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/8e6826fc-0af9-49b7-899d-9d96c25fd772</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/activities/8e6826fc-0af9-49b7-899d-9d96c25fd772/pdf</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/b-pharma-colleges-in-ap</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/best-pharmacy-college</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/documents/syllabus/college-curriculum.pdf</loc>
+       <lastmod>2026-07-23T13:20:25+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/01%20TYPES%20OF%20BALANCES.pdf</loc>
+       <lastmod>2026-07-23T13:20:25+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/DIFFERENCES%20BETWEEN%20DOSAGE%20FORMS.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/PHARMACEUTICAL%20LIQUIDS-%20ADV%20DISADV.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/SHO%20D.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%201/Types%20of%20pollutions.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/colloidaldisp1pptcompatibilitymode-120521101209-phpapp02%20(1).pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/mutations.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%202/syphilisbasics-110507210132-phpapp01.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/Filtration.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/general%20process%20of%20vaccine%20production.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/RADIOPHARMACEUTICALS%20APPLICATIONS.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK%20Hospital%20Formulary.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK%20PRESCRIPTION%20UPLOAD.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK%20PTC.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/uploads/B%20Pharmacy/B%20Pharmacy%20-%203/SSMK1%20BULK%20AND%20STERILE%20SUPPLIES.pdf</loc>
+       <lastmod>2026-07-23T13:20:26+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/115-central-instrumentation-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/117-industrial-pharmacy-laboratory-i</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/118-machine-room</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/129-animal-mouse-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/202-pharmaceutical-chemistry-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/204-pharmaceutical-chemistry-laboratory-ug</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/207-pharmaceutical-chemistry-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/217-pharmaceutics-physical-pharmacy-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/218-pharmaceutical-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/303-pharmaceutical-analysis-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/305-pharmaceutical-microbiology-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/309-pharmacognosy-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/312-pharmacognosy-anatomy-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/318-pharmacology-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/320-pharmacology-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/321-physiology-pharmacology-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/401-industrial-pharmacy-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/402-industrial-pharmacy-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/406-pharmaceutical-analysis-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/407-pharmaceutical-analaysis-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/412-pharmaceutics-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/419-pharmaceutics-laboratory</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/resources/labs/420-pharmaceutics-laboraotry</loc>
+       <lastmod>2026-07-27T13:30:00+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/documents/resources/computer-lab/APPLICATION%20SOFTWARE%20LIST.pdf</loc>
+       <lastmod>2026-07-23T13:20:25+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://chalapathipharmacy.ac.in/documents/resources/computer-lab/SYSTEM%20SOFTWARE.pdf</loc>
+       <lastmod>2026-07-23T13:20:25+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+ </urlset>

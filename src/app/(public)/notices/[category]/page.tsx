@@ -1,11 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { getNotices } from "@/lib/sanity-actions";
-import { Bell, Calendar, ChevronRight } from "lucide-react";
+import { getNoticesByCategory } from "@/lib/sanity-actions";
+import { Bell, Calendar, ChevronRight, X } from "lucide-react";
 import Link from "next/link";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { notFound } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
+
+interface PageProps {
+  params: Promise<{
+    category: string;
+  }>;
+}
+
+const VALID_CATEGORIES = ['examination', 'admissions', 'academic', 'research', 'general'];
 
 function renderContentWithLinks(content: string) {
   if (!content) return null;
@@ -23,8 +32,16 @@ function renderContentWithLinks(content: string) {
   });
 }
 
-export default async function NoticesPage() {
-  const notices = await getNotices().catch(() => []);
+export default async function CategoryNoticesPage({ params }: PageProps) {
+  const { category } = await params;
+
+  if (!VALID_CATEGORIES.includes(category.toLowerCase())) {
+    notFound();
+  }
+
+  const notices = await getNoticesByCategory(category.toLowerCase()).catch(() => []);
+
+  const displayCategory = category.charAt(0).toUpperCase() + category.slice(1).toLowerCase();
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -90,7 +107,7 @@ export default async function NoticesPage() {
               notice.priority === 'High' ? 'bg-red-50 text-red-600' :
               notice.priority === 'Medium' ? 'bg-amber-50 text-amber-600' :
               notice.priority === 'Low' ? 'bg-slate-50 text-slate-600' :
-              'bg-blue-50 text-blue-600'
+              'bg-blue-550/10 text-blue-600'
             }`}>
               <Bell size={20} />
             </div>
@@ -158,11 +175,16 @@ export default async function NoticesPage() {
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:32px_32px]" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto">
+            <div className="flex items-center gap-2 text-secondary font-bold text-sm uppercase tracking-widest mb-4">
+              <Link href="/notices" className="hover:underline">Notices</Link>
+              <ChevronRight size={14} />
+              <span>{displayCategory}</span>
+            </div>
             <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
-              <span className="text-secondary">Institutional Notices</span>
+              <span className="text-secondary">{displayCategory} Notices</span>
             </h1>
             <p className="text-white/70 text-xl leading-relaxed">
-              Stay updated with the latest announcements, examination schedules, and academic notifications from Chalapathi Institute of Pharmaceutical Sciences.
+              Stay updated with the latest {displayCategory.toLowerCase()} announcements, schedules, and academic notifications from Chalapathi Institute of Pharmaceutical Sciences.
             </p>
           </div>
         </div>
@@ -171,17 +193,32 @@ export default async function NoticesPage() {
       <div className="container mx-auto px-4 -mt-10 relative z-20 max-w-4xl">
         {/* Categories Bar */}
         <div className="bg-white rounded-3xl shadow-xl p-6 mb-10 flex flex-col gap-4 border border-slate-100">
-          <span className="text-slate-500 font-bold text-xs uppercase tracking-widest">Categories:</span>
+          <div className="flex items-center justify-between">
+            <span className="text-slate-500 font-bold text-xs uppercase tracking-widest">Categories:</span>
+            <Link
+              href="/notices"
+              className="px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-red-50 hover:bg-red-100 text-red-600 border border-red-100 flex items-center gap-1.5"
+            >
+              Clear Filter <X size={14} />
+            </Link>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 w-full">
-            {['Examination', 'Admissions', 'Academic', 'Research', 'General'].map((cat, i) => (
-              <Link
-                key={i}
-                href={`/notices/${cat.toLowerCase()}`}
-                className="px-4 py-2.5 rounded-full text-xs font-bold transition-all bg-slate-50 hover:bg-primary/10 text-slate-600 hover:text-primary border border-slate-100 shadow-sm text-center whitespace-nowrap w-full"
-              >
-                {cat}
-              </Link>
-            ))}
+            {['Examination', 'Admissions', 'Academic', 'Research', 'General'].map((cat, i) => {
+              const isActive = cat.toLowerCase() === category.toLowerCase();
+              return (
+                <Link
+                  key={i}
+                  href={`/notices/${cat.toLowerCase()}`}
+                  className={`px-4 py-2.5 rounded-full text-xs font-bold transition-all border text-center whitespace-nowrap w-full ${
+                    isActive
+                      ? 'bg-slate-900 text-white border-slate-900 shadow-md'
+                      : 'bg-slate-50 text-slate-600 hover:bg-primary/10 hover:text-primary border-slate-100'
+                  }`}
+                >
+                  {cat}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
@@ -194,8 +231,8 @@ export default async function NoticesPage() {
               <div className="bg-slate-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Bell size={40} className="text-slate-300" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">No active notices</h3>
-              <p className="text-slate-500">Check back later for new updates.</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">No active {displayCategory.toLowerCase()} notices</h3>
+              <p className="text-slate-500">Check back later for new updates in this category.</p>
             </div>
           )}
 

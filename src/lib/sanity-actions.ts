@@ -11,12 +11,31 @@ export async function getNotices() {
   );
 }
 
+export async function getNoticesByCategory(category: string) {
+  return await client.fetch(
+    `*[_type == "notice" && category == $category] | order(date desc) {
+      ...,
+      "pdfUrl": pdfFile.asset->url
+    }`,
+    { category },
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
+}
+
 export async function getFaculty() {
-  return await client.fetch(`*[_type == "faculty"] | order(name asc)`);
+  return await client.fetch(
+    `*[_type == "faculty"] | order(name asc)`,
+    {},
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
 }
 
 export async function getFacultyBySlug(slug: string) {
-  return await client.fetch(`*[_type == "faculty" && slug.current == $slug][0]`, { slug });
+  return await client.fetch(
+    `*[_type == "faculty" && slug.current == $slug][0]`,
+    { slug },
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
 }
 
 export async function getGallery() {

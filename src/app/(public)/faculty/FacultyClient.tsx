@@ -22,53 +22,6 @@ import { PageHeader } from "@/components/ui/PageHeader";
  * }
  */
 
-const DEPARTMENTS = [
-  "All Departments",
-  "Pharmaceutics",
-  "Pharmaceutical Chemistry",
-  "Pharmacology",
-  "Pharmacognosy",
-  "Pharmaceutical Analysis",
-  "Pharmacy Practice",
-  "Regulatory Affairs",
-  "Industrial Pharmacy",
-  "Quality Assurance (QA)",
-  "Pharmaceutical Biotechnology",
-  "Human Anatomy and Physiology",
-  "Mathematics and Biostatistics",
-  "Computer Applications / IT",
-  "Environmental Sciences",
-  "Management Studies / MBA",
-  "Physical Education",
-  "Library Sciences",
-];
-
-const DESIGNATIONS = [
-  "All Designations",
-  "Head of Department (HOD)",
-  "Professor",
-  "Associate Professor",
-  "Assistant Professor",
-  "Senior Lecturer",
-  "Lecturer",
-  "Professor Emeritus",
-  "Adjunct Professor",
-  "Visiting Faculty",
-  "Guest Lecturer",
-  "Research Scientist",
-  "Postdoctoral Fellow",
-  "Research Associate",
-  "Research Scholar / Ph.D. Candidate",
-  "Teaching Assistant (TA)",
-  "Librarian",
-  "Assistant Librarian",
-  "Placement Officer",
-  "Laboratory Technician",
-  "System Administrator",
-  "Adjunct Faculty",
-  "Principal and Dean",
-];
-
 export default function FacultyClient({ initialFaculty }: { initialFaculty: FacultyMember[] }) {
   const [faculty, setFaculty] = useState<FacultyMember[]>(initialFaculty || []);
   const [loading, setLoading] = useState(false);
@@ -78,6 +31,88 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
   const [selectedDept, setSelectedDept] = useState("All Departments");
   const [selectedDesignation, setSelectedDesignation] = useState("All Designations");
   const [isSticky, setIsSticky] = useState(false);
+
+  // Dynamically extract unique departments from the faculty list
+  const departmentsList = useMemo(() => {
+    const depts = new Set<string>();
+    faculty.forEach((f) => {
+      if (f.department) {
+        depts.add(f.department.trim());
+      }
+    });
+    return ["All Departments", ...Array.from(depts).sort()];
+  }, [faculty]);
+
+  // Dynamically extract unique individual designations from the faculty list
+  const designationsList = useMemo(() => {
+    const desigs = new Set<string>();
+    faculty.forEach((f) => {
+      if (f.designation) {
+        f.designation.split(',').forEach((d) => {
+          const trimmed = d.trim();
+          if (trimmed) {
+            desigs.add(trimmed);
+          }
+        });
+      }
+    });
+    return ["All Designations", ...Array.from(desigs).sort()];
+  }, [faculty]);
+
+  // Helper to score rank/seniority of designations (lower score = higher seniority)
+  const getDesignationRank = (designationStr: string) => {
+    if (!designationStr) return 999;
+    const d = designationStr.toLowerCase();
+    
+    // 1. Principal & Dean are top priority
+    if (d.includes('principal') || d.includes('dean')) return 1;
+    
+    // 2. Head of Department
+    if (d.includes('head of department') || d.includes('hod')) return 2;
+    
+    // 3. Professors
+    if (d.includes('professor emeritus')) return 3.2;
+    if (d.includes('adjunct professor')) return 3.3;
+    if (d.includes('visiting professor') || d.includes('visiting faculty')) return 3.4;
+    if (d.includes('professor')) return 3;
+    
+    // 4. Associate Professors
+    if (d.includes('associate professor')) return 4;
+    
+    // 5. Assistant Professors
+    if (d.includes('assistant professor')) return 5;
+    
+    // 6. Lecturers
+    if (d.includes('senior lecturer')) return 6;
+    if (d.includes('lecturer')) return 7;
+    
+    // 7. Researchers
+    if (d.includes('research scientist')) return 8;
+    if (d.includes('postdoctoral fellow')) return 9;
+    if (d.includes('research associate') || d.includes('research scholar')) return 10;
+    
+    // 8. Other support & administrative titles
+    if (d.includes('teaching assistant')) return 11;
+    if (d.includes('placement officer')) return 12;
+    if (d.includes('librarian')) return 13;
+    if (d.includes('technician') || d.includes('administrator')) return 14;
+    
+    return 100;
+  };
+
+  // Get the highest rank among all titles the member has
+  const getFacultyHighestRank = (member: FacultyMember) => {
+    const dStr = member.designation || "";
+    const parts = dStr.split(',').map((p) => p.trim());
+    let highestRank = 999;
+    parts.forEach((part) => {
+      const rank = getDesignationRank(part);
+      if (rank < highestRank) {
+        highestRank = rank;
+      }
+    });
+    return highestRank;
+  };
 
   useEffect(() => {
     // Sync initial fetched server data
@@ -92,15 +127,26 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
     return () => window.removeEventListener("scroll", handleScroll);
   }, [initialFaculty]);
 
-  // Optimized Client-Side Filtering
+  // Optimized Client-Side Filtering & Sorting
   const filteredFaculty = useMemo(() => {
-    return faculty.filter((f) => {
+    const filtered = faculty.filter((f) => {
       const searchStr = `${f.name} ${f.designation}`.toLowerCase();
       const matchesSearch = searchStr.includes(searchQuery.toLowerCase());
       const matchesDept = selectedDept === "All Departments" || f.department === selectedDept;
-      const matchesDesignation = selectedDesignation === "All Designations" || f.designation === selectedDesignation;
+      const matchesDesignation = selectedDesignation === "All Designations" || 
+        (f.designation && f.designation.split(',').map(d => d.trim().toLowerCase()).includes(selectedDesignation.toLowerCase()));
 
       return matchesSearch && matchesDept && matchesDesignation;
+    });
+
+    // Sort: designation rank ascending (1 is top), then name alphabetically
+    return filtered.sort((a, b) => {
+      const rankA = getFacultyHighestRank(a);
+      const rankB = getFacultyHighestRank(b);
+      if (rankA !== rankB) {
+        return rankA - rankB;
+      }
+      return a.name.localeCompare(b.name);
     });
   }, [faculty, searchQuery, selectedDept, selectedDesignation]);
 
@@ -148,7 +194,7 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
                   value={selectedDept}
                   onChange={(e) => setSelectedDept(e.target.value)}
                 >
-                  {DEPARTMENTS.map(dept => (
+                  {departmentsList.map(dept => (
                     <option key={dept} value={dept}>{dept}</option>
                   ))}
                 </select>
@@ -161,7 +207,7 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
                   value={selectedDesignation}
                   onChange={(e) => setSelectedDesignation(e.target.value)}
                 >
-                  {DESIGNATIONS.map(des => (
+                  {designationsList.map(des => (
                     <option key={des} value={des}>{des}</option>
                   ))}
                 </select>

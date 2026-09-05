@@ -27,8 +27,12 @@ import enquiry from './enquiry';
 import { resourcesGallery } from './resourcesGallery';
 import activityReport from './activityReport';
 import attendedActivity from './attendedActivity';
+import department from './department';
+import academicToolkit from './academicToolkit';
 
 export const schemaTypes = [
+  academicToolkit,
+  department,
   activityReport,
   attendedActivity,
   faculty, 

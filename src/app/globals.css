@@ -71,8 +71,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .animate-scroll {
-  animation: scroll 30s linear infinite;
+  animation: scroll 80s linear infinite;
   width: max-content;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }
 
 /* High-fidelity PDF document print layout settings */

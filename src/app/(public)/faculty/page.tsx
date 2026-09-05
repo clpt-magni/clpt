@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Metadata } from 'next';
 import { getFaculty } from '@/lib/sanity-actions';
 import FacultyClient from './FacultyClient';
@@ -10,8 +11,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function FacultyPage() {
+export const revalidate = 0;
+
+export default async function FacultyPage({
+  searchParams,
+}: {
+  searchParams?: Promise<{ department?: string; dept?: string }>;
+}) {
+  const params = await searchParams;
+  const initialDept = params?.department || params?.dept || "";
   const initialFaculty = await getFaculty();
   
-  return <FacultyClient initialFaculty={initialFaculty || []} />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <FacultyClient initialFaculty={initialFaculty || []} initialDepartment={initialDept} />
+    </Suspense>
+  );
 }

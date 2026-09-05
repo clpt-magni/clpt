@@ -12,6 +12,7 @@ export interface FacultyMember {
   department: string;
   email?: string;
   image?: any;
+  dateOfJoining?: string;
 }
 
 const getInitials = (name: string) => {

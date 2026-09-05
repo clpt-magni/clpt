@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Microscope, Users, GraduationCap, Calendar, Laptop, Download, Briefcase, Clock, MapPin } from "lucide-react";
-import { getNotices, getNews, getEvents } from "@/lib/sanity-actions";
+import { getNotices, getNews, getEvents, getAcademicToolkit } from "@/lib/sanity-actions";
 
 import HeroVideo from "@/components/home/HeroVideo";
 import AdmissionsPopup from "@/components/home/AdmissionsPopup";
@@ -24,6 +24,7 @@ export default async function Home() {
   const notices = await getNotices().catch(() => []);
   const news = await getNews().catch(() => []);
   const events = await getEvents().catch(() => []);
+  const academicToolkit = await getAcademicToolkit().catch(() => null);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -96,8 +97,33 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Internship Training Report Template Section */}
-      <InternshipReportSection />
+      {/* Ticker from Sanity */}
+      <section className="bg-primary py-6 overflow-hidden border-y border-white/10">
+        <div className="flex items-center overflow-hidden">
+          <div className="animate-scroll flex whitespace-nowrap gap-12 px-12">
+            {notices.length > 0 ? (
+              notices.concat(notices, notices).map((notice: any, i: number) => (
+                <span key={`${notice._id}-${i}`} className="text-white font-bold tracking-tight flex items-center gap-4 font-poppins">
+                  <span className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_rgba(244,180,0,0.8)]" />
+                  {notice.title.toUpperCase()}
+                </span>
+              ))
+            ) : (
+              [
+                "FALL 2026 ADMISSIONS ARE NOW OPEN!",
+                "JOIN US FOR THE ANNUAL PHARMACY SYMPOSIUM.",
+                "NEW RESEARCH LAB INAUGURATED YESTERDAY.",
+                "100% PLACEMENT RECORD FOR B.PHARM BATCH 2024"
+              ].map((text, i) => (
+                <span key={i} className="text-white font-bold tracking-tight flex items-center gap-4 font-poppins">
+                  <span className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_rgba(244,180,0,0.8)]" />
+                  {text}
+                </span>
+              ))
+            )}
+          </div>
+        </div>
+      </section>
 
       {/* Important Notices Section */}
       <section className="py-16 bg-slate-50 border-y">
@@ -159,33 +185,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Ticker from Sanity */}
-      <section className="bg-primary py-6 overflow-hidden border-y border-white/10">
-        <div className="flex items-center overflow-hidden">
-          <div className="animate-scroll flex whitespace-nowrap gap-12 px-12">
-            {notices.length > 0 ? (
-              notices.concat(notices, notices).map((notice: any, i: number) => (
-                <span key={`${notice._id}-${i}`} className="text-white font-bold tracking-tight flex items-center gap-4 font-poppins">
-                  <span className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_rgba(244,180,0,0.8)]" />
-                  {notice.title.toUpperCase()}
-                </span>
-              ))
-            ) : (
-              [
-                "FALL 2026 ADMISSIONS ARE NOW OPEN!",
-                "JOIN US FOR THE ANNUAL PHARMACY SYMPOSIUM.",
-                "NEW RESEARCH LAB INAUGURATED YESTERDAY.",
-                "100% PLACEMENT RECORD FOR B.PHARM BATCH 2024"
-              ].map((text, i) => (
-                <span key={i} className="text-white font-bold tracking-tight flex items-center gap-4 font-poppins">
-                  <span className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_rgba(244,180,0,0.8)]" />
-                  {text}
-                </span>
-              ))
-            )}
-          </div>
-        </div>
-      </section>
+      {/* Internship Training Report Template Section */}
+      <InternshipReportSection data={academicToolkit} />
 
       {/* Placements & Research */}
       <section className="py-16 bg-white">

@@ -123,3 +123,27 @@ export async function getAffiliations() {
     }
   }`);
 }
+
+export async function getDepartments() {
+  return await client.fetch(
+    `*[_type == "department"] | order(order asc, name asc)`,
+    {},
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
+}
+
+export async function getAcademicToolkit() {
+  return await client.fetch(
+    `*[_type == "academicToolkit" && isActive != false][0] {
+      _id,
+      title,
+      category,
+      description,
+      isActive,
+      "pdfUrl": pdfFile.asset->url,
+      "docxUrl": docxFile.asset->url
+    }`,
+    {},
+    { cache: 'no-store', next: { revalidate: 0 } }
+  );
+}

@@ -1,36 +1,39 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
+import { useSearchParams } from "next/navigation";
 import { Search, Filter, User, SlidersHorizontal, ArrowUp } from "lucide-react";
 import Link from "next/link";
 import { getFaculty } from "@/lib/sanity-actions";
 import FacultyCard, { FacultyMember } from "@/components/faculty/FacultyCard";
 import { PageHeader } from "@/components/ui/PageHeader";
 
-/**
- * GROQ Query for Faculty Directory
- * 
- * *[_type == "faculty"] | order(name asc) {
- *   _id,
- *   name,
- *   prefix,
- *   slug,
- *   designation,
- *   department,
- *   email,
- *   image
- * }
- */
+function findMatchingDepartment(queryDept: string, availableDepts: string[]): string {
+  if (!queryDept || queryDept === "All Departments") return "All Departments";
+  const normalized = queryDept.trim().toLowerCase();
 
-export default function FacultyClient({ initialFaculty }: { initialFaculty: FacultyMember[] }) {
+  const exact = availableDepts.find((d) => d.toLowerCase() === normalized);
+  if (exact) return exact;
+
+  const startsWith = availableDepts.find((d) => d.toLowerCase().startsWith(normalized));
+  if (startsWith) return startsWith;
+
+  const contains = availableDepts.find((d) => d.toLowerCase().includes(normalized));
+  if (contains) return contains;
+
+  return "All Departments";
+}
+
+export default function FacultyClient({ 
+  initialFaculty,
+  initialDepartment = ""
+}: { 
+  initialFaculty: FacultyMember[];
+  initialDepartment?: string;
+}) {
+  const searchParams = useSearchParams();
   const [faculty, setFaculty] = useState<FacultyMember[]>(initialFaculty || []);
   const [loading, setLoading] = useState(false);
-
-  // Filter States
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedDept, setSelectedDept] = useState("All Departments");
-  const [selectedDesignation, setSelectedDesignation] = useState("All Designations");
-  const [isSticky, setIsSticky] = useState(false);
 
   // Dynamically extract unique departments from the faculty list
   const departmentsList = useMemo(() => {
@@ -42,6 +45,23 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
     });
     return ["All Departments", ...Array.from(depts).sort()];
   }, [faculty]);
+
+  // Filter States
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedDept, setSelectedDept] = useState("All Departments");
+  const [selectedDesignation, setSelectedDesignation] = useState("All Designations");
+  const [isSticky, setIsSticky] = useState(false);
+
+  // Sync selectedDept when URL department query parameter changes
+  useEffect(() => {
+    const deptQuery = searchParams?.get("department") || searchParams?.get("dept") || initialDepartment;
+    if (deptQuery && departmentsList.length > 1) {
+      const matched = findMatchingDepartment(deptQuery, departmentsList);
+      if (matched && matched !== "All Departments") {
+        setSelectedDept(matched);
+      }
+    }
+  }, [searchParams, initialDepartment, departmentsList]);
 
   // Dynamically extract unique individual designations from the faculty list
   const designationsList = useMemo(() => {
@@ -59,59 +79,22 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
     return ["All Designations", ...Array.from(desigs).sort()];
   }, [faculty]);
 
-  // Helper to score rank/seniority of designations (lower score = higher seniority)
-  const getDesignationRank = (designationStr: string) => {
-    if (!designationStr) return 999;
-    const d = designationStr.toLowerCase();
-    
-    // 1. Principal & Dean are top priority
-    if (d.includes('principal') || d.includes('dean')) return 1;
-    
-    // 2. Head of Department
-    if (d.includes('head of department') || d.includes('hod')) return 2;
-    
-    // 3. Professors
-    if (d.includes('professor emeritus')) return 3.2;
-    if (d.includes('adjunct professor')) return 3.3;
-    if (d.includes('visiting professor') || d.includes('visiting faculty')) return 3.4;
-    if (d.includes('professor')) return 3;
-    
-    // 4. Associate Professors
-    if (d.includes('associate professor')) return 4;
-    
-    // 5. Assistant Professors
-    if (d.includes('assistant professor')) return 5;
-    
-    // 6. Lecturers
-    if (d.includes('senior lecturer')) return 6;
-    if (d.includes('lecturer')) return 7;
-    
-    // 7. Researchers
-    if (d.includes('research scientist')) return 8;
-    if (d.includes('postdoctoral fellow')) return 9;
-    if (d.includes('research associate') || d.includes('research scholar')) return 10;
-    
-    // 8. Other support & administrative titles
-    if (d.includes('teaching assistant')) return 11;
-    if (d.includes('placement officer')) return 12;
-    if (d.includes('librarian')) return 13;
-    if (d.includes('technician') || d.includes('administrator')) return 14;
-    
-    return 100;
+  // Helper to categorize faculty into seniority tiers:
+  // Tier 1: Principal & Dean (always on top)
+  // Tier 2: Head of Department (HOD)
+  // Tier 3: All other faculty members
+  const getFacultyRoleTier = (member: FacultyMember): number => {
+    const desig = (member.designation || "").toLowerCase();
+    if (desig.includes("principal") || desig.includes("dean")) return 1;
+    if (desig.includes("head of department") || desig.includes("hod")) return 2;
+    return 3;
   };
 
-  // Get the highest rank among all titles the member has
-  const getFacultyHighestRank = (member: FacultyMember) => {
-    const dStr = member.designation || "";
-    const parts = dStr.split(',').map((p) => p.trim());
-    let highestRank = 999;
-    parts.forEach((part) => {
-      const rank = getDesignationRank(part);
-      if (rank < highestRank) {
-        highestRank = rank;
-      }
-    });
-    return highestRank;
+  // Helper to get numeric timestamp for dateOfJoining (earlier joining date = higher seniority)
+  const getJoiningTimestamp = (dateStr?: string): number => {
+    if (!dateStr) return Number.MAX_SAFE_INTEGER;
+    const time = new Date(dateStr).getTime();
+    return isNaN(time) ? Number.MAX_SAFE_INTEGER : time;
   };
 
   useEffect(() => {
@@ -132,20 +115,40 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
     const filtered = faculty.filter((f) => {
       const searchStr = `${f.name} ${f.designation}`.toLowerCase();
       const matchesSearch = searchStr.includes(searchQuery.toLowerCase());
-      const matchesDept = selectedDept === "All Departments" || f.department === selectedDept;
+      const matchesDept = 
+        selectedDept === "All Departments" || 
+        f.department === selectedDept ||
+        (f.department && selectedDept && (
+          f.department.toLowerCase().startsWith(selectedDept.toLowerCase()) ||
+          selectedDept.toLowerCase().startsWith(f.department.toLowerCase())
+        ));
       const matchesDesignation = selectedDesignation === "All Designations" || 
         (f.designation && f.designation.split(',').map(d => d.trim().toLowerCase()).includes(selectedDesignation.toLowerCase()));
 
       return matchesSearch && matchesDept && matchesDesignation;
     });
 
-    // Sort: designation rank ascending (1 is top), then name alphabetically
+    // Sort order:
+    // 1. Principal always on top (Tier 1)
+    // 2. Next Head of Department / HOD (Tier 2)
+    // 3. Faculty members sorted by date of joining (Tier 3 - earlier dates first)
     return filtered.sort((a, b) => {
-      const rankA = getFacultyHighestRank(a);
-      const rankB = getFacultyHighestRank(b);
-      if (rankA !== rankB) {
-        return rankA - rankB;
+      const tierA = getFacultyRoleTier(a);
+      const tierB = getFacultyRoleTier(b);
+
+      if (tierA !== tierB) {
+        return tierA - tierB;
       }
+
+      // Within the same tier (e.g. among HODs or among faculty):
+      const dateA = getJoiningTimestamp(a.dateOfJoining);
+      const dateB = getJoiningTimestamp(b.dateOfJoining);
+
+      if (dateA !== dateB) {
+        return dateA - dateB;
+      }
+
+      // Fallback: alphabetical by name
       return a.name.localeCompare(b.name);
     });
   }, [faculty, searchQuery, selectedDept, selectedDesignation]);
@@ -163,6 +166,7 @@ export default function FacultyClient({ initialFaculty }: { initialFaculty: Facu
 
       {/* 2. Search & Filter Bar - Compacted segments */}
       <div
+        id="faculty-directory"
         className={`z-40 transition-all duration-500 relative md:sticky md:top-[145px] ${isSticky
           ? "py-2 md:bg-white/95 md:backdrop-blur-md md:shadow-lg border-b border-slate-200 bg-white"
           : "py-4 bg-white border-b border-slate-100"

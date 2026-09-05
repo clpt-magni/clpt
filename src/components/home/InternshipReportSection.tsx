@@ -5,7 +5,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FileText, Download, Eye, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function InternshipReportSection() {
+export interface AcademicToolkitData {
+  _id?: string;
+  title?: string;
+  category?: string;
+  description?: string;
+  isActive?: boolean;
+  pdfUrl?: string;
+  docxUrl?: string;
+}
+
+export default function InternshipReportSection({ data }: { data?: AcademicToolkitData | null }) {
   const [mounted, setMounted] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
@@ -14,9 +24,13 @@ export default function InternshipReportSection() {
   }, []);
 
   if (!mounted) return null;
+  if (data?.isActive === false) return null;
 
-  const docxUrl = "/documents/studentdocuments/Internship-training-report.docx";
-  const pdfUrl = "/documents/studentdocuments/Internship-training-report.pdf";
+  const title = data?.title || "Internship Training Report";
+  const category = data?.category || "Academic Toolkits";
+  const description = data?.description || "Access the approved template and submission guidelines for the official clinical or industrial pharmacy internship report. Download the template or preview the guide below.";
+  const docxUrl = data?.docxUrl || "/documents/studentdocuments/Internship-training-report.docx";
+  const pdfUrl = data?.pdfUrl || "/documents/studentdocuments/Internship-training-report.pdf";
 
   return (
     <>
@@ -33,15 +47,15 @@ export default function InternshipReportSection() {
                   <div className="w-12 h-12 bg-primary/5 rounded-2xl flex items-center justify-center text-primary shadow-inner">
                     <FileText size={22} />
                   </div>
-                  <div className="text-[10px] font-black uppercase tracking-[0.25em] text-primary font-poppins">Academic Toolkits</div>
+                  <div className="text-[10px] font-black uppercase tracking-[0.25em] text-primary font-poppins">{category}</div>
                 </div>
 
                 <div className="space-y-3">
                   <h3 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight font-poppins leading-none">
-                    Internship Training Report
+                    {title}
                   </h3>
                   <p className="text-slate-500 font-medium leading-relaxed text-sm">
-                    Access the approved template and submission guidelines for the official clinical or industrial pharmacy internship report. Download the template or preview the guide below.
+                    {description}
                   </p>
                 </div>
               </div>
@@ -107,7 +121,7 @@ export default function InternshipReportSection() {
                     <FileText size={18} />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-800 leading-none">Internship Training Guide</h4>
+                    <h4 className="text-sm font-bold text-slate-800 leading-none">{title}</h4>
                     <span className="text-[10px] font-bold text-slate-400 mt-1 block">PDF Preview Mode</span>
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 # robots.txt
-# Website: https://chalapathipharmacy.ac.in/
+# Website: https://www.chalapathipharmacy.ac.in/
 
 User-agent: *
 Allow: /
@@ -59,4 +59,4 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-Sitemap: https://chalapathipharmacy.ac.in/sitemap.xml
+Sitemap: https://www.chalapathipharmacy.ac.in/sitemap.xml

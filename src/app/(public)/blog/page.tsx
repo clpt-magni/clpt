@@ -1,17 +1,37 @@
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
-import { BookOpen, Calendar, Clock, ArrowRight, GraduationCap, Briefcase } from "lucide-react";
+import { BookOpen, Calendar, Clock, ArrowRight, GraduationCap, Briefcase, FlaskConical } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "CLPT Pharmacy Blog & Admission Guides | Chalapathi Pharmacy",
-  description: "Read our comprehensive guides and articles on B.Pharmacy admissions, entrance exams, and career pathways in pharmaceutical sciences.",
+  description: "Read our comprehensive guides and articles on B.Pharmacy and M.Pharmacy admissions, entrance exams, and career pathways in pharmaceutical sciences.",
   alternates: {
     canonical: "/blog",
   },
 };
 
 const blogPosts = [
+  {
+    title: "How to Select a Good Pharmacy or M Pharmacy College",
+    slug: "how-to-select-a-good-pharmacy-college",
+    description: "Essential guide on how to evaluate pharmacy colleges in India. Key factors include PCI regulatory approvals, lab infrastructure, faculty credentials, placements, and fees.",
+    category: "College Selection",
+    icon: GraduationCap,
+    readTime: "7 min read",
+    date: "October 14, 2026",
+    badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+  },
+  {
+    title: "B Pharmacy vs M Pharmacy: Which Pharmacy Course and College is Right for You?",
+    slug: "b-pharmacy-vs-m-pharmacy",
+    description: "Detailed comparison between B.Pharm and M.Pharm degrees. Understand differences in duration, curriculum depth, eligibility, specialized R&D careers, and how to choose the right path.",
+    category: "Course Comparison",
+    icon: FlaskConical,
+    readTime: "8 min read",
+    date: "October 14, 2026",
+    badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+  },
   {
     title: "Complete Admission Guide for B.Pharmacy Colleges in AP",
     slug: "b-pharma-colleges-in-ap",

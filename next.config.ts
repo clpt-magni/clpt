@@ -11,6 +11,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/how-to-select-a-good-pharmacy-or-m-pharmacy-college',
+        destination: '/how-to-select-a-good-pharmacy-college',
+        permanent: true,
+      },
+      {
+        source: '/b-pharm-vs-m-pharm',
+        destination: '/b-pharmacy-vs-m-pharmacy',
+        permanent: true,
+      },
+      {
+        source: '/b-pharmacy-vs-m-pharmacy-which-is-right-for-you',
+        destination: '/b-pharmacy-vs-m-pharmacy',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
